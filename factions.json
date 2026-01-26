@@ -1,0 +1,62 @@
+{
+    "Russia": {
+        "color": "#e74c3c",
+        "label": "Russian Armed Forces",
+        "type": "State",
+        "render_order": 1
+    },
+    "SNA": {
+        "color": "#27ae60",
+        "label": "Syrian Interim Gov (SNA) & Turkey",
+        "type": "State",
+        "render_order": 2
+    },
+    "HTS": {
+        "color": "#116327",
+        "label": "Syrian Salvation Gov (HTS)",
+        "type": "Militia",
+        "render_order": 3
+    },
+    "SDF": {
+        "color": "#f1c40f",
+        "label": "Rojava (SDF)",
+        "type": "Militia",
+        "render_order": 4
+    },
+    "Druze": {
+        "color": "#32cd32",
+        "label": "Druze Local Militia",
+        "type": "Militia",
+        "render_order": 5
+    },
+    "USA": {
+        "color": "#1abc9c",
+        "label": "United States Forces",
+        "type": "State",
+        "render_order": 6
+    },
+    "Israel": {
+        "color": "#3498db",
+        "label": "Israel Defense Forces",
+        "type": "State",
+        "render_order": 7
+    },
+    "TSK": {
+        "color": "#2ecc71",
+        "label": "Turkish Armed Forces (TSK)",
+        "type": "State",
+        "render_order": 8
+    },
+    "Ukraine": {
+        "color": "#3498db",
+        "label": "Ukraine",
+        "type": "State",
+        "render_order": 9
+    },
+    "ISIS": {
+        "color": "#2c3e50",
+        "label": "Islamic State (ISIL)",
+        "type": "Terrorist",
+        "render_order": 10
+    }
+}

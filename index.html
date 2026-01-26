@@ -1,0 +1,2937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAR MAP | Advanced Intel & Analytics Hub</title>
+    <script>
+        if (screen.width <= 768) {
+            window.location.href = "mobile.html";
+        }
+    </script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --panel-bg: rgba(15, 15, 15, 0.85);
+            --accent: #e74c3c;
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #e0e0e0;
+            --text-dim: #888;
+            --glass: blur(12px) saturate(180%);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            overflow: hidden;
+            height: 100dvh;
+            /* Dynamic viewport height fix for mobile browsers */
+            width: 100vw;
+            overscroll-behavior: none;
+            /* Prevent scroll bounce */
+            touch-action: none;
+            /* Disable default touch actions (scrolling) on body */
+        }
+
+        /* GLOBAL FIX: Layer Control Z-Index (User Request) */
+        .mapboxgl-ctrl-top-right,
+        .leaflet-control-layers,
+        #layer-control {
+            z-index: 99999 !important;
+        }
+
+        /* Global Icon Scaling for Mobile */
+        /* Mobile CSS moved to bottom for precedence */
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 380px;
+            width: calc(100% - 380px);
+            background: #000;
+        }
+
+        #sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 380px;
+            height: 100%;
+            background: var(--panel-bg);
+            backdrop-filter: var(--glass);
+            border-right: 1px solid var(--border);
+            overflow-y: auto;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar-header {
+            padding: 25px 20px;
+            border-bottom: 1px solid var(--border);
+            background: rgba(5, 5, 5, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent);
+            animation: pulse 2s infinite;
+        }
+
+        .hover-tooltip .mapboxgl-popup-content {
+            background: rgba(10, 10, 10, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 8px 12px;
+            font-size: 11px;
+            backdrop-filter: blur(8px);
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            pointer-events: none;
+        }
+
+        .hover-tooltip .mapboxgl-popup-tip {
+            display: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        #stats-panel {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat-row {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .stat-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-bar-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stat-bar-bg {
+            flex-grow: 1;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .stat-bar-fill {
+            height: 100%;
+            border-radius: 2px;
+            transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #fff;
+            min-width: 35px;
+            text-align: right;
+        }
+
+        #feed-container {
+            flex-grow: 1;
+        }
+
+        .feed-item {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .feed-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            padding-left: 25px;
+        }
+
+        .feed-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--accent);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .feed-item:hover::before {
+            transform: scaleY(1);
+        }
+
+        #layer-control {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--panel-bg);
+            backdrop-filter: var(--glass);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            z-index: 100;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            transition: opacity 0.3s ease;
+        }
+
+        .layer-toggle {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-main);
+            transition: color 0.2s;
+        }
+
+        .layer-toggle:hover {
+            color: #fff;
+        }
+
+        .layer-toggle input {
+            margin-right: 12px;
+            width: 16px;
+            height: 16px;
+            accent-color: var(--accent);
+            cursor: pointer;
+        }
+
+        .attacker-badge {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 100px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .bg-Russia {
+            background: rgba(231, 76, 60, 0.2);
+            color: #e74c3c;
+            border: 1px solid #e74c3c;
+        }
+
+        .bg-Turkiye {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+            border: 1px solid #2ecc71;
+        }
+
+        .bg-SDF {
+            background: rgba(241, 196, 15, 0.2);
+            color: #f1c40f;
+            border: 1px solid #f1c40f;
+        }
+
+        .bg-USA {
+            background: rgba(26, 188, 156, 0.2);
+            color: #1abc9c;
+            border: 1px solid #1abc9c;
+        }
+
+        .mapboxgl-popup {
+            z-index: 2000 !important;
+        }
+
+        .mapboxgl-popup-content {
+            background: var(--panel-bg) !important;
+            backdrop-filter: var(--glass);
+            color: #fff;
+            padding: 0;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .mapboxgl-popup-tip {
+            border-top-color: var(--panel-bg) !important;
+        }
+
+        .mapboxgl-popup-close-button {
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 0 12px;
+        }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 768px) {
+            #map {
+                left: 0 !important;
+                width: 100% !important;
+            }
+
+            #sidebar {
+                transform: translateX(-100%);
+                width: 85%;
+                max-width: 320px;
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                z-index: 1000;
+                box-shadow: 20px 0 50px rgba(0, 0, 0, 0.5);
+            }
+
+            #sidebar.active {
+                transform: translateX(0);
+            }
+
+            #mobile-menu-btn {
+                display: flex !important;
+            }
+
+            #layer-control {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                height: 100%;
+                width: 75%;
+                max-width: 280px;
+                max-height: none;
+                /* Reset */
+                transform: translateX(100%);
+                /* Start hidden off-screen right */
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                border-radius: 0;
+                border-left: 1px solid var(--border);
+                background: rgba(15, 15, 15, 0.95);
+                display: block !important;
+                /* Always block, toggle via transform */
+                z-index: 1001;
+                /* Above map */
+                padding: 20px;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+            }
+
+            #layer-control.active {
+                display: block;
+                /* Ensure visibility */
+                transform: translateX(0);
+            }
+
+            /* Smaller Popups on Mobile */
+            .mapboxgl-popup {
+                max-width: 200px !important;
+            }
+
+            .mapboxgl-popup-content {
+                padding: 0 !important;
+            }
+
+
+
+            /* Adjust stats for mobile */
+            #stats-panel {
+                padding: 15px;
+            }
+
+            .feed-item {
+                padding: 15px;
+                /* Compact feed */
+            }
+        }
+
+        #mobile-menu-btn {
+            display: none;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 999;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            cursor: pointer;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        #mobile-layer-btn {
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 999;
+            background: var(--accent);
+            /* Same red as menu button */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            cursor: pointer;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        /* MOBILE OPTIMIZATION - MOVED TO BOTTOM FOR PRECEDENCE */
+        @media (max-width: 768px) {
+
+            /* 1. Global Icon Scaling - Reverted to 0.75 for clarity */
+            .mapboxgl-marker canvas,
+            .mapboxgl-marker img,
+            .mapboxgl-marker div {
+                transform: scale(0.75) !important;
+                transform-origin: center bottom;
+            }
+
+            /* 2. Map Container Fix (Black Bar Removal) */
+            #map {
+                position: fixed !important;
+                height: 100dvh !important;
+                width: 100vw !important;
+                top: 0;
+                left: 0;
+            }
+
+            /* 3. Sidebar Width & Behavior */
+            #sidebar {
+                transform: translateX(-100%);
+                width: 100% !important;
+                /* Full width */
+                max-width: none !important;
+                z-index: 2100;
+                /* Higher than layer button (2000) */
+                background: #0f0f0f !important;
+                /* Force Opaque on Mobile */
+            }
+
+            #sidebar.active {
+                transform: translateX(0);
+            }
+
+            /* Fix: Layer Control Z-Index (User Request) */
+            .mapboxgl-ctrl-top-right,
+            .leaflet-control-layers,
+            #layer-control {
+                z-index: 99999 !important;
+            }
+
+            /* Scrollbar */
+            /* 4. Layer Control Drawer (Right Side) */
+            #layer-control {
+                top: 0 !important;
+                bottom: 0 !important;
+                right: 0 !important;
+                height: 100% !important;
+                width: 60% !important;
+                /* Smaller width */
+                max-width: 240px !important;
+                max-height: none !important;
+                max-height: none !important;
+                transform: translateX(100%);
+                display: block !important;
+                padding: 20px;
+                z-index: 1001;
+            }
+
+            #layer-control.active {
+                transform: translateX(0);
+            }
+
+            /* 5. Feed Items (Twitter Style) */
+            .feed-item {
+                padding: 15px !important;
+                display: block !important;
+                /* Forces vertical stack */
+            }
+
+            .feed-item>div:first-child {
+                /* Avatar area */
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+            }
+
+            .feed-item img:first-child {
+                /* Avatar Icon */
+                width: 36px !important;
+                height: 36px !important;
+            }
+
+            .feed-item>div:last-child img {
+                /* Content Images */
+                width: 100% !important;
+                height: auto !important;
+                margin-top: 8px;
+                border-radius: 6px;
+            }
+
+            /* 6. Buttons Visibility */
+            #mobile-menu-btn {
+                display: flex !important;
+            }
+
+            #mobile-layer-btn {
+                display: flex !important;
+                z-index: 2000 !important;
+            }
+
+            /* 7. Modal Fix */
+            #modal-content {
+                width: 90% !important;
+                max-width: 90% !important;
+                /* Ensure it doesn't exceed screen */
+                height: auto !important;
+                max-height: 80vh !important;
+                /* Limit height */
+                padding: 20px !important;
+                margin: 0 !important;
+                overflow-y: auto !important;
+                /* Enable scrolling */
+                border-radius: 12px !important;
+            }
+
+
+
+            /* 8. Popups */
+            .mapboxgl-popup {
+                max-width: 220px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" onclick="toggleSidebar()">
+        ☰ INTEL
+    </button>
+
+    <!-- Mobile Layer Button -->
+    <button id="mobile-layer-btn" onclick="toggleLayers()">
+        🌐 LAYERS
+    </button>
+
+    <!-- Settings Button -->
+    <button id="settings-btn" onclick="toggleSettings()"
+        style="position:fixed; top:20px; right:20px; width:40px; height:40px; background:rgba(0,0,0,0.7); border:1px solid #444; color:#fff; border-radius:50%; z-index:2000; cursor:pointer; font-size:20px; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(5px); box-shadow:0 0 10px rgba(0,0,0,0.5);">
+        ⚙️
+    </button>
+
+    <div id="sidebar">
+        <!-- Close Button for Sidebar (Removed) -->
+
+        <div class="sidebar-header">
+            <div class="logo-container">
+                <div class="pulse-dot"></div>
+                <h2 style="margin:0; font-size: 18px; letter-spacing: 1px; font-weight: 800;" data-i18n="intel_hub">
+                    INTEL HUB</h2>
+            </div>
+            <div data-i18n="subtitle"
+                style="font-size: 11px; color: var(--text-dim); margin-top: 4px; font-weight: 600; text-transform: uppercase;">
+                Real-time Analysis & Monitoring</div>
+        </div>
+        <div id="stats-panel">
+            <div data-i18n="control_index"
+                style="font-size:10px; color: var(--text-dim); margin-bottom:15px; text-transform:uppercase; letter-spacing:1.5px; font-weight: 700;">
+                Strategic Control Index</div>
+            <div id="stats-content">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+        <div id="feed-container"></div>
+        <div style="padding: 10px; text-align: center; font-size: 10px; color: #555; border-top: 1px solid #222;">
+            <span data-i18n="system_ver">System Version: v4.9 (Hover Preview & No Zoom)</span><br>
+            Last Update: <span id="last-update">...</span>
+        </div>
+    </div>
+
+    <!-- NEWS MODAL (Hidden by default) -->
+    <div id="news-modal"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+        <div id="modal-content"
+            style="background:#1a1a1a; width:80%; max-width:900px; max-height:90vh; overflow-y:auto; border-radius:12px; padding:30px; border:1px solid #333; box-shadow:0 0 50px rgba(0,0,0,0.8);">
+            <!-- Dynamic Content -->
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- SETTINGS MODAL -->
+    <div id="settings-modal"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center; backdrop-filter:blur(3px);">
+        <div
+            style="background:#1a1a1a; width:90%; max-width:400px; padding:25px; border-radius:12px; border:1px solid #333; text-align:center; box-shadow:0 0 50px rgba(0,0,0,0.9);">
+            <h2
+                style="color:#fff; margin-top:0; border-bottom:1px solid #333; padding-bottom:15px; font-weight:800; letter-spacing:1px;">
+                SETTINGS</h2>
+
+            <h4 style="color:#aaa; margin-bottom:15px; margin-top:20px;">LANGUAGE</h4>
+            <div style="display:flex; gap:20px; justify-content:center; margin-bottom:25px;">
+                <span onclick="changeLanguage('en')"
+                    style="cursor:pointer; font-size:36px; filter:grayscale(100%); transition:0.3s;" id="flag-en"
+                    title="English">🇺🇸</span>
+                <span onclick="changeLanguage('tr')"
+                    style="cursor:pointer; font-size:36px; filter:grayscale(100%); transition:0.3s;" id="flag-tr"
+                    title="Türkçe">🇹🇷</span>
+                <span onclick="changeLanguage('ru')"
+                    style="cursor:pointer; font-size:36px; filter:grayscale(100%); transition:0.3s;" id="flag-ru"
+                    title="Русский">🇷🇺</span>
+                <span onclick="changeLanguage('zh')"
+                    style="cursor:pointer; font-size:36px; filter:grayscale(100%); transition:0.3s;" id="flag-zh"
+                    title="中文">🇨🇳</span>
+            </div>
+
+            <h4 style="color:#aaa; margin-bottom:15px;">SYSTEM INFO</h4>
+            <div
+                style="color:#777; font-size:12px; background:#111; padding:15px; border-radius:6px; text-align:left; border:1px solid #222;">
+                <div style="margin-bottom:5px;"><span style="color:#aaa;">Version:</span> v5.1 (Settings Update)</div>
+                <div style="margin-bottom:5px;"><span style="color:#aaa;">Status:</span> <span style="color:#2ecc71;">●
+                        Online</span></div>
+                <div style="margin-bottom:5px;"><span style="color:#aaa;">Last Update:</span> <span
+                        id="settings-last-update">...</span></div>
+                <div><span style="color:#aaa;">User:</span> Admin</div>
+            </div>
+
+            <button onclick="toggleSettings()"
+                style="margin-top:25px; width:100%; padding:12px; background:#e74c3c; border:none; color:white; font-weight:bold; border-radius:6px; cursor:pointer; font-size:14px; transition:0.2s;">CLOSE</button>
+        </div>
+    </div>
+
+    <div id="layer-control">
+        <!-- Close Button for Layers (Removed) -->
+
+        <!-- Language Selector -->
+        <!-- Language Selector Removed - Moved to Settings -->
+
+        <h4 style="margin:0 0 10px 0; border-bottom:1px solid #444; padding-bottom:5px;" data-i18n="layers_title">LAYERS
+        </h4>
+        <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('border-group', this)"> <span
+                data-i18n="layer_borders">🏳️ Borders</span></label>
+        <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('war-layer', this)"> <span
+                data-i18n="layer_events">⚔️ Events</span></label>
+        <div class="separator"></div>
+        <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('heatmap-layer', this)"> <span
+                data-i18n="layer_heatmap">🔥 Heatmap</span></label>
+        <hr style="border:0; border-top:1px solid #333; margin:10px 0;">
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-airport', this)"> <span
+                data-i18n="layer_airports">✈️ Airports</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-heliport', this)"> <span
+                data-i18n="layer_heliports">🚁 Heliports</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-base', this)"> <span
+                data-i18n="layer_bases">🛡️ Military Bases</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-crossing', this)"> <span
+                data-i18n="layer_crossings">🚧 Border Crossings</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-dam', this)"> <span
+                data-i18n="layer_dams">💧 Dams</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-oil', this)"> <span
+                data-i18n="layer_oil">🛢️ Oil/Gas Fields</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-port', this)"> <span
+                data-i18n="layer_ports">⚓ Naval Ports</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-peak', this)"> <span
+                data-i18n="layer_peaks">⛰️ Peaks & Heights</span></label>
+        <label class="layer-toggle"><input type="checkbox" onchange="toggleLayer('strategic-settlement', this)"> <span
+                data-i18n="layer_settlements">🏠 Settlements (Population)</span></label>
+    </div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoib3phbmR1cm1heiIsImEiOiJjbWs2c3YwMnkwc2FyM2ZyMmVoZTUyNW9hIn0.euai9bDIbu-kLxAykyD9Ig';
+
+        // --- MULTI-LANGUAGE SYSTEM ---
+        window.currentLang = 'en'; // Default
+
+        const translations = {
+            "en": {
+                "intel_hub": "INTEL HUB",
+                "subtitle": "Real-time Analysis & Monitoring",
+                "control_index": "Strategic Control Index",
+                "layers_title": "LAYERS",
+                "layer_borders": "🏳️ Borders",
+                "layer_events": "⚔️ Events",
+                "layer_heatmap": "🔥 Heatmap",
+                "layer_airports": "✈️ Airports",
+                "layer_heliports": "🚁 Heliports",
+                "layer_bases": "🛡️ Military Bases",
+                "layer_crossings": "🚧 Border Crossings",
+                "layer_dams": "💧 Dams",
+                "layer_oil": "🛢️ Oil/Gas Fields",
+                "layer_ports": "⚓ Naval Ports",
+                "layer_peaks": "⛰️ Peaks & Heights",
+                "layer_settlements": "🏠 Settlements",
+                "details": "Click for details",
+                "expand": "Click to Expand ↗",
+                "system_ver": "System Version: v5.0 (Multi-Lang)",
+                "loading": "Loading...",
+                "ago": "ago",
+                "just_now": "Just now",
+                "mins": "mins",
+                "modal_report": "Event Report",
+                "modal_details": "DETAILS",
+                "modal_actor": "Actor",
+                "modal_time": "Time",
+                "modal_source": "Source",
+                "modal_view_source": "View Original Source ↗",
+                "modal_reliability": "Reliability Score",
+                "modal_sources_count": "Source Count"
+            },
+            "tr": {
+                "intel_hub": "İSTİHBARAT MERKEZİ",
+                "subtitle": "Gerçek Zamanlı Analiz & İzleme",
+                "control_index": "Stratejik Kontrol Endeksi",
+                "layers_title": "KATMANLAR",
+                "layer_borders": "🏳️ Sınırlar",
+                "layer_events": "⚔️ Olaylar",
+                "layer_heatmap": "🔥 Yoğunluk Haritası",
+                "layer_airports": "✈️ Havalimanları",
+                "layer_heliports": "🚁 Heliputlar",
+                "layer_bases": "🛡️ Askeri Üsler",
+                "layer_crossings": "🚧 Sınır Kapıları",
+                "layer_dams": "💧 Barajlar",
+                "layer_oil": "🛢️ Petrol/Gaz",
+                "layer_ports": "⚓ Limanlar",
+                "layer_peaks": "⛰️ Tepeler",
+                "layer_settlements": "🏠 Yerleşimler",
+                "details": "Detaylar için tıkla",
+                "expand": "Genişlet ↗",
+                "system_ver": "Sistem Sürümü: v5.0 (Çoklu Dil)",
+                "loading": "Yükleniyor...",
+                "ago": "önce",
+                "just_now": "Şimdi",
+                "mins": "dk",
+                "modal_report": "Olay Raporu",
+                "modal_details": "DETAYLAR",
+                "modal_actor": "Aktör",
+                "modal_time": "Zaman",
+                "modal_source": "Kaynak",
+                "modal_view_source": "Kaynağı Görüntüle ↗",
+                "modal_reliability": "Güvenilirlik Puanı",
+                "modal_sources_count": "Kaynak Sayısı"
+            },
+            "ru": {
+                "intel_hub": "ИНТЕЛ HUB",
+                "subtitle": "Анализ и Мониторинг",
+                "control_index": "Индекс Стратегического Контроля",
+                "layers_title": "СЛОИ",
+                "layer_borders": "🏳️ Границы",
+                "layer_events": "⚔️ События",
+                "layer_heatmap": "🔥 Тепловая карта",
+                "layer_airports": "✈️ Аэропорты",
+                "layer_heliports": "🚁 Вертодромы",
+                "layer_bases": "🛡️ Военные базы",
+                "layer_crossings": "🚧 Погранпереходы",
+                "layer_dams": "💧 Дамбы",
+                "layer_oil": "🛢️ Нефть/Газ",
+                "layer_ports": "⚓ Порты",
+                "layer_peaks": "⛰️ Высоты",
+                "layer_settlements": "🏠 Населенные пункты",
+                "details": "Нажмите для деталей",
+                "expand": "Развернуть ↗",
+                "system_ver": "Версия: v5.0 (Multi-Lang)",
+                "loading": "Загрузка...",
+                "ago": "назад",
+                "just_now": "Только что",
+                "mins": "мин",
+                "modal_report": "Отчет о событии",
+                "modal_details": "ДЕТАЛИ",
+                "modal_actor": "Актер",
+                "modal_time": "Время",
+                "modal_source": "Источник",
+                "modal_view_source": "Посмотреть источник ↗",
+                "modal_reliability": "Рейтинг надежности",
+                "modal_sources_count": "Количество источников"
+            },
+            "zh": {
+                "intel_hub": "情报中心",
+                "subtitle": "实时分析与监控",
+                "control_index": "战略控制指数",
+                "layers_title": "图层",
+                "layer_borders": "🏳️ 边界",
+                "layer_events": "⚔️ 事件",
+                "layer_heatmap": "🔥 热力图",
+                "layer_airports": "✈️ 机场",
+                "layer_heliports": "🚁 直升机场",
+                "layer_bases": "🛡️ 军事基地",
+                "layer_crossings": "🚧 边境口岸",
+                "layer_dams": "💧 大坝",
+                "layer_oil": "🛢️ 油气田",
+                "layer_ports": "⚓ 港口",
+                "layer_peaks": "⛰️ 高地",
+                "layer_settlements": "🏠 定居点",
+                "details": "点击详情",
+                "expand": "展开 ↗",
+                "system_ver": "版本: v5.0 (多语言)",
+                "loading": "加载中...",
+                "ago": "前",
+                "just_now": "刚刚",
+                "mins": "分钟",
+                "modal_report": "事件报告",
+                "modal_details": "详情",
+                "modal_actor": "行为者",
+                "modal_time": "时间",
+                "modal_source": "来源",
+                "modal_view_source": "查看原始来源 ↗",
+                "modal_reliability": "可靠性评分",
+                "modal_sources_count": "来源数量"
+            }
+        };
+
+        window.changeLanguage = function (lang) {
+            window.currentLang = lang;
+            document.documentElement.lang = lang;
+
+            // 1. Update UI Elements
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.innerText = translations[lang][key];
+                }
+            });
+
+            // 2. Update Flag Active State
+            ['en', 'tr', 'ru', 'zh'].forEach(c => {
+                const flag = document.getElementById('flag-' + c);
+                if (flag) flag.style.filter = (c === lang) ? 'grayscale(0%)' : 'grayscale(100%)';
+            });
+
+            // 3. Re-render Dynamic Content (Feed & Markers)
+            // We need to re-run feed generation and marker updates
+            updateSidebar(latestNews);
+            updateMapMarkers(latestNews);
+        };
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/satellite-streets-v12',
+            center: [38.0, 35.0], zoom: 6.5, projection: 'globe'
+        });
+
+        const iconMapping = {
+            "Small Arms": "🔫", "Sniper": "🎯", "Artillery": "💥", "MLRS": "🚀", "Tank": "🚜",
+            "Airstrike": "🛩️", "Drone": "🚁", "IED": "🧨", "Other": "⚠️",
+            "Airport": "✈️", "Military Base": "🛡️", "Border Crossing": "🚧", "Dam": "💧"
+        };
+
+        const colorMapping = {
+            "Russia": "#e74c3c",
+            "Syria": "#e74c3c", "Regime": "#e74c3c",
+            "TSK": "#2ecc71", "Turkey": "#2ecc71",
+            "SNA": "#27ae60",
+            "HTS": "#16a085",
+            "SDF": "#f1c40f",
+            "USA": "#3498db",
+            "Israel": "#8e44ad",
+            "ISIS": "#000000",
+            "Iran": "#8e44ad",
+            "Druze": "#2c3e50", "Suwayda": "#2c3e50", // Distinct Dark Blue/Navy
+            "Unknown": "#95a5a6",
+            "Other": "#95a5a6"
+        };
+
+
+        let renderOrder = ["Unknown", "ISIS", "SDF", "Druze", "TSK", "Russia"];
+
+        let globalSyriaGeoJSON = null;
+        let lastSettlementsHash = "";
+        let latestNews = [];
+        let cachedSettlements = null;
+        let needsBorderUpdate = true; // Trigger first calculation on load
+        window.lastSeenCaptureId = null; // Track last capture to avoid infinite loops
+        window.lastNewsHash = ""; // Track data changes to prevent re-renders
+
+        // UPDATED MAPPING FOR BETTER VISUALS
+        const symbolTypeMapping = {
+            "Small Arms": "gun", "Sniper": "gun", "Execution": "gun",
+            "Artillery": "cannon", "MLRS": "cannon", "Mortar": "cannon",
+            "Tank": "tank", "IFV": "tank", "Reinforcement": "truck",
+            "Airstrike": "plane", "Drone": "fpv",
+            "Cruise Missile": "rocket", "Ballistic Missile": "rocket",
+            "IED": "explosion", "Other": "unknown",
+            "Hospital": "medical",
+            "Military Base": "hq",
+            "Border Crossing": "crossing", "Dam": "dam",
+            "Diplomacy/Negotiation": "diplomacy", "Statement": "diplomacy", "Propaganda/Violation of Religious Site": "unknown", "Transport": "truck",
+            "Military Training": "training", "Seizure": "capture_flag", "Capture": "capture_flag", "Meeting": "diplomacy",
+            "Humanitarian Aid": "medical",
+            "Airport": "plane", "Heliport": "heliport", "Military Base": "hq", "Hospital": "medical", "Border Crossing": "crossing", "Dam": "dam", "Oil": "oil", "Port": "port", "Peak": "peak", "Settlement": "unknown",
+            // Passthrough for AI visual_icon
+            "gun": "gun", "cannon": "cannon", "tank": "tank", "truck": "truck", "plane": "plane", "rocket": "rocket", "explosion": "explosion", "hq": "hq", "diplomacy": "diplomacy", "medical": "medical", "supply": "oil",
+            "capture_flag": "capture_flag", "fpv": "fpv", "drone": "fpv", "uav": "fpv",
+            "🛩️": "plane", "🚁": "fpv"
+        };
+
+        // INTERACTION STATE
+        window.activeDetailPopup = null;
+        window.popupLocked = false;
+
+        const markerUrls = {};
+
+        // Updated Signature to include factionName
+        function createCompositeMarker(subType, color, originalType, isBesieged = false, emojiChar = null, confidence = 0, factionName = "Unknown") {
+            const canvas = document.createElement('canvas');
+            const size = 66; // Slightly larger for flags
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+
+            // Settings
+            const symbolType = symbolTypeMapping[originalType] || "unknown";
+
+            // Frame checks
+            const isStrategic = ["Airport", "Heliport", "Hospital", "Military Base", "Border Crossing", "Dam", "Oil", "Port", "Peak", "Settlement"].includes(originalType);
+
+            const padding = 8;
+            const frameSize = size - (padding * 2);
+            const cx = size / 2;
+            const cy = size / 2;
+            const s = frameSize * 0.6; // Symbol size
+
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+
+            // HIGH CONFIDENCE GLOW
+            if (confidence > 7.5) {
+                ctx.shadowColor = '#ffd700'; // Gold
+                ctx.shadowBlur = 15;
+            }
+
+            // Custom Drawings List
+            const customDrawings = ['tank', 'truck', 'plane', 'rocket', 'gun', 'cannon', 'medical', 'hq', 'diplomacy', 'crossing', 'dam', 'oil', 'port', 'explosion', 'capture_flag', 'fpv'];
+            const hasCustomDrawing = customDrawings.includes(symbolType);
+
+            // DRAW FRAME
+            ctx.fillStyle = color;
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+
+            if (symbolType === 'capture_flag') {
+                // SPECIAL RENDER FOR CAPTURE FLAGS (No Frame, Real Flag)
+
+                // Shadow for pop
+                ctx.shadowColor = 'rgba(0,0,0,0.8)';
+                ctx.shadowBlur = 8;
+                ctx.shadowOffsetX = 2;
+                ctx.shadowOffsetY = 2;
+
+                const flagMap = {
+                    "Turkey": "🇹🇷", "TSK": "🇹🇷",
+                    "Russia": "🇷🇺",
+                    "Syria": "🇸🇾", "Regime": "🇸🇾", "SAA": "🇸🇾",
+                    "USA": "🇺🇸",
+                    "Ukraine": "🇺🇦",
+                    "Israel": "🇮🇱",
+                    "Iran": "🇮🇷",
+                    "ISIS": "🏴"
+                };
+
+                const flagEmoji = flagMap[factionName];
+
+                if (flagEmoji) {
+                    // RENDER EMOJI FLAG
+                    ctx.font = "52px serif";
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(flagEmoji, cx, cy);
+                } else {
+                    // RENDER CUSTOM MILITIA FLAG (Waving Shape)
+                    ctx.save();
+                    ctx.translate(cx, cy);
+
+                    // Pole
+                    ctx.lineWidth = 4;
+                    ctx.strokeStyle = '#444';
+                    ctx.beginPath();
+                    ctx.moveTo(-s * 0.4, s * 0.6);
+                    ctx.lineTo(-s * 0.4, -s * 0.6);
+                    ctx.stroke();
+
+                    // Flag Cloth Path
+                    ctx.beginPath();
+                    ctx.moveTo(-s * 0.4, -s * 0.6);
+                    ctx.bezierCurveTo(s * 0.1, -s * 0.8, s * 0.4, -s * 0.4, s * 0.6, -s * 0.5); // Top edge
+                    ctx.lineTo(s * 0.6, s * 0.1); // Right edge
+                    ctx.bezierCurveTo(s * 0.4, s * 0.2, s * 0.1, -s * 0.2, -s * 0.4, 0); // Bottom edge
+                    ctx.closePath();
+
+                    // Fill Logic based on Militia
+                    if (factionName === "SDF" || factionName === "QSD") {
+                        ctx.fillStyle = "#f1c40f"; // Yellow
+                        ctx.fill();
+                        // Red Star?
+                        ctx.fillStyle = "red";
+                        ctx.font = "14px Arial";
+                        ctx.fillText("★", 0, -10);
+                    } else if (factionName === "HTS" || factionName === "Salvation Government") {
+                        ctx.fillStyle = "#fff"; // White
+                        ctx.fill();
+                        ctx.fillStyle = "black";
+                        ctx.font = "10px monospace";
+                        ctx.fillText("HTS", 0, -10);
+                    } else if (factionName === "SNA" || factionName === "TFSA") {
+                        // Green/White/Black Tricolor approx
+                        const grad = ctx.createLinearGradient(0, -20, 0, 20);
+                        grad.addColorStop(0, "green");
+                        grad.addColorStop(0.5, "white");
+                        grad.addColorStop(1, "black");
+                        ctx.fillStyle = grad;
+                        ctx.fill();
+                        // Red Stars
+                        ctx.fillStyle = "red";
+                        ctx.font = "10px monospace";
+                        ctx.fillText("★★★", 5, -10);
+                    } else {
+                        // Fallback: Solor Color
+                        ctx.fillStyle = color;
+                        ctx.fill();
+                    }
+
+                    // Stroke
+                    ctx.strokeStyle = "#fff";
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+
+                    ctx.restore();
+                }
+
+                return canvas; // SKIP FRAME & GENERIC DRAWING
+            }
+
+            if (hasCustomDrawing) {
+                // Legacy Shape Logic
+                if (symbolType === 'plane') {
+                    ctx.arc(cx, cy, frameSize / 2, 0, Math.PI * 2);
+                } else if (symbolType === 'rocket' || symbolType === 'explosion' || symbolType === 'gun') {
+                    // Diamond
+                    ctx.moveTo(cx, padding);
+                    ctx.lineTo(size - padding, cy);
+                    ctx.lineTo(cx, size - padding);
+                    ctx.lineTo(padding, cy);
+                    ctx.closePath();
+                } else {
+                    // Box
+                    ctx.rect(padding, padding, frameSize, frameSize);
+                }
+            } else if (emojiChar) {
+                // Emoji Container (Circle)
+                ctx.arc(cx, cy, frameSize / 2, 0, Math.PI * 2);
+            } else {
+                // Fallback Box
+                ctx.rect(padding, padding, frameSize, frameSize);
+            }
+
+            ctx.globalAlpha = 0.8;
+            ctx.fill();
+            ctx.globalAlpha = 1.0;
+            ctx.shadowBlur = 0; // Reset shadow
+            ctx.stroke();
+
+            // DRAW SYMBOL OR EMOJI
+            ctx.fillStyle = '#ffffff';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            // Priority: Custom Drawing > Emoji
+            if (!hasCustomDrawing && emojiChar) {
+                ctx.save();
+                ctx.font = "32px serif";
+                ctx.fillText(emojiChar, cx, cy + 2);
+                ctx.restore();
+                return canvas;
+            }
+
+            // SIEGE EFFECT (Dashed Red Ring)
+            if (isBesieged) {
+                ctx.lineWidth = 4;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                ctx.arc(cx, cy, (size / 2) - 3, 0, Math.PI * 2);
+                ctx.stroke();
+                ctx.setLineDash([]); // Reset dash
+            }
+
+            // DRAW SYMBOLS (ILLUSTRATIVE)
+            ctx.strokeStyle = '#ffffff';
+            ctx.fillStyle = '#ffffff';
+            ctx.lineWidth = 2;
+
+            const sx = cx - s / 2;
+            const sy = cy - s / 2;
+
+            ctx.beginPath();
+            switch (symbolType) {
+                case 'tank': // Simple Tank Side Profile
+                    // Tracks
+                    ctx.fillRect(sx, cy + s * 0.2, s, s * 0.2);
+                    // Body
+                    ctx.fillRect(sx + s * 0.1, cy - s * 0.1, s * 0.8, s * 0.3);
+                    // Turret
+                    ctx.arc(cx, cy - s * 0.1, s * 0.2, Math.PI, 0);
+                    ctx.fill();
+                    // Barrel
+                    ctx.moveTo(cx, cy - s * 0.2);
+                    ctx.lineTo(sx + s, cy - s * 0.25);
+                    ctx.stroke();
+                    break;
+
+                case 'truck': // Truck Side Profile
+                    // Wheels
+                    ctx.beginPath();
+                    ctx.arc(sx + s * 0.25, cy + s * 0.4, s * 0.15, 0, Math.PI * 2);
+                    ctx.arc(sx + s * 0.75, cy + s * 0.4, s * 0.15, 0, Math.PI * 2);
+                    ctx.fill();
+                    // Chassis
+                    ctx.fillRect(sx, cy + s * 0.2, s, s * 0.1);
+                    // Cargo
+                    ctx.fillRect(sx, cy - s * 0.2, s * 0.65, s * 0.4);
+                    // Cab
+                    ctx.fillRect(sx + s * 0.7, cy - s * 0.05, s * 0.3, s * 0.25);
+                    break;
+
+                case 'plane': // F-16 Fighting Falcon Silhouette
+                    ctx.beginPath();
+                    // Nose
+                    ctx.moveTo(cx, cy - s * 0.7);
+                    // Cockpit/Body widening
+                    ctx.lineTo(cx + s * 0.1, cy - s * 0.2);
+                    // Right Wing Leading Edge
+                    ctx.lineTo(cx + s * 0.5, cy + s * 0.2);
+                    // Right Wing Trailing Edge (with missile rail indentation hint)
+                    ctx.lineTo(cx + s * 0.15, cy + s * 0.25);
+                    // Right Horizontal Stabilizer
+                    ctx.lineTo(cx + s * 0.25, cy + s * 0.6);
+                    ctx.lineTo(cx + s * 0.05, cy + s * 0.6);
+                    // Exhaust
+                    ctx.lineTo(cx, cy + s * 0.65);
+                    // Mirror Left Side
+                    ctx.lineTo(cx - s * 0.05, cy + s * 0.6);
+                    ctx.lineTo(cx - s * 0.25, cy + s * 0.6);
+                    ctx.lineTo(cx - s * 0.15, cy + s * 0.25);
+                    ctx.lineTo(cx - s * 0.5, cy + s * 0.2);
+                    ctx.lineTo(cx - s * 0.1, cy - s * 0.2);
+                    ctx.closePath();
+                    ctx.fill();
+                    // Cockpit Highlight (Optional)
+                    // ctx.fillStyle = '#rgba(0,0,0,0.3)'; ctx.fill();
+                    break;
+
+                case 'fpv': // Mapped to 'drone' -> Fixed Wing Combat UAV (Bayraktar/Reaper Style) instead of Quadcopter
+                case 'drone':
+                    ctx.beginPath();
+                    // Nose/Sensor Ball
+                    ctx.moveTo(cx, cy - s * 0.4);
+                    // Long Fuselage
+                    ctx.lineTo(cx + s * 0.08, cy - s * 0.2);
+                    // Long Straight Wings
+                    ctx.lineTo(cx + s * 0.7, cy - s * 0.1); // Wing Tip R
+                    ctx.lineTo(cx + s * 0.7, cy); // Wing Trailing R
+                    ctx.lineTo(cx + s * 0.1, cy + s * 0.1);
+                    // Twin Boom Tail
+                    ctx.lineTo(cx + s * 0.2, cy + s * 0.5); // Tail Boom R
+                    ctx.lineTo(cx + s * 0.3, cy + s * 0.5); // V-Tail R
+                    // Center Propeller gap? Just fill simple
+                    ctx.lineTo(cx, cy + s * 0.45);
+                    // Mirror
+                    ctx.lineTo(cx - s * 0.3, cy + s * 0.5);
+                    ctx.lineTo(cx - s * 0.2, cy + s * 0.5);
+                    ctx.lineTo(cx - s * 0.1, cy + s * 0.1);
+                    ctx.lineTo(cx - s * 0.7, cy);
+                    ctx.lineTo(cx - s * 0.7, cy - s * 0.1);
+                    ctx.lineTo(cx - s * 0.08, cy - s * 0.2);
+                    ctx.closePath();
+                    ctx.fill();
+                    break;
+                    ctx.fillStyle = '#ffffff';
+                    // Central Body
+                    ctx.fillRect(cx - s * 0.15, cy - s * 0.15, s * 0.3, s * 0.3);
+                    // Arms (X shape)
+                    ctx.strokeStyle = '#ffffff';
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - s * 0.4, cy - s * 0.4); ctx.lineTo(cx + s * 0.4, cy + s * 0.4);
+                    ctx.moveTo(cx + s * 0.4, cy - s * 0.4); ctx.lineTo(cx - s * 0.4, cy + s * 0.4);
+                    ctx.stroke();
+                    // Rotors (Circles at ends)
+                    ctx.lineWidth = 2;
+                    const r = s * 0.15;
+                    ctx.beginPath(); ctx.arc(cx - s * 0.4, cy - s * 0.4, r, 0, Math.PI * 2); ctx.stroke(); // TL
+                    ctx.beginPath(); ctx.arc(cx + s * 0.4, cy - s * 0.4, r, 0, Math.PI * 2); ctx.stroke(); // TR
+                    ctx.beginPath(); ctx.arc(cx - s * 0.4, cy + s * 0.4, r, 0, Math.PI * 2); ctx.stroke(); // BL
+                    ctx.beginPath(); ctx.arc(cx + s * 0.4, cy + s * 0.4, r, 0, Math.PI * 2); ctx.stroke(); // BR
+                    break;
+
+                case 'rocket': // Missile shape
+                    ctx.save();
+                    ctx.translate(cx, cy);
+                    ctx.rotate(Math.PI / 4); // 45 degree angle
+                    // Body
+                    ctx.fillRect(-s * 0.15, -s * 0.3, s * 0.3, s * 0.6);
+                    // Nose
+                    ctx.beginPath();
+                    ctx.moveTo(-s * 0.15, -s * 0.3);
+                    ctx.lineTo(0, -s * 0.5);
+                    ctx.lineTo(s * 0.15, -s * 0.3);
+                    ctx.fill();
+                    // Fins
+                    ctx.beginPath();
+                    ctx.moveTo(-s * 0.15, s * 0.3);
+                    ctx.lineTo(-s * 0.3, s * 0.5);
+                    ctx.lineTo(-s * 0.15, s * 0.3);
+                    ctx.moveTo(s * 0.15, s * 0.3);
+                    ctx.lineTo(s * 0.3, s * 0.5);
+                    ctx.stroke();
+                    ctx.restore();
+                    break;
+
+                case 'gun': // Simple Rifle
+                    ctx.fillRect(sx, cy, s * 0.6, s * 0.15); // Stock/Body
+                    ctx.fillRect(sx + s * 0.6, cy + s * 0.02, s * 0.4, s * 0.05); // Barrel
+                    ctx.fillRect(sx + s * 0.1, cy + s * 0.15, s * 0.05, s * 0.2); // Mag
+                    break;
+
+                case 'cannon': // Field Gun
+                    ctx.arc(cx - s * 0.2, cy + s * 0.2, s * 0.15, 0, Math.PI * 2); // Wheel
+                    ctx.stroke();
+                    // Barrel
+                    ctx.beginPath();
+                    ctx.moveTo(cx - s * 0.2, cy + s * 0.2);
+                    ctx.lineTo(cx + s * 0.4, cy - s * 0.2);
+                    ctx.lineWidth = 3;
+                    ctx.stroke();
+                    break;
+
+                case 'medical': // Cross
+                    ctx.fillStyle = '#ffffff'; // Force White
+                    ctx.fillRect(cx - s * 0.1, sy, s * 0.2, s);
+                    ctx.fillRect(sx, cy - s * 0.1, s, s * 0.2);
+                    break;
+
+
+
+                case 'hq': // Flag
+                    ctx.save();
+                    ctx.translate(cx, cy);
+                    // Flag pole
+                    ctx.beginPath();
+                    ctx.lineWidth = 3;
+                    ctx.moveTo(-s * 0.3, s * 0.4);
+                    ctx.lineTo(-s * 0.3, -s * 0.4);
+                    ctx.stroke();
+                    // Flag cloth
+                    ctx.beginPath();
+                    ctx.moveTo(-s * 0.3, -s * 0.4);
+                    ctx.lineTo(s * 0.4, -s * 0.2);
+                    ctx.lineTo(-s * 0.3, 0);
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.restore();
+                    break;
+
+                case 'diplomacy': // Speech Bubble
+                    ctx.save();
+                    ctx.translate(cx, cy);
+                    ctx.beginPath();
+                    ctx.rect(-s / 2, -s / 2, s, s * 0.7);
+                    ctx.moveTo(-s / 4, s * 0.2);
+                    ctx.lineTo(-s / 4, s * 0.4);
+                    ctx.lineTo(0, s * 0.2);
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.restore();
+                    break;
+
+                case 'crossing': // Gate
+                    ctx.lineWidth = 4;
+                    ctx.beginPath();
+                    ctx.moveTo(sx, cy); ctx.lineTo(sx + s, cy);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.lineWidth = 3;
+                    ctx.moveTo(sx + s * 0.2, cy - s * 0.3); ctx.lineTo(sx + s * 0.2, cy + s * 0.3);
+                    ctx.moveTo(sx + s * 0.8, cy - s * 0.3); ctx.lineTo(sx + s * 0.8, cy + s * 0.3);
+                    ctx.stroke();
+                    break;
+
+                case 'dam': // Arch
+                    ctx.lineWidth = 4;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy - s * 0.2, s / 2, 0.2 * Math.PI, 0.8 * Math.PI);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.lineWidth = 2;
+                    ctx.moveTo(cx - s * 0.3, cy + s * 0.3); ctx.lineTo(cx + s * 0.3, cy + s * 0.3);
+                    ctx.stroke();
+                    break;
+
+                case 'explosion': // !
+                    ctx.font = "bold 28px monospace";
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText("!", cx, cy);
+                    ctx.fillText("!", cx, cy);
+                    break;
+
+                case 'training': // Target 🎯
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, s * 0.4, 0, Math.PI * 2); // Outer
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, s * 0.2, 0, Math.PI * 2); // Inner
+                    ctx.fillStyle = color; // Use faction color for center
+                    ctx.fill();
+                    // Crosshairs?
+                    ctx.strokeStyle = color;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - s * 0.5, cy); ctx.lineTo(cx + s * 0.5, cy);
+                    ctx.moveTo(cx, cy - s * 0.5); ctx.lineTo(cx, cy + s * 0.5);
+                    ctx.stroke();
+                    // Reset
+                    ctx.strokeStyle = '#ffffff';
+                    ctx.fillStyle = '#ffffff';
+                    break;
+
+                case 'heliport':
+                    ctx.beginPath();
+                    ctx.lineWidth = 3;
+                    ctx.arc(cx, cy, s * 0.45, 0, Math.PI * 2);
+                    ctx.stroke();
+                    ctx.font = `bold ${s * 0.6}px Segoe UI`;
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText("H", cx, cy);
+                    break;
+
+                case 'oil':
+                    // Oil Drop / Tower shape
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy - s * 0.5);
+                    ctx.bezierCurveTo(cx + s * 0.4, cy, cx + s * 0.4, cy + s * 0.5, cx, cy + s * 0.5);
+                    ctx.bezierCurveTo(cx - s * 0.4, cy + s * 0.5, cx - s * 0.4, cy, cx, cy - s * 0.5);
+                    ctx.fill();
+                    break;
+
+                case 'port':
+                    // Anchor
+                    ctx.beginPath();
+                    ctx.lineWidth = 3;
+                    ctx.moveTo(cx, cy - s * 0.4);
+                    ctx.lineTo(cx, cy + s * 0.2);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(cx, cy - s * 0.4, s * 0.1, 0, Math.PI * 2);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, s * 0.4, 0.2 * Math.PI, 0.8 * Math.PI);
+                    ctx.stroke();
+                    break;
+
+                case 'capture_flag': // Dynamic Waving Flag
+                    ctx.save();
+                    ctx.translate(cx, cy);
+                    // Pole
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    ctx.moveTo(-s * 0.3, s * 0.5);
+                    ctx.lineTo(-s * 0.3, -s * 0.5);
+                    ctx.stroke();
+
+                    // Flag (Waving)
+                    ctx.fillStyle = color; // Use faction color
+                    ctx.beginPath();
+                    ctx.moveTo(-s * 0.3, -s * 0.5);
+                    // Top curve
+                    ctx.bezierCurveTo(-s * 0.1, -s * 0.6, s * 0.1, -s * 0.4, s * 0.4, -s * 0.5);
+                    // Right edge
+                    ctx.lineTo(s * 0.4, -s * 0.1);
+                    // Bottom curve
+                    ctx.bezierCurveTo(s * 0.1, 0, -s * 0.1, -s * 0.2, -s * 0.3, -s * 0.1);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.stroke(); // White outline
+                    ctx.restore();
+                    break;
+
+                case 'peak':
+                    // Mountain triangle
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy - s * 0.4);
+                    ctx.lineTo(cx + s * 0.4, cy + s * 0.4);
+                    ctx.lineTo(cx - s * 0.4, cy + s * 0.4);
+                    ctx.closePath();
+                    ctx.fill();
+                    // Snow cap
+                    ctx.fillStyle = '#ffffff';
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy - s * 0.4);
+                    ctx.lineTo(cx + s * 0.15, cy - s * 0.1);
+                    ctx.lineTo(cx - s * 0.15, cy - s * 0.1);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.fillStyle = '#ffffff';
+                    break;
+
+                default: // ? or Box
+                    ctx.font = "bold 24px monospace";
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(originalType.charAt(0), cx, cy);
+            }
+
+            return canvas;
+        }
+
+        function timeAgo(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const seconds = Math.floor((now - date) / 1000);
+
+            // Translations for time
+            const t = translations[window.currentLang] || translations['en'];
+            const ago = t.ago || "ago";
+            const mins = t.mins || "mins";
+
+            let interval = seconds / 31536000;
+            if (interval > 1) return Math.floor(interval) + " " + "years " + ago;
+            interval = seconds / 2592000;
+            if (interval > 1) return Math.floor(interval) + " " + "months " + ago;
+            interval = seconds / 86400;
+            if (interval > 1) return Math.floor(interval) + " " + "days " + ago;
+            interval = seconds / 3600;
+            if (interval > 1) return Math.floor(interval) + " " + "hours " + ago;
+            interval = seconds / 60;
+            if (interval > 1) return Math.floor(interval) + " " + mins + " " + ago;
+            return Math.floor(seconds) + " seconds " + ago;
+        }
+
+        // HELPER: Get Localized Text
+        function getLoc(item, field) {
+            const lang = window.currentLang || 'en';
+            if (!item[field]) return "";
+            // New Format: Object {en: "...", val: "..."}
+            if (typeof item[field] === 'object') {
+                return item[field][lang] || item[field]['en'] || Object.values(item[field])[0] || "";
+            }
+            // Old Format: String
+            return item[field];
+        }
+
+        // --- POPUP & MODAL SYSTEM ---
+
+        function openDetailModal(imgUrl, attacker, location_name, summary, date, tweet_id, channel, image_path, local_video_path, original_text, sources, confidence) {
+            try {
+                // alert("Debug: Opening Modal for " + location_name); // Debug Line
+                const modal = document.getElementById('news-modal');
+                const content = document.getElementById('modal-content');
+                if (!modal || !content) { alert("Error: Modal DOM missing"); return; }
+
+                const ago = timeAgo(date || new Date().toISOString());
+
+                // MEDIA LOGIC
+                let mediaHtml = '';
+                // Valid Video?
+                if (local_video_path && local_video_path.length > 5) {
+                    mediaHtml = `<div style="width:100%; max-height:500px; background:#000; display:flex; justify-content:center; margin-bottom:15px; border-radius:8px; overflow:hidden;">
+                                    <video src="${local_video_path}" controls autoplay style="max-width:100%; max-height:500px;"></video>
+                                </div>`;
+                } else if (image_path && image_path.length > 5) {
+                    mediaHtml = `<img src="${image_path}" style="width:100%; max-height:450px; object-fit:contain; border-radius:8px; margin-bottom:15px; background:#000;">`;
+                } else {
+                    mediaHtml = `<div style="width:100%; height:200px; background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:8px; margin-bottom:15px; color:#555;">
+                    <span style="font-size:30px; margin-bottom:10px;">📡</span> 
+                    <span>NO TACTICAL FOOTAGE</span>
+                    </div>`;
+                }
+
+                // LINK
+                const link = `https://twitter.com/i/status/${tweet_id}`;
+
+                // Color Logic
+                const safeColor = (colorMapping && colorMapping[attacker]) ? colorMapping[attacker] : '#fff';
+
+                // LOCALIZATION FIX: Handle Object or String
+                const lang = window.currentLang || 'en';
+                const locName = (typeof location_name === 'object') ? (location_name[lang] || location_name['en'] || Object.values(location_name)[0]) : location_name;
+                const locSummary = (typeof summary === 'object') ? (summary[lang] || summary['en'] || Object.values(summary)[0]) : summary;
+
+                const t = translations[lang] || translations['en'];
+
+                // SOURCE & CONFIDENCE LOGIC
+                const sourceList = sources && sources.length ? sources.join(", ") : (channel || "Unknown");
+                const sourceCount = sources ? sources.length : 1;
+                const confScore = parseFloat(confidence) || 4.0;
+                let confColor = '#f39c12';
+                let confLabel = 'Medium';
+                if (confScore >= 7.5) { confColor = '#2ecc71'; confLabel = 'High'; }
+                if (confScore < 4.0) { confColor = '#e74c3c'; confLabel = 'Low'; }
+
+                content.innerHTML = `
+                <div style="border-bottom:1px solid #333; padding-bottom:15px; margin-bottom:15px;">
+                    <h2 style="color:${safeColor}; margin:0; font-size:24px;">${locName} Report</h2>
+                    <div style="color:#aaa; font-size:14px; margin-top:5px;">📍 ${locName} • ${ago} • ${t.modal_source}: ${sourceList}</div>
+                </div>
+                
+                ${mediaHtml}
+                
+                <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                    <div style="flex:2; min-width:300px;">
+                        <h3 style="color:#fff; border-left:4px solid #3498db; padding-left:10px;">${t.modal_report}</h3>
+                        <p style="font-size:16px; line-height:1.6; color:#eee;">
+                            ${locSummary}
+                        </p>
+                        
+                        <!-- RELIABILITY BOX -->
+                        <div style="margin-top:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333; display:flex; gap:20px; align-items:center;">
+                            <div style="text-align:center;">
+                                <div style="font-size:24px; font-weight:bold; color:${confColor};">${confScore.toFixed(1)}</div>
+                                <div style="font-size:10px; color:#aaa; text-transform:uppercase;">AI Score</div>
+                            </div>
+                            <div style="flex:1;">
+                                <div style="font-size:12px; color:#ccc; margin-bottom:5px;"><strong>${t.modal_reliability}:</strong> <span style="color:${confColor}">${confLabel}</span></div>
+                                <div style="font-size:11px; color:#888;">
+                                    <strong>${t.modal_sources_count}:</strong> ${sourceCount}<br>
+                                    <span style="font-style:italic;">${sourceList}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div style="flex:1; min-width:200px; background:#222; padding:15px; border-radius:8px; height:fit-content;">
+                        <h4 style="margin-top:0; color:#aaa;">${t.modal_details}</h4>
+                        <p><strong>${t.modal_actor}:</strong> ${attacker}</p>
+                        <p><strong>${t.modal_time}:</strong> ${ago}</p>
+                        <hr style="border:0; border-top:1px solid #444;">
+                        <a href="${link}" target="_blank" style="display:block; text-align:center; background:#3498db; color:white; padding:12px; border-radius:4px; text-decoration:none; font-weight:bold; transition:0.2s;">${t.modal_view_source}</a>
+                    </div>
+                </div>
+            `;
+                modal.style.display = 'flex';
+                // console.log("Modal set to flex");
+            } catch (e) {
+                alert("Modal Error: " + e.message);
+                console.error(e);
+            }
+        }
+
+        // --- NEW: LIST POPUP (THE WINDOW) ---
+        function showListPopup(features, coords) {
+            // Close existing
+            if (window.hoverPopup) window.hoverPopup.remove();
+            if (window.activeDetailPopup) window.activeDetailPopup.remove();
+
+            // Build Grid HTML
+            let itemsHtml = '';
+            features.forEach(f => {
+                const p = f.properties;
+                const safeColor = (colorMapping && colorMapping[p.attacker]) ? colorMapping[p.attacker] : '#fff';
+                const timeStr = timeAgo(p.date || new Date().toISOString());
+                const vidId = 'vid-list-' + p.tweet_id;
+
+                // Confidence Badge Logic
+                const confScore = parseFloat(p.confidence) || 4.0;
+                let confColor = '#f39c12'; // Orange
+                if (confScore >= 7.5) confColor = '#2ecc71'; // Green
+
+                itemsHtml += `
+                    <div style="background:rgba(20,20,20,0.8); border:1px solid #444; border-radius:6px; overflow:hidden; cursor:pointer; width:100%; display:flex; flex-direction:column;"
+                         onclick="event.stopPropagation(); expandEvent('${p.tweet_id}')">
+                        
+                        <!-- Media Preview -->
+                        <div style="height:100px; width:100%; background:#000; position:relative;">
+                             ${p.local_video_path ?
+                        `<video src="${p.local_video_path}" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>` :
+                        (p.image_path ? `<div style="width:100%; height:100%; background:url('${p.image_path}') center/cover;"></div>` : '')
+                    }
+                        </div>
+                        
+                        <!-- Info -->
+                        <div style="padding:8px;">
+                             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                                <span class="attacker-badge" style="background:${safeColor}; font-size:9px;">${p.attacker}</span>
+                                <span style="font-size:9px; color:${confColor}; border:1px solid ${confColor}; padding:0 3px; border-radius:3px;">
+                                    ${confScore.toFixed(1)} AI
+                                </span>
+                             </div>
+                             <div style="color:#fff; font-size:11px; font-weight:bold; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">${p.location_name}</div>
+                             <div style="color:#aaa; font-size:10px;">${timeStr}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            const popup = new mapboxgl.Popup({ className: 'list-popup', maxWidth: '340px', closeButton: true })
+                .setLngLat(coords)
+                .setHTML(`
+                    <div style="padding:10px; max-height:400px; overflow-y:auto; overflow-x:hidden;">
+                        <div style="font-weight:bold; color:#fff; border-bottom:1px solid #555; padding-bottom:5px; margin-bottom:10px; font-size:13px;">
+                            ${features.length} Events at this location
+                        </div>
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                `)
+                .addTo(map);
+
+            // Standard Cleanup
+            const popupEl = popup.getElement();
+            // Allow mouse interaction without immediate close (List stays open until clicked out or X)
+            window.activeDetailPopup = popup;
+            window.popupLocked = true; // Lock immediately because it's a list view
+
+            popup.on('close', () => {
+                window.activeDetailPopup = null;
+                window.popupLocked = false;
+                window.popupCooldown = Date.now() + 500;
+            });
+        }
+        // SINGLETON POPUP LOGIC for Performance
+        function showEventPopup(feature, coords) {
+            const props = feature.properties;
+            const uniqueVidId = 'vid-' + props.tweet_id;
+            const timeStr = timeAgo(props.date || new Date().toISOString());
+            const safeColor = (colorMapping && colorMapping[props.attacker]) ? colorMapping[props.attacker] : '#fff';
+
+            // Confidence
+            const confScore = parseFloat(props.confidence) || 4.0;
+            let confColor = '#f39c12';
+            if (confScore >= 7.5) confColor = '#2ecc71';
+
+            const htmlContent = `
+                <div style="cursor:pointer;" onclick="event.stopPropagation(); expandEvent('${props.tweet_id}')">
+                   ${props.local_video_path ?
+                    `<div style="width:100%; height:160px; position:relative; background:#000; border-radius:6px 6px 0 0; overflow:hidden;">
+                        <video id="${uniqueVidId}" src="${props.local_video_path}" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+                      </div>`
+                    : (props.image_path ? `<div style="width:100%; height:160px; background:url('${props.image_path}') center/cover; border-radius:6px 6px 0 0;"></div>` : '')
+                }
+                   <div style="padding:10px;">
+                       <div style="display:flex; justify-content:space-between; margin-bottom:5px; align-items:center;">
+                           <div style="display:flex; align-items:center; gap:5px;">
+                               <span class="attacker-badge" style="background:${safeColor}">${props.attacker}</span>
+                                <span style="font-size:10px; color:${confColor}; border:1px solid ${confColor}; padding:1px 4px; border-radius:3px; font-weight:600;">
+                                    ${confScore.toFixed(1)} AI
+                                </span>
+                           </div>
+                           <span style="font-size:11px; color:#888;">${timeStr}</span>
+                       </div>
+                       <h3 style="margin:0 0 5px 0; font-size:14px; line-height:1.4; color:#fff;">${getLoc(props, 'location_name')}</h3>
+                       <p style="font-size:12px; color:#ccc; margin:0;">${getLoc(props, 'summary') ? getLoc(props, 'summary').substring(0, 80) + '...' : 'Click for details'}</p>
+                       <div style="font-size:11px; color:#3498db; margin-top:8px; font-weight:bold;">Click to Expand ↗</div>
+                   </div>
+                </div>`;
+
+            // REUSE EXISTING POPUP IF AVAILABLE
+            let popup = window.activeDetailPopup;
+
+            if (popup) {
+                // Remove any hover-only popups
+                if (window.hoverPopup) { window.hoverPopup.remove(); window.hoverPopup = null; }
+
+                // Update position and content
+                popup.setLngLat(coords).setHTML(htmlContent);
+
+                // Ensure it is added to map if it was removed (edge case)
+                if (!popup.isOpen()) popup.addTo(map);
+
+            } else {
+                // CREATE NEW (First Time Only)
+                // Remove hover popup first
+                if (window.hoverPopup) { window.hoverPopup.remove(); window.hoverPopup = null; }
+
+                popup = new mapboxgl.Popup({ className: 'event-popup', maxWidth: '320px', closeButton: true })
+                    .setLngLat(coords)
+                    .setHTML(htmlContent)
+                    .addTo(map);
+
+                // Attach Bridge Listeners ONLY ONCE
+                const popupEl = popup.getElement();
+                popupEl.addEventListener('mouseenter', () => {
+                    if (window.hoverRemoveTimer) {
+                        clearTimeout(window.hoverRemoveTimer);
+                        window.hoverRemoveTimer = null;
+                    }
+                });
+                popupEl.addEventListener('mouseleave', () => {
+                    if (!window.popupLocked) {
+                        // Debounce close to prevent accidental loss
+                        window.hoverRemoveTimer = setTimeout(() => {
+                            if (window.activeDetailPopup && !window.popupLocked) {
+                                window.activeDetailPopup.remove();
+                                window.activeDetailPopup = null;
+                            }
+                        }, 0);
+                    }
+                });
+
+                popup.on('close', () => {
+                    window.activeDetailPopup = null;
+                    window.popupLocked = false;
+                    window.popupCooldown = Date.now() + 500;
+                });
+            }
+
+            window.activeDetailPopup = popup;
+        }
+
+        // Helper for map popup click
+        window.expandEvent = function (tweet_id) {
+            console.log("Click Event ID:", tweet_id, "Type:", typeof tweet_id);
+            const item = latestNews.find(n => n.tweet_id == tweet_id);
+            if (item) {
+                // Close any open popup & RESET LOCKS
+                const popups = document.getElementsByClassName('mapboxgl-popup');
+                if (popups.length) popups[0].remove();
+
+                // Explicitly unlock map interaction when opening modal
+                window.popupLocked = false;
+                window.activeDetailPopup = null;
+
+                openDetailModal(null, item.attacker, item.location_name, item.summary, item.date, item.tweet_id, item.channel, item.image_path, item.local_video_path, item.original_text, item.sources, item.confidence);
+            }
+        };
+
+        // Close modal on outside click
+        window.onclick = function (event) {
+            const modal = document.getElementById('news-modal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.getElementById('modal-content').innerHTML = ""; // Stop video by removing content
+            }
+        }
+
+        // Close on Escape key
+        window.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                const modal = document.getElementById('news-modal');
+                if (modal.style.display !== "none") {
+                    modal.style.display = "none";
+                    document.getElementById('modal-content').innerHTML = ""; // Stop video
+                }
+            }
+        });
+
+        map.on('load', async () => {
+            // 0. FETCH FACTIONS & BUILD COLOR MAPPING DYNAMICALLY
+            try {
+                const fResp = await fetch('factions.json?t=' + Date.now());
+                const fData = await fResp.json();
+
+                // Reset and populate global objects
+                colorMapping = {};
+                renderOrder = []; // If you used this
+
+                // Sort by render_order if available
+                const sortedKeys = Object.keys(fData).sort((a, b) => (fData[a].render_order || 99) - (fData[b].render_order || 99));
+
+                sortedKeys.forEach(key => {
+                    colorMapping[key] = fData[key].color;
+                    renderOrder.push(key);
+                });
+
+                window.factionsData = fData; // ALWAYS store globally for popups
+                // Update Legend
+                const legendDiv = document.getElementById('legend');
+                if (legendDiv) {
+                    const sortedLegendKeys = Object.keys(fData).sort((a, b) => fData[a].render_order - fData[b].render_order);
+                    let legendHtml = '<h3>Factions</h3>';
+                    sortedLegendKeys.forEach(key => {
+                        const info = fData[key];
+                        legendHtml += `<div style="display:flex; align-items:center; margin-bottom:5px;">
+                                            <span style="width:12px; height:12px; background:${info.color}; border-radius:50%; margin-right:8px; display:inline-block;"></span>
+                                            <span style="font-size:12px;">${info.label}</span>
+                                        </div>`;
+                    });
+                    legendDiv.innerHTML = legendHtml;
+                }
+
+            } catch (e) { console.error("Factions Load Error", e); }
+
+
+
+            // 1. GENERATE ICONS
+            const strategicTypes = ["Airport", "Heliport", "Military Base", "Hospital", "Border Crossing", "Dam", "Oil", "Port", "Peak", "Settlement"];
+            const allTypes = [...strategicTypes, ...Object.keys(symbolTypeMapping)];
+            const uniqueTypes = [...new Set(allTypes)];
+
+            // LOAD REAL PNG ICONS & MAP TO ALL OWNERS
+            const ownerKeys = Object.keys({ ...colorMapping, "Unknown": "#7f8c8d" });
+
+            map.loadImage('media/icons/f16.png', (error, image) => {
+                if (error) console.error("F16 Load Error:", error);
+                else {
+                    ownerKeys.forEach(owner => {
+                        [false, true].forEach(isBesieged => {
+                            const suffix = isBesieged ? '-besieged' : '';
+                            const id = `plane-${owner}${suffix}`;
+                            if (!map.hasImage(id)) map.addImage(id, image, { sdf: true });
+                        });
+                    });
+                }
+            });
+
+            map.loadImage('media/icons/drone.png', (error, image) => {
+                if (error) console.error("Drone Load Error:", error);
+                else {
+                    ownerKeys.forEach(owner => {
+                        [false, true].forEach(isBesieged => {
+                            const suffix = isBesieged ? '-besieged' : '';
+                            const id = `fpv-${owner}${suffix}`;
+                            if (!map.hasImage(id)) map.addImage(id, image, { sdf: true });
+                        });
+                    });
+                }
+            });
+
+            uniqueTypes.forEach(type => {
+                const colors = { ...colorMapping, "Unknown": "#7f8c8d" };
+                Object.keys(colors).forEach(owner => {
+                    [false, true].forEach(isBesieged => {
+                        const suffix = isBesieged ? '-besieged' : '';
+                        const imageId = `${type}-${owner}${suffix}`;
+
+                        // SKIP PNG Types (Handled above by loadImage)
+                        const mappedType = symbolTypeMapping[type] || type;
+                        if (mappedType === 'plane' || mappedType === 'fpv') return;
+
+                        if (!map.hasImage(imageId)) {
+                            const canvas = createCompositeMarker(null, colors[owner], type, isBesieged);
+                            map.addImage(imageId, canvas.getContext('2d').getImageData(0, 0, 64, 64));
+                            markerUrls[imageId] = canvas.toDataURL();
+                        }
+                    });
+                });
+            });
+
+            // 2. LOAD DATA
+            try {
+                const resp = await fetch('syria.json');
+                globalSyriaGeoJSON = await resp.json();
+            } catch (e) { console.error("Syria JSON Error", e); }
+
+            map.addSource('dynamic-borders', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+            map.addLayer({ id: 'border-glow', type: 'line', source: 'dynamic-borders', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': ['get', 'color'], 'line-width': 6, 'line-blur': 3, 'line-opacity': 0.8 } });
+            map.addLayer({ id: 'border-fill', type: 'fill', source: 'dynamic-borders', paint: { 'fill-color': ['get', 'color'], 'fill-opacity': 0.35 } });
+
+            map.addSource('war-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+            map.addSource('heatmap-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+
+            map.addLayer({
+                id: 'heatmap-layer', type: 'heatmap', source: 'heatmap-data', maxzoom: 15,
+                paint: { 'heatmap-weight': 1, 'heatmap-intensity': 1, 'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(0,0,0,0)', 0.2, '#f1c40f', 0.6, '#e67e22', 1, '#e74c3c'], 'heatmap-radius': 40, 'heatmap-opacity': 0.6 }
+            });
+            // map.addLayer({
+            //     id: 'war-layer',
+            //     type: 'symbol',
+            //     source: 'war-data',
+            //     ... REMOVED TO USE HTML MARKERS ...
+            // });
+
+            // --- CUSTOM MARKER MANAGER ---
+            window.newsMarkers = [];
+            window.newsData = []; // Store raw features
+
+            // --- LEGACY CODE REMOVED ---
+            // Removed updateNewsMarkers() and associated listeners to prevent conflict with v4.x logic
+            // The new system uses window.updateStandardMarkers() defined at the bottom.
+
+            // map.on('move', ...) - REMOVED
+            // map.on('moveend', ...) - REMOVED
+            // map.on('zoom', ...) - REMOVED
+
+            map.on('mouseenter', 'war-layer', (e) => {
+                if (window.activeDetailPopup) return;
+
+                // CLEAR TIMER
+                if (window.hoverRemoveTimer) {
+                    clearTimeout(window.hoverRemoveTimer);
+                    window.hoverRemoveTimer = null;
+                }
+
+                map.getCanvas().style.cursor = 'pointer';
+                const props = e.features[0].properties;
+                const coords = e.lngLat;
+
+                window.hoverPopup = window.hoverPopup || new mapboxgl.Popup({
+                    closeButton: false,
+                    closeOnClick: false,
+                    className: 'hover-tooltip',
+                    offset: 15
+                });
+
+                window.hoverPopup.setLngLat(coords)
+                    .setHTML(`
+                        <div style="min-width: 160px; pointer-events: none;">
+                            <div style="font-weight: 800; color: var(--accent); margin-bottom: 6px; font-size: 13px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;">Intelligence Update</div>
+                            <div style="display: flex; flex-direction: column; gap: 4px;">
+                                <div style="font-weight: 600; color: #fff; font-size: 12px;">${props.location_name}</div>
+                                <div style="color: #bbb; font-size: 11px; line-height: 1.3;">${props.summary ? props.summary.substring(0, 100) + (props.summary.length > 100 ? '...' : '') : ''}</div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 4px;">
+                                    <span style="color: #3498db; font-size: 10px; font-weight: 600;">${props.attacker}</span>
+                                    <span style="color: #555; font-size: 9px;">${props.date ? props.date.split(' ')[1].substring(0, 5) : ''}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `)
+                    .addTo(map);
+            });
+            map.on('mousemove', 'war-layer', (e) => {
+                if (window.activeDetailPopup) return;
+                if (window.hoverPopup) window.hoverPopup.setLngLat(e.lngLat);
+            });
+            map.on('mouseleave', 'war-layer', () => {
+                map.getCanvas().style.cursor = '';
+                // DELAY REMOVAL
+                window.hoverRemoveTimer = setTimeout(() => {
+                    if (window.hoverPopup) window.hoverPopup.remove();
+                }, 0);
+            });
+
+            // 1. Stratejik Yerler (Resimli)
+            map.addSource('strategic-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+            // Add Border Crossing and Dam to layers (REMOVED HOSPITAL)
+            const strategicLayers = [
+                'strategic-airport', 'strategic-heliport', 'strategic-base', 'strategic-crossing',
+                'strategic-dam', 'strategic-oil', 'strategic-port', 'strategic-peak'
+            ];
+
+            strategicLayers.forEach((layerId, index) => {
+                const filters = [
+                    ['==', ['get', 'type'], 'Airport'],
+                    ['==', ['get', 'type'], 'Heliport'],
+                    ['==', ['get', 'type'], 'Military Base'],
+                    ['==', ['get', 'type'], 'Border Crossing'],
+                    ['==', ['get', 'type'], 'Dam'],
+                    ['==', ['get', 'type'], 'Oil'],
+                    ['==', ['get', 'type'], 'Port'],
+                    ['==', ['get', 'type'], 'Peak']
+                ];
+
+                // Global override for captures
+                window.strategicStatus = window.strategicStatus || {};
+
+
+                map.addLayer({
+                    id: layerId, type: 'symbol', source: 'strategic-data', filter: filters[index],
+                    layout: {
+                        'symbol-sort-key': index, // Lower index = higher priority
+                        'icon-image': [
+                            'concat',
+                            ['coalesce', ['get', 'type'], 'Settlement'],
+                            '-',
+                            ['coalesce', ['get', 'owner'], 'Unknown'],
+                            ['case', ['==', ['get', 'is_besieged'], true], '-besieged', '']
+                        ],
+                        'icon-size': [
+                            'interpolate', ['linear'], ['coalesce', ['get', 'marksize'], 5],
+                            3, 0.35,
+                            5, 0.6,
+                            8, 1.0,
+                            12, 1.4
+                        ],
+                        'icon-allow-overlap': false,
+                        'icon-ignore-placement': false,
+                        'text-field': ['get', 'name'],
+                        'text-offset': [0, 1.5],
+                        'text-size': [
+                            'interpolate', ['linear'], ['coalesce', ['get', 'marksize'], 5],
+                            3, 8,
+                            8, 11,
+                            12, 14
+                        ],
+                        'text-allow-overlap': false,
+                        'text-ignore-placement': false,
+                        'visibility': 'none'
+                    },
+                    paint: { 'text-color': '#ffffff', 'text-halo-color': '#000000', 'text-halo-width': 1 },
+                    minzoom: index < 9 ? 0 : 9
+                });
+
+                // Tıklama Olayı to Dismiss Locked Popups
+                map.on('click', (e) => {
+                    // If clicking a marker, the marker's listener handles it (stopPropagation).
+                    // But if we clicked empty map, we clear the lock.
+                    if (window.popupLocked && window.activeDetailPopup) {
+                        window.activeDetailPopup.remove();
+                        window.activeDetailPopup = null;
+                        window.popupLocked = false;
+                    }
+                });
+
+                // Strategic Layer Click
+                map.on('click', layerId, (e) => {
+                    const props = e.features[0].properties;
+                    const coords = e.features[0].geometry.coordinates.slice();
+
+                    // REMOVE HOVER POPUP IMMEDIATELY if exists
+                    if (window.hoverPopup) window.hoverPopup.remove();
+
+                    // Resim HTML
+                    const imageHTML = props.image && props.image !== "" ?
+                        `<div style="width:100%; height:140px; background:url('${props.image}') center/cover;"></div>` : '';
+
+                    const popup = new mapboxgl.Popup({ offset: 25, className: 'strategic-popup', closeButton: true })
+                        .setLngLat(coords)
+                        .setHTML(`
+                        ${imageHTML}
+                        <div style="padding:15px;">
+                            <h3 style="margin:0 0 5px 0; font-size:16px; color:#3498db;">${props.name}</h3>
+                            <span style="background:#333; padding:2px 6px; border-radius:4px; font-size:10px; text-transform:uppercase; color:#aaa;">${props.type}</span>
+                            <p style="font-size:13px; color:#ddd; line-height:1.5; margin-top:10px;">
+                                ${props.description || 'No additional intelligence available.'}
+                            </p>
+                        </div>
+                    `)
+                        .addTo(map);
+
+                    // Track active popup state
+                    window.activeDetailPopup = popup;
+                    popup.on('close', () => {
+                        window.activeDetailPopup = null;
+                    });
+                });
+                map.on('mouseenter', layerId, (e) => {
+                    // CLEAR REMOVE TIMER
+                    if (window.hoverRemoveTimer) {
+                        clearTimeout(window.hoverRemoveTimer);
+                        window.hoverRemoveTimer = null;
+                    }
+
+                    // Suppress hover if detail popup is open
+                    if (window.activeDetailPopup) return;
+
+                    map.getCanvas().style.cursor = 'pointer';
+                    const props = e.features[0].properties;
+                    const coords = e.lngLat;
+
+                    let ownerLabel = props.owner || 'Unknown';
+                    if (window.factionsData && window.factionsData[props.owner]) {
+                        ownerLabel = window.factionsData[props.owner].label;
+                    }
+
+                    window.hoverPopup = window.hoverPopup || new mapboxgl.Popup({
+                        closeButton: false,
+                        closeOnClick: false,
+                        className: 'hover-tooltip',
+                        offset: 15
+                    });
+
+                    window.hoverPopup.setLngLat(coords)
+                        .setHTML(`
+                            <div style="min-width: 140px;">
+                                <div style="font-weight: 800; color: #3498db; margin-bottom: 6px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;">${props.name}</div>
+                                <div style="display: flex; flex-direction: column; gap: 4px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span style="color: #888;">Owner:</span>
+                                        <span style="color: #fff; font-weight: 600;">${ownerLabel}</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span style="color: #888;">Category:</span>
+                                        <span style="color: #fff;">${props.type}</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span style="color: #888;">Importance:</span>
+                                        <span style="color: #ffd700;">${props.marksize || 'Standard'}</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; margin-top: 2px; font-size: 9px; color: #555;">
+                                        <span>${coords.lat.toFixed(4)}, ${coords.lng.toFixed(4)}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `)
+                        .addTo(map);
+                });
+
+                map.on('mousemove', layerId, (e) => {
+                    if (window.activeDetailPopup) return; // Don't move if blocked
+                    if (window.hoverPopup) {
+                        window.hoverPopup.setLngLat(e.lngLat);
+                    }
+                });
+
+                map.on('mouseleave', layerId, () => {
+                    map.getCanvas().style.cursor = '';
+                    // DELAY REMOVAL TO ALLOW MOVING TO NEIGHBOR
+                    window.hoverRemoveTimer = setTimeout(() => {
+                        if (window.hoverPopup) {
+                            window.hoverPopup.remove();
+                        }
+                    }, 0);
+                });
+            });
+
+            // 1.1 Settlements as Scalable Dots (Circles)
+            const settlementColorMatch = ['match', ['get', 'owner']];
+            Object.keys(colorMapping).forEach(owner => {
+                settlementColorMatch.push(owner, colorMapping[owner]);
+            });
+            settlementColorMatch.push('#7f8c8d'); // fallback
+
+            function getPopEstimate(marksize) {
+                const m = parseInt(marksize) || 5;
+                if (m <= 6) return "Under 3,500";
+                if (m <= 9) return "5,000 - 19,999"; // Data has 8 and 9
+                if (m <= 11) return "20,000 - 49,999"; // Data has 10 and 11
+                if (m <= 13) return "50,000 - 99,999"; // Data has 12 and 13
+                return "Above 100,000";
+            }
+
+            map.addLayer({
+                id: 'strategic-settlement',
+                type: 'circle',
+                source: 'strategic-data',
+                filter: ['==', ['get', 'type'], 'Settlement'],
+                // Removed minzoom so it works whenever Toggled ON
+                layout: { 'visibility': 'none' },
+                paint: {
+                    'circle-color': settlementColorMatch,
+                    'circle-radius': [
+                        'interpolate', ['linear'], ['zoom'],
+                        6, 2, // Tiny at global view
+                        9, ['step', ['coalesce', ['get', 'marksize'], 5], 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+                        12, ['step', ['coalesce', ['get', 'marksize'], 5], 7, 6, 12, 8, 18, 10, 25, 12, 35, 14, 50]
+                    ],
+                    'circle-stroke-width': [
+                        'interpolate', ['linear'], ['zoom'],
+                        7, 1,
+                        10, 2
+                    ],
+                    'circle-stroke-color': '#ffffff',
+                    'circle-opacity': 0.8
+                }
+            }); // On top of everything
+
+            // Settlement Event Handlers
+            map.on('click', 'strategic-settlement', (e) => {
+                const props = e.features[0].properties;
+                new mapboxgl.Popup({ offset: 10, className: 'strategic-popup' })
+                    .setLngLat(e.lngLat)
+                    .setHTML(`
+                        <div style="padding:15px; font-family: 'Inter', sans-serif;">
+                            <h3 style="margin:0 0 5px 0; font-size:16px; color:#3498db;">${props.name}</h3>
+                            <span style="background:#333; padding:2px 6px; border-radius:4px; font-size:10px; color:#aaa;">SETTLEMENT</span>
+                            <div style="margin-top:10px;">
+                                <div style="font-size:12px; color:#ccc;">Owner: <b>${(window.factionsData && window.factionsData[props.owner]) ? window.factionsData[props.owner].label : props.owner}</b></div>
+                                <div style="font-size:12px; color:#ccc;">Est. Population (2004 Census): <b>${getPopEstimate(props.marksize)}</b></div>
+                            </div>
+                        </div>
+                    `)
+                    .addTo(map);
+            });
+
+            map.on('mouseenter', 'strategic-settlement', (e) => {
+                // CLEAR TIMER
+                if (window.hoverRemoveTimer) {
+                    clearTimeout(window.hoverRemoveTimer);
+                    window.hoverRemoveTimer = null;
+                }
+
+                // console.log("Hovered Settlement:", e.features[0].properties.name);
+                map.getCanvas().style.cursor = 'pointer';
+                const props = e.features[0].properties;
+                const coords = e.lngLat;
+                window.hoverPopup = window.hoverPopup || new mapboxgl.Popup({ closeButton: false, closeOnClick: false, className: 'hover-tooltip', offset: 15 });
+                window.hoverPopup.setLngLat(coords)
+                    .setHTML(`
+                        <div style="min-width: 140px;">
+                            <div style="font-weight: 800; color: #3498db; margin-bottom: 6px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;">${props.name}</div>
+                            <div style="display: flex; flex-direction: column; gap: 4px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span style="color: #888;">Owner:</span>
+                                    <span style="color: #fff; font-weight: 600;">${(window.factionsData && window.factionsData[props.owner]) ? window.factionsData[props.owner].label : props.owner}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span style="color: #888;">Est. Population:</span>
+                                    <span style="color: #ffd700; font-weight: 600;">${getPopEstimate(props.marksize)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `)
+                    .addTo(map);
+            });
+
+            map.on('mousemove', 'strategic-settlement', (e) => {
+                if (window.hoverPopup) window.hoverPopup.setLngLat(e.lngLat);
+            });
+
+            map.on('mouseleave', 'strategic-settlement', () => {
+                map.getCanvas().style.cursor = '';
+                // DELAY REMOVAL
+                window.hoverRemoveTimer = setTimeout(() => {
+                    if (window.hoverPopup) window.hoverPopup.remove();
+                }, 0);
+            });
+
+            // --- LAYER END ---
+
+            // Correct placement: Load strategic assets immediately after layers are ready
+            loadStrategicAssets();
+            updateBorders(true);
+
+
+        });
+
+
+
+
+        // setInterval(updateBorders, 30000); // REMOVED: Only update on News Events
+        setInterval(loadNews, 10000); // 10s interval (optimized from 2s)
+
+        function updateStats(features) {
+            const areas = { "Russia": 0, "TSK": 0, "SNA": 0, "HTS": 0, "SDF": 0, "Druze": 0, "USA": 0, "Israel": 0, "ISIS": 0, "Unknown": 0 };
+            let totalArea = 0;
+            features.forEach(f => {
+                const owner = f.properties.owner || "Unknown";
+                const area = turf.area(f);
+                if (areas[owner] !== undefined) areas[owner] += area;
+                totalArea += area;
+            });
+
+            // Count settlements per owner
+            const settlementCounts = {};
+            if (cachedSettlements) {
+                cachedSettlements.forEach(c => {
+                    const o = c.owner || "Unknown";
+                    settlementCounts[o] = (settlementCounts[o] || 0) + 1;
+                });
+            }
+
+            const contentDiv = document.getElementById('stats-content');
+            contentDiv.innerHTML = '';
+            const sortedOwners = Object.keys(areas).sort((a, b) => areas[b] - areas[a]);
+            sortedOwners.forEach(owner => {
+                if (areas[owner] <= 0) return;
+
+                // FILTER: Hide if faction has NO settlements (and not 0 settlements just because cachedSettlements is empty/loading)
+                // If cachedSettlements is null/empty, we might not want to filter aggressively yet, but here we assume it loads fast.
+                if (cachedSettlements && (!settlementCounts[owner] || settlementCounts[owner] < 1)) return;
+
+                const percent = ((areas[owner] / totalArea) * 100).toFixed(1);
+                const color = colorMapping[owner] || '#7f8c8d';
+                const row = document.createElement('div');
+                row.className = 'stat-row';
+                row.innerHTML = `
+                    <div class="stat-info">
+                        <span>${owner}</span>
+                        <span>${percent}%</span>
+                    </div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar-bg">
+                            <div class="stat-bar-fill" style="width:${percent}%; background:${color}; box-shadow: 0 0 10px ${color}44"></div>
+                        </div>
+                    </div>
+                `;
+                contentDiv.appendChild(row);
+            });
+        }
+
+        let borderWorker = null;
+
+        async function updateBorders(force = false) {
+            if (!globalSyriaGeoJSON) return;
+            if (!needsBorderUpdate && !force) return;
+
+            // Initialize worker if not exists
+            if (!borderWorker) {
+                borderWorker = new Worker('worker.js?v=' + Date.now());
+                borderWorker.onmessage = function (e) {
+                    if (e.data.features) {
+                        const finalCollection = turf.featureCollection(e.data.features);
+                        if (map.getSource('dynamic-borders')) map.getSource('dynamic-borders').setData(finalCollection);
+                        updateStats(e.data.features);
+                        needsBorderUpdate = false;
+                        console.log("✅ Worker updated borders.");
+                    } else if (e.data.error) {
+                        console.error("Worker Error:", e.data.error);
+                    }
+                };
+            }
+
+            try {
+                let cities = [];
+                if (!cachedSettlements || force) {
+                    console.log("💾 REFRESHING settlements from server...");
+                    const settlementsResp = await fetch('settlements.json?t=' + Date.now());
+                    cachedSettlements = await settlementsResp.json();
+                }
+                cities = cachedSettlements;
+
+                // Identify expeditionary factions
+                const counts = {};
+                cities.forEach(c => { if (c.owner) counts[c.owner] = (counts[c.owner] || 0) + 1; });
+
+                const LOCAL_FACTIONS = ["SNA", "HTS", "SDF", "Druze", "Israel", "ISIS"];
+                const manualExpeditionary = ["Russia", "USA", "Ukraine", "TSK"];
+                const expeditionaryFactions = Object.keys(colorMapping).filter(f => {
+                    const fewSettlements = (counts[f] || 0) < 20;
+                    return (fewSettlements && !LOCAL_FACTIONS.includes(f)) || manualExpeditionary.includes(f);
+                });
+
+                // Get strategic features if available for extra points
+                let strategicFeatures = [];
+                if (map.getSource('strategic-data')) {
+                    const sData = map.getSource('strategic-data')._data;
+                    if (sData && sData.features) strategicFeatures = sData.features;
+                }
+
+                // Offload to Worker
+                borderWorker.postMessage({
+                    cities: cities,
+                    strategicFeatures: strategicFeatures,
+                    globalSyriaGeoJSON: globalSyriaGeoJSON,
+                    colorMapping: colorMapping,
+                    LOCAL_FACTIONS: LOCAL_FACTIONS,
+                    expeditionaryFactions: expeditionaryFactions
+                });
+
+            } catch (e) { console.error("Border Update Error", e); }
+        }
+
+        async function loadStrategicAssets() {
+            try {
+                // Fetch both Strategic Assets and Settlements
+                const [stratResp, settResp] = await Promise.all([
+                    fetch('strategic.json?t=' + Date.now()),
+                    fetch('settlements.json?t=' + Date.now())
+                ]);
+
+                const stratData = await stratResp.json();
+                const settData = await settResp.json();
+
+                // Convert Settlements List to GeoJSON Features
+                const settlementFeatures = settData.map(s => ({
+                    type: "Feature",
+                    geometry: {
+                        type: "Point",
+                        coordinates: [s.lng, s.lat]
+                    },
+                    properties: {
+                        name: s.name,
+                        lat: s.lat,
+                        lng: s.lng,
+                        owner: s.owner,
+                        type: "Settlement", // Ensure type matches filter
+                        is_besieged: s.is_besieged,
+                        marksize: s.marksize,
+                        contestants: s.contestants, // Critical for contested visualization
+                        wiki_page: s.wiki_page // New: Wiki Link
+                    }
+                }));
+
+                // Merge: Strategic + Settlements
+                // This allows the map source 'strategic-data' to feed BOTH layers (bases and settlements)
+                // while keeping the backend files separate.
+                stratData.features = stratData.features.concat(settlementFeatures);
+
+                // APPLY CAPTURE OVERRIDES
+                if (window.strategicStatus) {
+                    stratData.features.forEach(f => {
+                        const name = f.properties.name;
+                        if (window.strategicStatus[name]) {
+                            f.properties.owner = window.strategicStatus[name];
+                        }
+                    });
+                }
+
+                // FILTER & VISUALIZE CONTESTED ZONES
+                // We remove them from the GL layer and render them as HTML Markers for the "Checkerboard" effect
+                const cleanFeatures = [];
+                const contestedFeatures = [];
+
+                stratData.features.forEach(f => {
+                    if (f.properties.contestants && f.properties.contestants.length >= 2) {
+                        contestedFeatures.push(f);
+                    } else {
+                        cleanFeatures.push(f);
+                    }
+                });
+
+                stratData.features = cleanFeatures;
+
+                // Render Contested Markers
+                contestedFeatures.forEach(f => {
+                    const c1 = colorMapping[f.properties.contestants[0]] || '#888';
+                    const c2 = colorMapping[f.properties.contestants[1]] || '#888';
+                    // Bigger size for visibility
+                    const size = Math.max((f.properties.marksize || 4) * 3.5, 18);
+
+                    const el = document.createElement('div');
+                    el.className = 'contested-marker';
+                    el.style.width = `${size}px`;
+                    el.style.height = `${size}px`;
+                    el.style.borderRadius = '50%';
+                    el.style.border = '2px solid rgba(255,255,255,0.8)'; // White border to pop
+                    el.style.boxShadow = '0 0 6px rgba(0,0,0,0.6)';
+                    el.style.zIndex = '1000'; // Ensure on top
+                    // Dama Pattern (4 Quarters)
+                    el.style.background = `conic-gradient(${c1} 0% 25%, ${c2} 25% 50%, ${c1} 50% 75%, ${c2} 75% 100%)`;
+
+                    // Dynamic Popup with Wiki Fetch
+                    const popupNode = document.createElement('div');
+                    popupNode.innerHTML = `
+                        <div style="font-weight:bold; margin-bottom:5px; border-bottom:1px solid #ccc; padding-bottom:3px;">
+                            ${f.properties.name}
+                        </div>
+                        <div style="font-size:11px;">
+                            <span style="color:${c1}">■ ${f.properties.contestants[0]}</span> / 
+                            <span style="color:${c2}">■ ${f.properties.contestants[1]}</span>
+                        </div>
+                        <div id="wiki-content-${f.properties.name.replace(/\s+/g, '')}" style="margin-top:8px; display:none;">
+                            <img id="wiki-img-${f.properties.name.replace(/\s+/g, '')}" style="width:100%; border-radius:4px; display:none; margin-bottom:5px;">
+                            <div id="wiki-text-${f.properties.name.replace(/\s+/g, '')}" style="font-size:10px; line-height:1.3; color:#ccc;"></div>
+                            <a id="wiki-link-${f.properties.name.replace(/\s+/g, '')}" href="#" target="_blank" style="display:block; margin-top:5px; color:#3498db; font-size:10px;">Read on Wikipedia &rarr;</a>
+                        </div>
+                    `;
+
+                    // Fetch Wiki Data on creation (or wait for click? creation is eager but fewer contested zones so okay)
+                    // Mapbox popup doesnt have explicit 'open' event on the marker easily unless we hook it.
+                    // Let's just run it. Typically few contested zones (<10). 
+                    if (f.properties.wiki_page) {
+                        const wikiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(f.properties.wiki_page)}`;
+
+                        fetch(wikiUrl).then(res => res.json()).then(data => {
+                            if (data.title) {
+                                const container = popupNode.querySelector(`div[id^="wiki-content"]`);
+                                const img = popupNode.querySelector(`img[id^="wiki-img"]`);
+                                const txt = popupNode.querySelector(`div[id^="wiki-text"]`);
+                                const lnk = popupNode.querySelector(`a[id^="wiki-link"]`);
+
+                                container.style.display = "block";
+                                if (data.thumbnail && data.thumbnail.source) {
+                                    img.src = data.thumbnail.source;
+                                    img.style.display = "block";
+                                }
+                                if (data.extract) {
+                                    txt.innerText = data.extract.substring(0, 150) + "...";
+                                }
+                                if (data.content_urls && data.content_urls.desktop) {
+                                    lnk.href = data.content_urls.desktop.page;
+                                }
+                            }
+                        }).catch(err => console.log("Wiki fetch failed", err));
+                    }
+
+                    const popup = new mapboxgl.Popup({ offset: 10, maxWidth: '250px' })
+                        .setDOMContent(popupNode);
+
+                    new mapboxgl.Marker({ element: el })
+                        .setLngLat(f.geometry.coordinates)
+                        .setPopup(popup)
+                        .addTo(map);
+                });
+
+                if (map.getSource('strategic-data')) {
+                    console.log(`📊 Intel Loaded: ${cleanFeatures.length} standard assets + ${contestedFeatures.length} contested zones.`);
+                    map.getSource('strategic-data').setData(stratData);
+
+                    // Force re-render: Wait for data ingest, then trigger a "fake" flyTo
+                    // This creates a camera movement event which wakes up the renderer
+                    setTimeout(() => {
+                        const currentCenter = map.getCenter();
+                        const currentZoom = map.getZoom();
+                        map.flyTo({ center: currentCenter, zoom: currentZoom, speed: 10, curve: 0 });
+                        map.resize();
+                    }, 500);
+                }
+            } catch (e) { console.error("Strategic Load Error", e); }
+        }
+
+        async function loadNews() {
+            try {
+                const response = await fetch('news_feed.json?t=' + Date.now());
+                const newsRaw = await response.json();
+
+                // CLIENT-SIDE FILTER: 24 Hours
+                const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+                const news = newsRaw.filter(n => new Date(n.date) > oneDayAgo);
+
+                // OPTIMIZATION: Check if data actually changed
+                const currentHash = JSON.stringify(news.map(n => n.tweet_id)); // Simple hash based on IDs
+                if (window.lastNewsHash === currentHash) return;
+                window.lastNewsHash = currentHash;
+
+                latestNews = news;
+
+                // PROCESS CAPTURES
+                let updatesNeeded = false;
+
+                // Find the latest capture event in the feed (assuming feed is sorted desc)
+                const latestCapture = news.find(item =>
+                    (item.attack_type === "Capture" || item.attack_type === "Seizure") && item.location_name
+                );
+
+                if (latestCapture) {
+                    // Only update if we encounter a NEW capture event we haven't handled yet
+                    if (window.lastSeenCaptureId !== latestCapture.tweet_id) {
+                        console.log("🚨 New Territory Change Detected:", latestCapture.location_name);
+                        updatesNeeded = true;
+                        window.lastSeenCaptureId = latestCapture.tweet_id;
+                    }
+                }
+
+                if (updatesNeeded) {
+                    // Refresh strategic assets to apply color change
+                    loadStrategicAssets();
+                    // Borders will update automatically on next interval or we can force it
+                    needsBorderUpdate = true;
+                    setTimeout(() => updateBorders(true), 1000);
+                }
+
+                const sidebar = document.getElementById('feed-container');
+                sidebar.innerHTML = '';
+                const features = [];
+                news.forEach(item => {
+                    // Filter invalid coordinates
+                    if (!item.lat || !item.lng || isNaN(item.lat) || isNaN(item.lng)) return;
+
+                    let safeIconName = item.attack_type;
+                    if (!symbolTypeMapping[safeIconName]) safeIconName = "Other";
+
+                    // Use cached image URL
+                    let safeAttacker = item.attacker;
+                    if (!colorMapping[safeAttacker]) safeAttacker = "Unknown";
+
+                    // DYNAMIC EMOJI SYSTEM
+                    // If AI provided an emoji, use it to generate a unique key
+                    let rawEmoji = item.visual_emoji;
+
+                    // EMOJI NORMALIZATION (User Request: "Reuse generic icons")
+                    const emojiNormalization = {
+                        // Fight
+                        "🔫": "⚔️", "🧨": "⚔️", "🛡️": "⚔️", "🏹": "⚔️", "💣": "💥",
+                        // Air
+                        "🛩️": "✈️", "🛫": "✈️", "🛬": "✈️",
+                        // Transport
+                        "🚛": "🚚", "🚙": "🚚", "🚗": "🚚",
+                        // Medical
+                        "🏥": "🚑", "💉": "🚑", "🩺": "🚑", "💊": "🚑",
+                        // Politics/Diplomacy
+                        "🗣️": "📢", "🗳️": "📢", "📜": "📢", "⚖️": "📢", "🏛️": "📢",
+                        // Security
+                        "🚔": "👮", "🚓": "👮", "🚨": "👮"
+                    };
+
+                    // SPECIAL: If AI returns Helicopter for Drone, suppress it to use Custom FPV Shape
+                    if (rawEmoji === "🚁") rawEmoji = null;
+
+                    // DEFENSIVE: Filter out "0", "null", "None" or integers
+                    if (rawEmoji === 0 || rawEmoji === "0" || rawEmoji === "null" || rawEmoji === "None") rawEmoji = null;
+
+                    let emoji = emojiNormalization[rawEmoji] || rawEmoji;
+                    let confidence = item.confidence || 4.0;
+                    let isHighConf = confidence > 7.5;
+
+                    let key;
+                    if (emoji) {
+                        // Use normalized emoji for key to hit cache more often
+                        key = `emoji-${emoji}-${safeAttacker}-${isHighConf ? 'high' : 'norm'}`;
+                    } else {
+                        key = `${safeIconName}-${safeAttacker}-${isHighConf ? 'high' : 'norm'}`;
+                    }
+
+                    // Dynamically generate and cache the icon if it's new (Aklımıza gelmeyen eventler için)
+                    // CUSTOM FLAG OVERRIDE
+                    if (safeIconName === "capture_flag") {
+                        if (safeAttacker === "SDF" || safeAttacker === "QSD") markerUrls[key] = "flag_sdf.png";
+                        else if (safeAttacker === "HTS" || safeAttacker === "Salvation Government") markerUrls[key] = "flag_hts.png";
+                        else if (!markerUrls[key]) {
+                            // Default Canvas Flag for others
+                            const canvas = createCompositeMarker(null, colorMapping[safeAttacker], "capture_flag", false, emoji, confidence, safeAttacker);
+                            markerUrls[key] = canvas.toDataURL();
+                        }
+                    } else if (!markerUrls[key]) {
+                        // Standard Marker
+                        const canvas = createCompositeMarker(null, colorMapping[safeAttacker], emoji ? "Other" : safeIconName, false, emoji, confidence, safeAttacker);
+                        markerUrls[key] = canvas.toDataURL();
+                    }
+
+                    const imgUrl = markerUrls[key];
+
+                    const div = document.createElement('div');
+                    div.className = 'feed-item';
+
+                    // Media Check
+                    let mediaHtml = '';
+                    if (item.image_path) {
+                        mediaHtml += `<div style="margin-top:5px;"><img src="${item.image_path}" style="max-width:100%; border-radius:4px;"></div>`;
+                    }
+                    if (item.local_video_path) {
+                        mediaHtml += `<div style="margin-top:5px;"><span style="font-size:10px; color:#3498db;">📹 Video attached</span></div>`;
+                    }
+
+                    div.innerHTML = `
+                        <div>
+                            <img src="${imgUrl}" style="width:42px; height:42px; filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55);">
+                            ${item.local_video_path ? '<div style="position:absolute; bottom:-2px; right:-2px; background:var(--accent); color:white; font-size:8px; padding:2px 4px; border-radius:4px; font-weight:bold;">LIVE</div>' : ''}
+                        </div>
+                        <div>
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                                <div>
+                                    <span class="attacker-badge bg-${safeAttacker}">${safeAttacker}</span>
+                                    <span style="font-size:9px; color:${isHighConf ? '#2ecc71' : '#f39c12'}; margin-left:5px; border:1px solid ${isHighConf ? '#2ecc71' : '#f39c12'}; padding:1px 4px; border-radius:4px;">
+                                        ${confidence.toFixed(1)} AI
+                                    </span>
+                                </div>
+                                <span style="font-size:10px; color:var(--text-dim); font-weight:600;">${item.date ? item.date.split(' ')[1].substring(0, 5) : ''}</span>
+                            </div>
+                            <div style="font-weight:700; font-size:13px; color:#fff; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${getLoc(item, 'location_name')}</div>
+                            <div style="font-size:12px; color:var(--text-dim); line-height:1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${getLoc(item, 'summary')}</div>
+                            ${mediaHtml}
+                        </div>
+                    `;
+                    div.onclick = () => {
+                        // User Request: "Only fly to location, don't open big window"
+                        // expandEvent(item.tweet_id); 
+                        if (item.lat && item.lng) {
+                            map.flyTo({ center: [item.lng, item.lat], zoom: 9, speed: 1.5 });
+                        }
+                    };
+                    sidebar.appendChild(div);
+                    // Use safeAttacker for the icon lookup in the map layer
+                    features.push({
+                        type: 'Feature',
+                        geometry: { type: 'Point', coordinates: [item.lng, item.lat] },
+                        properties: {
+                            type: safeIconName,
+                            attacker: safeAttacker,
+                            original_attacker: item.attacker,
+                            summary: item.summary,
+                            location_name: item.location_name,
+                            image_path: item.image_path || "",
+                            local_video_path: item.local_video_path || "",
+                            date: item.date,
+                            tweet_id: item.tweet_id,
+                            icon_url: imgUrl,
+                            confidence: item.confidence || 4.0,
+                            sources: item.sources || [item.channel || "Unknown"]
+                        }
+                    });
+                });
+
+                // DESKTOP VERSION: Redirect if Mobile
+                if (window.innerWidth <= 768) {
+                    window.location.href = "mobile.html";
+                    return;
+                }
+
+                // Render Standard Markers
+                updateStandardMarkers(features);
+
+                // Handle Resize (Debounced) - Redirect check
+                window.onresize = () => {
+                    if (window.innerWidth <= 768) window.location.href = "mobile.html";
+                };
+
+                // HEATMAP FILTERING
+                const nonConflictTypes = ["Military Training", "Meeting", "Statement", "Humanitarian Aid", "Reinforcement", "Diplomacy/Negotiation"];
+                const heatmapFeatures = features.filter(f => !nonConflictTypes.includes(f.properties.type));
+
+                if (map.getSource('heatmap-data')) map.getSource('heatmap-data').setData({ type: 'FeatureCollection', features: heatmapFeatures });
+            } catch (e) { console.error(e); alert("LoadNews Error: " + e.message); }
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const layerControl = document.getElementById('layer-control');
+            sidebar.classList.toggle('active');
+            if (sidebar.classList.contains('active')) {
+                layerControl.classList.remove('active'); // Close layers if opening sidebar
+            }
+        }
+
+        function toggleLayers() {
+            const layerControl = document.getElementById('layer-control');
+            const sidebar = document.getElementById('sidebar');
+            layerControl.classList.toggle('active');
+            if (layerControl.classList.contains('active')) {
+                sidebar.classList.remove('active'); // Close sidebar if opening layers
+            }
+        }
+
+        // Close sidebar when clicking map on mobile AND Reset Popup Locks
+        map.on('click', () => {
+            // Mobile Sidebar
+            if (window.innerWidth <= 768) {
+                document.getElementById('sidebar').classList.remove('active');
+                document.getElementById('layer-control').classList.remove('active');
+            }
+
+            // RESET INTERACTION LOCKS (Important)
+            if (window.popupLocked) {
+                window.popupLocked = false;
+                if (window.activeDetailPopup) {
+                    window.activeDetailPopup.remove();
+                    window.activeDetailPopup = null;
+                }
+            }
+        });
+
+        window.toggleLayer = function (layerId, checkbox) {
+            const visibility = checkbox.checked ? 'visible' : 'none';
+
+            if (layerId === 'war-layer') {
+                // Handle Custom HTML Markers (Both Standard and Clustered)
+                const vis = checkbox.checked ? 'visible' : 'hidden';
+                console.log("Toggling markers:", vis);
+
+                // Toggle Desktop Markers
+                if (window.newsMarkers) {
+                    window.newsMarkers.forEach(marker => {
+                        marker.getElement().style.visibility = vis;
+                    });
+                }
+
+                // Toggle Mobile Clusters
+                if (clusterMarkers) {
+                    for (const id in clusterMarkers) {
+                        if (clusterMarkers[id]) clusterMarkers[id].getElement().style.visibility = vis;
+                    }
+                }
+
+                // Toggle Cluster Layer (if active)
+                if (map.getLayer('news-cluster-layer-hidden')) {
+                    map.setLayoutProperty('news-cluster-layer-hidden', 'visibility', visibility);
+                }
+
+            } else if (layerId === 'border-group') {
+                map.setLayoutProperty('border-glow', 'visibility', visibility);
+                map.setLayoutProperty('border-fill', 'visibility', visibility);
+            } else {
+                // Handle Standard Mapbox Layers/Heatmaps
+                if (map.getLayer(layerId)) {
+                    map.setLayoutProperty(layerId, 'visibility', visibility);
+                }
+            }
+        }
+        // Set build timestamp
+        document.getElementById('last-update').innerText = new Date().toLocaleString();
+        // Also update settings modal time
+        if (document.getElementById('settings-last-update')) {
+            document.getElementById('settings-last-update').innerText = new Date().toLocaleString();
+        }
+
+        function toggleSettings() {
+            const modal = document.getElementById('settings-modal');
+            if (modal.style.display === 'flex') {
+                modal.style.display = 'none';
+            } else {
+                modal.style.display = 'flex';
+            }
+        }
+
+        // --- DESKTOP ONLY LOGIC ---
+        // Removed Clustering Code entirely for index.html
+
+        window.newsMarkers = [];
+
+        function updateStandardMarkers(features) {
+            console.log("Updating Standard Markers (Individual + Jitter): " + features.length);
+
+            if (window.newsMarkers) {
+                window.newsMarkers.forEach(m => m.remove());
+            }
+            window.newsMarkers = [];
+
+            // TRACK COORDINATES TO APPLY JITTER
+            const coordCounts = {};
+
+            features.forEach(feature => {
+                const props = feature.properties;
+                let [lng, lat] = feature.geometry.coordinates;
+
+                const key = `${lng.toFixed(4)},${lat.toFixed(4)}`;
+                if (coordCounts[key]) {
+                    // JITTER: Add small random offset (~500m-1km)
+                    // 0.01 degrees is roughly 1km
+                    lng += (Math.random() - 0.5) * 0.015;
+                    lat += (Math.random() - 0.5) * 0.015;
+                }
+                coordCounts[key] = (coordCounts[key] || 0) + 1;
+
+                // Create DOM Element
+                const el = document.createElement('div');
+                el.className = 'news-icon-marker';
+                // Only add CSS pole for PNG flags (SDF/HTS), because Canvas flags already have a drawn pole
+                if (props.type === 'capture_flag' && props.icon_url.includes('.png')) {
+                    el.classList.add('is-flag');
+                    // Offset correction for flag pole
+                    el.style.transform = "translate(10px, -20px)";
+                }
+                el.style.display = 'block';
+                el.style.zIndex = '1000';
+                el.style.pointerEvents = 'auto';
+
+                // Icon
+                const img = document.createElement('img');
+                img.src = props.icon_url;
+                img.className = 'news-marker-img';
+                img.style.pointerEvents = 'auto';
+
+                // For custom PNGs (SDF/HTS), ensure they fit well
+                if (props.icon_url.includes('.png')) {
+                    img.style.width = '100%';
+                    img.style.height = '100%';
+                    img.style.objectFit = 'contain';
+                }
+
+                el.appendChild(img);
+
+                // --- EVENTS ---
+
+                // MOUSE ENTER (Preview)
+                el.addEventListener('mouseenter', () => {
+                    // Removed restrictive cooldown check to allow fast switching
+                    // if (window.popupCooldown && Date.now() < window.popupCooldown) return;
+
+                    // Clear debounce timer
+                    if (window.hoverRemoveTimer) {
+                        clearTimeout(window.hoverRemoveTimer);
+                        window.hoverRemoveTimer = null;
+                    }
+
+                    if (window.popupLocked && window.activeDetailPopup) return;
+
+                    const pseudoFeature = { properties: props, geometry: { coordinates: [lng, lat] } };
+                    showEventPopup(pseudoFeature, [lng, lat]);
+                });
+
+                // MOUSE LEAVE (Debounced)
+                el.addEventListener('mouseleave', () => {
+                    if (window.popupLocked) return;
+                    window.hoverRemoveTimer = setTimeout(() => {
+                        if (window.activeDetailPopup && !window.popupLocked) {
+                            window.activeDetailPopup.remove();
+                            window.activeDetailPopup = null;
+                        }
+                    }, 0);
+                });
+
+                // CLICK (Lock)
+                el.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+
+                    window.popupLocked = true;
+                    // Standard Event Popup is reused for click
+                    const pseudoFeature = { properties: props, geometry: { coordinates: [lng, lat] } };
+                    showEventPopup(pseudoFeature, [lng, lat]);
+                });
+
+                // Add to Map
+                const marker = new mapboxgl.Marker({ element: el })
+                    .setLngLat([lng, lat])
+                    .addTo(map);
+
+                window.newsMarkers.push(marker);
+            });
+        }
+    </script>
+    <style>
+        /* Desktop specific marker scaling */
+        .news-icon-marker {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            pointer-events: auto !important;
+            /* FORCE CLICKABILITY */
+            z-index: 1000 !important;
+            /* OVERRIDE EVERYTHING */
+            /* Ensure Mapbox can position it, but we control the rest */
+            background-size: cover;
+        }
+
+        /* FLAG POLE EFFECT FOR PNGs */
+        .news-icon-marker.is-flag::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            /* Pole to the left */
+            top: 0;
+            bottom: -20px;
+            /* Extend down */
+            width: 4px;
+            background: #333;
+            border: 1px solid #aaa;
+            border-radius: 2px;
+            z-index: -1;
+        }
+
+        /* Adjust for canvas flags (which draw their own pole) vs PNGs */
+        /* If the image IS a canvas dataURL (starts with data:), we might not need the CSS pole if the canvas has one.
+           BUT my update to createCompositeMarker REMOVED the pole for Custom Militias (SDF/HTS) in the code analysis? 
+           Wait, I added a pole in the fallback canvas drawing. 
+           For the PNGs I am adding now, they DON'T have a pole.
+           So I should only add .is-flag class if it's a PNG url?
+           Let's refine the JS logic above. */
+
+        /* FORCE ALL MAPBOX MARKERS TO BE CLICKABLE */
+        .mapboxgl-marker {
+            pointer-events: auto !important;
+        }
+
+        .news-marker-img {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+            display: block;
+            pointer-events: auto !important;
+        }
+    </style>
+</body>
+
+</html>
