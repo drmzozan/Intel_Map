@@ -142,10 +142,10 @@
         "visual_emoji": "🚩",
         "actor": "Syria",
         "summary": {
-            "en": "Syrian Army begins using armored vehicles captured from SDF/PKK in the field.",
-            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada kullanmaya başladı.",
+            "en": "Syrian Army deploys armored vehicles captured from SDF/PKK in field operations.",
+            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirilen zırhlı araçları sahada kullanmaya başladı.",
             "ru": "Сирийская армия начала использовать бронетехнику, захваченную у СДС/РПК.",
-            "zh": "叙利亚军队开始在战场上使用从SDF/PKK缴获的装甲车。"
+            "zh": "叙利亚军队开始在实战中部署从SDF/PKK缴获的装甲车。"
         },
         "territory_update": null,
         "confidence": 6.0,
