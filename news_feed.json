@@ -77,8 +77,10 @@
                 "image_path": null,
                 "channel": "X (@AJSyriaNowN)",
                 "attacker": "Central Committee for Response in Aleppo",
+                "actor": "Central Committee for Response in Aleppo",
                 "original_text": "اللجنة المركزية لاستجابة حلب ترسل خبزا بالزوارق عبر نهر الفرات إلى قرى محاصرة من قبل قسد قرب عين العرب (كوباني) https://t.co/W2Vhpjk4kb",
-                "actor": "Central Committee for Response in Aleppo"
+                "attack_type": "Ceasefire extension & humanitarian access",
+                "visual_emoji": "🤝"
             }
         ]
     },
@@ -160,8 +162,10 @@
                 "image_path": null,
                 "channel": "X (@clashreport)",
                 "attacker": "USA",
+                "actor": null,
                 "original_text": "US Ambassador to Israel Mike Huckabee:\n\nTrump does not see things horizontally; he sees them vertically.\n\nIf a thing may work but it lands a little left of center, he may still go there. https://t.co/nnWbiTrrYW",
-                "actor": null
+                "attack_type": "Statement",
+                "visual_emoji": "📢"
             },
             {
                 "summary": {
@@ -176,8 +180,10 @@
                 "image_path": "media/2016150134078235063.jpg",
                 "channel": "X (@clashreport)",
                 "attacker": "USA",
+                "actor": null,
                 "original_text": "US Ambassador to Israel Mike Huckabee:\n\nThe root of Jew hatred is not political, it is not economic, it is spiritual. https://t.co/g6Pq8jfwio",
-                "actor": null
+                "attack_type": "Statement",
+                "visual_emoji": "📢"
             }
         ]
     },
@@ -226,8 +232,10 @@
                 "image_path": null,
                 "channel": "X (@AJSyriaNowN)",
                 "attacker": "Turkey",
+                "actor": "Turkey",
                 "original_text": "الرئيس التركي رجب طيب أردوغان:\n\nلا يمكن أن يكون هناك دولة داخل الدولة ولا قوى مسلّحة منفصلة في سوريا https://t.co/bxusL0I82a",
-                "actor": "Turkey"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             },
             {
                 "summary": {
@@ -242,8 +250,10 @@
                 "image_path": "media/2016147752267256048.jpg",
                 "channel": "X (@ConflictTR)",
                 "attacker": "Turkey",
+                "actor": "Turkey",
                 "original_text": "🔴 Genelkurmay Başkanı Orgeneral Selçuk Bayraktaroğlu, ABD Merkez Kuvvetler Komutanı Oramiral Brad Cooper ile telefon görüşmesi gerçekleştirdi.\n\nGörüşmede ikili ilişkiler ve bölgesel konuların ele alındığı bildirildi. https://t.co/FvL1yTDMSU",
-                "actor": "Turkey"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             },
             {
                 "summary": {
@@ -258,8 +268,10 @@
                 "image_path": "media/2016159854616788993.jpg",
                 "channel": "X (@ConflictTR)",
                 "attacker": "USA, UK, France, Germany",
+                "actor": "USA, UK, France, Germany",
                 "original_text": "🚨 ABD, İngiltere, Fransa ve Almanya’dan Suriye'deki ateşkes hakkında ortak açıklama:\n\nSuriye hükümeti ve PKK/SDG arasında varılan ateşkesin 15 gün daha uzatılmasını memnuniyetle karşılıyor ve tüm tarafları ateşkese kesinlikle uymaya çağırıyoruz.\n\nTüm tarafları kalıcı bir ateşkes https://t.co/ceHRySNQ84",
-                "actor": "USA, UK, France, Germany"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             },
             {
                 "summary": {
@@ -274,8 +286,10 @@
                 "image_path": null,
                 "channel": "X (@clashreport)",
                 "attacker": "Turkey",
+                "actor": "Turkey",
                 "original_text": "Turkish President Erdogan on Syria:\n\nResources that should be spent on the welfare of the Syrian people will no longer be used to dig tunnels underground, but instead to build schools, hospitals, bakeries, factories, and roads above ground. https://t.co/MLLVXAtbmF",
-                "actor": "Turkey"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             },
             {
                 "summary": {
@@ -290,8 +304,10 @@
                 "image_path": null,
                 "channel": "X (@clashreport)",
                 "attacker": "Turkey",
+                "actor": "Turkey",
                 "original_text": "Turkish President Erdogan:\n\nAs Syria achieves stability and security, all neighboring countries—starting with us—will directly feel its positive effects.\n\nTrade will accelerate, investments will increase, and tourism will develop. In the residential areas that were reduced to https://t.co/yWU6omRBM3",
-                "actor": "Turkey"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             },
             {
                 "summary": {
@@ -306,8 +322,10 @@
                 "image_path": "media/2016126196744962524.jpg",
                 "channel": "X (@ConflictTR)",
                 "attacker": "Turkey",
+                "actor": "Turkey",
                 "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nÇevremize baktığımızda, Kuzey’den Güney’e etrafımızın yangın yeri olduğunu görüyoruz. https://t.co/32VhtIEsQy",
-                "actor": "Turkey"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             },
             {
                 "summary": {
@@ -322,8 +340,10 @@
                 "image_path": "media/2016123658855412084.jpg",
                 "channel": "X (@AJSyriaNowN)",
                 "attacker": "Turkey",
+                "actor": "Turkey",
                 "original_text": "ميدل إيست آي:\n\n• تركيا تخطط لإنشاء منطقة عازلة لصد موجة نزوح محتملة في حال سقوط الحكومة الإيرانية\n\n• في العام الماضي، قدّرت تركيا أن نحو مليون شخص قد يصلون إلى حدودها في حال حدوث هذا السيناريو https://t.co/Sx0zGYgzVZ",
-                "actor": "Turkey"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             },
             {
                 "summary": {
@@ -338,8 +358,10 @@
                 "image_path": "media/2016115911095132344.jpg",
                 "channel": "X (@ConflictTR)",
                 "attacker": "Türkiye",
+                "actor": "Türkiye",
                 "original_text": "🔴 Middle East Eye:\n\n▪️ Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda potansiyel mülteci dalgasını önlemek için plan hazırlıyor.\n\n▪️ Türkiye, İran'da en kötü senaryoya hazırlanıyor ve yeni bir mülteci dalgasını önlemek için sınırın İran tarafında bir tampon bölge https://t.co/zd9H4UYM7y",
-                "actor": "Türkiye"
+                "attack_type": "TOLUN ammunition capabilities",
+                "visual_emoji": "🚀"
             }
         ]
     },
@@ -453,8 +475,10 @@
                 "image_path": "media/2016145248108364232.jpg",
                 "channel": "X (@AJSyriaNowN)",
                 "attacker": "Abdul Latif Al-Muhaimid",
+                "actor": "Abdul Latif Al-Muhaimid",
                 "original_text": "الباحث والمؤلف عبد اللطيف المحيمد يبدي استغرابه من التعليمات المعمول بها في جامعة دمشق عبر منشور له على منصة فيسبوك:\n\n\"ذهبت اليوم لأستعيد قيدي في كلية الآداب - قسم اللغة العربية في دمشق، بناء على مرسوم وزير التعليم العالي، فقالوا لي: وين كنت بالفترة الماضية؟ فقلت: مسجون عند قسد، https://t.co/J1v72HXmzs",
-                "actor": "Abdul Latif Al-Muhaimid"
+                "attack_type": "Integration meeting planned",
+                "visual_emoji": "🤝"
             }
         ]
     },
@@ -605,8 +629,10 @@
                 "image_path": "media/2016128529289613599.jpg",
                 "channel": "X (@Sana__gov)",
                 "attacker": "Civilians",
+                "actor": "Civilians",
                 "original_text": "أهالي المفقودين في سجون تنظيم قسد ينظمون وقفة في دير الزور، طالبوا خلالها بالكشف عن مصير أبنائهم الذين اختطفهم تنظيم داعش الإرهابي إبان سيطرته على المنطقة، ثم استمر احتجازهم في السجون بعد انتقال السيطرة إلى تنظيم قسد.\n\n#سوريا\n#دير_الزور https://t.co/BhayjMIoIf",
-                "actor": "Civilians"
+                "attack_type": "Road and bridge inspection",
+                "visual_emoji": "⚠️"
             }
         ]
     },
@@ -656,7 +682,10 @@
                 "image_path": null,
                 "channel": "X (@AJSyriaNowN)",
                 "attacker": "Syria",
-                "original_text": "هدوء حذر في الجزيرة السورية.. هل يصمد بعد تمديد وقف إطلاق النار؟ https://t.co/MPv2Iq1qih"
+                "actor": "HTS",
+                "original_text": "هدوء حذر في الجزيرة السورية.. هل يصمد بعد تمديد وقف إطلاق النار؟ https://t.co/MPv2Iq1qih",
+                "attack_type": "January Events",
+                "visual_emoji": "📢"
             },
             {
                 "summary": {
@@ -671,8 +700,10 @@
                 "image_path": "media/2016127452179759360.jpg",
                 "channel": "X (@ConflictTR)",
                 "attacker": "Türkiye",
+                "actor": "Türkiye",
                 "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nSuriye’nin tamamında, eski rejimin varil bombalarıyla enkaza çevirdiği yerleşim yerlerinde büyük bir inşa ve ihya seferberliği başlayacak. https://t.co/EsibvjtRsz",
-                "actor": "Türkiye"
+                "attack_type": "January Events",
+                "visual_emoji": "📢"
             }
         ]
     },
@@ -892,7 +923,10 @@
                 "image_path": null,
                 "channel": "X (@clashreport)",
                 "attacker": "USA",
-                "original_text": "U.S. Treasury Secretary Scott Bessent:\n\nCarney should do what is best for the Canadian people rather than trying to push his own globalist agenda. https://t.co/AhSYAzumyS"
+                "actor": "USA",
+                "original_text": "U.S. Treasury Secretary Scott Bessent:\n\nCarney should do what is best for the Canadian people rather than trying to push his own globalist agenda. https://t.co/AhSYAzumyS",
+                "attack_type": "Statement",
+                "visual_emoji": "📢"
             }
         ]
     },
