@@ -1,26 +1,186 @@
 [
     {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.5061,
-        "lng": 40.7442,
+        "action": "MERGE",
+        "target_id": "2016096807386784163",
+        "lat": 36.637,
+        "lng": 38.204,
+        "location_name": {
+            "en": "Ain al-Arab Countryside",
+            "tr": "Ayn el-Arap Kırsalı",
+            "ru": "Сельская местность Айн-эль-Араб",
+            "zh": "艾因阿拉伯农村"
+        },
+        "attack_type": "Aid Distribution",
+        "visual_emoji": "🚚",
+        "actor": "Syria",
+        "summary": {
+            "en": "Aleppo Response Committee transports bread by boat to villages on the Euphrates east bank.",
+            "tr": "Halep Müdahale Komitesi, Fırat'ın doğu yakasındaki köylere tekneyle ekmek taşıyor.",
+            "ru": "Комитет Алеппо доставляет хлеб на лодках в деревни на восточном берегу Евфрата.",
+            "zh": "阿勒颇委员会通过船只向幼发拉底河东岸的村庄运送面包。"
+        },
+        "territory_update": null,
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016096807386784163",
+        "local_video_path": null,
+        "image_path": "media/2016096807386784163.jpg",
+        "date": "2026-01-27 10:31:50+00:00",
+        "original_text": "اللجنة المركزية لاستجابة حلب تستمر بنقل الخبز عبر القوارب إلى 10 قرى بريف عين العرب على الضفة الشرقية لنهر الفرات.\n\n#سوريا \n#حلب https://t.co/z2dJhV5ZLy",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "MERGE",
+        "target_id": "2016092591729570238",
+        "lat": 36.49,
+        "lng": 40.74,
         "location_name": {
             "en": "Al-Hasakah",
             "tr": "Haseke",
             "ru": "Аль-Хасака",
             "zh": "哈塞克"
         },
-        "attack_type": "Suicide attack on Syrian Army armored vehicle",
-        "visual_emoji": "💥",
-        "attacker": "SDF",
+        "attack_type": "Seizure",
+        "visual_emoji": "🚩",
+        "actor": "Syria",
         "summary": {
-            "en": "SDF claims a suicide operation by its member targeted a Syrian army armored vehicle west of Al-Hasakah.",
-            "tr": "SDF, bir üyesinin El-Hasakah'ın batısında Suriye ordusuna ait bir zırhlı araca yönelik intihar saldırısı düzenlediğini iddia ediyor.",
-            "ru": "SDF заявляет, что их член совершил теракт-самоубийство, нацеленный на бронированный автомобиль сирийской армии к западу от Аль-Хасаки.",
-            "zh": "SDF 声称其一名成员对哈塞克西部的一辆叙利亚军队装甲车发动了自杀式袭击。"
+            "en": "Syrian Army begins deploying armored vehicles seized from SDF/PKK in the field.",
+            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada kullanmaya başladı.",
+            "ru": "Сирийская армия начала использовать бронетехнику, захваченную у СДС/РПК.",
+            "zh": "叙利亚军队开始在战场上部署从 SDF/PKK 缴获的装甲车。"
         },
-        "territory_update": {},
-        "confidence": 7.5,
+        "territory_update": null,
+        "confidence": 7.2,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016092591729570238",
+        "local_video_path": "media/2016092591729570238.mp4",
+        "image_path": null,
+        "date": "2026-01-27 10:15:05+00:00",
+        "original_text": "🔴 Suriye ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada kullanmaya başladı. https://t.co/NQj3ZaYNTx",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "MERGE",
+        "target_id": "2016090843866714196",
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "National Strategy Meeting",
+        "visual_emoji": "🤝",
+        "actor": "Syria",
+        "summary": {
+            "en": "WHO and Syrian ministries discussed the National Drug Control Strategy (2026-2030) in Damascus.",
+            "tr": "DSÖ ve Suriye bakanlıkları Şam'da Ulusal Uyuşturucu Kontrol Stratejisini (2026-2030) görüştü.",
+            "ru": "ВОЗ и министерства Сирии обсудили Национальную стратегию по борьбе с наркотиками (2026-2030) в Дамаске.",
+            "zh": "世卫组织和叙利亚各部委在大马士革讨论了国家药物管制战略（2026-2030）。"
+        },
+        "territory_update": null,
+        "confidence": 9.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016090843866714196",
+        "local_video_path": null,
+        "image_path": "media/2016090843866714196.jpg",
+        "date": "2026-01-27 10:08:08+00:00",
+        "original_text": "منظمة الصحة العالمية:\n\n• عُقد في دمشق اجتماع ضم ممثلين عن وزارات الصحة، والداخلية، والخارجية، والشؤون الاجتماعية والعمل، لمناقشة الإستراتيجية السورية الوطنية لمكافحة تعاطي المخدرات (2026-2030)\n\n• الإستراتيجية توفر إطارا موحّدا للعمل على أربعة محاور، هي الحوكمة والسياسات، https://t.co/hsNNLMaxJw",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "MERGE",
+        "target_id": "2016091188034453671",
+        "lat": 34.889,
+        "lng": 35.8866,
+        "location_name": {
+            "en": "Tartus",
+            "tr": "Tartus",
+            "ru": "Тартус",
+            "zh": "塔尔图斯"
+        },
+        "attack_type": "Internal Security Forces car display with new visual identity",
+        "visual_emoji": "🚚",
+        "actor": "Syria",
+        "summary": {
+            "en": "Internal Security Forces in Tartus displayed vehicles with a new visual identity.",
+            "tr": "Tartus'taki İç Güvenlik Güçleri, yeni görsel kimliğe sahip araçları sergiledi.",
+            "ru": "Силы внутренней безопасности в Тартусе продемонстрировали автомобили с новой визуальной идентичностью.",
+            "zh": "塔尔图斯内部安全部队展示了具有新视觉形象的车辆。"
+        },
+        "territory_update": null,
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016091188034453671",
+        "local_video_path": null,
+        "image_path": "media/2016091188034453671.jpg",
+        "date": "2026-01-27 10:09:31+00:00",
+        "original_text": "عرض لسيارات قيادة الأمن الداخلي في محافظة طرطوس بالهوية البصرية الجديدة.\n\n#سوريا\n#طرطوس https://t.co/wJA8u7qJLD",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "MERGE",
+        "target_id": "2016087261863977445",
+        "lat": 40.4093,
+        "lng": 49.8671,
+        "location_name": {
+            "en": "Baku",
+            "tr": "Bakü",
+            "ru": "Баку",
+            "zh": "巴库"
+        },
+        "attack_type": "Attack plan against the Israeli Embassy",
+        "visual_emoji": "👮",
+        "actor": "Other",
+        "summary": {
+            "en": "Three Azerbaijani citizens arrested for planning attack on Israeli Embassy in Baku.",
+            "tr": "Bakü'deki İsrail Büyükelçiliği'ne saldırı planlayan 3 Azerbaycan vatandaşı tutuklandı.",
+            "ru": "Трое граждан Азербайджана арестованы за планирование нападения на посольство Израиля в Баку.",
+            "zh": "三名阿塞拜疆公民因策划袭击巴库的以色列大使馆而被捕。"
+        },
+        "territory_update": null,
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016087261863977445",
+        "local_video_path": null,
+        "image_path": "media/2016087261863977445.jpg",
+        "date": "2026-01-27 09:53:54+00:00",
+        "original_text": "#SONDAKİKA\n\n🚨 Azerbaycan’daki İsrail Büyükelçiliği’ne saldırı planlayan 3 Azerbaycan vatandaşı tutuklandı. https://t.co/FZNmr4QGNV",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "MERGE",
+        "target_id": "2016089448769798588",
+        "lat": 36.5125,
+        "lng": 40.648,
+        "location_name": {
+            "en": "West of Al-Hasakah",
+            "tr": "Haseke'nin Batısı",
+            "ru": "К западу от Аль-Хасаки",
+            "zh": "哈塞克西部"
+        },
+        "attack_type": "Suicide operation against a Syrian army armored vehicle",
+        "visual_emoji": "💣",
+        "actor": "SDF",
+        "summary": {
+            "en": "SDF claims responsibility for a suicide attack targeting a Syrian Army armored vehicle west of Al-Hasakah.",
+            "tr": "SDF, Haseke'nin batısında Suriye Ordusu'na ait zırhlı bir aracı hedef alan intihar saldırısını üstlendi.",
+            "ru": "SDF взяли на себя ответственность за теракт-самоубийство против бронетехники сирийской армии к западу от Аль-Хасаки.",
+            "zh": "SDF 声称对哈塞克西部针对叙利亚军队装甲车的自杀式袭击负责。"
+        },
+        "territory_update": null,
+        "confidence": 9.0,
         "channel": "X (@AJSyriaNowN)",
         "tweet_id": "2016089448769798588",
         "local_video_path": null,
@@ -1559,150 +1719,5 @@
             "X (@AJSyriaNowN)"
         ],
         "actor": "Russia"
-    },
-    {
-        "action": "Irrelevant",
-        "confidence": 7.4,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016054737389473985",
-        "local_video_path": null,
-        "image_path": "media/2016054737389473985.jpg",
-        "date": "2026-01-27 07:44:40+00:00",
-        "original_text": "#SONDAKİKA\n\n🔴 Kuzey Kore'nin balistik füze ateşlediği bildiriliyor. https://t.co/CNESjo2z4F",
-        "lat": null,
-        "lng": null,
-        "sources": [
-            "X (@ConflictTR)",
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.5303,
-        "lng": 35.7681,
-        "location_name": {
-            "en": "Latakia",
-            "tr": "Lazkiye",
-            "ru": "Латакия",
-            "zh": "拉塔基亚"
-        },
-        "attack_type": "Drug Seizure",
-        "visual_emoji": "🚩",
-        "summary": {
-            "en": "Syrian Interior Ministry seized a large amount of cocaine on a ship from Brazil in Latakia.",
-            "tr": "Suriye İçişleri Bakanlığı, Lazkiye'de Brezilya'dan gelen bir gemide büyük miktarda kokaine el koydu.",
-            "ru": "Министерство внутренних дел Сирии изъяло крупную партию кокаина на судне из Бразилии в Латакии.",
-            "zh": "叙利亚内政部在拉塔基亚一艘来自巴西的船上查获了大量可卡因。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016050425439338830",
-        "local_video_path": null,
-        "image_path": "media/2016050425439338830.jpg",
-        "date": "2026-01-27 07:27:32+00:00",
-        "original_text": "🔴 Suriye İçişleri Bakanlığı, ismi açıklanmayan komşu bir ülkeye ulaştırılmak üzere Brezilya’dan yola çıkan bir gemide yüklü miktarda kokaine el koyduğunu duyurdu. https://t.co/WXyA8M2G4m",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9042,
-        "lng": 116.4074,
-        "location_name": {
-            "en": "Beijing",
-            "tr": "Pekin",
-            "ru": "Пекин",
-            "zh": "北京"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "US Ambassador to China David Perdue reports personnel changes in China's Central Military Commission.",
-            "tr": "ABD'nin Çin Büyükelçisi David Perdue, Çin'in Merkezi Askeri Komisyonu'ndaki personel değişikliklerini rapor ediyor.",
-            "ru": "Посол США в Китае Дэвид Пердью сообщает о кадровых изменениях в Центральной военной комиссии Китая.",
-            "zh": "美国驻华大使戴维·珀杜报告了中国中央军事委员会的人事变动。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016055760929648868",
-        "local_video_path": "media/2016055760929648868.mp4",
-        "image_path": null,
-        "date": "2026-01-27 07:48:44+00:00",
-        "original_text": "US Ambassador to China David Perdue:\n\nOf the seven people on that Central Military Commission, only Xi Jinping remains.\n\nVice-Chairman Zhang was a lifelong family friend of Xi Jinping. For this to happen is a major development in China.\n\nI take him at his word that there’s a https://t.co/CTb18GTHff",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "USA"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.6092,
-        "lng": 40.7691,
-        "location_name": {
-            "en": "Al-Safa village",
-            "tr": "El-Safa köyü",
-            "ru": "Деревня Аль-Сафа",
-            "zh": "萨法村"
-        },
-        "attack_type": "Drone strike",
-        "visual_emoji": "🚁",
-        "summary": {
-            "en": "Deir ez-Zor National Hospital received 14 injured last night due to SDF drone shelling on Al-Safa village, south of Al-Hasakah.",
-            "tr": "Dün gece, Haseke'nin güneyindeki El-Safa köyüne SDG'nin düzenlediği drone saldırısı sonucu yaralanan 14 kişi Deyr ez-Zor Milli Hastanesine kaldırıldı.",
-            "ru": "Национальная больница Дейр-эз-Зора приняла 14 раненых прошлой ночью в результате обстрела деревни Аль-Сафа к югу от Аль-Хасаки беспилотниками SDF.",
-            "zh": "由于叙利亚民主力量对哈塞克省南部的 Al-Safa 村庄进行无人机炮击，代尔祖尔国家医院昨晚接收了 14 名伤员。"
-        },
-        "territory_update": null,
-        "confidence": 8.9,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016046122213540253",
-        "local_video_path": null,
-        "image_path": "media/2016046122213540253.jpg",
-        "date": "2026-01-27 07:10:26+00:00",
-        "original_text": "مقطع مصور يُظهر استقبال مشفى دير الزور الوطني 14 مصابا ليلة أمس جراء قصف بالمسيّرات نفّذته قسد على قرية الصفا في ريف الحسكة الجنوبي https://t.co/6vR5fVl8zu",
-        "sources": [
-            "X (@AJSyriaNowN)",
-            "X (@clashreport)"
-        ],
-        "actor": "SDF"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 38.8951,
-        "lng": -77.0364,
-        "location_name": {
-            "en": "Washington, D.C.",
-            "tr": "Washington, D.C.",
-            "ru": "Вашингтон, округ Колумбия",
-            "zh": "华盛顿特区"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "US President Donald Trump stated Iran seeks a deal with Washington.",
-            "tr": "ABD Başkanı Donald Trump, İran'ın Washington ile bir anlaşma yapmak istediğini belirtti.",
-            "ru": "Президент США Дональд Трамп заявил, что Иран стремится к соглашению с Вашингтоном.",
-            "zh": "美国总统唐纳德·特朗普表示，伊朗寻求与华盛顿达成协议。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016045440890753277",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 07:07:44+00:00",
-        "original_text": "US President Donald Trump said Iran seeks a deal with Washington\n\nhttps://t.co/1F4bgiM953",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "USA"
     }
 ]
