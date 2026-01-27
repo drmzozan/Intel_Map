@@ -2,6 +2,200 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 39.9208,
+        "lng": 32.8541,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Meeting",
+        "visual_emoji": "🤝",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "Turkish Foreign Minister Hakan Fidan met with French Foreign Minister Jean-Noel Barrot in Ankara.",
+            "tr": "Dışişleri Bakanı Hakan Fidan, Fransa Dışişleri Bakanı Jean-Noel Barrot ile Ankara'da bir araya geldi.",
+            "ru": "Министр иностранных дел Турции Хакан Фидан встретился с министром иностранных дел Франции Жаном-Ноэлем Барро в Анкаре.",
+            "zh": "土耳其外交部长哈坎·菲丹在安卡拉会见了法国外交部长让-诺埃尔·巴罗。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016082137644924998",
+        "local_video_path": null,
+        "image_path": "media/2016082137644924998.jpg",
+        "date": "2026-01-27 09:33:33+00:00",
+        "original_text": "🔴 Dışişleri Bakanı Hakan Fidan, Fransa Dışişleri Bakanı Jean-Noel Barrot ile Ankara'da bir araya geldi. https://t.co/BhXoaI8SN8",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.9525,
+        "lng": 39.0178,
+        "location_name": {
+            "en": "Raqqa",
+            "tr": "Rakka",
+            "ru": "Ракка",
+            "zh": "拉卡"
+        },
+        "attack_type": "Arrest",
+        "visual_emoji": "🔗",
+        "attacker": "SDF",
+        "summary": {
+            "en": "A former detainee of the QSD (SDF) recounts his detention before being released from Al-Aqtan prison in Raqqa.",
+            "tr": "Eski bir QSD (SDF) tutuklusu, Rakka'daki El-Aktan hapishanesinden serbest bırakılmadan önce tutukluluğunu anlatıyor.",
+            "ru": "Бывший задержанный QSD (SDF) рассказывает о своем задержании перед освобождением из тюрьмы Аль-Актан в Ракке.",
+            "zh": "一名曾被 QSD (SDF) 拘留的人讲述了他被拘留的经历，之后他从拉卡市的 Al-Aqtan 监狱获释。"
+        },
+        "territory_update": {},
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016082115171938358",
+        "local_video_path": "media/2016082115171938358.mp4",
+        "image_path": null,
+        "date": "2026-01-27 09:33:27+00:00",
+        "original_text": "معتقل سابق لدى تنظيم قسد يروي لـ سانا ظروف اعتقاله قبل تحريره من سجن الأقطان في الرقة\n\n#سوريا \n#الرقة https://t.co/qyq6TIStCe",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "Irrelevant",
+        "target_id": null,
+        "lat": 36.19924,
+        "lng": 37.1637253,
+        "location_name": {
+            "en": "N/A",
+            "tr": "N/A",
+            "ru": "N/A",
+            "zh": "N/A"
+        },
+        "attack_type": "Political Trip",
+        "visual_emoji": "⚠️",
+        "attacker": "Starmer",
+        "summary": {
+            "en": "Report on Keir Starmer's trip to China.",
+            "tr": "Keir Starmer'ın Çin seyahati hakkında rapor.",
+            "ru": "Отчет о поездке Кира Стармера в Китай.",
+            "zh": "关于凯尔·斯塔默访华的报告。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016075766006513751",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 09:08:14+00:00",
+        "original_text": "Starmer Heads to China Defying Trump's Tariff Threat\n\nhttps://t.co/fSeH1c9ad2",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "error",
+        "target_id": null,
+        "lat": 36.19924,
+        "lng": 37.1637253,
+        "location_name": {
+            "en": "N/A",
+            "tr": "N/A",
+            "ru": "N/A",
+            "zh": "N/A"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "None",
+        "summary": {
+            "en": "This report is about John Bolton's opinion on Iran and is not relevant to the Syrian theatre.",
+            "tr": "Bu rapor John Bolton'ın İran hakkındaki görüşleri ile ilgili ve Suriye sahası ile alakalı değil.",
+            "ru": "Этот отчет о мнении Джона Болтона об Иране и не относится к сирийскому театру военных действий.",
+            "zh": "该报告是关于约翰·博尔顿对伊朗的看法，与叙利亚战区无关。"
+        },
+        "territory_update": null,
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016069136237928542",
+        "local_video_path": "media/2016069136237928542.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:41:53+00:00",
+        "original_text": "John Bolton on Iran:\n\nOne strike isn’t going to bring the regime down if he is committed to regime change, as he has now said. \n\nYou need to think in a more programmatic, strategic way.\n\nYou have to think about what multiple strikes might do to degrade the regime’s ability to https://t.co/V6B022n4k9",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "error",
+        "target_id": null,
+        "lat": 36.1593592086948,
+        "lng": 37.15741007426682,
+        "location_name": {
+            "en": "N/A",
+            "tr": "N/A",
+            "ru": "N/A",
+            "zh": "N/A"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "None",
+        "summary": {
+            "en": "This report is about John Bolton's opinion on Iran and is not relevant to the Syrian theatre.",
+            "tr": "Bu rapor John Bolton'ın İran hakkındaki görüşleri ile ilgili ve Suriye sahası ile alakalı değil.",
+            "ru": "Этот отчет о мнении Джона Болтона об Иране и не относится к сирийскому театру военных действий.",
+            "zh": "该报告是关于约翰·博尔顿对伊朗的看法，与叙利亚战区无关。"
+        },
+        "territory_update": null,
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016069136237928542_ghost_2",
+        "local_video_path": "media/2016069136237928542.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:41:53+00:00",
+        "original_text": "John Bolton on Iran:\n\nOne strike isn’t going to bring the regime down if he is committed to regime change, as he has now said. \n\nYou need to think in a more programmatic, strategic way.\n\nYou have to think about what multiple strikes might do to degrade the regime’s ability to https://t.co/V6B022n4k9",
+        "is_ghost": true,
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "error",
+        "target_id": null,
+        "lat": 36.22282977507003,
+        "lng": 37.12747155237664,
+        "location_name": {
+            "en": "N/A",
+            "tr": "N/A",
+            "ru": "N/A",
+            "zh": "N/A"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "None",
+        "summary": {
+            "en": "This report is about John Bolton's opinion on Iran and is not relevant to the Syrian theatre.",
+            "tr": "Bu rapor John Bolton'ın İran hakkındaki görüşleri ile ilgili ve Suriye sahası ile alakalı değil.",
+            "ru": "Этот отчет о мнении Джона Болтона об Иране и не относится к сирийскому театру военных действий.",
+            "zh": "该报告是关于约翰·博尔顿对伊朗的看法，与叙利亚战区无关。"
+        },
+        "territory_update": null,
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016069136237928542_ghost_1",
+        "local_video_path": "media/2016069136237928542.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:41:53+00:00",
+        "original_text": "John Bolton on Iran:\n\nOne strike isn’t going to bring the regime down if he is committed to regime change, as he has now said. \n\nYou need to think in a more programmatic, strategic way.\n\nYou have to think about what multiple strikes might do to degrade the regime’s ability to https://t.co/V6B022n4k9",
+        "is_ghost": true,
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 37.1667,
         "lng": 42.1333,
         "location_name": {
@@ -116,7 +310,7 @@
             "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了两辆坦克，并杀死了数十名战士。"
         },
         "territory_update": {},
-        "confidence": 7.5,
+        "confidence": 9.0,
         "channel": "X (@vvanwilgenburg)",
         "tweet_id": "2016078098844758209",
         "local_video_path": null,
@@ -125,6 +319,23 @@
         "original_text": "\"During their attempt to advance towards Kobani, at least two of their tanks were destroyed and dozens of their fighters were killed. Between 40 and 50 of their fighters were also killed in the village of Safa and many of their armored vehicles were destroyed.\"  YPJ spox",
         "sources": [
             "X (@vvanwilgenburg)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "YPJ reports destroying two tanks and killing dozens of fighters near Kobani and in Safa village.",
+                    "tr": "YPJ, Kobani yakınlarında ve Safa köyünde iki tankı imha ettiğini ve düzinelerce savaşçıyı öldürdüğünü bildirdi.",
+                    "ru": "YPJ сообщает об уничтожении двух танков и гибели десятков бойцов возле Кобани и в деревне Сафа.",
+                    "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了两辆坦克，并杀死了数十名战士。"
+                },
+                "date": "2026-01-27 09:17:30+00:00",
+                "tweet_id": "2016078098844758209",
+                "local_video_path": null,
+                "image_path": null,
+                "channel": "X (@vvanwilgenburg)",
+                "attacker": "YPJ",
+                "original_text": "\"During their attempt to advance towards Kobani, at least two of their tanks were destroyed and dozens of their fighters were killed. Between 40 and 50 of their fighters were also killed in the village of Safa and many of their armored vehicles were destroyed.\"  YPJ spox"
+            }
         ]
     },
     {
@@ -180,7 +391,7 @@
             "zh": "叙利亚交通部长亚鲁布·巴德尔访问了代尔祖尔，与省长加桑·赛义德·艾哈迈德讨论了道路和交通状况。"
         },
         "territory_update": {},
-        "confidence": 8.0,
+        "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016079708870336579",
         "local_video_path": null,
@@ -212,7 +423,7 @@
             "zh": "在大马士革举办了一场关于“Wajib”应用程序的研讨会，该程序用于处理所有部委的投诉。"
         },
         "territory_update": {},
-        "confidence": 8.0,
+        "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016072146515099859",
         "local_video_path": "media/2016072146515099859.mp4",
@@ -436,7 +647,7 @@
             "zh": "土耳其驻大马士革大使努·伊尔马兹会见了叙利亚交通部长亚鲁卜·贝迪尔，讨论了恢复希贾兹铁路的问题。"
         },
         "territory_update": {},
-        "confidence": 6.0,
+        "confidence": 7.2,
         "channel": "X (@ConflictTR)",
         "tweet_id": "2016078173805384046",
         "local_video_path": null,
@@ -1436,198 +1647,6 @@
         "original_text": "South Sudanese Army Orders UN and NGO's to Evacuate Ahead of a Major Offensive\n\nhttps://t.co/HF9dFXdFJV",
         "sources": [
             "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.887,
-        "lng": 39.578,
-        "location_name": {
-            "en": "Çil Agha (Hasakah province)",
-            "tr": "Çil Ağa (Haseke ili)",
-            "ru": "Чил Ага (провинция Хасака)",
-            "zh": "Çil Agha（哈塞克省）"
-        },
-        "attack_type": "airstrikes",
-        "visual_emoji": "✈️",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Turkish aircraft are conducting airstrikes on Çil Agha and villages near Kobani.",
-            "tr": "Türk uçakları Çil Ağa ve Kobani yakınlarındaki köylere hava saldırıları düzenliyor.",
-            "ru": "Турецкие самолеты наносят авиаудары по Чил Ага и деревням возле Кобани.",
-            "zh": "土耳其飞机正在对 Çil Agha 和科巴尼附近的村庄进行空袭。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015803627776983274",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 15:06:51+00:00",
-        "original_text": "A military source told the ANHA agency that Turkish aircraft are currently carrying out airstrikes on the town of Çil Agha (Hasakah province) and the villages of Kharab Ashk and Zerek in the Kobani countryside, part of the Euphrates region, following unsuccessful attempts by",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.0392,
-        "lng": 42.0392,
-        "location_name": {
-            "en": "Safa village",
-            "tr": "Safa köyü",
-            "ru": "Деревня Сафа",
-            "zh": "萨法村"
-        },
-        "attack_type": "Drones spotted",
-        "visual_emoji": "🚁",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Unidentified drones were spotted near Safa village in Al-Jawadiyah (Cilagha).",
-            "tr": "El-Cevadiye'deki (Çil Ağa) Safa köyü yakınlarında tanımlanamayan dronlar görüldü.",
-            "ru": "Неопознанные беспилотники были замечены возле деревни Сафа в Аль-Джавадии (Чил Ага).",
-            "zh": "在 Al-Jawadiyah (Cilagha) 的 Safa 村附近发现了不明无人机。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015798214180458900",
-        "local_video_path": "media/2015798214180458900.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:45:20+00:00",
-        "original_text": "Drones spotted near Safa village in Al-Jawadiyah (Cilagha). https://t.co/nBiaJcXTqE",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.6915,
-        "lng": 38.3436,
-        "location_name": {
-            "en": "Korik",
-            "tr": "Korik",
-            "ru": "Корик",
-            "zh": "科里克"
-        },
-        "attack_type": "Repelled attacking factions’ assaults",
-        "visual_emoji": "⚔️",
-        "attacker": "SDF",
-        "summary": {
-            "en": "SDF repelled attacking factions' assaults in Korik village. Clashes continue in the region.",
-            "tr": "SDF, Korik köyünde saldıran fraksiyonların saldırılarını püskürttü. Bölgede çatışmalar devam ediyor.",
-            "ru": "SDF отразили нападения атакующих группировок в деревне Корик. Столкновения в регионе продолжаются.",
-            "zh": "叙利亚民主力量击退了袭击科里克村的派系的袭击。该地区的冲突仍在继续。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015797839691993442",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:43:51+00:00",
-        "original_text": "SDF: In the area of the village of Korik, our fighters managed to repel the attacking factions’ assaults and thwart their attempts to advance, while clashes continue in the region.",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 31.7683,
-        "lng": 35.2137,
-        "location_name": {
-            "en": "Jerusalem",
-            "tr": "Kudüs",
-            "ru": "Иерусалим",
-            "zh": "耶路撒冷"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Israel",
-        "summary": {
-            "en": "Israeli Foreign Ministry official Carney responds to a question, referring to respecting the troops.",
-            "tr": "İsrail Dışişleri Bakanlığı yetkilisi Carney bir soruya cevap vererek askerlere saygı gösterilmesini vurguluyor.",
-            "ru": "Официальный представитель министерства иностранных дел Израиля Карни отвечает на вопрос, упоминая об уважении к войскам.",
-            "zh": "以色列外交部官员 Carney 回应了一个问题，提到了尊重军队。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015800740720038330",
-        "local_video_path": "media/2015800740720038330.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:55:23+00:00",
-        "original_text": "Reporter: Are you offended by being called “Governor?”\n\nCarney: I am not going to comment on every tweet or truth or comment from whoever, I can handle it.\n\nBut I do think that the point about respecting our troops is fundamental. https://t.co/77bEJ3xrhR",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.3306,
-        "lng": 40.7414,
-        "location_name": {
-            "en": "Mardin",
-            "tr": "Mardin",
-            "ru": "Мардин",
-            "zh": "马尔丁"
-        },
-        "attack_type": "Restriction of public gatherings",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Mardin Governorship bans public gatherings except those approved by governorship and district governorships.",
-            "tr": "Mardin Valiliği, valilik ve kaymakamlıkların uygun gördüğü etkinlikler dışında açık alanlarda toplanmayı yasakladı.",
-            "ru": "Губернаторство Мардина запрещает публичные собрания, за исключением тех, которые одобрены губернаторством и районными губернаторствами.",
-            "zh": "马尔丁省长禁止公众集会，除非得到省长和地区省长的批准。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2015801384101150800",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:57:56+00:00",
-        "original_text": "🚨 Mardin Valiliği:\n\nValilik ve Kaymakamlık makamlarının uygun göreceği etkinlikler dışında, açık alanlarda yapılmak istenilen toplanma, yürüyüş, basın açıklaması, açlık grevi, oturma eylemi, miting, stant açma, çadır kurma, bildiri, broşür dağıtma, afiş, pankart asma gibi her",
-        "sources": [
-            "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Announcement",
-        "visual_emoji": "📢",
-        "attacker": "Syria",
-        "summary": {
-            "en": "Syrian Interior Ministry announced registration for PKK/SDG terrorists wishing to legalize their status by surrendering weapons.",
-            "tr": "Suriye İçişleri Bakanlığı, silahlarını teslim ederek statülerini yasallaştırmak isteyen PKK/SDG'li teröristlerin kayıt işlemlerinin başladığını duyurdu.",
-            "ru": "Министерство внутренних дел Сирии объявило о начале регистрации террористов PKK/SDG, желающих легализовать свой статус путем сдачи оружия.",
-            "zh": "叙利亚内政部宣布，希望通过上缴武器使其地位合法化的 PKK/SDG 恐怖分子开始登记。"
-        },
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2015800852234043642",
-        "local_video_path": null,
-        "image_path": "media/2015800852234043642.jpg",
-        "date": "2026-01-26 14:55:49+00:00",
-        "original_text": "🔴 Suriye İçişleri Bakanlığı, silahlarını teslim ederek statülerini yasallaştırmak isteyen PKK/SDG’li teröristlerin kayıt işlemlerinin başladığını duyurdu. https://t.co/nHoQz8YuO4",
-        "sources": [
-            "X (@ConflictTR)"
         ]
     }
 ]

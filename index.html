@@ -1541,6 +1541,11 @@
                     const evSummary = getLoc(ev, 'summary');
                     const evLink = `https://twitter.com/i/status/${ev.tweet_id}`;
 
+                    // Confidence
+                    const conf = parseFloat(ev.confidence) || 4.0;
+                    let confCol = '#f39c12';
+                    if (conf >= 7.5) confCol = '#2ecc71';
+
                     let mediaHtml = '';
                     if (ev.local_video_path) {
                         mediaHtml = `<div style="width:100%; max-height:400px; background:#000; display:flex; justify-content:center; margin-bottom:15px; border-radius:8px; overflow:hidden; border:1px solid #333;">
@@ -1550,10 +1555,25 @@
                         mediaHtml = `<img src="${ev.image_path}" style="width:100%; max-height:400px; object-fit:contain; border-radius:8px; margin-bottom:15px; background:#000; border:1px solid #333;">`;
                     }
 
+                    // Sources
+                    const sourcesArr = ev.sources || [];
+                    let sourcesHtml = '';
+                    if (sourcesArr.length > 0) {
+                        sourcesHtml = `<div style="margin-top:15px; border-top:1px solid #222; padding-top:10px;">
+                                          <div style="font-size:10px; color:#555; margin-bottom:5px; font-weight:800; text-transform:uppercase;">Intelligence Sources:</div>
+                                          <div style="display:flex; flex-wrap:wrap; gap:5px;">
+                                              ${sourcesArr.map(s => `<span style="background:#111; color:#777; font-size:10px; padding:2px 8px; border-radius:10px; border:1px solid #222;">${s}</span>`).join('')}
+                                          </div>
+                                       </div>`;
+                    }
+
                     html += `
                         <div style="margin-bottom:40px; background:rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
                             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                                <div style="font-size:11px; color:#666; font-weight:800; text-transform:uppercase; letter-spacing:1px;">REPORT #${events.length - idx} • ${ago}</div>
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="font-size:11px; color:#666; font-weight:800; text-transform:uppercase; letter-spacing:1px;">REPORT #${events.length - idx} • ${ago}</div>
+                                    <span style="font-size:10px; color:${confCol}; border:1px solid ${confCol}; padding:1px 5px; border-radius:3px; font-weight:700;">${conf.toFixed(1)} AI</span>
+                                </div>
                                 <div style="font-size:11px; color:#444;">via ${ev.channel || channel}</div>
                             </div>
 
@@ -1569,6 +1589,8 @@
                                 </a>
                                 <div style="font-size:10px; color:#333; font-family:monospace;">ID: ${ev.tweet_id}</div>
                             </div>
+
+                            ${sourcesHtml}
                         </div>
                     `;
                 });
@@ -1670,23 +1692,36 @@
 
             if (isCluster) {
                 htmlContent += `
-                    <div style="background:${safeColor}22; padding:8px 12px; border-bottom:1px solid #333; display:flex; justify-content:space-between; align-items:center;">
-                        <span style="font-size:10px; font-weight:900; color:${safeColor}; letter-spacing:1px; text-transform:uppercase;">INTEL CLUSTER (${props.sub_events.length})</span>
-                        <span style="font-size:10px; color:#888;">${timeStr}</span>
+                    <div style="background:${safeColor}15; padding:8px 12px; border-bottom:1px solid #333; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:10px; font-weight:900; color:${safeColor}; letter-spacing:1.5px; text-transform:uppercase;">INTEL CLUSTER (${props.sub_events.length})</span>
+                        <span style="font-size:10px; color:#666;">${timeStr}</span>
                     </div>
-                    <div style="max-height:220px; overflow-y:auto; background:rgba(0,0,0,0.2);">
+                    <div style="max-height:280px; overflow-y:auto; background:rgba(0,0,0,0.3); border-radius:0 0 6px 6px;">
                 `;
 
                 props.sub_events.forEach((ev, i) => {
                     const evTime = timeAgo(ev.date);
+
+                    let miniMedia = '';
+                    if (ev.local_video_path) {
+                        miniMedia = `<div style="width:100%; height:90px; background:#000; margin-bottom:8px; border-radius:4px; overflow:hidden;">
+                                        <video src="${ev.local_video_path}" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+                                     </div>`;
+                    } else if (ev.image_path) {
+                        miniMedia = `<div style="width:100%; height:90px; background:url('${ev.image_path}') center/cover; margin-bottom:8px; border-radius:4px;"></div>`;
+                    }
+
                     htmlContent += `
-                        <div style="padding:10px 12px; border-bottom: ${i < props.sub_events.length - 1 ? '1px solid #222' : 'none'};">
-                             <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
-                                <span style="font-size:9px; color:#555; font-weight:800;">REPORT #${props.sub_events.length - i}</span>
+                        <div style="padding:12px; border-bottom: ${i < props.sub_events.length - 1 ? '1px solid #222' : 'none'};">
+                             <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+                                <span style="font-size:9px; color:#555; font-weight:800; letter-spacing:0.5px;">REPORT #${props.sub_events.length - i}</span>
                                 <span style="font-size:9px; color:#444;">${evTime}</span>
                              </div>
+                             
+                             ${miniMedia}
+
                              <div style="font-size:11px; color:#eee; line-height:1.4; font-weight:500;">
-                                ${getLoc(ev, 'summary').substring(0, 90)}${getLoc(ev, 'summary').length > 90 ? '...' : ''}
+                                ${getLoc(ev, 'summary').substring(0, 100)}${getLoc(ev, 'summary').length > 100 ? '...' : ''}
                              </div>
                         </div>
                     `;
@@ -1694,7 +1729,7 @@
 
                 htmlContent += `
                     </div>
-                    <div style="padding:10px; background:#111; color:${safeColor}; font-size:10px; text-align:center; font-weight:800; border-top:1px solid #222;">CLICK TO EXPAND ALL MEDIA ↗</div>
+                    <div style="padding:10px; background:#000; color:${safeColor}; font-size:10px; text-align:center; font-weight:900; border-top:1px solid #222; letter-spacing:1px;">FULL INTEL DOSSIER ↗</div>
                 `;
             } else {
                 htmlContent += `
@@ -1704,19 +1739,19 @@
                       </div>`
                         : (props.image_path ? `<div style="width:100%; height:160px; background:url('${props.image_path}') center/cover; border-radius:6px 6px 0 0;"></div>` : '')
                     }
-                   <div style="padding:10px;">
-                       <div style="display:flex; justify-content:space-between; margin-bottom:5px; align-items:center;">
-                           <div style="display:flex; align-items:center; gap:5px;">
+                   <div style="padding:12px;">
+                       <div style="display:flex; justify-content:space-between; margin-bottom:8px; align-items:center;">
+                           <div style="display:flex; align-items:center; gap:6px;">
                                <span class="attacker-badge" style="background:${safeColor}">${props.attacker}</span>
-                                <span style="font-size:10px; color:${confColor}; border:1px solid ${confColor}; padding:1px 4px; border-radius:3px; font-weight:600;">
+                                <span style="font-size:10px; color:${confColor}; border:1px solid ${confColor}; padding:1px 5px; border-radius:3px; font-weight:700;">
                                     ${confScore.toFixed(1)} AI
                                 </span>
                            </div>
-                           <span style="font-size:11px; color:#888;">${timeStr}</span>
+                           <span style="font-size:11px; color:#666;">${timeStr}</span>
                        </div>
-                       <h3 style="margin:0 0 5px 0; font-size:14px; line-height:1.4; color:#fff;">${getLoc(props, 'location_name')}</h3>
-                       <p style="font-size:12px; color:#ccc; margin:0;">${getLoc(props, 'summary') ? getLoc(props, 'summary').substring(0, 80) + '...' : 'Click for details'}</p>
-                       <div style="font-size:11px; color:#3498db; margin-top:8px; font-weight:bold;">Click to Expand ↗</div>
+                       <h3 style="margin:0 0 6px 0; font-size:14px; line-height:1.4; color:#fff; font-weight:800;">${getLoc(props, 'location_name')}</h3>
+                       <p style="font-size:12px; color:#ccc; margin:0; line-height:1.5;">${getLoc(props, 'summary') ? getLoc(props, 'summary').substring(0, 85) + '...' : 'Click for details'}</p>
+                       <div style="font-size:11px; color:#3498db; margin-top:10px; font-weight:900; letter-spacing:0.5px;">EXPAND REPORT ↗</div>
                    </div>
                 `;
             }
