@@ -37,8 +37,8 @@
             width: 100vw;
             overscroll-behavior: none;
             /* Prevent scroll bounce */
-            touch-action: none;
-            /* Disable default touch actions (scrolling) on body */
+            touch-action: manipulation;
+            /* Allow basic gestures while avoiding double-tap zoom delay */
         }
 
         /* GLOBAL FIX: Layer Control Z-Index (User Request) */
@@ -302,6 +302,11 @@
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
         }
 
+        /* Hide Close Buttons on Desktop */
+        .sidebar-close-btn {
+            display: none;
+        }
+
         .mapboxgl-popup-tip {
             border-top-color: var(--panel-bg) !important;
         }
@@ -553,11 +558,44 @@
             .mapboxgl-popup {
                 max-width: 220px !important;
             }
+
+            /* Close Button Style */
+            .sidebar-close-btn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 38px;
+                height: 38px;
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                cursor: pointer;
+                z-index: 2200;
+                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                backdrop-filter: blur(8px);
+            }
+
+            .sidebar-close-btn:active {
+                transform: scale(0.9);
+                background: var(--accent);
+                border-color: var(--accent);
+            }
         }
     </style>
 </head>
 
 <body>
+    <!-- Settings Button (Moved for Visibility) -->
+    <button id="settings-btn" onclick="toggleSettings()"
+        style="position:fixed; top:20px; right:20px; width:40px; height:40px; background:rgba(0,0,0,0.8); border:1px solid #555; color:#fff; border-radius:50%; z-index:2147483647; cursor:pointer; font-size:20px; display:flex; align-items:center; justify-content:center; box-shadow:0 0 10px rgba(0,0,0,0.5);">
+        ⚙️
+    </button>
+
     <!-- Mobile Menu Button -->
     <button id="mobile-menu-btn" onclick="toggleSidebar()">
         ☰ INTEL
@@ -568,14 +606,10 @@
         🌐 LAYERS
     </button>
 
-    <!-- Settings Button -->
-    <button id="settings-btn" onclick="toggleSettings()"
-        style="position:fixed; top:20px; right:20px; width:40px; height:40px; background:rgba(0,0,0,0.7); border:1px solid #444; color:#fff; border-radius:50%; z-index:2000; cursor:pointer; font-size:20px; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(5px); box-shadow:0 0 10px rgba(0,0,0,0.5);">
-        ⚙️
-    </button>
 
     <div id="sidebar">
-        <!-- Close Button for Sidebar (Removed) -->
+        <!-- Close Button for Sidebar (Restored) -->
+        <button class="sidebar-close-btn" onclick="toggleSidebar()" aria-label="Close sidebar">×</button>
 
         <div class="sidebar-header">
             <div class="logo-container">
@@ -655,7 +689,9 @@
     </div>
 
     <div id="layer-control">
-        <!-- Close Button for Layers (Removed) -->
+        <!-- Close Button for Layers (Restored) -->
+        <button class="sidebar-close-btn" onclick="toggleLayers()" aria-label="Close layer control"
+            style="top: 15px; right: 15px; width: 32px; height: 32px; font-size: 20px;">×</button>
 
         <!-- Language Selector -->
         <!-- Language Selector Removed - Moved to Settings -->
@@ -1818,8 +1854,14 @@
                     ownerKeys.forEach(owner => {
                         [false, true].forEach(isBesieged => {
                             const suffix = isBesieged ? '-besieged' : '';
-                            const id = `plane-${owner}${suffix}`;
-                            if (!map.hasImage(id)) map.addImage(id, image, { sdf: true });
+
+                            // 1. Register 'plane' (Airstrikes)
+                            const idPlane = `plane-${owner}${suffix}`;
+                            if (!map.hasImage(idPlane)) map.addImage(idPlane, image, { sdf: true });
+
+                            // 2. Register 'Airport' (Airfields) - Reuse F16 icon
+                            const idAirport = `Airport-${owner}${suffix}`;
+                            if (!map.hasImage(idAirport)) map.addImage(idAirport, image, { sdf: true });
                         });
                     });
                 }
@@ -2677,9 +2719,9 @@
                     if (window.innerWidth <= 768) window.location.href = "mobile.html";
                 };
 
-                // HEATMAP FILTERING
-                const nonConflictTypes = ["Military Training", "Meeting", "Statement", "Humanitarian Aid", "Reinforcement", "Diplomacy/Negotiation"];
-                const heatmapFeatures = features.filter(f => !nonConflictTypes.includes(f.properties.type));
+                // HEATMAP FILTERING: Only Clashes/Conflicts
+                const conflictTypes = ["Small Arms", "Sniper", "Artillery", "MLRS", "Mortar", "Tank", "IFV", "Airstrike", "Drone", "Cruise Missile", "Ballistic Missile", "IED", "Execution", "Seizure", "Capture", "Raid"];
+                const heatmapFeatures = features.filter(f => conflictTypes.includes(f.properties.type));
 
                 if (map.getSource('heatmap-data')) map.getSource('heatmap-data').setData({ type: 'FeatureCollection', features: heatmapFeatures });
             } catch (e) { console.error(e); alert("LoadNews Error: " + e.message); }
@@ -2893,6 +2935,8 @@
             /* OVERRIDE EVERYTHING */
             /* Ensure Mapbox can position it, but we control the rest */
             background-size: cover;
+            touch-action: manipulation;
+            /* Allow gestures but ensure clicks register */
         }
 
         /* FLAG POLE EFFECT FOR PNGs */
