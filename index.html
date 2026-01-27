@@ -2903,10 +2903,10 @@
                     }, 0);
                 });
 
-                // CLICK (Lock)
-                el.addEventListener('click', (e) => {
+                // CLICK (Lock) - Pointerdown for mobile compatibility
+                el.addEventListener('pointerdown', (e) => {
                     e.stopPropagation();
-                    e.preventDefault();
+                    // e.preventDefault();
 
                     window.popupLocked = true;
                     // Standard Event Popup is reused for click

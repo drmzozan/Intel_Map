@@ -461,6 +461,7 @@
                 width: 100vw !important;
                 top: 0;
                 left: 0;
+                touch-action: manipulation;
             }
 
             /* 3. Sidebar Width & Behavior */
@@ -1439,6 +1440,15 @@
                         window.activeDetailPopup = null;
                     });
                 });
+
+                // Pointerdown for mobile/click issues
+                map.on('pointerdown', layerId, (e) => {
+                    console.log("Strategic Layer PointerDown:", layerId);
+                    const props = e.features[0].properties;
+                    // const coords = e.lngLat; // Not needed for openDetailModal
+                    openDetailModal(null, props.owner, props.name, props.summary || "Strategic Location", props.date, null, props.channel, null, null, null);
+                });
+
                 map.on('mouseenter', layerId, (e) => {
                     // Suppress hover if detail popup is open
                     if (window.activeDetailPopup) return;
@@ -1540,6 +1550,12 @@
             }); // On top of everything
 
             // Settlement Event Handlers
+            map.on('pointerdown', 'strategic-settlement', (e) => {
+                console.log("Settlement PointerDown");
+                const props = e.features[0].properties;
+                openDetailModal(null, props.owner, props.name, "Settlement Area", null, null, null, null, null, null);
+            });
+
             map.on('click', 'strategic-settlement', (e) => {
                 const props = e.features[0].properties;
                 new mapboxgl.Popup({ offset: 10, className: 'strategic-popup' })
@@ -1594,8 +1610,9 @@
             // --- LAYER END ---
 
             // Correct placement: Load strategic assets immediately after layers are ready
-            loadStrategicAssets();
-            updateBorders(true);
+            await loadStrategicAssets();
+            await updateBorders(true);
+            await loadNews(); // Ensure news is loaded at start
 
 
         });
@@ -2047,6 +2064,11 @@
                 document.getElementById('sidebar').classList.remove('active');
                 document.getElementById('layer-control').classList.remove('active');
             }
+            window.popupLocked = false;
+            if (window.activeDetailPopup) {
+                window.activeDetailPopup.remove();
+                window.activeDetailPopup = null;
+            }
         });
 
         window.toggleLayer = function (layerId, checkbox) {
@@ -2168,10 +2190,10 @@
                     });
 
                     // 3. CLICK/TAP: Lock Popup (No Zoom)
-                    el.addEventListener('click', (e) => {
-                        console.log("MOBILE TAP:", props.location_name);
+                    el.addEventListener('pointerdown', (e) => {
+                        console.log("MOBILE POINTERDOWN:", props.location_name);
                         e.stopPropagation();
-                        e.preventDefault();
+                        // e.preventDefault(); // Don't prevent default on pointerdown to avoid blocking scrolls
 
                         // 1. Lock the popup
                         window.popupLocked = true;
