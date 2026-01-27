@@ -2,6 +2,70 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 28.6139,
+        "lng": 77.209,
+        "location_name": {
+            "en": "New Delhi",
+            "tr": "Yeni Delhi",
+            "ru": "Нью-Дели",
+            "zh": "新德里"
+        },
+        "attack_type": "Trade Deal Announcement",
+        "visual_emoji": "📢",
+        "attacker": "EU",
+        "summary": {
+            "en": "EU announces a trade deal with India, expecting to cut billions in tariffs.",
+            "tr": "AB, Hindistan ile bir ticaret anlaşması yaptığını ve milyarlarca tarifeyi düşürmeyi beklediğini duyurdu.",
+            "ru": "ЕС объявляет о торговой сделке с Индией, ожидается сокращение тарифов на миллиарды.",
+            "zh": "欧盟宣布与印度达成贸易协议，预计将削减数十亿关税。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016064576240992320",
+        "local_video_path": "media/2016064576240992320.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:23:46+00:00",
+        "original_text": "EU's von der Leyen on trade deal with India:\n\nWe did it. We delivered the mother of all deals.\n\nWe are creating a market of two billion people. \n\nIt will cut up to four billion euros in annual tariffs for exporters of all sizes. https://t.co/J2S60dWKtX",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Official exchange rates for new and old Syrian pounds",
+        "visual_emoji": "📢",
+        "attacker": "Syria",
+        "summary": {
+            "en": "The Central Bank of Syria announced official exchange rates for the new and old Syrian pound.",
+            "tr": "Suriye Merkez Bankası, yeni ve eski Suriye lirası için resmi döviz kurlarını yayınladı.",
+            "ru": "Центральный банк Сирии опубликовал официальные обменные курсы новой и старой сирийской лиры.",
+            "zh": "叙利亚中央银行发布了新旧叙利亚镑的官方汇率。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016062708974571837",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 08:16:21+00:00",
+        "original_text": "READ MORE👇\n\nhttps://t.co/iLHcaMMcuX",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 33.5138,
         "lng": 36.2765,
         "location_name": {
@@ -20,7 +84,7 @@
             "zh": "2026 年 1 月 27 日星期二，叙利亚中央银行发布了新旧叙利亚镑的官方汇率。"
         },
         "territory_update": {},
-        "confidence": 8.0,
+        "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016061191810949407",
         "local_video_path": null,
@@ -52,7 +116,7 @@
             "zh": "SANA 报告说，中央委员会正在向阿勒颇的艾因阿拉伯派遣一支载有食品、医疗和后勤物资的车队。"
         },
         "territory_update": {},
-        "confidence": 8.0,
+        "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016058590704853336",
         "local_video_path": null,
@@ -1474,70 +1538,6 @@
         "original_text": "Albanian PM Edi Rama in Israel:\n\nWhile we pray for the countless souls that have lost in the last days in the fires of Khomeinism, we hold hope and conviction that the days of Tehran's killers are coming to an end. https://t.co/B7SuQEnFQ1",
         "sources": [
             "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 24.466667,
-        "lng": 54.366669,
-        "location_name": {
-            "en": "Abu Dhabi",
-            "tr": "Abu Dabi",
-            "ru": "Абу-Даби",
-            "zh": "阿布扎比"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "UAE",
-        "summary": {
-            "en": "UAE will not allow its airspace to be used for military action against Iran.",
-            "tr": "BAE, hava sahasının İran'a karşı askeri bir eylemde kullanılmasına izin vermeyecek.",
-            "ru": "ОАЭ не позволит использовать свое воздушное пространство для военных действий против Ирана.",
-            "zh": "阿联酋不允许其领空被用于对伊朗的军事行动。"
-        },
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2015792050969473367",
-        "local_video_path": null,
-        "image_path": "media/2015792050969473367.jpg",
-        "date": "2026-01-26 14:20:51+00:00",
-        "original_text": "🔴 Birleşik Arap Emirlikleri:\n\nHava sahamızın İran'a karşı herhangi bir askeri müdahalede kullanılmasına izin vermeyeceğiz. https://t.co/S6kVkLRoeN",
-        "sources": [
-            "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.95,
-        "lng": 39.0167,
-        "location_name": {
-            "en": "Raqqa Museum",
-            "tr": "Rakka Müzesi",
-            "ru": "Музей Ракки",
-            "zh": "拉卡博物馆"
-        },
-        "attack_type": "Inspection/Observation of the state of artifacts",
-        "visual_emoji": "⚠️",
-        "attacker": "Sana__gov",
-        "summary": {
-            "en": "Report shows the state of the artifacts in the Raqqa Museum.",
-            "tr": "Rapor, Rakka Müzesi'ndeki eserlerin durumunu gösteriyor.",
-            "ru": "В отчете показано состояние артефактов в музее Ракки.",
-            "zh": "报告显示了拉卡博物馆中文物的情况。"
-        },
-        "territory_update": null,
-        "confidence": 8.0,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2015789173848867302",
-        "local_video_path": "media/2015789173848867302.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:09:25+00:00",
-        "original_text": "مشاهد لمتحف الرقة تظهر حالة القطع الأثرية الموجودة فيه.\n\n#سوريا \n#الرقة https://t.co/PMuDrEj3t8",
-        "sources": [
-            "X (@Sana__gov)"
         ]
     }
 ]

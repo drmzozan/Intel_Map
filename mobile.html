@@ -100,6 +100,57 @@
             pointer-events: none;
         }
 
+        /* Settings UI */
+        #settings-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .settings-content {
+            background: #111;
+            width: 90%;
+            max-width: 360px;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid #333;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+
+        .lang-flag {
+            cursor: pointer;
+            font-size: 32px;
+            filter: grayscale(100%);
+            transition: transform 0.2s, filter 0.3s;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .lang-flag.active {
+            filter: grayscale(0%);
+            transform: scale(1.2);
+        }
+
+        .settings-section-title {
+            color: #888;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 25px 0 15px 0;
+            border-bottom: 1px solid #222;
+            padding-bottom: 8px;
+        }
+
         .hover-tooltip .mapboxgl-popup-tip {
             display: none;
         }
@@ -440,16 +491,22 @@
         <button class="sidebar-close-btn" onclick="toggleSidebar()" aria-label="Close sidebar">×</button>
 
         <div class="sidebar-header">
-            <div class="logo-container">
-                <div class="pulse-dot"></div>
-                <h2 style="margin:0; font-size: 18px; letter-spacing: 1px; font-weight: 800;">INTEL HUB</h2>
+            <div class="logo-container" style="justify-content: space-between;">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <div class="pulse-dot"></div>
+                    <h2 style="margin:0; font-size: 18px; letter-spacing: 1px; font-weight: 800;" data-i18n="intel_hub">
+                        INTEL HUB</h2>
+                </div>
+                <button onclick="toggleSettings()"
+                    style="background:none; border:none; color:#555; cursor:pointer; font-size:20px; padding:0; display:flex; align-items:center; transition:0.3s; margin-left:10px;"
+                    id="gear-btn">⚙️</button>
             </div>
-            <div
+            <div data-i18n="subtitle"
                 style="font-size: 11px; color: var(--text-dim); margin-top: 4px; font-weight: 600; text-transform: uppercase;">
                 Real-time Analysis & Monitoring</div>
         </div>
         <div id="stats-panel">
-            <div
+            <div data-i18n="control_index"
                 style="font-size:10px; color: var(--text-dim); margin-bottom:15px; text-transform:uppercase; letter-spacing:1.5px; font-weight: 700;">
                 Strategic Control Index</div>
             <div id="stats-content">
@@ -472,6 +529,45 @@
         </div>
     </div>
 
+    <!-- SETTINGS MODAL -->
+    <div id="settings-modal" onclick="if(event.target === this) toggleSettings()">
+        <div class="settings-content">
+            <h2 style="margin:0 0 10px 0; font-weight:900; letter-spacing:1px; color:#fff;">SETTINGS</h2>
+
+            <div class="settings-section-title">Visual Layout</div>
+            <div style="display:flex; justify-content:center; gap:10px; margin-bottom:10px;">
+                <button class="layer-toggle"
+                    style="background: #1a1a1a; border: 1px solid #333; color: #fff; padding: 10px 15px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; flex: 1;"
+                    onclick="toggleLayers(); toggleSettings();">
+                    🌐 Open Layer Map
+                </button>
+            </div>
+
+            <div class="settings-section-title">Display Language</div>
+            <div style="display:flex; justify-content:center; margin-bottom:10px;">
+                <span onclick="changeLanguage('en')" class="lang-flag" id="flag-en" title="English">🇺🇸</span>
+                <span onclick="changeLanguage('tr')" class="lang-flag" id="flag-tr" title="Türkçe">🇹🇷</span>
+                <span onclick="changeLanguage('ru')" class="lang-flag" id="flag-ru" title="Русский">🇷🇺</span>
+                <span onclick="changeLanguage('zh')" class="lang-flag" id="flag-zh" title="中文">🇨🇳</span>
+            </div>
+
+            <div class="settings-section-title">System Status</div>
+            <div
+                style="background:#0a0a0a; border:1px solid #222; border-radius:10px; padding:12px; text-align:left; font-size:11px; color:#666;">
+                <div style="margin-bottom:6px;"><span style="color:#aaa;">Engine:</span> <span
+                        style="color:#3498db;">Vite-Quantum-V4</span></div>
+                <div style="margin-bottom:6px;"><span style="color:#aaa;">Status:</span> <span style="color:#2ecc71;">●
+                        Live Feed</span></div>
+                <div style="margin-bottom:6px;"><span style="color:#aaa;">Update:</span> <span
+                        id="settings-last-update">...</span></div>
+                <div><span style="color:#aaa;">Version:</span> v4.9.2 (Setting Hub)</div>
+            </div>
+
+            <button onclick="toggleSettings()"
+                style="margin-top:25px; width:100%; padding:14px; background:var(--accent); border:none; color:white; font-weight:800; border-radius:10px; cursor:pointer; font-size:14px; box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);">CLOSE</button>
+        </div>
+    </div>
+
     <div id="map"></div>
 
     <div id="layer-control">
@@ -479,7 +575,8 @@
         <button class="sidebar-close-btn" onclick="toggleLayers()" aria-label="Close layer control"
             style="top: 15px; right: 15px; width: 32px; height: 32px; font-size: 20px;">×</button>
 
-        <h4 style="margin:0 0 10px 0; border-bottom:1px solid #444; padding-bottom:5px;">LAYERS</h4>
+        <h4 style="margin:0 0 10px 0; border-bottom:1px solid #444; padding-bottom:5px;" data-i18n="layers_title">LAYERS
+        </h4>
         <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('border-group', this)"> 🏳️
             Borders</label>
         <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('war-layer', this)"> ⚔️
@@ -520,6 +617,89 @@
             center: [38.0, 35.0], zoom: 6.5, projection: 'globe',
             doubleClickZoom: false
         });
+
+        // --- MULTI-LANGUAGE SYSTEM ---
+        const translations = {
+            "en": {
+                "intel_hub": "INTEL HUB",
+                "subtitle": "Real-time Analysis & Monitoring",
+                "control_index": "Strategic Control Index",
+                "layers_title": "LAYERS",
+                "ago": "ago", "just_now": "Just now", "mins": "mins", "hours": "hours", "days": "days", "months": "months", "years": "years"
+            },
+            "tr": {
+                "intel_hub": "İSTİHBARAT MERKEZİ",
+                "subtitle": "Gerçek Zamanlı Analiz & İzleme",
+                "control_index": "Stratejik Kontrol Endeksi",
+                "layers_title": "KATMANLAR",
+                "ago": "önce", "just_now": "Az önce", "mins": "dakika", "hours": "saat", "days": "gün", "months": "ay", "years": "yıl"
+            },
+            "ru": {
+                "intel_hub": "ИНТЕЛ ЦЕНТР",
+                "subtitle": "Анализ и мониторинг в реальном времени",
+                "control_index": "Индекс стратегического контроля",
+                "layers_title": "СЛОИ",
+                "ago": "назад", "just_now": "Только что", "mins": "мин", "hours": "час", "days": "дн", "months": "мес", "years": "лет"
+            },
+            "zh": {
+                "intel_hub": "情报中心",
+                "subtitle": "实时分析与监测",
+                "control_index": "战略控制指数",
+                "layers_title": "图层",
+                "ago": "前", "just_now": "刚刚", "mins": "分钟", "hours": "小时", "days": "天", "months": "月", "years": "年"
+            }
+        };
+
+        window.currentLang = localStorage.getItem('appLang') || (navigator.language.startsWith('tr') ? 'tr' : (navigator.language.startsWith('ru') ? 'ru' : (navigator.language.startsWith('zh') ? 'zh' : 'en')));
+
+        window.toggleSettings = function () {
+            const modal = document.getElementById('settings-modal');
+            if (modal.style.display === 'flex') {
+                modal.style.display = 'none';
+            } else {
+                modal.style.display = 'flex';
+                // Update time in settings
+                if (document.getElementById('settings-last-update')) {
+                    document.getElementById('settings-last-update').innerText = document.getElementById('last-update').innerText;
+                }
+                // Flags active state
+                document.querySelectorAll('.lang-flag').forEach(flag => {
+                    flag.classList.remove('active');
+                    if (flag.id === 'flag-' + window.currentLang) flag.classList.add('active');
+                });
+            }
+        };
+
+        window.changeLanguage = function (lang) {
+            window.currentLang = lang;
+            localStorage.setItem('appLang', lang);
+
+            // 1. Update UI
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerText = translations[lang][key];
+                }
+            });
+
+            // 2. Flags active state
+            document.querySelectorAll('.lang-flag').forEach(flag => {
+                flag.classList.remove('active');
+                if (flag.id === 'flag-' + lang) flag.classList.add('active');
+            });
+
+            // 3. Refresh feed
+            window.lastNewsHash = null;
+            loadNews();
+
+            // 4. Close modal
+            toggleSettings();
+        };
+
+        // Initialize Language on Startup
+        setTimeout(() => {
+            changeLanguage(window.currentLang);
+        }, 100);
         // map.addControl(new mapboxgl.NavigationControl()); // REMOVED FOR MOBILE UI
 
         const iconMapping = {
@@ -920,18 +1100,20 @@
             const date = new Date(dateString);
             const now = new Date();
             const seconds = Math.floor((now - date) / 1000);
+            const lang = window.currentLang || 'en';
+            const t = translations[lang] || translations['en'];
 
             let interval = seconds / 31536000;
-            if (interval > 1) return Math.floor(interval) + " years ago";
+            if (interval > 1) return Math.floor(interval) + " " + t.years + " " + t.ago;
             interval = seconds / 2592000;
-            if (interval > 1) return Math.floor(interval) + " months ago";
+            if (interval > 1) return Math.floor(interval) + " " + t.months + " " + t.ago;
             interval = seconds / 86400;
-            if (interval > 1) return Math.floor(interval) + " days ago";
+            if (interval > 1) return Math.floor(interval) + " " + t.days + " " + t.ago;
             interval = seconds / 3600;
-            if (interval > 1) return Math.floor(interval) + " hours ago";
+            if (interval > 1) return Math.floor(interval) + " " + t.hours + " " + t.ago;
             interval = seconds / 60;
-            if (interval > 1) return Math.floor(interval) + " mins ago";
-            return Math.floor(seconds) + " seconds ago";
+            if (interval > 1) return Math.floor(interval) + " " + t.mins + " " + t.ago;
+            return t.just_now;
         }
 
         // --- POPUP & MODAL SYSTEM ---
@@ -1588,10 +1770,10 @@
             if (!item[field]) return "";
             if (typeof item[field] === 'string') return item[field];
             // Otherwise it's the translation object
-            const lang = navigator.language || navigator.userLanguage;
-            if (lang.startsWith('tr')) return item[field].tr || item[field].en || "";
-            if (lang.startsWith('ru')) return item[field].ru || item[field].en || "";
-            if (lang.startsWith('zh')) return item[field].zh || item[field].en || "";
+            const lang = window.currentLang || 'en';
+            if (lang === 'tr') return item[field].tr || item[field].en || "";
+            if (lang === 'ru') return item[field].ru || item[field].en || "";
+            if (lang === 'zh') return item[field].zh || item[field].en || "";
             return item[field].en || "";
         }
 
