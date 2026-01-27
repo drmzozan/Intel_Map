@@ -1,5 +1,69 @@
 [
     {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.8947,
+        "lng": 37.2106,
+        "location_name": {
+            "en": "Aleppo Governorate",
+            "tr": "Halep Valiliği",
+            "ru": "Алеппо (мухафаза)",
+            "zh": "阿勒颇省"
+        },
+        "attack_type": "Displacement and Return",
+        "visual_emoji": "📢",
+        "attacker": "UNHCR",
+        "summary": {
+            "en": "UNHCR reports tens of thousands displaced in NE Syria. 80% of ~100k displaced in Aleppo Governorate have returned home.",
+            "tr": "UNHCR, kuzeydoğu Suriye'de on binlerce kişinin yerinden edildiğini bildirdi. Halep Valiliğindeki ~100 bin yerinden edilmiş kişinin %80'i evlerine geri döndü.",
+            "ru": "УВКБ ООН сообщает о десятках тысяч перемещенных лиц в северо-восточной Сирии. 80% из ~100 тыс. перемещенных лиц в провинции Алеппо вернулись домой.",
+            "zh": "难民署报告说，在叙利亚东北部有数万人流离失所。阿勒颇省约10万流离失所者中，有80%已经返回家园。"
+        },
+        "territory_update": {},
+        "confidence": 9.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016057423602016363",
+        "local_video_path": null,
+        "image_path": "media/2016057423602016363.jpg",
+        "date": "2026-01-27 07:55:20+00:00",
+        "original_text": "المتحدثة باسم مفوضية الأمم المتحدة لشؤون اللاجئين في سوريا سيلين شميت:\n\n• عشرات الآلاف نزحوا في شمال شرقي سوريا نتيجة الأعمال العدائية الأخيرة\n\n• عاد نحو 80 % من أصل ما يقارب 100 ألف نازح من مناطق في محافظة حلب إلى ديارهم https://t.co/VMFsV9NJMh",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.1934,
+        "lng": 35.9576,
+        "location_name": {
+            "en": "Baniyas",
+            "tr": "Baniyas",
+            "ru": "Банияс",
+            "zh": "巴尼亚斯"
+        },
+        "attack_type": "Arrival of oil tankers",
+        "visual_emoji": "🚚",
+        "attacker": "Russia",
+        "summary": {
+            "en": "A shipment of 668,000 barrels of crude oil from Russia arrived in Baniyas on the tanker \"CARMA\".",
+            "tr": "\"CARMA\" tankerinde Rusya'dan gelen 668.000 varil ham petrol sevkiyatı Baniyas'a ulaştı.",
+            "ru": "В Банияс прибыла партия сырой нефти из России объемом 668 000 баррелей на танкере \"CARMA\".",
+            "zh": "一艘载有 668,000 桶俄罗斯原油的“CARMA”号油轮抵达巴尼亚斯。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016056662302298418",
+        "local_video_path": null,
+        "image_path": "media/2016056662302298418.jpg",
+        "date": "2026-01-27 07:52:19+00:00",
+        "original_text": "منصة الطاقة:\n\n• وصول شحنة نفط خام تضم 668 ألف برميل إلى بانياس قادمة من روسيا\n\n• الشحنة وصلت على متن الناقلة \"CARMA\" التي ترفع علم سلطنة عُمان\n\n• كذلك رست في بانياس الناقلة \"TENDUA\" محمّلة بنحو 29 ألفا و927 طنا متريا من المازوت، إضافة إلى الناقلة \"GAZ PROVIDENCE\"، محمّلة بأكثر https://t.co/DE27TPhBdo",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
         "action": "Irrelevant",
         "confidence": 7.4,
         "channel": "X (@ConflictTR)",
@@ -1476,70 +1540,6 @@
             "X (@ConflictTR)",
             "X (@vvanwilgenburg)",
             "X (@Sana__gov)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.8881,
-        "lng": 38.3569,
-        "location_name": {
-            "en": "Kobani",
-            "tr": "Kobani",
-            "ru": "Кобани",
-            "zh": "科巴尼"
-        },
-        "attack_type": "Field escalation in Ain al-Arab (Kobani) tests the truce.",
-        "visual_emoji": "⚔️",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Field escalation in Kobani tests the truce. A parallel humanitarian route is open.",
-            "tr": "Kobani'de sahadaki gerginlik ateşkesi test ediyor. Paralel bir insani yardım rotası açık.",
-            "ru": "Эскалация на местах в Кобани проверяет перемирие. Открыт параллельный гуманитарный маршрут.",
-            "zh": "科巴尼地区的局势升级考验着停火协议。 同时开通一条人道主义援助通道。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2015780727862808830",
-        "local_video_path": "media/2015780727862808830.mp4",
-        "image_path": null,
-        "date": "2026-01-26 13:35:51+00:00",
-        "original_text": "تصعيد ميداني في عين العرب يختبر الهدنة ومسار إنساني موازٍ لإدخال المساعدات https://t.co/2jKDXwydoC",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.3318,
-        "lng": 40.1453,
-        "location_name": {
-            "en": "Deir ez-Zor",
-            "tr": "Deyrizor",
-            "ru": "Дейр-эз-Зор",
-            "zh": "代尔祖尔"
-        },
-        "attack_type": "Settling status",
-        "visual_emoji": "📢",
-        "attacker": "Remnant_Regime",
-        "summary": {
-            "en": "The Interior Ministry in Deir ez-Zor begins receiving former QSD members to settle their status.",
-            "tr": "Deyrizor'daki İçişleri Bakanlığı, statülerini düzenlemek için eski QSD üyelerini kabul etmeye başlıyor.",
-            "ru": "Министерство внутренних дел в Дейр-эз-Зоре начинает принимать бывших членов QSD для урегулирования их статуса.",
-            "zh": "代尔祖尔内政部开始接收前 QSD 成员以解决他们的身份问题。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2015777936175976694",
-        "local_video_path": null,
-        "image_path": "media/2015777936175976694.jpg",
-        "date": "2026-01-26 13:24:45+00:00",
-        "original_text": "وزارة الداخلية:\n\nقيادة الأمن الداخلي في محافظة دير الزور تباشر في استقبال العناصر المنتسبين لقسد، والراغبين في تسوية أوضاعهم ضمن المركز المخصص في المحافظة، بعد تسليم أسلحتهم إلى الجهات الأمنية https://t.co/K3wPkFSbep",
-        "sources": [
-            "X (@AJSyriaNowN)"
         ]
     }
 ]
