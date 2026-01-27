@@ -2080,14 +2080,11 @@
                 document.getElementById('layer-control').classList.remove('active');
             }
             window.popupLocked = false;
-            // Popups are now persistent (closeOnClick: false), so we don't remove them on map click here
-            // to avoid accidental closings while panning.
-            /*
+            // Restore: Map click closes the open detail popup
             if (window.activeDetailPopup) {
                 window.activeDetailPopup.remove();
                 window.activeDetailPopup = null;
             }
-            */
         });
 
         window.toggleLayer = function (layerId, checkbox) {
