@@ -1989,7 +1989,7 @@
                     div.innerHTML = `
                         <div class="collapsed-content" style="display:flex; gap:12px;">
                             <div>
-                                <img src="${imgUrl}" style="width:42px; height:42px; filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55);">
+                                <img src="${imgUrl}" style="width:36px; height:36px; filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55); object-fit:contain;">
                                 ${item.local_video_path ? '<div style="position:absolute; bottom:-2px; right:-2px; background:var(--accent); color:white; font-size:8px; padding:2px 4px; border-radius:4px; font-weight:bold;">LIVE</div>' : ''}
                             </div>
                             <div style="flex:1; min-width:0;">
@@ -2009,8 +2009,8 @@
                         </div>
                         <div class="expanded-content" style="display:none; padding:15px 0 5px 0;">
                             <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
-                                <img src="${imgUrl}" style="width:36px; height:36px;">
-                                <div style="font-weight:700; color:#fff; font-size:15px;">${getLoc(item, 'location_name')}</div>
+                                <img src="${imgUrl}" style="width:30px; height:30px; object-fit:contain;">
+                                <div style="font-weight:700; color:#fff; font-size:16px;">${getLoc(item, 'location_name')}</div>
                             </div>
                             
                             <div style="font-size:14px; line-height:1.6; color:#eee; margin-bottom:15px;">
