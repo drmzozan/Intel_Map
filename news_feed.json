@@ -2,6 +2,422 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 37.1667,
+        "lng": 42.1333,
+        "location_name": {
+            "en": "Derik",
+            "tr": "Derik",
+            "ru": "Дерик",
+            "zh": "代里克"
+        },
+        "attack_type": "Displacement and dire humanitarian conditions",
+        "visual_emoji": "📢",
+        "attacker": "Unknown",
+        "summary": {
+            "en": "IDP families from Afrin, Aleppo, Raqqa, and Hasakah are sheltered in Derik with dire humanitarian conditions.",
+            "tr": "Afrin, Halep, Rakka ve Haseke'den gelen IDP aileleri, Derik'te kötü insani koşullarda barınıyor.",
+            "ru": "Семьи ВПЛ из Африна, Алеппо, Ракки и Хасаки укрываются в Дерике в тяжелых гуманитарных условиях.",
+            "zh": "来自阿夫林、阿勒颇、拉卡和哈塞克的境内流离失所者家庭在代里克避难，人道主义条件恶劣。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016079017300897824",
+        "local_video_path": "media/2016079017300897824.mp4",
+        "image_path": null,
+        "date": "2026-01-27 09:21:09+00:00",
+        "original_text": "Hundreds of IDP families, from Afrin, Aleppo, Raqqa and Hasakah, are sheltered in schools and mosques in the border town of Derik in dire humanitarian conditions amid freezing weather conditions without any humanitarian aid. https://t.co/FQgtBjQbez",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 37.1583,
+        "lng": 38.7917,
+        "location_name": {
+            "en": "Şanlıurfa",
+            "tr": "Şanlıurfa",
+            "ru": "Шанлыурфа",
+            "zh": "尚勒乌尔法"
+        },
+        "attack_type": "Gift Exchange",
+        "visual_emoji": "🤝",
+        "attacker": "Öcalan",
+        "summary": {
+            "en": "Öcalan sent a rug from Şanlıurfa to a DEM delegation as a gift.",
+            "tr": "Öcalan, bir DEM heyetine Şanlıurfa'dan bir halı hediye etti.",
+            "ru": "Оджалан отправил ковер из Шанлыурфы делегации DEM в качестве подарка.",
+            "zh": "厄贾兰送给民主选举党代表团一块来自尚勒乌尔法的地毯作为礼物。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016078360879800626",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 09:18:32+00:00",
+        "original_text": "Bahçeli also revealed that Öcalan, through a DEM delegation visiting him last December, sent a gift of a traditional rug woven in Öcalan’s hometown Şanlıurfa. “I thank him for his sincerity on Turkish-Kurdish unity and named this as Feb. 27 Peace and Democracy Rug,” referring to",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.5024,
+        "lng": 40.7477,
+        "location_name": {
+            "en": "Al-Hasakah",
+            "tr": "Haseke",
+            "ru": "Аль-Хасака",
+            "zh": "哈塞克"
+        },
+        "attack_type": "Military advance",
+        "visual_emoji": "⚔️",
+        "attacker": "HTS",
+        "summary": {
+            "en": "HTS forces are 30km from Al-Hasakah city center but have not occupied any territory.",
+            "tr": "HTS güçleri El-Haseke şehir merkezine 30 km mesafede bulunuyor ancak herhangi bir bölgeyi işgal etmedi.",
+            "ru": "Силы ХТШ находятся в 30 км от центра города Аль-Хасака, но не оккупировали никакой территории.",
+            "zh": "HTS 部队距离哈塞克市中心 30 公里，但尚未占领任何领土。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016078172014408126",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 09:17:47+00:00",
+        "original_text": "\"The Syrian Arab Army is now stationed 30 kilometers from the center of Hasakah city with a large force, but it has not yet been able to occupy any place.\" - YPJ spox",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.891,
+        "lng": 38.3536,
+        "location_name": {
+            "en": "Kobani",
+            "tr": "Kobani",
+            "ru": "Кобани",
+            "zh": "科巴尼"
+        },
+        "attack_type": "Military advance towards Kobani thwarted",
+        "visual_emoji": "⚔️",
+        "attacker": "YPJ",
+        "summary": {
+            "en": "YPJ reports destroying two tanks and killing dozens of fighters near Kobani and in Safa village.",
+            "tr": "YPJ, Kobani yakınlarında ve Safa köyünde iki tankı imha ettiğini ve düzinelerce savaşçıyı öldürdüğünü bildirdi.",
+            "ru": "YPJ сообщает об уничтожении двух танков и гибели десятков бойцов возле Кобани и в деревне Сафа.",
+            "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了两辆坦克，并杀死了数十名战士。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016078098844758209",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 09:17:30+00:00",
+        "original_text": "\"During their attempt to advance towards Kobani, at least two of their tanks were destroyed and dozens of their fighters were killed. Between 40 and 50 of their fighters were also killed in the village of Safa and many of their armored vehicles were destroyed.\"  YPJ spox",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.8667,
+        "lng": 39.2167,
+        "location_name": {
+            "en": "Qamishli",
+            "tr": "Kamışlı",
+            "ru": "Камышлы",
+            "zh": "卡米什利"
+        },
+        "attack_type": "Ceasefire Violation",
+        "visual_emoji": "⚔️",
+        "attacker": "HTS/Daesh",
+        "summary": {
+            "en": "YPJ reports ceasefire violations by HTS and Daesh, who allegedly plan to invade West Kurdistan (Rojava).",
+            "tr": "YPJ, HTS ve Daesh'in ateşkesi ihlal ettiğini ve Batı Kürdistan'ı (Rojava) işgal etmeyi planladığını bildirdi.",
+            "ru": "YPJ сообщает о нарушениях прекращения огня со стороны HTS и Даиш, которые предположительно планируют вторжение в Западный Курдистан (Рожава).",
+            "zh": "YPJ 报告说，HTS 和 Daesh 违反了停火协议，他们据称计划入侵西库尔德斯坦（罗贾瓦）。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016077218531758376",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 09:14:00+00:00",
+        "original_text": "“Ever since the ceasefire was announced, the HTS gangs and Daesh have been violating it. Their plot is to invade West Kurdistan [Rojava], but we will not let them - unless they go over our dead bodies.” - YPJ spox https://t.co/SN3l5hMNPM",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.333,
+        "lng": 40.15,
+        "location_name": {
+            "en": "Deir ez-Zor",
+            "tr": "Deir ez-Zor",
+            "ru": "Дейр-эз-Зор",
+            "zh": "代尔祖尔"
+        },
+        "attack_type": "Inspection of roads and bridges",
+        "visual_emoji": "🤝",
+        "attacker": "Syria",
+        "summary": {
+            "en": "Syrian Transport Minister Yarub Badr visited Deir ez-Zor to discuss the state of roads and transportation with Governor Ghassan Al-Sayed Ahmed.",
+            "tr": "Suriye Ulaştırma Bakanı Yarub Badr, Vali Ghassan Al-Sayed Ahmed ile yolların ve ulaşımın durumunu görüşmek üzere Deir ez-Zor'u ziyaret etti.",
+            "ru": "Министр транспорта Сирии Яруб Бадр посетил Дейр-эз-Зор, чтобы обсудить состояние дорог и транспорта с губернатором Гассаном Аль-Сайедом Ахмедом.",
+            "zh": "叙利亚交通部长亚鲁布·巴德尔访问了代尔祖尔，与省长加桑·赛义德·艾哈迈德讨论了道路和交通状况。"
+        },
+        "territory_update": {},
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016079708870336579",
+        "local_video_path": null,
+        "image_path": "media/2016079708870336579.jpg",
+        "date": "2026-01-27 09:23:54+00:00",
+        "original_text": "وزير النقل السوري يعرب بدر يزور دير الزور ويبحث مع المحافظ غسان السيد أحمد واقع الطرقات والجسور وقطاع النقل في المحافظة.\n\n#سوريا\n#دير_الزور https://t.co/NrqLYwg0oV",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.5104,
+        "lng": 36.2783,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Workshop on launching a unified complaints application",
+        "visual_emoji": "🤝",
+        "attacker": "Syria",
+        "summary": {
+            "en": "A workshop was held in Damascus on the \"Wajib\" application for complaints across all ministries.",
+            "tr": "Tüm bakanlıklarda şikayetler için \"Wajib\" uygulaması üzerine Şam'da bir çalıştay düzenlendi.",
+            "ru": "В Дамаске состоялся семинар по приложению \"Wajib\" для подачи жалоб во всех министерствах.",
+            "zh": "在大马士革举办了一场关于“Wajib”应用程序的研讨会，该程序用于处理所有部委的投诉。"
+        },
+        "territory_update": {},
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016072146515099859",
+        "local_video_path": "media/2016072146515099859.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:53:51+00:00",
+        "original_text": "تطبيق \"وجب\" للشكاوى بجميع الوزارات.. محور ورشة عمل في الأمانة العامة لرئاسة الجمهورية.\n\n#سوريا\n#تطبيق_وجب https://t.co/WXR8DPaCWD",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.89941866116659,
+        "lng": 38.321992495760874,
+        "location_name": {
+            "en": "Ain al-Arab",
+            "tr": "Ayn el-Arap",
+            "ru": "Айн-эль-Араб",
+            "zh": "艾因阿拉伯"
+        },
+        "attack_type": "aid convoy",
+        "visual_emoji": "🚚",
+        "attacker": "Sana__gov",
+        "summary": {
+            "en": "An aid convoy loaded with food, medical, and logistical supplies is en route to the Ain al-Arab area in the Aleppo countryside.",
+            "tr": "Gıda, tıbbi ve lojistik malzeme yüklü bir yardım konvoyu, Halep kırsalındaki Ayn el-Arap bölgesine doğru yola çıktı.",
+            "ru": "Автоколонна с продовольствием, медикаментами и материально-техническими средствами направляется в район Айн-эль-Араб в сельской местности Алеппо.",
+            "zh": "一支装载着食品、医疗和后勤物资的援助车队正在前往阿勒颇农村地区的艾因阿拉伯地区。"
+        },
+        "territory_update": {},
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016068564080365664",
+        "local_video_path": "media/2016068564080365664.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:39:37+00:00",
+        "original_text": "قافلة مساعدات محملة بالمواد الغذائية والطبية واللوجستية في طريقها إلى منطقة عين العرب في ريف حلب.\n\n#سوريا \n#حلب https://t.co/hWDeaihSyv",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 24.7136,
+        "lng": 46.6753,
+        "location_name": {
+            "en": "Riyadh",
+            "tr": "Riyad",
+            "ru": "Эр-Рияд",
+            "zh": "利雅得"
+        },
+        "attack_type": "Construction paused",
+        "visual_emoji": "🏗️",
+        "attacker": "Saudi Arabia",
+        "summary": {
+            "en": "Saudi Arabia has paused major construction on the Mukaab cube megaproject in Riyadh.",
+            "tr": "Suudi Arabistan, Riyad'daki Mukaab küp mega projesinin büyük inşaatına ara verdi.",
+            "ru": "Саудовская Аравия приостановила основное строительство мегапроекта Mukaab cube в Эр-Рияде.",
+            "zh": "沙特阿拉伯已暂停在利雅得的 Mukaab 立方体大型项目的重大建设。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016065773005914323",
+        "local_video_path": null,
+        "image_path": "media/2016065773005914323.jpg",
+        "date": "2026-01-27 08:28:31+00:00",
+        "original_text": "NEW: Saudi Arabia has paused major construction on the futuristic Mukaab cube megaproject in Riyadh. \n\nSource: Reuters https://t.co/09kT3BEj2X",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "location_name": {
+            "en": "Beirut",
+            "tr": "Beyrut",
+            "ru": "Бейрут",
+            "zh": "贝鲁特"
+        },
+        "attack_type": "Announcement",
+        "visual_emoji": "📢",
+        "attacker": "Qatar",
+        "summary": {
+            "en": "Qatar announces a $20 million project with IOM to support the voluntary return of 100,000 Syrian refugees in Lebanon.",
+            "tr": "Katar, Lübnan'daki 100.000 Suriyeli mültecinin gönüllü geri dönüşünü desteklemek için IOM ile 20 milyon dolarlık bir proje duyurdu.",
+            "ru": "Катар объявляет о проекте стоимостью 20 миллионов долларов с IOM для поддержки добровольного возвращения 100 000 сирийских беженцев в Ливане.",
+            "zh": "卡塔尔宣布与国际移民组织合作，启动一项耗资 2000 万美元的项目，以支持在黎巴嫩的 10 万叙利亚难民自愿返回家园。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016078256366145686",
+        "local_video_path": null,
+        "image_path": "media/2016078256366145686.jpg",
+        "date": "2026-01-27 09:18:07+00:00",
+        "original_text": "وزير الدولة في وزارة الخارجية القطرية محمد بن عبد العزيز الخليفي:\n\n• نعلن إطلاق مشروع لدعم العودة الطوعية للاجئين السوريين في لبنان، بالتعاون مع المنظمة الدولية للهجرة، وفق برنامج يستهدف قرابة 100 ألف شخص\n\n• تبلغ تكلفة المرحلة الأولى من المشروع نحو 20 مليون دولار، في إطار https://t.co/rmoW4szXNo",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 37.0407,
+        "lng": 41.2143,
+        "location_name": {
+            "en": "Qamishli",
+            "tr": "Kamışlı",
+            "ru": "Камышлы",
+            "zh": "卡米什利"
+        },
+        "attack_type": "Withdrawal of equipment",
+        "visual_emoji": "🚚",
+        "attacker": "Russia",
+        "summary": {
+            "en": "Russia is gradually withdrawing its equipment from Qamishli airport, with some forces redeploying to Khmeimim airbase.",
+            "tr": "Rusya, ekipmanlarını kademeli olarak Kamışlı havaalanından çekiyor, bazı kuvvetler Hmeymim hava üssüne yeniden konuşlandırılıyor.",
+            "ru": "Россия постепенно выводит свою технику из аэропорта Камышли, при этом часть сил перебрасывается на авиабазу Хмеймим.",
+            "zh": "俄罗斯正逐步从卡米什利机场撤出设备，部分部队重新部署到赫梅米姆空军基地。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016075680446828891",
+        "local_video_path": "media/2016075680446828891.mp4",
+        "image_path": null,
+        "date": "2026-01-27 09:07:53+00:00",
+        "original_text": "روسيا تبدأ بسحب عتادها تدريجيا من مطار القامشلي.. متى وضعت قدمها هناك، وكيف حصل ذلك؟ https://t.co/K7wt9XkmZ6",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Death announcement",
+        "visual_emoji": "📢",
+        "attacker": "Syria",
+        "summary": {
+            "en": "Syrian Ministry of Health announces the death of Dr. Omar Onlar, former personal physician to the Turkish President Erdogan.",
+            "tr": "Suriye Sağlık Bakanlığı, Türkiye Cumhurbaşkanı Erdoğan'ın eski özel doktoru Dr. Omar Onlar'ın ölümünü duyurdu.",
+            "ru": "Министерство здравоохранения Сирии объявляет о смерти доктора Омара Онлара, бывшего личного врача президента Турции Эрдогана.",
+            "zh": "叙利亚卫生部宣布土耳其总统埃尔多安的前私人医生奥马尔·昂拉尔博士去世。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016073375156736087",
+        "local_video_path": null,
+        "image_path": "media/2016073375156736087.jpg",
+        "date": "2026-01-27 08:58:44+00:00",
+        "original_text": "وزارة الصحة تنعى الدكتور السوري عمر أونلار، رئيس قسم الأمراض العصبية في جامعة \"يلدرم بيازيد\"، والطبيب الشخصي السابق للرئيس التركي رجب طيب أردوغان، ومسؤول الملف الصحي للاجئين السوريين في تركيا بين عامي 2011 و2014 https://t.co/J2dJmNiBtd",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.3412,
+        "lng": 40.7591,
+        "location_name": {
+            "en": "Al-Safa village",
+            "tr": "El-Safa köyü",
+            "ru": "Деревня Аль-Сафа",
+            "zh": "萨法村"
+        },
+        "attack_type": "SDF drone shelling",
+        "visual_emoji": "🚁",
+        "attacker": "SDF",
+        "summary": {
+            "en": "SDF drone shelling injured 14 in Al-Safa village, south of Al-Hasakah.",
+            "tr": "SDF drone saldırısı Haseke'nin güneyindeki El-Safa köyünde 14 kişiyi yaraladı.",
+            "ru": "В результате обстрела деревни Аль-Сафа к югу от Аль-Хасаки беспилотниками SDF ранены 14 человек.",
+            "zh": "叙利亚民主力量无人机炮击造成哈塞克以南的 Al-Safa 村 14 人受伤。"
+        },
+        "territory_update": {},
+        "confidence": 9.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016071717500658158",
+        "local_video_path": null,
+        "image_path": "media/2016071717500658158.jpg",
+        "date": "2026-01-27 08:52:08+00:00",
+        "original_text": "https://t.co/zZGOjtq5n8",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 33.5138,
         "lng": 36.3116,
         "location_name": {
@@ -238,23 +654,38 @@
         "visual_emoji": "🤝",
         "attacker": "EU",
         "summary": {
-            "en": "Multiple reports on EU-India trade and security agreements in New Delhi.",
-            "tr": "Yeni Delhi'de AB-Hindistan ticaret ve güvenlik anlaşmalarına ilişkin çok sayıda rapor.",
-            "ru": "Многочисленные сообщения о торговых соглашениях и соглашениях в области безопасности между ЕС и Индией в Нью-Дели.",
-            "zh": "有关欧盟与印度在新德里达成的贸易和安全协议的多份报告。"
+            "en": "India and EU deepen partnership in counter-terrorism, maritime, and cyber security.",
+            "tr": "Hindistan ve AB, terörle mücadele, denizcilik ve siber güvenlik alanlarındaki ortaklığı derinleştiriyor.",
+            "ru": "Индия и ЕС углубляют партнерство в борьбе с терроризмом, в морской сфере и кибербезопасности.",
+            "zh": "印度和欧盟深化在反恐、海事和网络安全领域的伙伴关系。"
         },
         "territory_update": {},
-        "confidence": 9.2,
+        "confidence": 10.0,
         "channel": "X (@clashreport)",
-        "tweet_id": "2016064576240992320",
-        "local_video_path": "media/2016064576240992320.mp4",
+        "tweet_id": "2016067523301523624",
+        "local_video_path": "media/2016067523301523624.mp4",
         "image_path": null,
-        "date": "2026-01-27 08:23:46+00:00",
+        "date": "2026-01-27 08:35:28+00:00",
         "original_text": "EU-India Trade & Security Cluster",
         "sources": [
             "X (@clashreport)"
         ],
         "sub_events": [
+            {
+                "summary": {
+                    "en": "India and EU deepen partnership in counter-terrorism, maritime, and cyber security.",
+                    "tr": "Hindistan ve AB, terörle mücadele, denizcilik ve siber güvenlik alanlarındaki ortaklığı derinleştiriyor.",
+                    "ru": "Индия и ЕС углубляют партнерство в борьбе с терроризмом, в морской сфере и кибербезопасности.",
+                    "zh": "印度和欧盟深化在反恐、海事和网络安全领域的伙伴关系。"
+                },
+                "date": "2026-01-27 08:35:28+00:00",
+                "tweet_id": "2016067523301523624",
+                "local_video_path": "media/2016067523301523624.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "India",
+                "original_text": "India's Modi on security and defence pact with the EU:\n\nThis will deepen our partnership in counter-terrorism, maritime, and cyber security.\n\nThe scope of our cooperation in the Indo-Pacific region will further increase. \n\nOur defense companies will realize new opportunities for https://t.co/WCJQM7N2L7"
+            },
             {
                 "summary": {
                     "en": "EU announces a trade deal with India, expecting to cut billions in tariffs.",
@@ -1197,414 +1628,6 @@
         "original_text": "🔴 Suriye İçişleri Bakanlığı, silahlarını teslim ederek statülerini yasallaştırmak isteyen PKK/SDG’li teröristlerin kayıt işlemlerinin başladığını duyurdu. https://t.co/nHoQz8YuO4",
         "sources": [
             "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.847,
-        "lng": 38.343,
-        "location_name": {
-            "en": "Jalabiya",
-            "tr": "Celabiye",
-            "ru": "Джалабия",
-            "zh": "贾拉比耶"
-        },
-        "attack_type": "intensive strikes",
-        "visual_emoji": "🚁",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Turkish drones supported Damascus-affiliated factions attacking Jalabiya, Kharab Ashk, and Zirik villages southeast of Kobani.",
-            "tr": "Türk dronları, Kobani'nin güneydoğusundaki Celabiye, Kharab Ashk ve Zirik köylerine saldıran Şam bağlantılı grupları destekledi.",
-            "ru": "Турецкие беспилотники поддержали связанные с Дамаском группировки, атаковавшие деревни Джалабия, Хараб Ашк и Зирик к юго-востоку от Кобани.",
-            "zh": "土耳其无人机支持大马士革附属派系袭击科巴尼东南部的贾拉比耶、哈拉布阿什克和齐里克村庄。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015797781114315063",
-        "local_video_path": null,
-        "image_path": "media/2015797781114315063.jpg",
-        "date": "2026-01-26 14:43:37+00:00",
-        "original_text": "SDF: Turkish Bayraktar drones provided air support for attacks by Damascus-affiliated factions on the villages of Jalabiya, Kharab Ashk, and Zirik, southeast of the city of Kobani, carrying out intensive strikes targeting these villages. https://t.co/bolaWG6I6W",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.1775,
-        "lng": 41.265,
-        "location_name": {
-            "en": "Al-Hasakah",
-            "tr": "Haseke",
-            "ru": "Хасака",
-            "zh": "哈塞克"
-        },
-        "attack_type": "decree",
-        "visual_emoji": "📢",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Kurdish decree introduces optional language courses, not full instruction, in Kurdish areas.",
-            "tr": "Kürt kararnamesi, Kürt bölgelerinde tam eğitim yerine isteğe bağlı dil kursları getiriyor.",
-            "ru": "Курдский указ вводит факультативные языковые курсы, а не полноценное обучение, в курдских районах.",
-            "zh": "库尔德法令在库尔德地区引入可选语言课程，而不是全面教学。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015796371832353258",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:38:01+00:00",
-        "original_text": "Kurdish decree in practice., optional language course: \"It means Kurdish is not introduced as a real language of instruction in Kurdish areas, but confined to a limited, low-stakes language course.\" https://t.co/PkbnGNLLgC",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.896,
-        "lng": 38.353,
-        "location_name": {
-            "en": "Kobani",
-            "tr": "Kobani",
-            "ru": "Кобани",
-            "zh": "科巴尼"
-        },
-        "attack_type": "Humanitarian Aid",
-        "visual_emoji": "🚚",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Aid convoy that entered Ain al-Arab (Kobani) yesterday departed after unloading its humanitarian aid.",
-            "tr": "Dün Ayn el-Arab'a (Kobani) giren yardım konvoyu, insani yardım malzemelerini boşalttıktan sonra ayrıldı.",
-            "ru": "Гуманитарный конвой, прибывший вчера в Айн-эль-Араб (Кобани), покинул город после выгрузки гуманитарной помощи.",
-            "zh": "昨天进入艾因阿拉伯（科巴尼）的援助车队在卸载人道主义援助后离开。"
-        },
-        "territory_update": {},
-        "confidence": 8.0,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2015800281657643169",
-        "local_video_path": null,
-        "image_path": "media/2015800281657643169.jpg",
-        "date": "2026-01-26 14:53:33+00:00",
-        "original_text": "خروج القافلة الإغاثية التي دخلت أمس إلى منطقة عين العرب في ريف حلب الشرقي بعد إفراغ كامل حمولتها من المساعدات الإنسانية.\n\n#سوريا \n#حلب https://t.co/vZdvPfpJHr",
-        "sources": [
-            "X (@Sana__gov)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.8,
-        "lng": 36.5,
-        "location_name": {
-            "en": "Idlib",
-            "tr": "İdlib",
-            "ru": "Идлиб",
-            "zh": "伊德利卜"
-        },
-        "attack_type": "Report",
-        "visual_emoji": "📢",
-        "attacker": "clashreport",
-        "summary": {
-            "en": "READ MORE: Link to clashreport external page",
-            "tr": "DAHA FAZLA BİLGİ: Clashreport harici sayfasına bağlantı",
-            "ru": "ЧИТАТЬ ДАЛЕЕ: Ссылка на внешнюю страницу clashreport",
-            "zh": "阅读更多：指向 clashreport 外部页面的链接"
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015799010972365275",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:48:30+00:00",
-        "original_text": "READ MORE👇\n\nhttps://t.co/Ff386C4jNu",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 31.7683,
-        "lng": 35.2137,
-        "location_name": {
-            "en": "Jerusalem",
-            "tr": "Kudüs",
-            "ru": "Иерусалим",
-            "zh": "耶路撒冷"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Israel",
-        "summary": {
-            "en": "Israeli Foreign Ministry states that Syrian Kurds are facing displacement and violence.",
-            "tr": "İsrail Dışişleri Bakanlığı, Suriyeli Kürtlerin yerinden edilme ve şiddetle karşı karşıya olduğunu belirtiyor.",
-            "ru": "Министерство иностранных дел Израиля заявляет, что сирийские курды сталкиваются с перемещением и насилием.",
-            "zh": "以色列外交部表示，叙利亚库尔德人正面临流离失所和暴力。"
-        },
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2015798225089765598",
-        "local_video_path": null,
-        "image_path": "media/2015798225089765598.jpg",
-        "date": "2026-01-26 14:45:23+00:00",
-        "original_text": "🔴 İsrail Dışişleri Bakanlığı: (Suriye ordusunun PKK/SDG terör örgütüne operasyonu hk.)\n\n''Suriye’deki Kürtler; sırf Kürt oldukları için yerinden edilmeyle, baskıyla ve şiddetle karşı karşıya kalıyor.\n\nİnsan hakları ayrımcılık yapmaz. Sessizlik tarafsızlık değildir.'' https://t.co/IxEEZuLC3U",
-        "sources": [
-            "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.88037587768128,
-        "lng": 40.78553742906201,
-        "location_name": {
-            "en": "Al-Safa village (near Çil Agha)",
-            "tr": "El-Safa köyü (Çil Ağa yakınında)",
-            "ru": "Деревня Аль-Сафа (около Чил Ага)",
-            "zh": "Al-Safa 村（靠近 Çil Agha）"
-        },
-        "attack_type": "Shelling",
-        "visual_emoji": "💥",
-        "attacker": "SDF",
-        "summary": {
-            "en": "One person killed and others injured in SDF shelling of Al-Safa village in Al-Hasakah countryside.",
-            "tr": "Haseke kırsalındaki El-Safa köyünün SDF tarafından bombalanması sonucu bir kişi öldü, diğerleri yaralandı.",
-            "ru": "Один человек погиб и несколько человек получили ранения в результате обстрела деревни Аль-Сафа в провинции Хасаке со стороны SDF.",
-            "zh": "在哈塞克郊区，SDF 对 Al-Safa 村的炮击导致一人死亡，多人受伤。"
-        },
-        "territory_update": null,
-        "confidence": 10.0,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2015795650466656648",
-        "local_video_path": "media/2015787671310712881.mp4",
-        "image_path": "media/2015795650466656648.jpg",
-        "date": "2026-01-26 14:35:09+00:00",
-        "original_text": "مقتل شخص وإصابة آخرين جراء قصف تنظيم قسد لقرية الصفا في ريف الحسكة. https://t.co/bEPBHlXzza",
-        "sources": [
-            "X (@Sana__gov)",
-            "X (@ConflictTR)",
-            "X (@AJSyriaNowN)"
-        ]
-    },
-    {
-        "action": "Irrelevant",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": null,
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": null,
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015798028993540350",
-        "local_video_path": "media/2015798028993540350.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:44:36+00:00",
-        "original_text": "Carney:\n\nWe are starting to fundamentally transform our economy.\n\nBuilding a stronger, more resilient, more independent Canada. https://t.co/notdwKjAFc",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.8889,
-        "lng": 39.2358,
-        "location_name": {
-            "en": "Kobani",
-            "tr": "Kobani",
-            "ru": "Кобани",
-            "zh": "科巴尼"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "SDF",
-        "summary": {
-            "en": "SDF chief commemorates Kobani's resistance, stating people are still under attack.",
-            "tr": "SDF şefi, Kobani'nin direnişini anıyor ve halkın hala saldırı altında olduğunu belirtiyor.",
-            "ru": "Глава SDF вспоминает сопротивление Кобани, заявляя, что люди все еще находятся под атакой.",
-            "zh": "SDF 负责人纪念科巴尼的抵抗运动，并表示人民仍然受到袭击。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015796170082181457",
-        "local_video_path": "media/2015796170082181457.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:37:13+00:00",
-        "original_text": "\"On the anniversary of Kobani’s victorious resistance against ISIS, the people of Kobani are still under heavy attacks.\nThe world must honor Kobani’s sacrifice with its commitment.\nWe salute Kobani’s resistance from the heart.\" - SDF chief @MazloumAbdi \nhttps://t.co/52XtLqMfJA",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.4811,
-        "lng": 41.2544,
-        "location_name": {
-            "en": "Tal Hamis",
-            "tr": "Tel Hamis",
-            "ru": "Тель-Хамис",
-            "zh": "塔尔哈米斯"
-        },
-        "attack_type": "Counteroffensive",
-        "visual_emoji": "⚔️",
-        "attacker": "SDF",
-        "summary": {
-            "en": "YPG reported to be advancing towards Tal Hamis in a counteroffensive.",
-            "tr": "YPG'nin bir karşı saldırıda Tel Hamis'e doğru ilerlediği bildirildi.",
-            "ru": "Сообщается, что YPG продвигается к Таль-Хамису в контратаке.",
-            "zh": "据报道，YPG 在反攻中向塔尔哈米斯推进。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015794903091990720",
-        "local_video_path": "media/2015794903091990720.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:32:11+00:00",
-        "original_text": "Seems YPG advancing towards Tal Hamis in counteroffensive  https://t.co/FBZPiSbPVQ",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.2333,
-        "lng": 37.15,
-        "location_name": {
-            "en": "Sheikh Maqsoud (Aleppo)",
-            "tr": "Şeyh Maksut (Halep)",
-            "ru": "Шейх Максуд (Алеппо)",
-            "zh": "谢赫·马克苏德（阿勒颇）"
-        },
-        "attack_type": "Torture to death",
-        "visual_emoji": "👮",
-        "attacker": "SNA",
-        "summary": {
-            "en": "Four residents of Sheikh Maqsoud reportedly tortured to death in SNA detention centers.",
-            "tr": "Şeyh Maksut'tan dört sakinin, SNA gözaltı merkezlerinde işkenceyle öldürüldüğü bildirildi.",
-            "ru": "Сообщается, что четверо жителей Шейх-Максуда были замучены до смерти в центрах содержания под стражей SNA.",
-            "zh": "据报道，谢赫·马克苏德的四名居民在 SNA 拘留中心被折磨致死。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015794806929113490",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:31:48+00:00",
-        "original_text": "ANHA: Four residents of Sheikh Maqsoud and Ashrafieh were reportedly tortured to death in detention centers run by the Syrian Interim Government after being arrested during recent attacks on Sheikh Maqsoud in Aleppo.",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.51242208592497,
-        "lng": 40.75464160519061,
-        "location_name": {
-            "en": "Hasakah countryside",
-            "tr": "Haseke kırsalı",
-            "ru": "Окрестности Хасаки",
-            "zh": "哈塞克郊区"
-        },
-        "attack_type": "Drone strike",
-        "visual_emoji": "🚁",
-        "attacker": "SNA",
-        "summary": {
-            "en": "Villages in Hasakah countryside struck by a drone; three civilians injured.",
-            "tr": "Haseke kırsalındaki köyler bir drone ile vuruldu; üç sivil yaralandı.",
-            "ru": "Села в окрестностях Хасаки подверглись удару дрона, трое мирных жителей получили ранения.",
-            "zh": "哈塞克郊区的村庄遭到无人机袭击；三名平民受伤。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015794700301533502",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:31:22+00:00",
-        "original_text": "ANHA correspondent reported that villages in the Hasaka countryside were struck three times by a drone operated by forces affiliated with the Syrian Interim Government, resulting in injuries to three civilians.",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.95,
-        "lng": 39.0167,
-        "location_name": {
-            "en": "Raqqa",
-            "tr": "Rakka",
-            "ru": "Ракка",
-            "zh": "拉卡"
-        },
-        "attack_type": "Settling status",
-        "visual_emoji": "📢",
-        "attacker": "Syria",
-        "summary": {
-            "en": "Former QSD members gather in Raqqa to settle their status with the Syrian government.",
-            "tr": "Eski QSD üyeleri, Suriye hükümeti ile durumlarını düzeltmek için Rakka'da toplanıyor.",
-            "ru": "Бывшие члены QSD собираются в Ракке, чтобы урегулировать свой статус с сирийским правительством.",
-            "zh": "前 QSD 成员聚集在拉卡，以解决他们与叙利亚政府的地位问题。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2015796439029371112",
-        "local_video_path": "media/2015796439029371112.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:38:17+00:00",
-        "original_text": "وسط إقبال واسع.. عناصر منتمون سابقا لقسد يتجمّعون لتسوية أوضاعهم في الرقة https://t.co/83IWZWwpOF",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.95,
-        "lng": 39.0278,
-        "location_name": {
-            "en": "Al-Aqtan Prison (Raqqa)",
-            "tr": "El-Aktan Hapishanesi (Rakka)",
-            "ru": "Тюрьма Аль-Актана (Ракка)",
-            "zh": "阿克坦监狱 (拉卡)"
-        },
-        "attack_type": "Release of prisoners",
-        "visual_emoji": "🔗",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Journalist Firas al-Barjas and humanitarian activist Abdullah Darbouk released from Al-Aqtan Prison in Raqqa.",
-            "tr": "Gazeteci Firas el-Barjas ve insani yardım aktivisti Abdullah Darbuk, Rakka'daki El-Aktan Hapishanesi'nden serbest bırakıldı.",
-            "ru": "Журналист Фирас аль-Барджас и гуманитарный активист Абдулла Дарбук освобождены из тюрьмы Аль-Актан в Ракке.",
-            "zh": "记者 Firas al-Barjas 和人道主义活动家 Abdullah Darbouk 从拉卡的 Al-Aqtan 监狱获释。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2015795172508942487",
-        "local_video_path": null,
-        "image_path": "media/2015795172508942487.jpg",
-        "date": "2026-01-26 14:33:15+00:00",
-        "original_text": "إطلاق سراح الصحفي فراس البرجس والناشط الإنساني عبد الله دربوك من سجن الأقطان في الرقة https://t.co/m1bNtf0ckX",
-        "sources": [
-            "X (@AJSyriaNowN)"
         ]
     }
 ]

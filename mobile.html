@@ -1214,29 +1214,64 @@
             if (window.hoverPopup) window.hoverPopup.remove();
             if (window.activeDetailPopup) window.activeDetailPopup.remove();
 
-            const popup = new mapboxgl.Popup({ className: 'event-popup', maxWidth: '320px', closeButton: true, closeOnClick: false })
-                .setLngLat(coords)
-                .setHTML(`
-                    <div style="cursor:pointer;" onclick="event.stopPropagation(); expandEvent('${props.tweet_id}')">
-                       ${props.local_video_path ?
+            // CLUSTER LOGIC
+            const isCluster = props.sub_events && props.sub_events.length > 0;
+            let htmlContent = `<div style="cursor:pointer;" onclick="event.stopPropagation(); expandEvent('${props.tweet_id}')">`;
+
+            if (isCluster) {
+                htmlContent += `
+                    <div style="background:${safeColor}22; padding:8px 12px; border-bottom:1px solid #333; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:10px; font-weight:900; color:${safeColor}; letter-spacing:1px; text-transform:uppercase;">INTEL CLUSTER (${props.sub_events.length})</span>
+                    </div>
+                    <div style="max-height:200px; overflow-y:auto; background:rgba(0,0,0,0.1);">
+                `;
+
+                props.sub_events.forEach((ev, i) => {
+                    const evTime = timeAgo(ev.date);
+                    htmlContent += `
+                        <div style="padding:10px 12px; border-bottom: ${i < props.sub_events.length - 1 ? '1px solid #222' : 'none'};">
+                             <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                                <span style="font-size:9px; color:#555; font-weight:800;">REPORT #${props.sub_events.length - i}</span>
+                                <span style="font-size:9px; color:#444;">${evTime}</span>
+                             </div>
+                             <div style="font-size:11px; color:#eee; line-height:1.4;">
+                                ${getLoc(ev, 'summary').substring(0, 80)}${getLoc(ev, 'summary').length > 80 ? '...' : ''}
+                             </div>
+                        </div>
+                    `;
+                });
+
+                htmlContent += `
+                    </div>
+                    <div style="padding:10px; background:#111; color:${safeColor}; font-size:10px; text-align:center; font-weight:800; border-top:1px solid #222;">CLICK FOR DETAILS ↗</div>
+                `;
+            } else {
+                htmlContent += `
+                   ${props.local_video_path ?
                         `<div style="width:100%; height:160px; position:relative; background:#000; border-radius:6px 6px 0 0; overflow:hidden;">
-                            <video id="${uniqueVidId}" src="${props.local_video_path}" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
-                          </div>`
+                        <video id="${uniqueVidId}" src="${props.local_video_path}" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+                      </div>`
                         : (props.image_path ? `<div style="width:100%; height:160px; background:url('${props.image_path}') center/cover; border-radius:6px 6px 0 0;"></div>` : '')
                     }
-                       <div style="padding:10px;">
-                           <div style="display:flex; justify-content:space-between; margin-bottom:5px; align-items:center;">
-                               <div style="display:flex; align-items:center; gap:5px;">
-                                   <span class="attacker-badge" style="background:${safeColor}">${props.attacker}</span>
-                               </div>
-                               <span style="font-size:11px; color:#888;">${timeStr}</span>
+                   <div style="padding:10px;">
+                       <div style="display:flex; justify-content:space-between; margin-bottom:5px; align-items:center;">
+                           <div style="display:flex; align-items:center; gap:5px;">
+                               <span class="attacker-badge" style="background:${safeColor}">${props.attacker}</span>
                            </div>
-                           <h3 style="margin:0 0 5px 0; font-size:14px; line-height:1.4; color:#fff;">${getLoc(props, 'location_name')}</h3>
-                           <p style="font-size:12px; color:#ccc; margin:0;">${getLoc(props, 'summary') ? getLoc(props, 'summary').substring(0, 80) + '...' : 'Click for details'}</p>
-                           <div style="font-size:11px; color:#3498db; margin-top:8px; font-weight:bold;">Click to Expand ↗</div>
+                           <span style="font-size:11px; color:#888;">${timeStr}</span>
                        </div>
-                    </div>
-                `)
+                       <h3 style="margin:0 0 5px 0; font-size:14px; line-height:1.4; color:#fff;">${getLoc(props, 'location_name')}</h3>
+                       <p style="font-size:12px; color:#ccc; margin:0;">${getLoc(props, 'summary') ? getLoc(props, 'summary').substring(0, 80) + '...' : 'Click for details'}</p>
+                       <div style="font-size:11px; color:#3498db; margin-top:8px; font-weight:bold;">Click to Expand ↗</div>
+                   </div>
+                `;
+            }
+
+            htmlContent += `</div>`;
+
+            const popup = new mapboxgl.Popup({ className: 'event-popup', maxWidth: '320px', closeButton: true, closeOnClick: false })
+                .setLngLat(coords)
+                .setHTML(htmlContent)
                 .addTo(map);
 
             window.activeDetailPopup = popup;
@@ -2137,7 +2172,8 @@
                             tweet_id: item.tweet_id,
                             icon_url: imgUrl,
                             confidence: item.confidence || 4.0,
-                            sources: item.sources || [item.channel || "Unknown"]
+                            sources: item.sources || [item.channel || "Unknown"],
+                            sub_events: item.sub_events || []
                         }
                     });
                 });
