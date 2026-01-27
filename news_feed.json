@@ -1,5 +1,85 @@
 [
     {
+        "action": "Irrelevant",
+        "confidence": 7.4,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016054737389473985",
+        "local_video_path": null,
+        "image_path": "media/2016054737389473985.jpg",
+        "date": "2026-01-27 07:44:40+00:00",
+        "original_text": "#SONDAKİKA\n\n🔴 Kuzey Kore'nin balistik füze ateşlediği bildiriliyor. https://t.co/CNESjo2z4F",
+        "lat": null,
+        "lng": null,
+        "sources": [
+            "X (@ConflictTR)",
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.5303,
+        "lng": 35.7681,
+        "location_name": {
+            "en": "Latakia",
+            "tr": "Lazkiye",
+            "ru": "Латакия",
+            "zh": "拉塔基亚"
+        },
+        "attack_type": "Drug Seizure",
+        "visual_emoji": "🚩",
+        "attacker": "Syria",
+        "summary": {
+            "en": "Syrian Interior Ministry seized a large amount of cocaine on a ship from Brazil in Latakia.",
+            "tr": "Suriye İçişleri Bakanlığı, Lazkiye'de Brezilya'dan gelen bir gemide büyük miktarda kokaine el koydu.",
+            "ru": "Министерство внутренних дел Сирии изъяло крупную партию кокаина на судне из Бразилии в Латакии.",
+            "zh": "叙利亚内政部在拉塔基亚一艘来自巴西的船上查获了大量可卡因。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016050425439338830",
+        "local_video_path": null,
+        "image_path": "media/2016050425439338830.jpg",
+        "date": "2026-01-27 07:27:32+00:00",
+        "original_text": "🔴 Suriye İçişleri Bakanlığı, ismi açıklanmayan komşu bir ülkeye ulaştırılmak üzere Brezilya’dan yola çıkan bir gemide yüklü miktarda kokaine el koyduğunu duyurdu. https://t.co/WXyA8M2G4m",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9042,
+        "lng": 116.4074,
+        "location_name": {
+            "en": "Beijing",
+            "tr": "Pekin",
+            "ru": "Пекин",
+            "zh": "北京"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "USA",
+        "summary": {
+            "en": "US Ambassador to China David Perdue reports personnel changes in China's Central Military Commission.",
+            "tr": "ABD'nin Çin Büyükelçisi David Perdue, Çin'in Merkezi Askeri Komisyonu'ndaki personel değişikliklerini rapor ediyor.",
+            "ru": "Посол США в Китае Дэвид Пердью сообщает о кадровых изменениях в Центральной военной комиссии Китая.",
+            "zh": "美国驻华大使戴维·珀杜报告了中国中央军事委员会的人事变动。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016055760929648868",
+        "local_video_path": "media/2016055760929648868.mp4",
+        "image_path": null,
+        "date": "2026-01-27 07:48:44+00:00",
+        "original_text": "US Ambassador to China David Perdue:\n\nOf the seven people on that Central Military Commission, only Xi Jinping remains.\n\nVice-Chairman Zhang was a lifelong family friend of Xi Jinping. For this to happen is a major development in China.\n\nI take him at his word that there’s a https://t.co/CTb18GTHff",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
         "action": "CREATE",
         "target_id": null,
         "lat": 36.6092,
@@ -20,7 +100,7 @@
             "zh": "由于叙利亚民主力量对哈塞克省南部的 Al-Safa 村庄进行无人机炮击，代尔祖尔国家医院昨晚接收了 14 名伤员。"
         },
         "territory_update": null,
-        "confidence": 7.5,
+        "confidence": 8.9,
         "channel": "X (@AJSyriaNowN)",
         "tweet_id": "2016046122213540253",
         "local_video_path": null,
@@ -28,7 +108,8 @@
         "date": "2026-01-27 07:10:26+00:00",
         "original_text": "مقطع مصور يُظهر استقبال مشفى دير الزور الوطني 14 مصابا ليلة أمس جراء قصف بالمسيّرات نفّذته قسد على قرية الصفا في ريف الحسكة الجنوبي https://t.co/6vR5fVl8zu",
         "sources": [
-            "X (@AJSyriaNowN)"
+            "X (@AJSyriaNowN)",
+            "X (@clashreport)"
         ]
     },
     {
@@ -599,38 +680,6 @@
         "original_text": "Kurdish decree in practice., optional language course: \"It means Kurdish is not introduced as a real language of instruction in Kurdish areas, but confined to a limited, low-stakes language course.\" https://t.co/PkbnGNLLgC",
         "sources": [
             "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.8667,
-        "lng": 38.7833,
-        "location_name": {
-            "en": "Ain al-Arab",
-            "tr": "Ayn el-Arap",
-            "ru": "Айн-эль-Араб",
-            "zh": "艾因阿拉伯"
-        },
-        "attack_type": "Airstrike with IHA's (Drones)",
-        "visual_emoji": "🚁",
-        "attacker": "Syria",
-        "summary": {
-            "en": "Syrian Army responded to SDF attacks on civilian settlements, targeting SDF positions with UAVs.",
-            "tr": "Suriye Ordusu, SDG'nin sivil yerleşimlere yönelik saldırılarına karşılık vererek, SDG mevzilerini İHA'larla hedef aldı.",
-            "ru": "Сирийская армия ответила на нападения СДС на гражданские поселения, нанеся удары беспилотниками по позициям СДС.",
-            "zh": "叙利亚军队回应了叙利亚民主力量对平民定居点的袭击，用无人机瞄准了叙利亚民主力量的阵地。"
-        },
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@khalildervPRESS)",
-        "tweet_id": "2015690500079005705",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 07:37:19+00:00",
-        "original_text": "Suriye Ordusu, SDG’nin sivil yerleşimlere yönelik saldırılarına karşılık verdi. \n\nSuriye Ordus örgüte ait mevzileri İHA’lar ile hedef alınd.",
-        "sources": [
-            "X (@khalildervPRESS)"
         ]
     },
     {
@@ -1491,70 +1540,6 @@
         "original_text": "وزارة الداخلية:\n\nقيادة الأمن الداخلي في محافظة دير الزور تباشر في استقبال العناصر المنتسبين لقسد، والراغبين في تسوية أوضاعهم ضمن المركز المخصص في المحافظة، بعد تسليم أسلحتهم إلى الجهات الأمنية https://t.co/K3wPkFSbep",
         "sources": [
             "X (@AJSyriaNowN)"
-        ]
-    },
-    {
-        "action": "Irrelevant",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": {
-            "en": null,
-            "tr": null,
-            "ru": null,
-            "zh": null
-        },
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": {
-            "en": null,
-            "tr": null,
-            "ru": null,
-            "zh": null
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015781476579660082",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 13:38:50+00:00",
-        "original_text": "Australia Day was marked by “Invasion Day” rallies and anti-immigration protests, as Indigenous advocates, nationalist groups, and Prime Minister Anthony Albanese issued competing messages of unity and division.\n\nhttps://t.co/u2sFz1kx6x",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Remnant_Regime",
-        "summary": {
-            "en": "Syrian Foreign Ministry accuses PKK/SDG of stalling tactics and prolonging the crisis.",
-            "tr": "Suriye Dışişleri Bakanlığı, PKK/SDG'yi oyalama taktikleri uygulamakla ve krizi uzatmakla suçluyor.",
-            "ru": "Министерство иностранных дел Сирии обвиняет РПК/СДС в тактике затягивания и затягивании кризиса.",
-            "zh": "叙利亚外交部指责PKK/SDG采取拖延战术并延长危机。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2015779830487265482",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 13:32:17+00:00",
-        "original_text": "🔴 Suriye Dışişleri Bakanlığı:\n\nPKK/SDG terör örgütüne birden fazla süre tanıdık, ancak onlar oyalama ve geciktirme taktiğiyle karşılık verdiler.\n\nPKK/SDG'nin oyalama taktikleri herhangi bir olumlu sonuç vermedi.\n\nPKK/SDG’nin kullandığı 'güven' argümanı, krizi uzatmayı amaçlayan",
-        "sources": [
-            "X (@ConflictTR)"
         ]
     }
 ]
