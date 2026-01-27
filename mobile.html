@@ -1310,6 +1310,16 @@
                 .setHTML(htmlContent)
                 .addTo(map);
 
+            // FORCE PLAY ALL VIDEOS (Mobile)
+            setTimeout(() => {
+                const el = popup.getElement();
+                if (el) {
+                    el.querySelectorAll('video').forEach(v => {
+                        v.play().catch(e => { });
+                    });
+                }
+            }, 60);
+
             window.activeDetailPopup = popup;
             popup.on('close', () => {
                 window.activeDetailPopup = null;

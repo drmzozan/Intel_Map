@@ -1770,6 +1770,16 @@
                 // Ensure it is added to map if it was removed (edge case)
                 if (!popup.isOpen()) popup.addTo(map);
 
+                // FORCE PLAY ALL VIDEOS (Trigger after UI update)
+                setTimeout(() => {
+                    const el = popup.getElement();
+                    if (el) {
+                        el.querySelectorAll('video').forEach(v => {
+                            v.play().catch(e => console.log("Autoplay blocked", e));
+                        });
+                    }
+                }, 60);
+
             } else {
                 // CREATE NEW (First Time Only)
                 // Remove hover popup first
@@ -1779,6 +1789,16 @@
                     .setLngLat(coords)
                     .setHTML(htmlContent)
                     .addTo(map);
+
+                // FORCE PLAY ALL VIDEOS
+                setTimeout(() => {
+                    const el = popup.getElement();
+                    if (el) {
+                        el.querySelectorAll('video').forEach(v => {
+                            v.play().catch(e => console.log("Autoplay blocked", e));
+                        });
+                    }
+                }, 60);
 
                 // Attach Bridge Listeners ONLY ONCE
                 const popupEl = popup.getElement();
