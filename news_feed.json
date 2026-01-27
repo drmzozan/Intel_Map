@@ -2,6 +2,220 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Official exchange rates for new and old Syrian pounds",
+        "visual_emoji": "📢",
+        "attacker": "Syria",
+        "summary": {
+            "en": "The Central Bank of Syria released the official exchange rates for the new and old Syrian pound on Tuesday, January 27, 2026.",
+            "tr": "Suriye Merkez Bankası, 27 Ocak 2026 Salı günü yeni ve eski Suriye lirası için resmi döviz kurlarını yayınladı.",
+            "ru": "Центральный банк Сирии опубликовал официальные обменные курсы новой и старой сирийской лиры во вторник, 27 января 2026 года.",
+            "zh": "2026 年 1 月 27 日星期二，叙利亚中央银行发布了新旧叙利亚镑的官方汇率。"
+        },
+        "territory_update": {},
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016061191810949407",
+        "local_video_path": null,
+        "image_path": "media/2016061191810949407.jpg",
+        "date": "2026-01-27 08:10:19+00:00",
+        "original_text": "النشرة الرسمية الصادرة عن مصرف سوريا المركزي اليوم الثلاثاء 27-1-2026 لأسعار الصرف بالليرة الجديدة والليرة القديمة.\n\n#أسعار_الصرف\n#مصرف_سوريا_المركزي https://t.co/5hOfpfDjak",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.891,
+        "lng": 38.3536,
+        "location_name": {
+            "en": "Ain al-Arab",
+            "tr": "Ayn el-Arap",
+            "ru": "Айн-эль-Араб",
+            "zh": " عين العرب"
+        },
+        "attack_type": "aid convoy",
+        "visual_emoji": "🚚",
+        "attacker": "Syria",
+        "summary": {
+            "en": "SANA reports the central committee is sending a convoy with food, medical and logistic supplies to Ain al-Arab in Aleppo.",
+            "tr": "SANA, merkez komitenin Halep'teki Ayn el-Arab'a gıda, tıbbi ve lojistik malzeme taşıyan bir konvoy gönderdiğini bildirdi.",
+            "ru": "SANA сообщает, что центральный комитет направляет конвой с продовольствием, медикаментами и материально-техническими средствами в Айн-эль-Араб в Алеппо.",
+            "zh": "SANA 报告说，中央委员会正在向阿勒颇的艾因阿拉伯派遣一支载有食品、医疗和后勤物资的车队。"
+        },
+        "territory_update": {},
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016058590704853336",
+        "local_video_path": null,
+        "image_path": "media/2016058590704853336.jpg",
+        "date": "2026-01-27 07:59:59+00:00",
+        "original_text": "مراسل سانا: اللجنة المركزية لاستجابة حلب ترسل قافلة مساعدات جديدة محملة بالمواد الغذائية والطبية واللوجستية إلى منطقة عين العرب في ريف حلب.\n\n#سوريا \n#حلب https://t.co/JKACqIZdH7",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 28.6139,
+        "lng": 77.209,
+        "location_name": {
+            "en": "New Delhi",
+            "tr": "Yeni Delhi",
+            "ru": "Нью-Дели",
+            "zh": "新德里"
+        },
+        "attack_type": "Trade agreement",
+        "visual_emoji": "🤝",
+        "attacker": "India",
+        "summary": {
+            "en": "India and the EU have signed a free trade agreement in New Delhi.",
+            "tr": "Hindistan ve AB, Yeni Delhi'de bir serbest ticaret anlaşması imzaladı.",
+            "ru": "Индия и ЕС подписали соглашение о свободной торговле в Нью-Дели.",
+            "zh": "印度和欧盟在新德里签署了自由贸易协定。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016061085321740792",
+        "local_video_path": "media/2016061085321740792.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:09:54+00:00",
+        "original_text": "India's Modi on trade deal with the EU:\n\nToday, India has concluded the largest-ever Free Trade Agreement in its history. https://t.co/AQPAZyVh8S",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 28.6358,
+        "lng": 77.2245,
+        "location_name": {
+            "en": "New Delhi",
+            "tr": "Yeni Delhi",
+            "ru": "Нью-Дели",
+            "zh": "新德里"
+        },
+        "attack_type": "Security and Defence Pact",
+        "visual_emoji": "🤝",
+        "attacker": "EU",
+        "summary": {
+            "en": "EU and India sign security and defence pact in New Delhi.",
+            "tr": "AB ve Hindistan, Yeni Delhi'de güvenlik ve savunma paktı imzaladı.",
+            "ru": "ЕС и Индия подписывают пакт о безопасности и обороне в Нью-Дели.",
+            "zh": "欧盟和印度在新德里签署安全和国防协议。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016058527232450645",
+        "local_video_path": "media/2016058527232450645.mp4",
+        "image_path": null,
+        "date": "2026-01-27 07:59:44+00:00",
+        "original_text": "NOW: EU and India sign security and defence pact in New Delhi. https://t.co/S8akBoLP46",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.3403,
+        "lng": 40.8203,
+        "location_name": {
+            "en": "Al-Safa village",
+            "tr": "El-Safa köyü",
+            "ru": "Деревня Аль-Сафа",
+            "zh": "萨法村"
+        },
+        "attack_type": "SDF drone shelling on Al-Safa village",
+        "visual_emoji": "💥",
+        "attacker": "SDF",
+        "summary": {
+            "en": "SDF drone shelling injured 14 in Al-Safa village, south of Al-Hasakah.",
+            "tr": "SDF drone bombardımanı, Haseke'nin güneyindeki El-Safa köyünde 14 kişiyi yaraladı.",
+            "ru": "В результате обстрела деревни Аль-Сафа к югу от Аль-Хасаки беспилотниками SDF ранены 14 человек.",
+            "zh": "叙利亚民主力量对哈塞克省南部的 Al-Safa 村庄进行无人机炮击，造成 14 人受伤。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016056694598443410",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 07:52:27+00:00",
+        "original_text": "READ MORE👇\n\nhttps://t.co/vbpmHQwxwZ",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "Irrelevant",
+        "target_id": null,
+        "lat": null,
+        "lng": null,
+        "location_name": null,
+        "attack_type": null,
+        "visual_emoji": null,
+        "attacker": null,
+        "summary": null,
+        "territory_update": null,
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016060153779351684",
+        "local_video_path": "media/2016060153779351684.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:06:11+00:00",
+        "original_text": "🔴 Avrupa Birliği ile Hindistan,  “tüm anlaşmaların anası” olarak nitelendirilen bir ticaret anlaşması yaptı. https://t.co/ABIPRIpVuC",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": -25.2744,
+        "lng": 133.7751,
+        "location_name": {
+            "en": "Australia",
+            "tr": "Avustralya",
+            "ru": "Австралия",
+            "zh": "澳大利亚"
+        },
+        "attack_type": "Visa Cancellation",
+        "visual_emoji": "📢",
+        "attacker": "Australia",
+        "summary": {
+            "en": "Australia canceled the visa of an Israeli influencer known for anti-Islam posts, citing that hate speech would not be allowed.",
+            "tr": "Avustralya, İslam karşıtı paylaşımlarıyla bilinen İsrailli bir influencer’ın vizesini, nefret söylemine izin verilmeyeceği gerekçesiyle iptal etti.",
+            "ru": "Австралия аннулировала визу израильского инфлюенсера, известного своими антиисламскими постами, заявив, что ненавистнические высказывания недопустимы.",
+            "zh": "澳大利亚取消了一位以反伊斯兰帖子闻名的以色列网红的签证，理由是不允许发表仇恨言论。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016057704398082093",
+        "local_video_path": null,
+        "image_path": "media/2016057704398082093.jpg",
+        "date": "2026-01-27 07:56:27+00:00",
+        "original_text": "🔴 Avustralya, İslam karşıtı paylaşımlarıyla bilinen İsrailli bir influencer’ın vizesini, “nefret yaymaya izin verilmeyeceği” gerekçesiyle iptal etti. https://t.co/58jyr34k3C",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 36.1833,
         "lng": 37.15,
         "location_name": {
@@ -34,7 +248,7 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 36.20,
+        "lat": 36.2,
         "lng": 37.15,
         "location_name": {
             "en": "Aleppo Governorate",
@@ -1322,220 +1536,6 @@
         "image_path": null,
         "date": "2026-01-26 14:09:25+00:00",
         "original_text": "مشاهد لمتحف الرقة تظهر حالة القطع الأثرية الموجودة فيه.\n\n#سوريا \n#الرقة https://t.co/PMuDrEj3t8",
-        "sources": [
-            "X (@Sana__gov)"
-        ]
-    },
-    {
-        "action": "IRRELEVANT",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": {
-            "en": null,
-            "tr": null,
-            "ru": null,
-            "zh": null
-        },
-        "attack_type": null,
-        "visual_emoji": "📢",
-        "attacker": null,
-        "summary": {
-            "en": "Albanian PM's statement in Israel about hostages and Hamas.",
-            "tr": "Arnavutluk Başbakanı'nın İsrail'de rehineler ve Hamas hakkında yaptığı açıklama.",
-            "ru": "Заявление премьер-министра Албании в Израиле о заложниках и ХАМАС.",
-            "zh": "阿尔巴尼亚总理在以色列就人质和哈马斯发表声明。"
-        },
-        "territory_update": null,
-        "confidence": 8.4,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015789702444441795",
-        "local_video_path": "media/2015789702444441795.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:11:31+00:00",
-        "original_text": "Albanian PM Edi Rama in Israel:\n\nWe stood by hostages and their families and against the neo-Nazi butchers of Hamas, whose actions have brought unbearable suffering not only for Israelis but for a very long time for our Palestinian sisters and brothers.\n\nThey were dehumanized by https://t.co/h6ewRmWynS",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "Irrelevant",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": {
-            "en": null,
-            "tr": null,
-            "ru": null,
-            "zh": null
-        },
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": {
-            "en": null,
-            "tr": null,
-            "ru": null,
-            "zh": null
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015788984660590666",
-        "local_video_path": "media/2015788984660590666.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:08:40+00:00",
-        "original_text": "Albanian PM Edi Rama in Israel:\n\nAlbanians didn’t gather in rallies of hate against Israel. \n\nThey didn’t project their anger on Jewish visitors.\n\nThis stands in sharp contrast with what happened in many other parts of Europe.\n\nOur country stands unshakeably against anti-Semitism https://t.co/EEP1A1f6pH",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "Irrelevant",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": null,
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": null,
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015783200149184730",
-        "local_video_path": null,
-        "image_path": "media/2015783200149184730.jpg",
-        "date": "2026-01-26 13:45:41+00:00",
-        "original_text": "BREAKING: The IDF says Master Sgt. Ran Gvili’s body has been identified and is being returned to Israel for burial.\n\nThere are no more any captives in Gaza. https://t.co/9kzcwbtbFa",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.4804,
-        "lng": 40.759,
-        "location_name": {
-            "en": "Hasakah",
-            "tr": "Haseke",
-            "ru": "Хасака",
-            "zh": "哈塞克"
-        },
-        "attack_type": "Report",
-        "visual_emoji": "📢",
-        "attacker": "Rudaw",
-        "summary": {
-            "en": "Rudaw is reporting live from Hasakah.",
-            "tr": "Rudaw, Haseke'den canlı yayın yapıyor.",
-            "ru": "Рудав ведет прямую трансляцию из Хасаки.",
-            "zh": "鲁道夫正在从哈塞克进行直播。"
-        },
-        "territory_update": null,
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015785644904112620",
-        "local_video_path": null,
-        "image_path": "media/2015785644904112620.jpg",
-        "date": "2026-01-26 13:55:23+00:00",
-        "original_text": "Rudaw live from Hasakah https://t.co/nGJxINdwii",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": {
-            "en": "Unknown",
-            "tr": "Bilinmeyen",
-            "ru": "Неизвестно",
-            "zh": "未知"
-        },
-        "attack_type": "Unknown",
-        "visual_emoji": "⚠️",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Report: Read more at the provided URL.",
-            "tr": "Rapor: Sağlanan URL'den daha fazlasını okuyun.",
-            "ru": "Отчет: Читайте больше по предоставленному URL-адресу.",
-            "zh": "报告：请访问提供的 URL 阅读更多内容。"
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015787678659183072",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:03:28+00:00",
-        "original_text": "READ MORE👇\n\nhttps://t.co/voCdlRwP2u",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "Irrelevant",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": {
-            "en": null,
-            "tr": null,
-            "ru": null,
-            "zh": null
-        },
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": {
-            "en": "Irrelevant",
-            "tr": "Alakasız",
-            "ru": "Нерелевантный",
-            "zh": "不相关"
-        },
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2015785457468981548",
-        "local_video_path": null,
-        "image_path": "media/2015785457468981548.jpg",
-        "date": "2026-01-26 13:54:39+00:00",
-        "original_text": "🔴 İsrail, Uzman Çavuş Ran Gvili'nin cansız bedeninin teşhis edildiğini ve cenaze töreni için İsrail'e getirildiğini duyurdu.\n\nBöylece Gazze'de hiç rehine kalmadı. https://t.co/v59LCEMTz3",
-        "sources": [
-            "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.95,
-        "lng": 39.0167,
-        "location_name": {
-            "en": "Raqqa",
-            "tr": "Rakka",
-            "ru": "Ракка",
-            "zh": "拉卡"
-        },
-        "attack_type": "Decline in services",
-        "visual_emoji": "⚠️",
-        "attacker": "Civilians",
-        "summary": {
-            "en": "Residents of Al-Tabqah in Raqqa suffer from deteriorating services during QSD's control.",
-            "tr": "Rakka'daki Tabka sakinleri, QSD'nin kontrolü sırasında kötüleşen hizmetlerden muzdarip.",
-            "ru": "Жители города Аль-Табка в Ракке страдают от ухудшения обслуживания во время контроля QSD.",
-            "zh": "拉卡塔卜卡居民在 QSD 控制期间遭受服务恶化之苦。"
-        },
-        "territory_update": {},
-        "confidence": 8.0,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2015784587108954263",
-        "local_video_path": "media/2015784587108954263.mp4",
-        "image_path": null,
-        "date": "2026-01-26 13:51:11+00:00",
-        "original_text": "معاناة أهالي الطبقة في الرقة من تردي الخدمات خلال فترة سيطرة تنظيم قسد.\n\n#سوريا \n#الرقة https://t.co/oRhrfZi9qg",
         "sources": [
             "X (@Sana__gov)"
         ]

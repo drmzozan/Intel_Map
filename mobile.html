@@ -303,273 +303,122 @@
         }
 
         /* MOBILE OPTIMIZATION */
+        /* MOBILE OPTIMIZATION (Consolidated) */
         @media (max-width: 768px) {
             #map {
                 left: 0 !important;
                 width: 100% !important;
+                position: fixed !important;
+                height: 100dvh !important;
+                top: 0;
             }
 
             #sidebar {
                 transform: translateX(-100%);
-                width: 85%;
-                max-width: 320px;
-                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                z-index: 1000;
+                width: 85% !important;
+                max-width: 320px !important;
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+                z-index: 2100 !important;
+                background: #0f0f0f !important;
                 box-shadow: 20px 0 50px rgba(0, 0, 0, 0.5);
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
             }
 
             #sidebar.active {
-                transform: translateX(0);
-            }
-
-            #mobile-menu-btn {
-                display: flex !important;
+                transform: translateX(0) !important;
             }
 
             #layer-control {
-                top: 0;
-                bottom: 0;
-                right: 0;
-                height: 100%;
-                width: 75%;
-                max-width: 280px;
-                max-height: none;
-                /* Reset */
+                position: fixed;
+                top: 0 !important;
+                bottom: 0 !important;
+                right: 0 !important;
+                height: 100dvh !important;
+                width: 80% !important;
+                max-width: 280px !important;
+                background: rgba(15, 15, 15, 0.98) !important;
+                backdrop-filter: blur(10px) !important;
                 transform: translateX(100%);
-                /* Start hidden off-screen right */
-                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                border-radius: 0;
-                border-left: 1px solid var(--border);
-                background: rgba(15, 15, 15, 0.95);
-                display: block !important;
-                /* Always block, toggle via transform */
-                z-index: 1001;
-                /* Above map */
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+                z-index: 2200 !important;
                 padding: 20px;
-                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+                border-left: 1px solid #333;
+                box-sizing: border-box;
+                display: block !important;
             }
 
             #layer-control.active {
-                display: block;
-                /* Ensure visibility */
-                transform: translateX(0);
+                transform: translateX(0) !important;
             }
 
-            /* Smaller Popups on Mobile */
-            .mapboxgl-popup {
-                max-width: 200px !important;
-            }
-
-            .mapboxgl-popup-content {
-                padding: 0 !important;
-            }
-
-
-
-            /* Adjust stats for mobile */
-            #stats-panel {
-                padding: 15px;
-            }
-
-            .feed-item {
-                padding: 15px;
-                /* Compact feed */
-            }
-
-            /* Close Button Style */
             .sidebar-close-btn {
                 position: absolute;
-                top: 20px;
-                right: 20px;
+                top: 15px;
+                right: 15px;
                 width: 38px;
                 height: 38px;
-                background: rgba(255, 255, 255, 0.08);
-                border: 1px solid rgba(255, 255, 255, 0.15);
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.2);
                 color: #fff;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 font-size: 24px;
-                cursor: pointer;
-                z-index: 2200;
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-                backdrop-filter: blur(8px);
+                z-index: 100;
+                backdrop-filter: blur(5px);
             }
 
-            .sidebar-close-btn:active {
-                transform: scale(0.9);
-                background: var(--accent);
-                border-color: var(--accent);
-            }
-        }
-
-        #mobile-menu-btn {
-            display: none;
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            z-index: 999;
-            background: var(--accent);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 14px;
-            font-weight: 700;
-            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
-            cursor: pointer;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-        }
-
-        #mobile-layer-btn {
-            display: none;
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            z-index: 999;
-            background: var(--accent);
-            /* Same red as menu button */
-            color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 14px;
-            font-weight: 700;
-            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
-            cursor: pointer;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-        }
-
-        /* MOBILE OPTIMIZATION - MOVED TO BOTTOM FOR PRECEDENCE */
-        @media (max-width: 768px) {
-
-            /* 1. Global Icon Scaling - Reverted to 0.75 for clarity */
-            .mapboxgl-marker canvas,
-            .mapboxgl-marker img,
-            .mapboxgl-marker div {
-                transform: scale(0.75) !important;
-                transform-origin: center bottom;
-            }
-
-            /* 2. Map Container Fix (Black Bar Removal) */
-            #map {
-                position: fixed !important;
-                height: 100dvh !important;
-                width: 100vw !important;
-                top: 0;
-                left: 0;
-                touch-action: manipulation;
-            }
-
-            /* 3. Sidebar Width & Behavior */
-            #sidebar {
-                transform: translateX(-100%);
-                width: 100% !important;
-                /* Full width */
-                max-width: none !important;
-                z-index: 2100;
-                /* Higher than layer button (2000) */
-                background: #0f0f0f !important;
-                /* Force Opaque on Mobile */
-            }
-
-            #sidebar.active {
-                transform: translateX(0);
-            }
-
-            /* 4. Layer Control Drawer (Right Side) */
-            #layer-control {
-                top: 0 !important;
-                bottom: 0 !important;
-                right: 0 !important;
-                height: 100% !important;
-                width: 60% !important;
-                /* Smaller width */
-                max-width: 240px !important;
-                max-height: none !important;
-                max-height: none !important;
-                transform: translateX(100%);
-                display: block !important;
-                padding: 20px;
-                z-index: 1001;
-            }
-
-            #layer-control.active {
-                transform: translateX(0);
-            }
-
-            /* 5. Hide Mapbox UI Buttons (Zoom, Compass, Attribution) */
-            .mapboxgl-ctrl-top-right,
-            .mapboxgl-ctrl-top-left,
-            .mapboxgl-ctrl-bottom-right,
-            .mapboxgl-ctrl-bottom-left {
-                display: none !important;
-            }
-
-            /* 5. Feed Items (Twitter Style) */
-            .feed-item {
-                padding: 15px !important;
-                display: block !important;
-                /* Forces vertical stack */
-            }
-
-            .feed-item>div:first-child {
-                /* Avatar area */
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-bottom: 8px;
-            }
-
-            .feed-icon {
-                /* Tactical icons stay fixed size */
-                width: 36px !important;
-                height: 36px !important;
-                object-fit: contain;
-                flex-shrink: 0;
-            }
-
-            .feed-media-img {
-                /* Content images stay full width */
-                width: 100% !important;
-                height: auto !important;
-                margin-top: 8px;
-                border-radius: 6px;
-                display: block;
-            }
-
-            /* 6. Buttons Visibility */
-            #mobile-menu-btn {
+            #mobile-menu-btn,
+            #mobile-layer-btn {
                 display: flex !important;
+                position: fixed;
+                top: 15px;
+                z-index: 1500;
+                background: var(--accent);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                padding: 10px 14px;
+                font-weight: 700;
+                font-size: 14px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            #mobile-menu-btn {
+                left: 15px;
             }
 
             #mobile-layer-btn {
-                display: flex !important;
-                z-index: 2000 !important;
+                right: 15px;
             }
 
-            /* 7. Modal Fix */
             #modal-content {
                 width: 92% !important;
                 max-width: 500px !important;
-                height: auto !important;
                 max-height: 85vh !important;
                 padding: 20px !important;
-                margin: auto !important;
                 border-radius: 16px !important;
-                border: 1px solid #333 !important;
-                overflow-y: auto !important;
                 box-sizing: border-box !important;
+                position: relative;
             }
 
+            .feed-icon {
+                width: 36px !important;
+                height: 36px !important;
+            }
 
+            .feed-media-img {
+                width: 100% !important;
+                border-radius: 12px;
+            }
 
-            /* 8. Popups */
-            .mapboxgl-popup {
-                max-width: 220px !important;
+            .mapboxgl-marker canvas,
+            .mapboxgl-marker img {
+                transform: scale(0.8) !important;
             }
         }
     </style>
@@ -1110,7 +959,7 @@
                 const displayImg = imgUrl || (item ? item.icon_url : '');
 
                 content.innerHTML = `
-                    <button onclick="closeModal()" style="position:absolute; top:15px; right:15px; background:rgba(255,255,255,0.1); color:white; border:none; width:32px; height:32px; border-radius:50%; font-size:20px; cursor:pointer; z-index:100; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.2);">×</button>
+                    <button onclick="event.stopPropagation(); closeModal()" style="position:absolute; top:15px; right:15px; background:rgba(255,255,255,0.1); color:white; border:none; width:32px; height:32px; border-radius:50%; font-size:20px; cursor:pointer; z-index:100; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.2);">×</button>
                     
                     <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px; padding-right:40px;">
                          ${displayImg ? `<img src="${displayImg}" class="feed-icon" style="width:36px; height:36px; filter: drop-shadow(0 0 5px ${safeColor}55);">` : ''}
