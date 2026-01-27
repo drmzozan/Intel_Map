@@ -2710,9 +2710,7 @@
                 updateStandardMarkers(features);
 
                 // Handle Resize (Debounced) - Redirect check
-                window.onresize = () => {
-                    if (window.innerWidth <= 768) window.location.href = "mobile.html";
-                };
+                // Removed aggressive onresize redirect
 
                 // HEATMAP FILTERING: Only Clashes/Conflicts
                 const conflictTypes = ["Small Arms", "Sniper", "Artillery", "MLRS", "Mortar", "Tank", "IFV", "Airstrike", "Drone", "Cruise Missile", "Ballistic Missile", "IED", "Execution", "Seizure", "Capture", "Raid"];
