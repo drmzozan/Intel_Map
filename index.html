@@ -1510,97 +1510,73 @@
 
         function openDetailModal(imgUrl, attacker, location_name, summary, date, tweet_id, channel, image_path, local_video_path, original_text, sources, confidence) {
             try {
-                // alert("Debug: Opening Modal for " + location_name); // Debug Line
                 const modal = document.getElementById('news-modal');
                 const content = document.getElementById('modal-content');
-                if (!modal || !content) { alert("Error: Modal DOM missing"); return; }
+                if (!modal || !content) return;
 
-                const ago = timeAgo(date || new Date().toISOString());
-
-                // MEDIA LOGIC
-                let mediaHtml = '';
-                // Valid Video?
-                if (local_video_path && local_video_path.length > 5) {
-                    mediaHtml = `<div style="width:100%; max-height:500px; background:#000; display:flex; justify-content:center; margin-bottom:15px; border-radius:8px; overflow:hidden;">
-                                    <video src="${local_video_path}" controls autoplay style="max-width:100%; max-height:500px;"></video>
-                                </div>`;
-                } else if (image_path && image_path.length > 5) {
-                    mediaHtml = `<img src="${image_path}" style="width:100%; max-height:450px; object-fit:contain; border-radius:8px; margin-bottom:15px; background:#000;">`;
-                } else {
-                    mediaHtml = `<div style="width:100%; height:200px; background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:8px; margin-bottom:15px; color:#555;">
-                    <span style="font-size:30px; margin-bottom:10px;">📡</span> 
-                    <span>NO TACTICAL FOOTAGE</span>
-                    </div>`;
-                }
-
-                // LINK
-                const link = `https://twitter.com/i/status/${tweet_id}`;
-
-                // Color Logic
+                const item = latestNews.find(n => n.tweet_id == tweet_id);
                 const safeColor = (colorMapping && colorMapping[attacker]) ? colorMapping[attacker] : '#fff';
-
-                // LOCALIZATION FIX: Handle Object or String
                 const lang = window.currentLang || 'en';
-                const locName = (typeof location_name === 'object') ? (location_name[lang] || location_name['en'] || Object.values(location_name)[0]) : location_name;
-                const locSummary = (typeof summary === 'object') ? (summary[lang] || summary['en'] || Object.values(summary)[0]) : summary;
-
                 const t = translations[lang] || translations['en'];
 
-                // SOURCE & CONFIDENCE LOGIC
-                const sourceList = sources && sources.length ? sources.join(", ") : (channel || "Unknown");
-                const sourceCount = sources ? sources.length : 1;
-                const confScore = parseFloat(confidence) || 4.0;
-                let confColor = '#f39c12';
-                let confLabel = 'Medium';
-                if (confScore >= 7.5) { confColor = '#2ecc71'; confLabel = 'High'; }
-                if (confScore < 4.0) { confColor = '#e74c3c'; confLabel = 'Low'; }
+                // LOCALIZATION
+                const locName = getLoc({ location_name }, 'location_name');
 
-                content.innerHTML = `
-                <div style="border-bottom:1px solid #333; padding-bottom:15px; margin-bottom:15px;">
-                    <h2 style="color:${safeColor}; margin:0; font-size:24px;">${locName} Report</h2>
-                    <div style="color:#aaa; font-size:14px; margin-top:5px;">📍 ${locName} • ${ago} • ${t.modal_source}: ${sourceList}</div>
-                </div>
-                
-                ${mediaHtml}
-                
-                <div style="display:flex; gap:20px; flex-wrap:wrap;">
-                    <div style="flex:2; min-width:300px;">
-                        <h3 style="color:#fff; border-left:4px solid #3498db; padding-left:10px;">${t.modal_report}</h3>
-                        <p style="font-size:16px; line-height:1.6; color:#eee;">
-                            ${locSummary}
-                        </p>
-                        
-                        <!-- RELIABILITY BOX -->
-                        <div style="margin-top:20px; background:#111; padding:15px; border-radius:8px; border:1px solid #333; display:flex; gap:20px; align-items:center;">
-                            <div style="text-align:center;">
-                                <div style="font-size:24px; font-weight:bold; color:${confColor};">${confScore.toFixed(1)}</div>
-                                <div style="font-size:10px; color:#aaa; text-transform:uppercase;">AI Score</div>
+                let html = `
+                    <div style="border-bottom:1px solid #333; padding-bottom:15px; margin-bottom:20px;">
+                        <h2 style="color:${safeColor}; margin:0; font-size:26px;">${locName} Cluster</h2>
+                        <div style="color:#888; font-size:14px; margin-top:5px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">
+                            ${attacker} • ${item ? item.attack_type : ''}
+                        </div>
+                    </div>
+                `;
+
+                // CLUSTER LOGIC
+                const events = (item && item.sub_events && item.sub_events.length > 0) ? item.sub_events : [{
+                    summary, date, tweet_id, channel, image_path, local_video_path, attacker, sources, confidence
+                }];
+
+                events.forEach((ev, idx) => {
+                    const ago = timeAgo(ev.date || new Date().toISOString());
+                    const evSummary = getLoc(ev, 'summary');
+                    const evLink = `https://twitter.com/i/status/${ev.tweet_id}`;
+
+                    let mediaHtml = '';
+                    if (ev.local_video_path) {
+                        mediaHtml = `<div style="width:100%; max-height:400px; background:#000; display:flex; justify-content:center; margin-bottom:15px; border-radius:8px; overflow:hidden; border:1px solid #333;">
+                                        <video src="${ev.local_video_path}" controls style="max-width:100%; max-height:400px;"></video>
+                                    </div>`;
+                    } else if (ev.image_path) {
+                        mediaHtml = `<img src="${ev.image_path}" style="width:100%; max-height:400px; object-fit:contain; border-radius:8px; margin-bottom:15px; background:#000; border:1px solid #333;">`;
+                    }
+
+                    html += `
+                        <div style="margin-bottom:40px; background:rgba(255,255,255,0.02); padding:20px; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                                <div style="font-size:11px; color:#666; font-weight:800; text-transform:uppercase; letter-spacing:1px;">REPORT #${events.length - idx} • ${ago}</div>
+                                <div style="font-size:11px; color:#444;">via ${ev.channel || channel}</div>
                             </div>
-                            <div style="flex:1;">
-                                <div style="font-size:12px; color:#ccc; margin-bottom:5px;"><strong>${t.modal_reliability}:</strong> <span style="color:${confColor}">${confLabel}</span></div>
-                                <div style="font-size:11px; color:#888;">
-                                    <strong>${t.modal_sources_count}:</strong> ${sourceCount}<br>
-                                    <span style="font-style:italic;">${sourceList}</span>
-                                </div>
+
+                            ${mediaHtml}
+
+                            <div style="font-size:17px; line-height:1.6; color:#eee; margin-bottom:20px;">
+                                ${evSummary}
+                            </div>
+
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <a href="${evLink}" target="_blank" style="color:#555; text-decoration:none; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 10px; border:1px solid #333; border-radius:4px; transition:0.2s;">
+                                    ${t.modal_view_source} ↗
+                                </a>
+                                <div style="font-size:10px; color:#333; font-family:monospace;">ID: ${ev.tweet_id}</div>
                             </div>
                         </div>
+                    `;
+                });
 
-                    </div>
-                    
-                    <div style="flex:1; min-width:200px; background:#222; padding:15px; border-radius:8px; height:fit-content;">
-                        <h4 style="margin-top:0; color:#aaa;">${t.modal_details}</h4>
-                        <p><strong>${t.modal_actor}:</strong> ${attacker}</p>
-                        <p><strong>${t.modal_time}:</strong> ${ago}</p>
-                        <hr style="border:0; border-top:1px solid #444;">
-                        <a href="${link}" target="_blank" style="display:block; text-align:center; background:#3498db; color:white; padding:12px; border-radius:4px; text-decoration:none; font-weight:bold; transition:0.2s;">${t.modal_view_source}</a>
-                    </div>
-                </div>
-            `;
+                content.innerHTML = html;
                 modal.style.display = 'flex';
-                // console.log("Modal set to flex");
             } catch (e) {
-                alert("Modal Error: " + e.message);
-                console.error(e);
+                console.error("Modal Error:", e);
             }
         }
 

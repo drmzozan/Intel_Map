@@ -625,6 +625,8 @@
                 "subtitle": "Real-time Analysis & Monitoring",
                 "control_index": "Strategic Control Index",
                 "layers_title": "LAYERS",
+                "related_reports": "Related Reports",
+                "view_source": "View Source",
                 "ago": "ago", "just_now": "Just now", "mins": "mins", "hours": "hours", "days": "days", "months": "months", "years": "years"
             },
             "tr": {
@@ -632,6 +634,8 @@
                 "subtitle": "Gerçek Zamanlı Analiz & İzleme",
                 "control_index": "Stratejik Kontrol Endeksi",
                 "layers_title": "KATMANLAR",
+                "related_reports": "İlgili Raporlar",
+                "view_source": "Kaynağı Gör",
                 "ago": "önce", "just_now": "Az önce", "mins": "dakika", "hours": "saat", "days": "gün", "months": "ay", "years": "yıl"
             },
             "ru": {
@@ -639,6 +643,8 @@
                 "subtitle": "Анализ и мониторинг в реальном времени",
                 "control_index": "Индекс стратегического контроля",
                 "layers_title": "СЛОИ",
+                "related_reports": "Связанные отчеты",
+                "view_source": "Посмотреть источник",
                 "ago": "назад", "just_now": "Только что", "mins": "мин", "hours": "час", "days": "дн", "months": "мес", "years": "лет"
             },
             "zh": {
@@ -646,6 +652,8 @@
                 "subtitle": "实时分析与监测",
                 "control_index": "战略控制指数",
                 "layers_title": "图层",
+                "related_reports": "相关报告",
+                "view_source": "查看来源",
                 "ago": "前", "just_now": "刚刚", "mins": "分钟", "hours": "小时", "days": "天", "months": "月", "years": "年"
             }
         };
@@ -1133,49 +1141,66 @@
                 const content = document.getElementById('modal-content');
                 if (!modal || !content) return;
 
-                const ago = timeAgo(date || new Date().toISOString());
-                const safeColor = (colorMapping && colorMapping[attacker]) ? colorMapping[attacker] : '#fff';
-
-                // Find original item for extra visuals if needed
                 const item = latestNews.find(n => n.tweet_id == tweet_id);
-                const displayImg = imgUrl || (item ? item.icon_url : '');
+                const safeColor = (colorMapping && colorMapping[attacker]) ? colorMapping[attacker] : '#fff';
+                const lang = window.currentLang || 'en';
+                const t = translations[lang] || translations['en'];
 
-                content.innerHTML = `
+                // 1. Header (Common for cluster)
+                let html = `
                     <button onclick="event.stopPropagation(); closeModal()" style="position:absolute; top:15px; right:15px; background:rgba(255,255,255,0.1); color:white; border:none; width:32px; height:32px; border-radius:50%; font-size:20px; cursor:pointer; z-index:100; display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.2);">×</button>
                     
-                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:15px; padding-right:40px;">
-                         ${displayImg ? `<img src="${displayImg}" class="feed-icon" style="width:36px; height:36px; filter: drop-shadow(0 0 5px ${safeColor}55);">` : ''}
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px; padding-right:40px;">
+                         ${imgUrl ? `<img src="${imgUrl}" class="feed-icon" style="width:40px; height:40px; filter: drop-shadow(0 0 8px ${safeColor}88);">` : ''}
                          <div>
-                            <div style="font-weight:800; color:#fff; font-size:17px; line-height:1.2;">${getLoc({ location_name }, 'location_name')}</div>
-                            <div style="font-size:10px; color:#aaa; text-transform:uppercase; margin-top:3px; letter-spacing:0.5px;">${attacker} • ${ago}</div>
+                            <div style="font-weight:900; color:#fff; font-size:18px; line-height:1.2; letter-spacing:0.5px;">${getLoc({ location_name }, 'location_name')}</div>
+                            <div style="font-size:11px; color:#888; text-transform:uppercase; margin-top:4px; letter-spacing:1px; font-weight:700;">${attacker} • ${item ? item.attack_type : ''}</div>
                          </div>
                     </div>
-
-                    <div style="font-size:14px; line-height:1.6; color:#eee; margin-bottom:15px;">
-                        ${getLoc({ summary }, 'summary')}
-                    </div>
-
-                    ${local_video_path ? `
-                        <div style="width:100%; border-radius:12px; overflow:hidden; background:#000; margin-bottom:15px; border:1px solid #222;">
-                            <video src="${local_video_path}" controls muted playsinline autoplay style="width:100%; display:block;"></video>
-                        </div>
-                    ` : (image_path ? `
-                        <img src="${image_path}" class="feed-media-img" style="border-radius:12px; margin-bottom:15px; border:1px solid #222;">
-                    ` : '')}
-
-                    <div style="background:#1a1a1a; padding:12px; border-radius:12px; border:1px solid #333; display:flex; flex-direction:column; gap:8px;">
-                        <div style="display:flex; justify-content:space-between; font-size:11px;">
-                            <span style="color:#666; font-weight:600;">SOURCE CHANNEL</span>
-                            <span style="color:#aaa;">${channel}</span>
-                        </div>
-                        <a href="https://twitter.com/i/status/${tweet_id}" target="_blank" onclick="event.stopPropagation();" style="display:block; text-align:center; background:rgba(52, 152, 219, 0.15); color:#3498db; padding:10px; border-radius:8px; text-decoration:none; font-size:13px; font-weight:800; border:1px solid rgba(52, 152, 219, 0.3); margin-top:5px;">ENTER SOURCE ↗</a>
-                    </div>
                 `;
+
+                // 2. Sub-Events or Single Event
+                const events = (item && item.sub_events && item.sub_events.length > 0) ? item.sub_events : [{
+                    summary, date, tweet_id, channel, image_path, local_video_path, attacker
+                }];
+
+                if (item && item.sub_events) {
+                    html += `<div style="color:${safeColor}; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:2px; margin-bottom:15px; border-bottom:1px solid ${safeColor}33; padding-bottom:5px;">${t.related_reports} (${events.length})</div>`;
+                }
+
+                events.forEach((ev, idx) => {
+                    const evDate = timeAgo(ev.date || new Date().toISOString());
+                    html += `
+                        <div style="margin-bottom:25px; padding-bottom:20px; border-bottom: ${idx < events.length - 1 ? '1px dashed #222' : 'none'};">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                                <div style="font-size:10px; color:#555; font-weight:800; letter-spacing:1px;">REPORT #${events.length - idx} • ${evDate}</div>
+                                <div style="font-size:10px; color:#444;">via ${ev.channel || channel}</div>
+                            </div>
+
+                            <div style="font-size:15px; line-height:1.6; color:#ddd; margin-bottom:15px; font-weight:500;">
+                                ${getLoc(ev, 'summary')}
+                            </div>
+
+                            ${ev.local_video_path ? `
+                                <div style="width:100%; border-radius:12px; overflow:hidden; background:#000; margin-bottom:12px; border:1px solid #333; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+                                    <video src="${ev.local_video_path}" controls muted playsinline style="width:100%; display:block;"></video>
+                                </div>
+                            ` : (ev.image_path ? `
+                                <img src="${ev.image_path}" class="feed-media-img" style="border-radius:12px; margin-bottom:12px; border:1px solid #333; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+                            ` : '')}
+
+                            <a href="https://twitter.com/i/status/${ev.tweet_id}" target="_blank" onclick="event.stopPropagation();" 
+                               style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.05); color:#aaa; padding:8px 15px; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; border:1px solid rgba(255,255,255,0.1); transition:0.2s;">
+                               ${t.view_source} ↗
+                            </a>
+                        </div>
+                    `;
+                });
+
+                content.innerHTML = html;
                 modal.style.display = 'flex';
-                // console.log("Modal set to flex");
             } catch (e) {
-                alert("Modal Error: " + e.message);
-                console.error(e);
+                console.error("Modal Error:", e);
             }
         }
 

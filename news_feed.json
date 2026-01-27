@@ -2,6 +2,230 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.3116,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Meeting to discuss the restoration of the Hejaz Railway",
+        "visual_emoji": "🤝",
+        "attacker": "Türkiye",
+        "summary": {
+            "en": "Turkish Ambassador Nuh Yılmaz met with Syrian Transport Minister Yarub Bedir to discuss restoring the Hejaz Railway.",
+            "tr": "Türkiye'nin Şam Büyükelçisi Nuh Yılmaz, Suriye Ulaştırma Bakanı Yarub Bedir ile Hicaz Demiryolu'nun yeniden ihyasını görüştü.",
+            "ru": "Посол Турции Нух Йылмаз встретился с министром транспорта Сирии Ярубом Бедиром для обсуждения восстановления Хиджазской железной дороги.",
+            "zh": "土耳其驻大马士革大使努·伊尔马兹会见了叙利亚交通部长亚鲁卜·贝迪尔，讨论了恢复希贾兹铁路的问题。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016078173805384046",
+        "local_video_path": null,
+        "image_path": "media/2016078173805384046.jpg",
+        "date": "2026-01-27 09:17:48+00:00",
+        "original_text": "🔴 Türkiye’nin Şam Büyükelçisi Nuh Yılmaz, Suriye Ulaştırma Bakanı Yarub Bedir’i ziyaret ederek, Hicaz Demiryolu’nun yeniden ihyasını görüştü. https://t.co/WiptWczGUp",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 31.769,
+        "lng": 35.2163,
+        "location_name": {
+            "en": "Jerusalem",
+            "tr": "Kudüs",
+            "ru": "Иерусалим",
+            "zh": "耶路撒冷"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Israel",
+        "summary": {
+            "en": "Israel is preparing for talks with the Trump administration for a new 10-year security agreement.",
+            "tr": "İsrail, mevcut anlaşmanın yerine geçecek yeni bir 10 yıllık güvenlik anlaşması için Trump yönetimiyle görüşmelere hazırlanıyor.",
+            "ru": "Израиль готовится к переговорам с администрацией Трампа о новом 10-летнем соглашении о безопасности.",
+            "zh": "以色列正准备与特朗普政府就一项新的 10 年安全协议进行谈判，以取代现有协议。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016074563054874857",
+        "local_video_path": null,
+        "image_path": "media/2016074563054874857.jpg",
+        "date": "2026-01-27 09:03:27+00:00",
+        "original_text": "🔴 İsrail, 2028’de sona erecek mevcut anlaşmanın yerine geçecek yeni bir 10 yıllık güvenlik anlaşması için Trump yönetimiyle görüşmelere hazırlanıyor.\n\nABD’den yıllık 3,8 milyar dolar nakit yardıma dayanmak yerine İsrail, “ücretsiz para”yı kademeli olarak azaltmak ve ortak silah https://t.co/ZgqXjyWRii",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9208,
+        "lng": 32.8541,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "TUSAŞ",
+        "summary": {
+            "en": "TUSAŞ General Manager announced plans to deliver 22 HÜRKUŞ aircraft this year.",
+            "tr": "TUSAŞ Genel Müdürü, bu yıl 22 adet HÜRKUŞ uçağı teslim etmeyi planladıklarını duyurdu.",
+            "ru": "Генеральный директор TUSAŞ объявил о планах поставки 22 самолетов HÜRKUŞ в этом году.",
+            "zh": "TUSAŞ 总经理宣布计划今年交付 22 架 HÜRKUŞ 飞机。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016068611803168963",
+        "local_video_path": "media/2016068611803168963.mp4",
+        "image_path": null,
+        "date": "2026-01-27 08:39:48+00:00",
+        "original_text": "🔴 TUSAŞ Genel Müdürü Mehmet Demiroğlu:\n\n\"HÜRKUŞ için bu sene içerisinde bir değil, 22 tane teslimat yapmayı planlıyoruz.\" https://t.co/RCx7TFeJEU",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9208,
+        "lng": 32.8541,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "TUSAŞ",
+        "summary": {
+            "en": "TUSAŞ General Manager Mehmet Demiroğlu stated that KAAN's P1 and P2 prototypes will start flights this year.",
+            "tr": "TUSAŞ Genel Müdürü Mehmet Demiroğlu, KAAN'ın P1 ve P2 prototiplerinin bu yıl uçuşlara başlayacağını belirtti.",
+            "ru": "Генеральный директор TUSAŞ Мехмет Демироглу заявил, что прототипы KAAN P1 и P2 начнут полеты в этом году.",
+            "zh": "TUSAŞ 总经理 Mehmet Demiroğlu 表示，KAAN 的 P1 和 P2 原型机将于今年开始飞行。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016067777379860821",
+        "local_video_path": null,
+        "image_path": "media/2016067777379860821.jpg",
+        "date": "2026-01-27 08:36:29+00:00",
+        "original_text": "🔴 TUSAŞ Genel Müdürü Mehmet Demiroğlu:\n\nKAAN’ın P1 ve P2 prototipleri bu yıl uçuşlara başlayacak. https://t.co/04nFxuSNzy",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 31.769,
+        "lng": 35.2163,
+        "location_name": {
+            "en": "Jerusalem",
+            "tr": "Kudüs",
+            "ru": "Иерусалим",
+            "zh": "耶路撒冷"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Israel",
+        "summary": {
+            "en": "Israeli Foreign Minister Gideon Sa'ar comments on the deteriorating relations with Turkey and expresses hope for no further worsening.",
+            "tr": "İsrail Dışişleri Bakanı Gideon Sa'ar, Türkiye ile bozulan ilişkiler hakkında yorumlarda bulundu ve daha fazla kötüleşme olmaması umudunu dile getirdi.",
+            "ru": "Министр иностранных дел Израиля Гидеон Саар комментирует ухудшение отношений с Турцией и выражает надежду на дальнейшее ухудшение.",
+            "zh": "以色列外交部长吉德昂·萨尔评论了与土耳其不断恶化的关系，并表示希望不会进一步恶化。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016066395713192078",
+        "local_video_path": null,
+        "image_path": "media/2016066395713192078.jpg",
+        "date": "2026-01-27 08:31:00+00:00",
+        "original_text": "🔴 İsrail Dışişleri Bakanı Gideon Sa'ar:\n\nTürkiye ile geçmişte çok iyi ilişkilerimiz vardı, ancak son on yıllarda bu ilişkilerin kötüleştiğini gördük. Bu onların tercihiydi.\n\nTürkiye ile ilişkilerimizi zaten olduğundan daha da kötüleştirmek gibi bir niyetimiz yok. \n\nUmarım https://t.co/twZ0YueT4Q",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Syria",
+        "summary": {
+            "en": "\"Wajib\" allows complaints via mobile app, web, bots, and citizen service centers.",
+            "tr": "\"Wajib\", mobil uygulama, web, botlar ve vatandaş hizmet merkezleri aracılığıyla şikayetlere olanak tanır.",
+            "ru": "\"Wajib\" позволяет подавать жалобы через мобильное приложение, веб-сайт, ботов и центры обслуживания граждан.",
+            "zh": "“Wajib” 允许通过移动应用程序、网络、机器人和公民服务中心进行投诉。"
+        },
+        "territory_update": {},
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016062742734532958",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 08:16:29+00:00",
+        "original_text": "يتيح \"وجب\" تقديم الشكاوى ومتابعتها عبر عدة مسارات تشمل؛ تطبيق الهاتف المحمول، ومنصة ويب، وتواصل عبر البوتات، ونوافذ مخصصة في مراكز خدمة المواطن.",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Syria",
+        "summary": {
+            "en": "The General Secretariat of the Presidency of the Republic - Council of Ministers, in cooperation with the Ministry of Communications and Information Technology, holds a workshop on launching a unified complaints application that includes all ministries, called \"Wajib.\"",
+            "tr": "Cumhurbaşkanlığı Genel Sekreterliği - Bakanlar Kurulu, İletişim ve Bilgi Teknolojileri Bakanlığı işbirliğiyle, tüm bakanlıkları içeren ve \"Wajib\" adını taşıyan birleşik bir şikayet uygulaması başlatmak üzere bir çalıştay düzenliyor.",
+            "ru": "Генеральный секретариат Администрации Президента Республики - Совет министров в сотрудничестве с Министерством связи и информационных технологий проводит семинар по запуску единого приложения для подачи жалоб, охватывающего все министерства, под названием «Ваджиб».",
+            "zh": "共和国总统秘书处 - 部长理事会与通信和信息技术部合作，举办一次关于启动统一投诉应用程序的研讨会，该程序涵盖所有部委，名称为“Wajib”。"
+        },
+        "territory_update": {},
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016062740456947767",
+        "local_video_path": null,
+        "image_path": "media/2016062740456947767.jpg",
+        "date": "2026-01-27 08:16:28+00:00",
+        "original_text": "الأمانة العامة لرئاسة الجمهورية - شؤون مجلس الوزراء، بالتعاون مع وزارة الاتصالات وتقانة المعلومات، تعقد ورشة عمل حول إطلاق تطبيق شكاوى موحد يشمل جميع الوزارات، ويحمل اسم \"وجب\".\n\n#سوريا \n#تطبيق_وجب https://t.co/5w016wS9ZC",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 28.6139,
         "lng": 77.209,
         "location_name": {
@@ -10,25 +234,72 @@
             "ru": "Нью-Дели",
             "zh": "新德里"
         },
-        "attack_type": "Trade Deal Announcement",
-        "visual_emoji": "📢",
+        "attack_type": "EU-India Strategic Summits",
+        "visual_emoji": "🤝",
         "attacker": "EU",
         "summary": {
-            "en": "EU announces a trade deal with India, expecting to cut billions in tariffs.",
-            "tr": "AB, Hindistan ile bir ticaret anlaşması yaptığını ve milyarlarca tarifeyi düşürmeyi beklediğini duyurdu.",
-            "ru": "ЕС объявляет о торговой сделке с Индией, ожидается сокращение тарифов на миллиарды.",
-            "zh": "欧盟宣布与印度达成贸易协议，预计将削减数十亿关税。"
+            "en": "Multiple reports on EU-India trade and security agreements in New Delhi.",
+            "tr": "Yeni Delhi'de AB-Hindistan ticaret ve güvenlik anlaşmalarına ilişkin çok sayıda rapor.",
+            "ru": "Многочисленные сообщения о торговых соглашениях и соглашениях в области безопасности между ЕС и Индией в Нью-Дели.",
+            "zh": "有关欧盟与印度在新德里达成的贸易和安全协议的多份报告。"
         },
         "territory_update": {},
-        "confidence": 7.0,
+        "confidence": 9.2,
         "channel": "X (@clashreport)",
         "tweet_id": "2016064576240992320",
         "local_video_path": "media/2016064576240992320.mp4",
         "image_path": null,
         "date": "2026-01-27 08:23:46+00:00",
-        "original_text": "EU's von der Leyen on trade deal with India:\n\nWe did it. We delivered the mother of all deals.\n\nWe are creating a market of two billion people. \n\nIt will cut up to four billion euros in annual tariffs for exporters of all sizes. https://t.co/J2S60dWKtX",
+        "original_text": "EU-India Trade & Security Cluster",
         "sources": [
             "X (@clashreport)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "EU announces a trade deal with India, expecting to cut billions in tariffs.",
+                    "tr": "AB, Hindistan ile bir ticaret anlaşması yaptığını ve milyarlarca tarifeyi düşürmeyi beklediğini duyurdu.",
+                    "ru": "ЕС объявляет о торговой сделке с Индией, ожидается сокращение тарифов на миллиарды.",
+                    "zh": "欧盟宣布与印度达成贸易协议，预计将削减数十亿关税。"
+                },
+                "date": "2026-01-27 08:23:46+00:00",
+                "tweet_id": "2016064576240992320",
+                "local_video_path": "media/2016064576240992320.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "EU",
+                "original_text": "EU's von der Leyen on trade deal with India:\n\nWe did it. We delivered the mother of all deals.\n\nWe are creating a market of two billion people. \n\nIt will cut up to four billion euros in annual tariffs for exporters of all sizes. https://t.co/J2S60dWKtX"
+            },
+            {
+                "summary": {
+                    "en": "India and the EU have signed a free trade agreement in New Delhi.",
+                    "tr": "Hindistan ve AB, Yeni Delhi'de bir serbest ticaret anlaşması imzaladı.",
+                    "ru": "Индия и ЕС подписали соглашение о свободной торговле в Нью-Дели.",
+                    "zh": "印度和欧盟在新德里签署了自由贸易协定。"
+                },
+                "date": "2026-01-27 08:09:54+00:00",
+                "tweet_id": "2016061085321740792",
+                "local_video_path": "media/2016061085321740792.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "India",
+                "original_text": "India's Modi on trade deal with the EU:\n\nToday, India has concluded the largest-ever Free Trade Agreement in its history. https://t.co/AQPAZyVh8S"
+            },
+            {
+                "summary": {
+                    "en": "EU and India sign security and defence pact in New Delhi.",
+                    "tr": "AB ve Hindistan, Yeni Delhi'de güvenlik ve savunma paktı imzaladı.",
+                    "ru": "ЕС и Индия подписывают пакт о безопасности и обороне в Нью-Дели.",
+                    "zh": "欧盟和印度在新德里签署安全和国防协议。"
+                },
+                "date": "2026-01-27 07:59:44+00:00",
+                "tweet_id": "2016058527232450645",
+                "local_video_path": "media/2016058527232450645.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "EU",
+                "original_text": "NOW: EU and India sign security and defence pact in New Delhi. https://t.co/S8akBoLP46"
+            }
         ]
     },
     {
@@ -125,70 +396,6 @@
         "original_text": "مراسل سانا: اللجنة المركزية لاستجابة حلب ترسل قافلة مساعدات جديدة محملة بالمواد الغذائية والطبية واللوجستية إلى منطقة عين العرب في ريف حلب.\n\n#سوريا \n#حلب https://t.co/JKACqIZdH7",
         "sources": [
             "X (@Sana__gov)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 28.6139,
-        "lng": 77.209,
-        "location_name": {
-            "en": "New Delhi",
-            "tr": "Yeni Delhi",
-            "ru": "Нью-Дели",
-            "zh": "新德里"
-        },
-        "attack_type": "Trade agreement",
-        "visual_emoji": "🤝",
-        "attacker": "India",
-        "summary": {
-            "en": "India and the EU have signed a free trade agreement in New Delhi.",
-            "tr": "Hindistan ve AB, Yeni Delhi'de bir serbest ticaret anlaşması imzaladı.",
-            "ru": "Индия и ЕС подписали соглашение о свободной торговле в Нью-Дели.",
-            "zh": "印度和欧盟在新德里签署了自由贸易协定。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016061085321740792",
-        "local_video_path": "media/2016061085321740792.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:09:54+00:00",
-        "original_text": "India's Modi on trade deal with the EU:\n\nToday, India has concluded the largest-ever Free Trade Agreement in its history. https://t.co/AQPAZyVh8S",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 28.6358,
-        "lng": 77.2245,
-        "location_name": {
-            "en": "New Delhi",
-            "tr": "Yeni Delhi",
-            "ru": "Нью-Дели",
-            "zh": "新德里"
-        },
-        "attack_type": "Security and Defence Pact",
-        "visual_emoji": "🤝",
-        "attacker": "EU",
-        "summary": {
-            "en": "EU and India sign security and defence pact in New Delhi.",
-            "tr": "AB ve Hindistan, Yeni Delhi'de güvenlik ve savunma paktı imzaladı.",
-            "ru": "ЕС и Индия подписывают пакт о безопасности и обороне в Нью-Дели.",
-            "zh": "欧盟和印度在新德里签署安全和国防协议。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016058527232450645",
-        "local_video_path": "media/2016058527232450645.mp4",
-        "image_path": null,
-        "date": "2026-01-27 07:59:44+00:00",
-        "original_text": "NOW: EU and India sign security and defence pact in New Delhi. https://t.co/S8akBoLP46",
-        "sources": [
-            "X (@clashreport)"
         ]
     },
     {
@@ -1398,146 +1605,6 @@
         "original_text": "إطلاق سراح الصحفي فراس البرجس والناشط الإنساني عبد الله دربوك من سجن الأقطان في الرقة https://t.co/m1bNtf0ckX",
         "sources": [
             "X (@AJSyriaNowN)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9208,
-        "lng": 32.8541,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Turkey opposes all terrorist organizations in Syria and stands with all Syrian people.",
-            "tr": "Türkiye, Suriye'deki tüm terör örgütlerine karşı ve tüm Suriye halkının yanındadır.",
-            "ru": "Турция выступает против всех террористических организаций в Сирии и поддерживает весь сирийский народ.",
-            "zh": "土耳其反对叙利亚的所有恐怖组织，并与所有叙利亚人民站在一起。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2015794356179935318",
-        "local_video_path": null,
-        "image_path": "media/2015794356179935318.jpg",
-        "date": "2026-01-26 14:30:00+00:00",
-        "original_text": "🔴 AK Parti Sözcüsü Ömer Çelik:\n\n▪️ Hangi ideoloji altında olursa olsun, Suriye’de ve bölgede bütün terör örgütlerinin karşısındayız.\n\n▪️ Şartlar ne olursa olsun, bedeli ne olursa olsun Suriyeli Kürtlerin, Suriyeli Türkmenlerin, Suriyeli Arapların yanındayız.\n\n▪️ Suriye’ye ilk https://t.co/OpgIKgAzKy",
-        "sources": [
-            "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "Irrelevant",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": {
-            "en": null,
-            "tr": null,
-            "ru": null,
-            "zh": null
-        },
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": {
-            "en": "Irrelevant",
-            "tr": "Alakasız",
-            "ru": "Нерелевантный",
-            "zh": "不相关"
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015792236861043057",
-        "local_video_path": null,
-        "image_path": "media/2015792236861043057.jpg",
-        "date": "2026-01-26 14:21:35+00:00",
-        "original_text": "Trump:\n\nI am sending Tom Homan to Minnesota tonight. He has not been involved in that area, but knows and likes many of the people there.\n\nTom is tough but fair, and will report directly to me. https://t.co/oHbQmRTPK7",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.0269,
-        "lng": 42.0128,
-        "location_name": {
-            "en": "Al-Safa village (near Çil Agha)",
-            "tr": "El-Safa köyü (Çil Ağa yakınında)",
-            "ru": "Деревня Аль-Сафа (около Чил Ага)",
-            "zh": "Al-Safa 村（靠近 Çil Agha）"
-        },
-        "attack_type": "Heavy clashes",
-        "visual_emoji": "⚔️",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Heavy clashes are reported in al-Safa village near Çil Agha (Al-Jawadiya).",
-            "tr": "Çil Ağa (El-Cevadiye) yakınlarındaki El-Safa köyünde şiddetli çatışmalar yaşandığı bildiriliyor.",
-            "ru": "Сообщается о тяжелых столкновениях в деревне Аль-Сафа возле Чил Ага (Аль-Джавадия).",
-            "zh": "据报道，在 Çil Agha (Al-Jawadiya) 附近的 Al-Safa 村发生了激烈的冲突。"
-        },
-        "territory_update": {},
-        "confidence": 9.0,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015783453321470021",
-        "local_video_path": "media/2015783453321470021.mp4",
-        "image_path": null,
-        "date": "2026-01-26 13:46:41+00:00",
-        "original_text": "Heavy clashes taking place in al-Safa village near Çil Agha (Al-Jawadiya) https://t.co/42ZYX3bHzw",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "IRRELEVANT",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": null,
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": null,
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015790761254563928",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 14:15:43+00:00",
-        "original_text": "BREAKING: UAE says the Emirates reaffirm their commitment not to allow their airspace, territory, or waters to be used for any military actions against Iran.",
-        "sources": [
-            "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "IRRELEVANT",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": null,
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": null,
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015790333091586084",
-        "local_video_path": "media/2015790333091586084.mp4",
-        "image_path": null,
-        "date": "2026-01-26 14:14:01+00:00",
-        "original_text": "Albanian PM Edi Rama in Israel:\n\nWhile we pray for the countless souls that have lost in the last days in the fires of Khomeinism, we hold hope and conviction that the days of Tehran's killers are coming to an end. https://t.co/B7SuQEnFQ1",
-        "sources": [
-            "X (@clashreport)"
         ]
     }
 ]
