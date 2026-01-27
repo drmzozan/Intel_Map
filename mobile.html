@@ -1987,28 +1987,83 @@
                     }
 
                     div.innerHTML = `
-                        <div>
-                            <img src="${imgUrl}" style="width:42px; height:42px; filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55);">
-                            ${item.local_video_path ? '<div style="position:absolute; bottom:-2px; right:-2px; background:var(--accent); color:white; font-size:8px; padding:2px 4px; border-radius:4px; font-weight:bold;">LIVE</div>' : ''}
-                        </div>
-                        <div>
-                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                                <div>
-                                    <span class="attacker-badge bg-${safeAttacker}">${safeAttacker}</span>
-                                    <span style="font-size:9px; color:${isHighConf ? '#2ecc71' : '#f39c12'}; margin-left:5px; border:1px solid ${isHighConf ? '#2ecc71' : '#f39c12'}; padding:1px 4px; border-radius:4px;">
-                                        ${confidence.toFixed(1)} AI
-                                    </span>
-                                </div>
-                                <span style="font-size:10px; color:var(--text-dim); font-weight:600;">${item.date ? item.date.split(' ')[1].substring(0, 5) : ''}</span>
+                        <div class="collapsed-content" style="display:flex; gap:12px;">
+                            <div>
+                                <img src="${imgUrl}" style="width:42px; height:42px; filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55);">
+                                ${item.local_video_path ? '<div style="position:absolute; bottom:-2px; right:-2px; background:var(--accent); color:white; font-size:8px; padding:2px 4px; border-radius:4px; font-weight:bold;">LIVE</div>' : ''}
                             </div>
-                            <div style="font-weight:700; font-size:13px; color:#fff; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${getLoc(item, 'location_name')}</div>
-                            <div style="font-size:12px; color:var(--text-dim); line-height:1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${getLoc(item, 'summary')}</div>
-                            ${mediaHtml}
+                            <div style="flex:1; min-width:0;">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                                    <div>
+                                        <span class="attacker-badge bg-${safeAttacker}">${safeAttacker}</span>
+                                        <span style="font-size:9px; color:${isHighConf ? '#2ecc71' : '#f39c12'}; margin-left:5px; border:1px solid ${isHighConf ? '#2ecc71' : '#f39c12'}; padding:1px 4px; border-radius:4px;">
+                                            ${confidence.toFixed(1)} AI
+                                        </span>
+                                    </div>
+                                    <span style="font-size:10px; color:var(--text-dim); font-weight:600;">${item.date ? item.date.split(' ')[1].substring(0, 5) : ''}</span>
+                                </div>
+                                <div style="font-weight:700; font-size:13px; color:#fff; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${getLoc(item, 'location_name')}</div>
+                                <div class="collapsed-summary" style="font-size:12px; color:var(--text-dim); line-height:1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${getLoc(item, 'summary')}</div>
+                                ${mediaHtml ? `<div class="collapsed-media-hint" style="margin-top:5px; font-size:10px; color:#3498db;">${item.local_video_path ? '📹 Video' : '🖼️ Image'} attached</div>` : ''}
+                            </div>
+                        </div>
+                        <div class="expanded-content" style="display:none; padding:15px 0 5px 0;">
+                            <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                                <img src="${imgUrl}" style="width:36px; height:36px;">
+                                <div style="font-weight:700; color:#fff; font-size:15px;">${getLoc(item, 'location_name')}</div>
+                            </div>
+                            
+                            <div style="font-size:14px; line-height:1.6; color:#eee; margin-bottom:15px;">
+                                ${getLoc(item, 'summary')}
+                            </div>
+
+                            ${item.local_video_path ? `
+                                <div style="width:100%; border-radius:8px; overflow:hidden; background:#000; margin-bottom:15px;">
+                                    <video src="${item.local_video_path}" controls muted playsinline style="width:100%; display:block;"></video>
+                                </div>
+                            ` : (item.image_path ? `
+                                <img src="${item.image_path}" style="width:100%; border-radius:8px; margin-bottom:15px; display:block;">
+                            ` : '')}
+
+                            <div style="background:#1a1a1a; padding:12px; border-radius:8px; border:1px solid #333;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:12px;">
+                                    <span style="color:#888;">ACTOR</span>
+                                    <span style="color:#fff; font-weight:bold;">${item.attacker}</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:12px;">
+                                    <span style="color:#888;">CONFIDENCE</span>
+                                    <span style="color:${isHighConf ? '#2ecc71' : '#f39c12'}; font-weight:bold;">${confidence.toFixed(1)} / 10</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:12px;">
+                                    <span style="color:#888;">SOURCES</span>
+                                    <span style="color:#aaa;">${item.sources ? item.sources.join(', ') : (item.channel || 'Unknown')}</span>
+                                </div>
+                                <hr style="border:0; border-top:1px solid #333; margin:10px 0;">
+                                <a href="https://twitter.com/i/status/${item.tweet_id}" target="_blank" style="display:block; text-align:center; background:#3498db; color:white; padding:8px; border-radius:4px; text-decoration:none; font-size:12px; font-weight:bold;">View Source ↗</a>
+                            </div>
                         </div>
                     `;
-                    div.onclick = () => {
+
+                    div.onclick = (e) => {
+                        const expanded = div.querySelector('.expanded-content');
+                        const collapsed = div.querySelector('.collapsed-content');
+                        const isExpanded = expanded.style.display === 'block';
+
+                        // Toggle
+                        if (isExpanded) {
+                            expanded.style.display = 'none';
+                            collapsed.style.display = 'flex';
+                            div.style.background = 'transparent';
+                            div.style.borderLeft = 'none';
+                        } else {
+                            expanded.style.display = 'block';
+                            collapsed.style.display = 'none';
+                            div.style.background = '#111';
+                            div.style.borderLeft = '3px solid var(--accent)';
+                        }
+
                         if (item.lat && item.lng) {
-                            map.flyTo({ center: [item.lng, item.lat], zoom: 9, speed: 1.5 }); // Closer zoom and smoother speed
+                            map.flyTo({ center: [item.lng, item.lat], zoom: 9.5, speed: 1.2 });
                         }
                     };
                     sidebar.appendChild(div);
