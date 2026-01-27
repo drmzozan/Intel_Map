@@ -524,18 +524,21 @@
                 margin-bottom: 8px;
             }
 
-            .feed-item img:first-child {
-                /* Avatar Icon */
+            .feed-icon {
+                /* Tactical icons stay fixed size */
                 width: 36px !important;
                 height: 36px !important;
+                object-fit: contain;
+                flex-shrink: 0;
             }
 
-            .feed-item>div:last-child img {
-                /* Content Images */
+            .feed-media-img {
+                /* Content images stay full width */
                 width: 100% !important;
                 height: auto !important;
                 margin-top: 8px;
                 border-radius: 6px;
+                display: block;
             }
 
             /* 6. Buttons Visibility */
@@ -1988,9 +1991,9 @@
 
                     div.innerHTML = `
                         <div class="collapsed-content" style="display:flex; gap:12px;">
-                            <div>
-                                <img src="${imgUrl}" style="width:36px; height:36px; filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55); object-fit:contain;">
-                                ${item.local_video_path ? '<div style="position:absolute; bottom:-2px; right:-2px; background:var(--accent); color:white; font-size:8px; padding:2px 4px; border-radius:4px; font-weight:bold;">LIVE</div>' : ''}
+                            <div style="position:relative; flex-shrink:0;">
+                                <img src="${imgUrl}" class="feed-icon" style="filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55);">
+                                ${item.local_video_path ? '<div style="position:absolute; bottom:-2px; right:-2px; background:var(--accent); color:white; font-size:8px; padding:2px 4px; border-radius:4px; font-weight:bold; z-index:1;">LIVE</div>' : ''}
                             </div>
                             <div style="flex:1; min-width:0;">
                                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
@@ -2009,7 +2012,7 @@
                         </div>
                         <div class="expanded-content" style="display:none; padding:15px 0 5px 0;">
                             <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
-                                <img src="${imgUrl}" style="width:30px; height:30px; object-fit:contain;">
+                                <img src="${imgUrl}" class="feed-icon" style="width:30px; height:30px;">
                                 <div style="font-weight:700; color:#fff; font-size:16px;">${getLoc(item, 'location_name')}</div>
                             </div>
                             
@@ -2022,7 +2025,7 @@
                                     <video src="${item.local_video_path}" controls muted playsinline style="width:100%; display:block;"></video>
                                 </div>
                             ` : (item.image_path ? `
-                                <img src="${item.image_path}" style="width:100%; border-radius:8px; margin-bottom:15px; display:block;">
+                                <img src="${item.image_path}" class="feed-media-img" style="border-radius:8px; margin-bottom:15px;">
                             ` : '')}
 
                             <div style="background:#1a1a1a; padding:12px; border-radius:8px; border:1px solid #333;">
