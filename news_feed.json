@@ -1,5 +1,37 @@
 [
     {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 34.6414,
+        "lng": 38.2851,
+        "location_name": {
+            "en": "Syria",
+            "tr": "Suriye",
+            "ru": "Сирия",
+            "zh": "叙利亚"
+        },
+        "attack_type": "Analysis of IS operations in Syria.",
+        "visual_emoji": "⚔️",
+        "attacker": "ISIS",
+        "summary": {
+            "en": "Analysis of IS operations in Syria and whether strikes and arrests are sufficient to curb its threat.",
+            "tr": "Suriye'deki IŞİD operasyonlarının analizi ve saldırıların ve tutuklamaların tehdidini engellemeye yeterli olup olmadığı.",
+            "ru": "Анализ операций ИГИЛ в Сирии и достаточно ли ударов и арестов, чтобы обуздать его угрозу.",
+            "zh": "分析伊斯兰国在叙利亚的行动，以及袭击和逮捕是否足以遏制其威胁。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016102803035353402",
+        "local_video_path": "media/2016102803035353402.mp4",
+        "image_path": null,
+        "date": "2026-01-27 10:55:40+00:00",
+        "original_text": "ما ركيزة عمليات تنظيم الدولة في سوريا؟ وهل تكفي الضربات والاعتقالات لكبح خطره؟ https://t.co/wTqZ454DWW",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
         "action": "MERGE",
         "target_id": "2016096807386784163",
         "lat": 36.643,
@@ -34,22 +66,22 @@
     {
         "action": "MERGE",
         "target_id": "2016092591729570238",
-        "lat": 36.5,
+        "lat": 36.49,
         "lng": 40.74,
         "location_name": {
             "en": "Al-Hasakah",
             "tr": "Haseke",
-            "ru": "Аль-Хасака",
+            "ru": "Эль-Хасака",
             "zh": "哈塞克"
         },
-        "attack_type": "Deployment of Captured Assets",
-        "visual_emoji": "🚚",
+        "attack_type": "Deployment of captured vehicles",
+        "visual_emoji": "🚩",
         "actor": "Syria",
         "summary": {
-            "en": "Syrian Army begins deploying armored vehicles captured from SDF/PKK in the field.",
-            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada kullanmaya başladı.",
-            "ru": "Сирийская армия начала использовать бронетехнику, захваченную у СДС/РПК.",
-            "zh": "叙利亚军队开始部署从SDF/PKK缴获的装甲车。"
+            "en": "Syrian Army deploys armored vehicles captured from SDF/PKK in Al-Hasakah.",
+            "tr": "Suriye Ordusu, Haseke'de SDG/PKK'dan ele geçirdiği zırhlı araçları konuşlandırdı.",
+            "ru": "Сирийская армия развертывает бронетехнику, захваченную у СДС/РПК в Эль-Хасаке.",
+            "zh": "叙利亚军队在哈塞克部署了从 SDF/PKK 缴获的装甲车。"
         },
         "territory_update": null,
         "confidence": 6.0,
@@ -1638,37 +1670,5 @@
             "X (@AJSyriaNowN)"
         ],
         "actor": "UNHCR"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.1934,
-        "lng": 35.9576,
-        "location_name": {
-            "en": "Baniyas",
-            "tr": "Baniyas",
-            "ru": "Банияс",
-            "zh": "巴尼亚斯"
-        },
-        "attack_type": "Arrival of oil tankers",
-        "visual_emoji": "🚚",
-        "summary": {
-            "en": "A shipment of 668,000 barrels of crude oil from Russia arrived in Baniyas on the tanker \"CARMA\".",
-            "tr": "\"CARMA\" tankerinde Rusya'dan gelen 668.000 varil ham petrol sevkiyatı Baniyas'a ulaştı.",
-            "ru": "В Банияс прибыла партия сырой нефти из России объемом 668 000 баррелей на танкере \"CARMA\".",
-            "zh": "一艘载有 668,000 桶俄罗斯原油的“CARMA”号油轮抵达巴尼亚斯。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016056662302298418",
-        "local_video_path": null,
-        "image_path": "media/2016056662302298418.jpg",
-        "date": "2026-01-27 07:52:19+00:00",
-        "original_text": "منصة الطاقة:\n\n• وصول شحنة نفط خام تضم 668 ألف برميل إلى بانياس قادمة من روسيا\n\n• الشحنة وصلت على متن الناقلة \"CARMA\" التي ترفع علم سلطنة عُمان\n\n• كذلك رست في بانياس الناقلة \"TENDUA\" محمّلة بنحو 29 ألفا و927 طنا متريا من المازوت، إضافة إلى الناقلة \"GAZ PROVIDENCE\"، محمّلة بأكثر https://t.co/DE27TPhBdo",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Russia"
     }
 ]
