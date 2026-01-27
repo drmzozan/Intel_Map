@@ -29,38 +29,23 @@
         "original_text": "US Ambassador to Israel Mike Huckabee:\n\nTrump does not see things horizontally; he sees them vertically.\n\nIf a thing may work but it lands a little left of center, he may still go there. https://t.co/nnWbiTrrYW",
         "sources": [
             "X (@clashreport)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 31.7683,
-        "lng": 35.2137,
-        "location_name": {
-            "en": "Jerusalem",
-            "tr": "Kudüs",
-            "ru": "Иерусалим",
-            "zh": "耶路撒冷"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "USA",
-        "summary": {
-            "en": "US Ambassador to Israel Mike Huckabee suggests that cell phones rely on Israel.",
-            "tr": "ABD'nin İsrail Büyükelçisi Mike Huckabee, cep telefonlarının İsrail'e dayandığını öne sürüyor.",
-            "ru": "Посол США в Израиле Майк Хакаби предполагает, что сотовые телефоны зависят от Израиля.",
-            "zh": "美国驻以色列大使迈克·赫卡比暗示手机依赖以色列。"
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016153161090711854",
-        "local_video_path": "media/2016153161090711854.mp4",
-        "image_path": null,
-        "date": "2026-01-27 14:15:46+00:00",
-        "original_text": "US Ambassador to Israel Mike Huckabee:\n\nDo you like your cell phone? If you don't like Israel, get rid of your cell phone. \n\nYou would not have it without Israel. https://t.co/tm49aTazW2",
-        "sources": [
-            "X (@clashreport)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "US Ambassador to Israel Mike Huckabee suggests that cell phones rely on Israel.",
+                    "tr": "ABD'nin İsrail Büyükelçisi Mike Huckabee, cep telefonlarının İsrail'e dayandığını öne sürüyor.",
+                    "ru": "Посол США в Израиле Майк Хакаби предполагает, что сотовые телефоны зависят от Израиля.",
+                    "zh": "美国驻以色列大使迈克·赫卡比暗示手机依赖以色列。"
+                },
+                "date": "2026-01-27 14:15:46+00:00",
+                "tweet_id": "2016153161090711854",
+                "local_video_path": "media/2016153161090711854.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "USA",
+                "original_text": "US Ambassador to Israel Mike Huckabee:\n\nDo you like your cell phone? If you don't like Israel, get rid of your cell phone. \n\nYou would not have it without Israel. https://t.co/tm49aTazW2"
+            }
         ]
     },
     {
@@ -147,7 +132,7 @@
             "zh": "阿拉伯叙利亚军队正在清理阿勒颇东部乡村 Qarah Qozak 桥周围的地雷。"
         },
         "territory_update": {},
-        "confidence": 8.0,
+        "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016152317205029203",
         "local_video_path": "media/2016152317205029203.mp4",
@@ -352,7 +337,54 @@
         "sources": [
             "X (@AJSyriaNowN)"
         ],
-        "actor": "Turkey"
+        "actor": "Turkey",
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "Turkish and US military officials discussed bilateral relations and regional issues.",
+                    "tr": "Türk ve ABD'li askeri yetkililer ikili ilişkileri ve bölgesel sorunları görüştü.",
+                    "ru": "Турецкие и американские военные чиновники обсудили двусторонние отношения и региональные вопросы.",
+                    "zh": "土耳其和美国军方官员讨论了双边关系和地区问题。"
+                },
+                "date": "2026-01-27 13:54:22+00:00",
+                "tweet_id": "2016147776136970500",
+                "local_video_path": null,
+                "image_path": "media/2016147776136970500.jpg",
+                "channel": "X (@clashreport)",
+                "attacker": "Turkey",
+                "original_text": "Turkish Chief of the General Staff General Selçuk Bayraktaroğlu spoke by phone with CENTCOM Commander Admiral Brad Cooper. https://t.co/rZBxcqNdRE"
+            },
+            {
+                "summary": {
+                    "en": "President Erdogan says there can be no state within a state or separate armed force within Syria.",
+                    "tr": "Cumhurbaşkanı Erdoğan, Suriye'de devlet içinde devlet veya ayrı bir silahlı kuvvet olamayacağını belirtiyor.",
+                    "ru": "Президент Эрдоган заявляет, что в Сирии не может быть государства в государстве или отдельной вооруженной силы.",
+                    "zh": "埃尔多安总统表示，叙利亚境内不能存在国中之国或单独的武装力量。"
+                },
+                "date": "2026-01-27 12:37:19+00:00",
+                "tweet_id": "2016128383491482048",
+                "local_video_path": "media/2016128383491482048.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "Turkey",
+                "original_text": "Turkish President Erdogan on Syria:\n\nThere can be no state within a state and no separate armed force within the state. https://t.co/anrHqExQvp"
+            },
+            {
+                "summary": {
+                    "en": "President Erdogan reports that millions of Syrian refugees, including 600,000 from Turkey, have returned to their homeland.",
+                    "tr": "Cumhurbaşkanı Erdoğan, Türkiye'den 600.000'i de dahil olmak üzere milyonlarca Suriyeli mültecinin anavatanlarına geri döndüğünü bildirdi.",
+                    "ru": "Президент Эрдоган сообщает, что миллионы сирийских беженцев, в том числе 600 000 из Турции, вернулись на родину.",
+                    "zh": "埃尔多安总统报告说，包括来自土耳其的 60 万在内的数百万叙利亚难民已经返回家园。"
+                },
+                "date": "2026-01-27 12:33:35+00:00",
+                "tweet_id": "2016127443971559430",
+                "local_video_path": "media/2016127443971559430.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "Turkey",
+                "original_text": "Turkish President Erdogan:\n\nMillions of Syrian refugees have returned to their homeland, including 600,000 from our country. https://t.co/s6RoGUDo6Z"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -451,7 +483,24 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "Cautious calm in the Syrian region following the extension of the ceasefire. Will it hold?",
+                    "tr": "Ateşkesin uzatılmasının ardından Suriye bölgesinde temkinli bir sükunet hakim. Bu sükunet devam edecek mi?",
+                    "ru": "Осторожное спокойствие в сирийском регионе после продления перемирия. Сохранится ли оно?",
+                    "zh": "在停火延长后，叙利亚地区局势谨慎平静。它能维持下去吗？"
+                },
+                "date": "2026-01-27 12:01:13+00:00",
+                "tweet_id": "2016119301380489521",
+                "local_video_path": "media/2016119301380489521.mp4",
+                "image_path": null,
+                "channel": "X (@AJSyriaNowN)",
+                "attacker": "Syria",
+                "original_text": "هدوء حذر في الجزيرة السورية.. هل يصمد بعد تمديد وقف إطلاق النار؟ https://t.co/MPv2Iq1qih"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -522,39 +571,6 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 39.9255,
-        "lng": 32.8663,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Meeting",
-        "visual_emoji": "🤝",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Turkish and US military officials discussed bilateral relations and regional issues.",
-            "tr": "Türk ve ABD'li askeri yetkililer ikili ilişkileri ve bölgesel sorunları görüştü.",
-            "ru": "Турецкие и американские военные чиновники обсудили двусторонние отношения и региональные вопросы.",
-            "zh": "土耳其和美国军方官员讨论了双边关系和地区问题。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016147776136970500",
-        "local_video_path": null,
-        "image_path": "media/2016147776136970500.jpg",
-        "date": "2026-01-27 13:54:22+00:00",
-        "original_text": "Turkish Chief of the General Staff General Selçuk Bayraktaroğlu spoke by phone with CENTCOM Commander Admiral Brad Cooper. https://t.co/rZBxcqNdRE",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
         "lat": 52.52,
         "lng": 13.405,
         "location_name": {
@@ -616,7 +632,24 @@
         "sources": [
             "X (@ConflictTR)"
         ],
-        "actor": "Turkey"
+        "actor": "Turkey",
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "President Erdogan states Turkey is meeting humanitarian aid requests from Kurdish brothers in cooperation with Syria.",
+                    "tr": "Cumhurbaşkanı Erdoğan, Türkiye'nin Suriye hükümeti ile işbirliği içinde Kürt kardeşlerinden gelen insani yardım taleplerini karşıladığını belirtiyor.",
+                    "ru": "Президент Эрдоган заявляет, что Турция удовлетворяет запросы о гуманитарной помощи от курдских братьев в сотрудничестве с Сирией.",
+                    "zh": "埃尔多安总统表示，土耳其正在与叙利亚合作，满足库尔德兄弟的人道主义援助要求。"
+                },
+                "date": "2026-01-27 12:39:37+00:00",
+                "tweet_id": "2016128964582912170",
+                "local_video_path": "media/2016128964582912170.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "Turkey",
+                "original_text": "Turkish President Erdogan:\n\nWe are meeting the humanitarian aid requests coming from our Kurdish brothers living beyond our border in close cooperation with the Syrian government. https://t.co/QKW2IqP10u"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -748,7 +781,24 @@
         "sources": [
             "X (@ConflictTR)"
         ],
-        "actor": "USA"
+        "actor": "USA",
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "U.S. Treasury Secretary Scott Bessent criticizes Canadian PM Mark Carney's globalist agenda.",
+                    "tr": "ABD Hazine Bakanı Scott Bessent, Kanada Başbakanı Mark Carney'in küreselci gündemini eleştiriyor.",
+                    "ru": "Министр финансов США Скотт Бессент критикует глобалистскую повестку дня премьер-министра Канады Марка Карни.",
+                    "zh": "美国财政部长斯科特·贝森特批评加拿大总理马克·卡尼的全球主义议程。"
+                },
+                "date": "2026-01-27 11:59:14+00:00",
+                "tweet_id": "2016118802639888880",
+                "local_video_path": "media/2016118802639888880.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "USA",
+                "original_text": "U.S. Treasury Secretary Scott Bessent:\n\nCarney should do what is best for the Canadian people rather than trying to push his own globalist agenda. https://t.co/AhSYAzumyS"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -951,72 +1001,6 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 39.9167,
-        "lng": 32.8667,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdogan states Turkey is meeting humanitarian aid requests from Kurdish brothers in cooperation with Syria.",
-            "tr": "Cumhurbaşkanı Erdoğan, Türkiye'nin Suriye hükümeti ile işbirliği içinde Kürt kardeşlerinden gelen insani yardım taleplerini karşıladığını belirtiyor.",
-            "ru": "Президент Эрдоган заявляет, что Турция удовлетворяет запросы о гуманитарной помощи от курдских братьев в сотрудничестве с Сирией.",
-            "zh": "埃尔多安总统表示，土耳其正在与叙利亚合作，满足库尔德兄弟的人道主义援助要求。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016128964582912170",
-        "local_video_path": "media/2016128964582912170.mp4",
-        "image_path": null,
-        "date": "2026-01-27 12:39:37+00:00",
-        "original_text": "Turkish President Erdogan:\n\nWe are meeting the humanitarian aid requests coming from our Kurdish brothers living beyond our border in close cooperation with the Syrian government. https://t.co/QKW2IqP10u",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9255,
-        "lng": 32.8663,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdogan says there can be no state within a state or separate armed force within Syria.",
-            "tr": "Cumhurbaşkanı Erdoğan, Suriye'de devlet içinde devlet veya ayrı bir silahlı kuvvet olamayacağını belirtiyor.",
-            "ru": "Президент Эрдоган заявляет, что в Сирии не может быть государства в государстве или отдельной вооруженной силы.",
-            "zh": "埃尔多安总统表示，叙利亚境内不能存在国中之国或单独的武装力量。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016128383491482048",
-        "local_video_path": "media/2016128383491482048.mp4",
-        "image_path": null,
-        "date": "2026-01-27 12:37:19+00:00",
-        "original_text": "Turkish President Erdogan on Syria:\n\nThere can be no state within a state and no separate armed force within the state. https://t.co/anrHqExQvp",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
         "lat": 39.9208,
         "lng": 32.8541,
         "location_name": {
@@ -1045,40 +1029,39 @@
         "sources": [
             "X (@clashreport)"
         ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9255,
-        "lng": 32.8663,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Refugee Return Program",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdogan reports that millions of Syrian refugees, including 600,000 from Turkey, have returned to their homeland.",
-            "tr": "Cumhurbaşkanı Erdoğan, Türkiye'den 600.000'i de dahil olmak üzere milyonlarca Suriyeli mültecinin anavatanlarına geri döndüğünü bildirdi.",
-            "ru": "Президент Эрдоган сообщает, что миллионы сирийских беженцев, в том числе 600 000 из Турции, вернулись на родину.",
-            "zh": "埃尔多安总统报告说，包括来自土耳其的 60 万在内的数百万叙利亚难民已经返回家园。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016127443971559430",
-        "local_video_path": "media/2016127443971559430.mp4",
-        "image_path": null,
-        "date": "2026-01-27 12:33:35+00:00",
-        "original_text": "Turkish President Erdogan:\n\nMillions of Syrian refugees have returned to their homeland, including 600,000 from our country. https://t.co/s6RoGUDo6Z",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Turkey"
+        "actor": "Turkey",
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "President Erdoğan states that no one has the right to impose new costs on the Syrian people. Terrorism and weapons are outdated.",
+                    "tr": "Cumhurbaşkanı Erdoğan, hiç kimsenin Suriye halkına yeni bedeller ödetme hakkı olmadığını, terörizm ve silahların miadının dolduğunu belirtiyor.",
+                    "ru": "Президент Эрдоган заявляет, что никто не имеет права возлагать новые издержки на сирийский народ. Терроризм и оружие устарели.",
+                    "zh": "埃尔多安总统表示，任何人都无权强加新的代价给叙利亚人民。恐怖主义和武器已经过时。"
+                },
+                "date": "2026-01-27 12:37:05+00:00",
+                "tweet_id": "2016128327048724517",
+                "local_video_path": null,
+                "image_path": "media/2016128327048724517.jpg",
+                "channel": "X (@ConflictTR)",
+                "attacker": "Turkey",
+                "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nKimsenin Suriye halkına yeni bedeller ödetme hakkı yoktur. Terörün, silahın miadı dolmuştur. Devlet içinde ayrı devlet olmaz. Devlet içinde ayrı silahlı güç olmaz, paralel ordu olmaz. https://t.co/naRCvsD6Ly"
+            },
+            {
+                "summary": {
+                    "en": "President Erdoğan states that new opportunities are opening up for Turkey, emphasizing the benefits of supporting the oppressed in Gaza and embracing those in Syria.",
+                    "tr": "Cumhurbaşkanı Erdoğan, Türkiye için yeni fırsatların açıldığını, Gazze'de mazlumlara sahip çıkmanın ve Suriye'de kucak açmanın faydalarını vurguluyor.",
+                    "ru": "Президент Эрдоган заявляет об открытии новых возможностей для Турции, подчеркивая преимущества поддержки угнетенных в Газе и принятия тех, кто находится в Сирии.",
+                    "zh": "埃尔多安总统表示，土耳其正在迎来新的机遇，强调支持加沙受压迫者和接纳叙利亚人民的好处。"
+                },
+                "date": "2026-01-27 12:31:26+00:00",
+                "tweet_id": "2016126906345673007",
+                "local_video_path": null,
+                "image_path": "media/2016126906345673007.jpg",
+                "channel": "X (@ConflictTR)",
+                "attacker": "Turkey",
+                "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nTürkiye’nin önünde yeni kapılar açılıyor. Samimiyetle ifade ediyorum; Gazze’de mazlumlara sahip çıkmamızın, Suriye’de 13,5 yıl boyunca kucak açmamızın bereketini ziyadesiyle göreceğiz. https://t.co/mLykNOEr1G"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -1110,39 +1093,6 @@
         "original_text": "Turkish President Erdogan:\n\nAs Syria achieves stability and security, all neighboring countries—starting with us—will directly feel its positive effects.\n\nTrade will accelerate, investments will increase, and tourism will develop. In the residential areas that were reduced to https://t.co/yWU6omRBM3",
         "sources": [
             "X (@clashreport)"
-        ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9208,
-        "lng": 32.8541,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdoğan states that no one has the right to impose new costs on the Syrian people. Terrorism and weapons are outdated.",
-            "tr": "Cumhurbaşkanı Erdoğan, hiç kimsenin Suriye halkına yeni bedeller ödetme hakkı olmadığını, terörizm ve silahların miadının dolduğunu belirtiyor.",
-            "ru": "Президент Эрдоган заявляет, что никто не имеет права возлагать новые издержки на сирийский народ. Терроризм и оружие устарели.",
-            "zh": "埃尔多安总统表示，任何人都无权强加新的代价给叙利亚人民。恐怖主义和武器已经过时。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016128327048724517",
-        "local_video_path": null,
-        "image_path": "media/2016128327048724517.jpg",
-        "date": "2026-01-27 12:37:05+00:00",
-        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nKimsenin Suriye halkına yeni bedeller ödetme hakkı yoktur. Terörün, silahın miadı dolmuştur. Devlet içinde ayrı devlet olmaz. Devlet içinde ayrı silahlı güç olmaz, paralel ordu olmaz. https://t.co/naRCvsD6Ly",
-        "sources": [
-            "X (@ConflictTR)"
         ],
         "actor": "Turkey"
     },
@@ -1182,39 +1132,6 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 39.9199,
-        "lng": 32.8543,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdoğan states that new opportunities are opening up for Turkey, emphasizing the benefits of supporting the oppressed in Gaza and embracing those in Syria.",
-            "tr": "Cumhurbaşkanı Erdoğan, Türkiye için yeni fırsatların açıldığını, Gazze'de mazlumlara sahip çıkmanın ve Suriye'de kucak açmanın faydalarını vurguluyor.",
-            "ru": "Президент Эрдоган заявляет об открытии новых возможностей для Турции, подчеркивая преимущества поддержки угнетенных в Газе и принятия тех, кто находится в Сирии.",
-            "zh": "埃尔多安总统表示，土耳其正在迎来新的机遇，强调支持加沙受压迫者和接纳叙利亚人民的好处。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016126906345673007",
-        "local_video_path": null,
-        "image_path": "media/2016126906345673007.jpg",
-        "date": "2026-01-27 12:31:26+00:00",
-        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nTürkiye’nin önünde yeni kapılar açılıyor. Samimiyetle ifade ediyorum; Gazze’de mazlumlara sahip çıkmamızın, Suriye’de 13,5 yıl boyunca kucak açmamızın bereketini ziyadesiyle göreceğiz. https://t.co/mLykNOEr1G",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
         "lat": 39.960956711822014,
         "lng": 32.871756711822016,
         "location_name": {
@@ -1243,7 +1160,24 @@
         "sources": [
             "X (@ConflictTR)"
         ],
-        "actor": "Turkey"
+        "actor": "Turkey",
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "President Erdogan states that the surroundings are practically on fire from north to south.",
+                    "tr": "Cumhurbaşkanı Erdoğan, çevrenin kuzeyden güneye adeta yanmakta olduğunu belirtiyor.",
+                    "ru": "Президент Эрдоган заявляет, что все вокруг практически в огне с севера на юг.",
+                    "zh": "埃尔多安总统表示，从北到南，周围环境实际上都着火了。"
+                },
+                "date": "2026-01-27 12:21:26+00:00",
+                "tweet_id": "2016124388383330331",
+                "local_video_path": "media/2016124388383330331.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "Turkey",
+                "original_text": "Turkish President Erdogan:\n\nWhen we look around us, we can all see that from north to south our surroundings are practically on fire. https://t.co/uGbC7YTWbp"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -1413,72 +1347,6 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 38.8977,
-        "lng": -77.0365,
-        "location_name": {
-            "en": "Washington, D.C.",
-            "tr": "Washington, D.C.",
-            "ru": "Вашингтон, округ Колумбия",
-            "zh": "华盛顿特区"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "USA",
-        "summary": {
-            "en": "U.S. Treasury Secretary Scott Bessent criticizes Canadian PM Mark Carney's globalist agenda.",
-            "tr": "ABD Hazine Bakanı Scott Bessent, Kanada Başbakanı Mark Carney'in küreselci gündemini eleştiriyor.",
-            "ru": "Министр финансов США Скотт Бессент критикует глобалистскую повестку дня премьер-министра Канады Марка Карни.",
-            "zh": "美国财政部长斯科特·贝森特批评加拿大总理马克·卡尼的全球主义议程。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016118802639888880",
-        "local_video_path": "media/2016118802639888880.mp4",
-        "image_path": null,
-        "date": "2026-01-27 11:59:14+00:00",
-        "original_text": "U.S. Treasury Secretary Scott Bessent:\n\nCarney should do what is best for the Canadian people rather than trying to push his own globalist agenda. https://t.co/AhSYAzumyS",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "USA"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.95820546760413,
-        "lng": 32.86900546760413,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdogan states that the surroundings are practically on fire from north to south.",
-            "tr": "Cumhurbaşkanı Erdoğan, çevrenin kuzeyden güneye adeta yanmakta olduğunu belirtiyor.",
-            "ru": "Президент Эрдоган заявляет, что все вокруг практически в огне с севера на юг.",
-            "zh": "埃尔多安总统表示，从北到南，周围环境实际上都着火了。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016124388383330331",
-        "local_video_path": "media/2016124388383330331.mp4",
-        "image_path": null,
-        "date": "2026-01-27 12:21:26+00:00",
-        "original_text": "Turkish President Erdogan:\n\nWhen we look around us, we can all see that from north to south our surroundings are practically on fire. https://t.co/uGbC7YTWbp",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
         "lat": 34.8904,
         "lng": 35.8903,
         "location_name": {
@@ -1504,39 +1372,6 @@
         "image_path": "media/2016121352336355528.jpg",
         "date": "2026-01-27 12:09:22+00:00",
         "original_text": "لقطات من عرض لرتل يضم 90 سيارة لقوى الأمن الداخلي بالهوية البصرية الجديدة على الكورنيش البحري في مدينة طرطوس https://t.co/QNPpPzxCbW",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "HTS"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 34.8021,
-        "lng": 38.9968,
-        "location_name": {
-            "en": "Syrian Desert",
-            "tr": "Suriye Çölü",
-            "ru": "Сирийская пустыня",
-            "zh": "叙利亚沙漠"
-        },
-        "attack_type": "Ceasefire",
-        "visual_emoji": "📢",
-        "attacker": "Syria",
-        "summary": {
-            "en": "Cautious calm in the Syrian region following the extension of the ceasefire. Will it hold?",
-            "tr": "Ateşkesin uzatılmasının ardından Suriye bölgesinde temkinli bir sükunet hakim. Bu sükunet devam edecek mi?",
-            "ru": "Осторожное спокойствие в сирийском регионе после продления перемирия. Сохранится ли оно?",
-            "zh": "在停火延长后，叙利亚地区局势谨慎平静。它能维持下去吗？"
-        },
-        "territory_update": {},
-        "confidence": 9.0,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016119301380489521",
-        "local_video_path": "media/2016119301380489521.mp4",
-        "image_path": null,
-        "date": "2026-01-27 12:01:13+00:00",
-        "original_text": "هدوء حذر في الجزيرة السورية.. هل يصمد بعد تمديد وقف إطلاق النار؟ https://t.co/MPv2Iq1qih",
         "sources": [
             "X (@AJSyriaNowN)"
         ],
