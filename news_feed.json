@@ -2,6 +2,136 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 24.7136,
+        "lng": 46.6753,
+        "location_name": {
+            "en": "Riyadh, Saudi Arabia",
+            "tr": "Riyad, Suudi Arabistan",
+            "ru": "Эр-Рияд, Саудовская Аравия",
+            "zh": "沙特阿拉伯利雅得"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "actor": "Al Arabiya",
+        "summary": {
+            "en": "Kurdish source reports Al-Hasakah agreements are being conducted under U.S.-French sponsorship.",
+            "tr": "Kürt bir kaynak, El-Hasakah anlaşmalarının ABD-Fransız sponsorluğunda yürütüldüğünü bildirdi.",
+            "ru": "Курдский источник сообщает, что соглашения по Аль-Хасаке заключаются при спонсорстве США и Франции.",
+            "zh": "库尔德消息人士称，在美法两国的赞助下，Al-Hasakah 协议正在进行中。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 7.5,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016186437603832227",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 16:28:00+00:00",
+        "original_text": "A Kurdish source to Al Arabiya: Agreements regarding Al-Hasakah are being conducted under U.S.-French sponsorship. - @AlArabiya_Brk",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "location_name": {
+            "en": "International",
+            "tr": "Uluslararası",
+            "ru": "Международный",
+            "zh": "国际"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "actor": "USA",
+        "summary": {
+            "en": "France, Britain, Germany, and the US welcome the 15-day ceasefire extension between the Syrian government and Kurdish forces.",
+            "tr": "Fransa, İngiltere, Almanya ve ABD, Suriye hükümeti ile Kürt güçleri arasındaki 15 günlük ateşkes uzatmasını memnuniyetle karşılıyor.",
+            "ru": "Франция, Великобритания, Германия и США приветствуют продление перемирия между сирийским правительством и курдскими силами на 15 дней.",
+            "zh": "法国、英国、德国和美国欢迎叙利亚政府与库尔德部队之间停火延长 15 天."
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 7.5,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016183768235618594",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 16:17:23+00:00",
+        "original_text": "France, Britain, Germany and the ​US on Tuesday welcomed the 15-day extension of ​the ceasefire between ‍the Syrian government and ​Kurdish forces, and urged all ​parties to strictly adhere to the agreement. https://t.co/XIfnKWze4r",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.6892,
+        "lng": 51.389,
+        "location_name": {
+            "en": "Tehran",
+            "tr": "Tahran",
+            "ru": "Тегеран",
+            "zh": "德黑兰"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "actor": "Saudi Arabia",
+        "summary": {
+            "en": "Saudi Crown Prince Bin Salman stated that they cannot accept any threat to Iran.",
+            "tr": "Suudi Arabistan Veliaht Prensi Bin Selman, İran'a yönelik hiçbir tehdidi kabul edemeyeceklerini belirtti.",
+            "ru": "Наследный принц Саудовской Аравии бен Салман заявил, что они не могут принять какую-либо угрозу в адрес Ирана.",
+            "zh": "沙特王储本·萨尔曼表示，他们不能接受对伊朗的任何威胁。"
+        },
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016185845582017023",
+        "local_video_path": null,
+        "image_path": "media/2016185845582017023.jpg",
+        "date": "2026-01-27 16:25:39+00:00",
+        "original_text": "🔴 Suudi Arabistan Veliaht Prensi Bin Selman:\n\n''İran'a yönelik hiçbir tehdidi kabul edemeyiz.'' https://t.co/ra4Uba9iwp",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.0667,
+        "lng": 40.5732,
+        "location_name": {
+            "en": "Deir ez-Zor",
+            "tr": "Deir ez-Zor",
+            "ru": "Дейр-эз-Зор",
+            "zh": "代尔祖尔"
+        },
+        "attack_type": "Settling status",
+        "visual_emoji": "📢",
+        "actor": "HTS",
+        "summary": {
+            "en": "In Deir ez-Zor, individuals formerly working with QSD continue to settle their status with the Syrian government.",
+            "tr": "Deyr ez-Zor'da, daha önce QSD ile çalışan kişiler, Suriye hükümeti ile statülerini düzenlemeye devam ediyor.",
+            "ru": "В Дейр-эз-Зоре лица, ранее работавшие с QSD, продолжают урегулировать свой статус с сирийским правительством.",
+            "zh": "在代尔祖尔，以前在库尔德武装组织（QSD）工作的人员继续与叙利亚政府解决他们的身份问题。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 8.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016182521625456769",
+        "local_video_path": "media/2016182521625456769.mp4",
+        "image_path": null,
+        "date": "2026-01-27 16:12:26+00:00",
+        "original_text": "استمرار إقبال العناصر العاملين مع تنظيم قسد سابقاً في دير الزور لتسوية أوضاعهم.\n\n#سوريا \n#دير_الزور https://t.co/0gVGdhxAwJ",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 55.7558,
         "lng": 37.6173,
         "location_name": {
@@ -12,7 +142,6 @@
         },
         "attack_type": "Meeting",
         "visual_emoji": "🤝",
-        "attacker": "Russia",
         "summary": {
             "en": "Putin will hold talks with Syrian President Ahmed Al-Sharaa in Moscow.",
             "tr": "Putin, Moskova'da Suriye Devlet Başkanı Ahmed Al-Sharaa ile görüşecek.",
@@ -30,7 +159,8 @@
         "sources": [
             "X (@AJSyriaNowN)"
         ],
-        "sub_events": []
+        "sub_events": [],
+        "actor": "Russia"
     },
     {
         "action": "CREATE",
@@ -45,7 +175,6 @@
         },
         "attack_type": "Ceasefire extension & humanitarian access",
         "visual_emoji": "🤝",
-        "attacker": "USA",
         "summary": {
             "en": "USA, France, Germany, and UK welcome the ceasefire extension between the Syrian government and QSD, and humanitarian access to Al-Hasakah and Ayn al-Arab.",
             "tr": "ABD, Fransa, Almanya ve İngiltere, Suriye hükümeti ile QSD arasındaki ateşkesin uzatılmasını ve El-Hasakah ve Ayn el-Arab'a insani erişimi memnuniyetle karşıladı.",
@@ -76,13 +205,13 @@
                 "local_video_path": "media/2016135114980262075.mp4",
                 "image_path": null,
                 "channel": "X (@AJSyriaNowN)",
-                "attacker": "Central Committee for Response in Aleppo",
                 "actor": "Central Committee for Response in Aleppo",
                 "original_text": "اللجنة المركزية لاستجابة حلب ترسل خبزا بالزوارق عبر نهر الفرات إلى قرى محاصرة من قبل قسد قرب عين العرب (كوباني) https://t.co/W2Vhpjk4kb",
                 "attack_type": "Ceasefire extension & humanitarian access",
                 "visual_emoji": "🤝"
             }
-        ]
+        ],
+        "actor": "USA"
     },
     {
         "action": "CREATE",
@@ -97,7 +226,6 @@
         },
         "attack_type": "Protest",
         "visual_emoji": "📣",
-        "attacker": "Civilians",
         "summary": {
             "en": "Families of missing persons in QSD prisons organize a protest in Deir ez-Zor, demanding disclosure of their sons' fate.",
             "tr": "QSD cezaevlerindeki kayıp kişilerin aileleri, Deyr ez-Zor'da bir protesto düzenleyerek oğullarının akıbetinin açıklanmasını talep ediyor.",
@@ -115,7 +243,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "sub_events": []
+        "sub_events": [],
+        "actor": "Civilians"
     },
     {
         "action": "CREATE",
@@ -130,7 +259,6 @@
         },
         "attack_type": "Statement",
         "visual_emoji": "📢",
-        "attacker": "USA",
         "summary": {
             "en": "US Ambassador Mike Huckabee comments on the importance of Israel for cell phone technology.",
             "tr": "ABD Büyükelçisi Mike Huckabee, İsrail'in cep telefonu teknolojisi için önemine değiniyor.",
@@ -161,8 +289,7 @@
                 "local_video_path": "media/2016154433051050001.mp4",
                 "image_path": null,
                 "channel": "X (@clashreport)",
-                "attacker": "USA",
-                "actor": null,
+                "actor": "USA",
                 "original_text": "US Ambassador to Israel Mike Huckabee:\n\nTrump does not see things horizontally; he sees them vertically.\n\nIf a thing may work but it lands a little left of center, he may still go there. https://t.co/nnWbiTrrYW",
                 "attack_type": "Statement",
                 "visual_emoji": "📢"
@@ -179,13 +306,13 @@
                 "local_video_path": null,
                 "image_path": "media/2016150134078235063.jpg",
                 "channel": "X (@clashreport)",
-                "attacker": "USA",
-                "actor": null,
+                "actor": "USA",
                 "original_text": "US Ambassador to Israel Mike Huckabee:\n\nThe root of Jew hatred is not political, it is not economic, it is spiritual. https://t.co/g6Pq8jfwio",
                 "attack_type": "Statement",
                 "visual_emoji": "📢"
             }
-        ]
+        ],
+        "actor": "USA"
     },
     {
         "action": "CREATE",
@@ -231,7 +358,6 @@
                 "local_video_path": "media/2016141730614038633.mp4",
                 "image_path": null,
                 "channel": "X (@AJSyriaNowN)",
-                "attacker": "Turkey",
                 "actor": "Turkey",
                 "original_text": "الرئيس التركي رجب طيب أردوغان:\n\nلا يمكن أن يكون هناك دولة داخل الدولة ولا قوى مسلّحة منفصلة في سوريا https://t.co/bxusL0I82a",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -249,7 +375,6 @@
                 "local_video_path": null,
                 "image_path": "media/2016147752267256048.jpg",
                 "channel": "X (@ConflictTR)",
-                "attacker": "Turkey",
                 "actor": "Turkey",
                 "original_text": "🔴 Genelkurmay Başkanı Orgeneral Selçuk Bayraktaroğlu, ABD Merkez Kuvvetler Komutanı Oramiral Brad Cooper ile telefon görüşmesi gerçekleştirdi.\n\nGörüşmede ikili ilişkiler ve bölgesel konuların ele alındığı bildirildi. https://t.co/FvL1yTDMSU",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -267,7 +392,6 @@
                 "local_video_path": null,
                 "image_path": "media/2016159854616788993.jpg",
                 "channel": "X (@ConflictTR)",
-                "attacker": "USA, UK, France, Germany",
                 "actor": "USA, UK, France, Germany",
                 "original_text": "🚨 ABD, İngiltere, Fransa ve Almanya’dan Suriye'deki ateşkes hakkında ortak açıklama:\n\nSuriye hükümeti ve PKK/SDG arasında varılan ateşkesin 15 gün daha uzatılmasını memnuniyetle karşılıyor ve tüm tarafları ateşkese kesinlikle uymaya çağırıyoruz.\n\nTüm tarafları kalıcı bir ateşkes https://t.co/ceHRySNQ84",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -285,7 +409,6 @@
                 "local_video_path": "media/2016127846058426464.mp4",
                 "image_path": null,
                 "channel": "X (@clashreport)",
-                "attacker": "Turkey",
                 "actor": "Turkey",
                 "original_text": "Turkish President Erdogan on Syria:\n\nResources that should be spent on the welfare of the Syrian people will no longer be used to dig tunnels underground, but instead to build schools, hospitals, bakeries, factories, and roads above ground. https://t.co/MLLVXAtbmF",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -303,7 +426,6 @@
                 "local_video_path": "media/2016127159362797739.mp4",
                 "image_path": null,
                 "channel": "X (@clashreport)",
-                "attacker": "Turkey",
                 "actor": "Turkey",
                 "original_text": "Turkish President Erdogan:\n\nAs Syria achieves stability and security, all neighboring countries—starting with us—will directly feel its positive effects.\n\nTrade will accelerate, investments will increase, and tourism will develop. In the residential areas that were reduced to https://t.co/yWU6omRBM3",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -321,7 +443,6 @@
                 "local_video_path": null,
                 "image_path": "media/2016126196744962524.jpg",
                 "channel": "X (@ConflictTR)",
-                "attacker": "Turkey",
                 "actor": "Turkey",
                 "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nÇevremize baktığımızda, Kuzey’den Güney’e etrafımızın yangın yeri olduğunu görüyoruz. https://t.co/32VhtIEsQy",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -339,7 +460,6 @@
                 "local_video_path": null,
                 "image_path": "media/2016123658855412084.jpg",
                 "channel": "X (@AJSyriaNowN)",
-                "attacker": "Turkey",
                 "actor": "Turkey",
                 "original_text": "ميدل إيست آي:\n\n• تركيا تخطط لإنشاء منطقة عازلة لصد موجة نزوح محتملة في حال سقوط الحكومة الإيرانية\n\n• في العام الماضي، قدّرت تركيا أن نحو مليون شخص قد يصلون إلى حدودها في حال حدوث هذا السيناريو https://t.co/Sx0zGYgzVZ",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -357,7 +477,6 @@
                 "local_video_path": null,
                 "image_path": "media/2016115911095132344.jpg",
                 "channel": "X (@ConflictTR)",
-                "attacker": "Türkiye",
                 "actor": "Türkiye",
                 "original_text": "🔴 Middle East Eye:\n\n▪️ Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda potansiyel mülteci dalgasını önlemek için plan hazırlıyor.\n\n▪️ Türkiye, İran'da en kötü senaryoya hazırlanıyor ve yeni bir mülteci dalgasını önlemek için sınırın İran tarafında bir tampon bölge https://t.co/zd9H4UYM7y",
                 "attack_type": "TOLUN ammunition capabilities",
@@ -378,7 +497,6 @@
         },
         "attack_type": "Meeting to discuss cooperation on rehabilitation projects, digital transformation, and reconstruction.",
         "visual_emoji": "🤝",
-        "attacker": "Syria",
         "summary": {
             "en": "Hama's Deputy Governor met with the Belgian agency Enabel to discuss cooperation on rehabilitation projects and digital transformation.",
             "tr": "Hama Vali Yardımcısı, rehabilitasyon projeleri ve dijital dönüşüm konusunda işbirliğini görüşmek üzere Belçikalı ajans Enabel ile bir araya geldi.",
@@ -395,7 +513,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "sub_events": []
+        "sub_events": [],
+        "actor": "Syria"
     },
     {
         "action": "CREATE",
@@ -410,7 +529,6 @@
         },
         "attack_type": "Mine clearing operation",
         "visual_emoji": "💣",
-        "attacker": "Syria",
         "summary": {
             "en": "The Syrian Arab Army is clearing mines around the Qarah Qozak Bridge in the eastern Aleppo countryside.",
             "tr": "Suriye Arap Ordusu, Halep'in doğu kırsalındaki Karah Qozak Köprüsü çevresindeki mayınları temizliyor.",
@@ -441,11 +559,11 @@
                 "local_video_path": null,
                 "image_path": "media/2016124105146204265.jpg",
                 "channel": "X (@Sana__gov)",
-                "attacker": "Syria",
                 "actor": "HTS",
                 "original_text": "الجيش العربي السوري يقوم بإزالة الألغام التي زرعها تنظيم قسد في محيط جسر قره قوزاق بريف حلب الشرقي.\n\n#الجيش_العربي_السوري \n#حلب https://t.co/al2rGljhGJ"
             }
-        ]
+        ],
+        "actor": "Syria"
     },
     {
         "action": "CREATE",
@@ -460,7 +578,6 @@
         },
         "attack_type": "Integration meeting planned",
         "visual_emoji": "🤝",
-        "attacker": "Syria",
         "summary": {
             "en": "Syrian government plans to hold a new integration meeting with PKK/SDG.",
             "tr": "Suriye hükümeti, PKK/SDG terör örgütü ile yeni bir entegrasyon görüşmesi yapmayı planlıyor.",
@@ -491,13 +608,13 @@
                 "local_video_path": null,
                 "image_path": "media/2016145248108364232.jpg",
                 "channel": "X (@AJSyriaNowN)",
-                "attacker": "Abdul Latif Al-Muhaimid",
                 "actor": "Abdul Latif Al-Muhaimid",
                 "original_text": "الباحث والمؤلف عبد اللطيف المحيمد يبدي استغرابه من التعليمات المعمول بها في جامعة دمشق عبر منشور له على منصة فيسبوك:\n\n\"ذهبت اليوم لأستعيد قيدي في كلية الآداب - قسم اللغة العربية في دمشق، بناء على مرسوم وزير التعليم العالي، فقالوا لي: وين كنت بالفترة الماضية؟ فقلت: مسجون عند قسد، https://t.co/J1v72HXmzs",
                 "attack_type": "Integration meeting planned",
                 "visual_emoji": "🤝"
             }
-        ]
+        ],
+        "actor": "Syria"
     },
     {
         "action": "CREATE",
@@ -512,7 +629,6 @@
         },
         "attack_type": "Multi-day readiness exercise",
         "visual_emoji": "✈️",
-        "attacker": "USA",
         "summary": {
             "en": "U.S. Air Forces Central conducts a multi-day readiness exercise in the Middle East amidst US-Iran tensions.",
             "tr": "ABD Hava Kuvvetleri Merkez Komutanlığı, ABD-İran gerginliği ortasında Orta Doğu'da çok günlü bir hazırlık tatbikatı düzenliyor.",
@@ -530,7 +646,8 @@
         "sources": [
             "X (@vvanwilgenburg)"
         ],
-        "sub_events": []
+        "sub_events": [],
+        "actor": "USA"
     },
     {
         "action": "CREATE",
@@ -545,7 +662,6 @@
         },
         "attack_type": "Repatriation",
         "visual_emoji": "📢",
-        "attacker": "UK",
         "summary": {
             "en": "Britain is secretly repatriating some of its citizens linked to the \"Islamic State\" from Syria.",
             "tr": "İngiltere, Suriye'den \"İslam Devleti\" ile bağlantılı bazı vatandaşlarını gizlice geri getiriyor.",
@@ -579,7 +695,6 @@
         },
         "attack_type": "Ban on makeup during official working hours",
         "visual_emoji": "📢",
-        "attacker": "Syria",
         "summary": {
             "en": "Latakia Governorate prohibits makeup during official working hours in its institutions.",
             "tr": "Lazkiye Valiliği, kurumlarında resmi çalışma saatlerinde makyajı yasakladı.",
@@ -613,7 +728,6 @@
         },
         "attack_type": "Road and bridge inspection",
         "visual_emoji": "⚠️",
-        "attacker": "Syria",
         "summary": {
             "en": "The Minister of Transport, accompanied by the Governor of Deir ez-Zor, inspects the roads and bridges to find appropriate emergency solutions.",
             "tr": "Ulaştırma Bakanı, Deyr ez-Zor Valisi eşliğinde, uygun acil çözümler bulmak için yol ve köprüleri inceliyor.",
@@ -645,7 +759,6 @@
                 "local_video_path": null,
                 "image_path": "media/2016128529289613599.jpg",
                 "channel": "X (@Sana__gov)",
-                "attacker": "Civilians",
                 "actor": "Civilians",
                 "original_text": "أهالي المفقودين في سجون تنظيم قسد ينظمون وقفة في دير الزور، طالبوا خلالها بالكشف عن مصير أبنائهم الذين اختطفهم تنظيم داعش الإرهابي إبان سيطرته على المنطقة، ثم استمر احتجازهم في السجون بعد انتقال السيطرة إلى تنظيم قسد.\n\n#سوريا\n#دير_الزور https://t.co/BhayjMIoIf",
                 "attack_type": "Road and bridge inspection",
@@ -666,7 +779,6 @@
         },
         "attack_type": "January Events",
         "visual_emoji": "📢",
-        "attacker": "Syria",
         "summary": {
             "en": "Highlights of January events in Syria.",
             "tr": "Suriye'deki Ocak ayı olaylarının özeti.",
@@ -698,7 +810,6 @@
                 "local_video_path": "media/2016119301380489521.mp4",
                 "image_path": null,
                 "channel": "X (@AJSyriaNowN)",
-                "attacker": "Syria",
                 "actor": "HTS",
                 "original_text": "هدوء حذر في الجزيرة السورية.. هل يصمد بعد تمديد وقف إطلاق النار؟ https://t.co/MPv2Iq1qih",
                 "attack_type": "January Events",
@@ -716,7 +827,6 @@
                 "local_video_path": null,
                 "image_path": "media/2016127452179759360.jpg",
                 "channel": "X (@ConflictTR)",
-                "attacker": "Türkiye",
                 "actor": "Türkiye",
                 "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nSuriye’nin tamamında, eski rejimin varil bombalarıyla enkaza çevirdiği yerleşim yerlerinde büyük bir inşa ve ihya seferberliği başlayacak. https://t.co/EsibvjtRsz",
                 "attack_type": "January Events",
@@ -737,7 +847,6 @@
         },
         "attack_type": "Road security patrols",
         "visual_emoji": "🚚",
-        "attacker": "Syria",
         "summary": {
             "en": "Syrian Interior Ministry deploys road security patrols in Latakia to enhance traffic safety and protect road users.",
             "tr": "Suriye İçişleri Bakanlığı, trafik güvenliğini artırmak ve yol kullanıcılarını korumak amacıyla Lazkiye'de yol güvenliği devriyeleri görevlendiriyor.",
@@ -771,7 +880,6 @@
         },
         "attack_type": "Opening of a center to settle the status of members affiliated with the QSD organization.",
         "visual_emoji": "📢",
-        "attacker": "Syria",
         "summary": {
             "en": "A center opened in Sheikh Maqsood, Aleppo, to settle the status of QSD members.",
             "tr": "Halep, Şeyh Maksut'ta QSD üyelerinin durumunu düzenlemek için bir merkez açıldı.",
@@ -805,7 +913,6 @@
         },
         "attack_type": "Statement",
         "visual_emoji": "📢",
-        "attacker": "Germany",
         "summary": {
             "en": "Germany seeks new partners due to strained US relations and tariffs.",
             "tr": "Almanya, ABD ilişkilerindeki gerginlik ve tarifeler nedeniyle yeni ortaklar arıyor.",
@@ -839,7 +946,6 @@
         },
         "attack_type": "Humanitarian aid delivery",
         "visual_emoji": "🚚",
-        "attacker": "Syria",
         "summary": {
             "en": "New humanitarian aid reached civilians in Ayn al-Arab through corridors opened by the Syrian army.",
             "tr": "Suriye ordusunun açtığı koridorlar üzerinden Ayn el-Arab'daki sivillere yeni insani yardımlar ulaştırıldı.",
@@ -873,7 +979,6 @@
         },
         "attack_type": "Transfer of ISIS detainees",
         "visual_emoji": "👮",
-        "attacker": "USA",
         "summary": {
             "en": "U.S. continues transferring ISIS detainees from Syria to Iraq.",
             "tr": "ABD, DEAŞ tutuklularının Suriye'den Irak'a transferine devam ediyor.",
@@ -907,7 +1012,6 @@
         },
         "attack_type": "Statement",
         "visual_emoji": "📢",
-        "attacker": "USA",
         "summary": {
             "en": "US Senator Lindsey Graham expresses concern over the situation in Syria and the threat to Kurds.",
             "tr": "ABD Senatörü Lindsey Graham, Suriye'deki durum ve Kürtlere yönelik tehdit konusundaki endişelerini dile getiriyor.",
@@ -939,7 +1043,6 @@
                 "local_video_path": "media/2016118802639888880.mp4",
                 "image_path": null,
                 "channel": "X (@clashreport)",
-                "attacker": "USA",
                 "actor": "USA",
                 "original_text": "U.S. Treasury Secretary Scott Bessent:\n\nCarney should do what is best for the Canadian people rather than trying to push his own globalist agenda. https://t.co/AhSYAzumyS",
                 "attack_type": "Statement",
@@ -960,7 +1063,6 @@
         },
         "attack_type": "Statement",
         "visual_emoji": "📢",
-        "attacker": "USA",
         "summary": {
             "en": "US legislation aims to impose sanctions on those hostile to Kurds.",
             "tr": "ABD mevzuatı Kürtlere düşman olanlara yaptırım uygulamayı amaçlıyor.",
@@ -994,7 +1096,6 @@
         },
         "attack_type": "Statement",
         "visual_emoji": "📢",
-        "attacker": "USA",
         "summary": {
             "en": "U.S. Congress has bipartisan support for northeastern Syria; however, the White House has gained power over foreign policy decisions since 9/11, limiting Congressional influence.",
             "tr": "ABD Kongresi'nin kuzeydoğu Suriye için iki partili desteği var; ancak Beyaz Saray, 11 Eylül'den beri dış politika kararları üzerinde daha fazla güç kazandı ve bu da Kongre'nin etkisini sınırladı.",
@@ -1028,7 +1129,6 @@
         },
         "attack_type": "An Islamist presents the severed braid of a Kurdish woman – and Kurdish women worldwide braid their hair. Why the braid is a symbol of misogyny and emancipation at the same time",
         "visual_emoji": "📢",
-        "attacker": "Islamist",
         "summary": {
             "en": "Report on Islamist presenting severed braid of Kurdish woman, exploring braid symbolism.",
             "tr": "Bir İslamcının Kürt bir kadının kesik örgüsünü sunması ve örgü sembolizmini inceleyen rapor.",
@@ -1062,7 +1162,6 @@
         },
         "attack_type": "aid convoy",
         "visual_emoji": "🚚",
-        "attacker": "Iraqi Kurdistan",
         "summary": {
             "en": "A convoy from Iraqi Kurdistan carrying supplies and fuel arrived in northern Syria (Rojava).",
             "tr": "Irak Kürdistanı'ndan bir konvoy, kuzey Suriye'ye (Rojava) malzeme ve yakıt taşıdı.",
@@ -1096,7 +1195,6 @@
         },
         "attack_type": "Inspection of roads and bridges",
         "visual_emoji": "🤝",
-        "attacker": "Syria",
         "summary": {
             "en": "Minister of Transport Yaarob Badr visits Raqqa to discuss transportation, roads, and bridges with Governor Abdul Rahman Salama.",
             "tr": "Ulaştırma Bakanı Yaarob Badr, Vali Abdul Rahman Salama ile taşımacılığı, yolları ve köprüleri görüşmek üzere Rakka'yı ziyaret ediyor.",
@@ -1130,7 +1228,6 @@
         },
         "attack_type": "drone attack",
         "visual_emoji": "🚁",
-        "attacker": "Syria",
         "summary": {
             "en": "SAA carried out a drone attack on the village of Baqla, south of Çilaxa (Jawadiya).",
             "tr": "SAA, Çilaxa'nın (Jawadiya) güneyindeki Baqla köyüne bir drone saldırısı düzenledi.",
@@ -1164,7 +1261,6 @@
         },
         "attack_type": "Collective escape attempt",
         "visual_emoji": "👮",
-        "attacker": "Inmates",
         "summary": {
             "en": "A collective escape attempt occurred at Al-Hol camp in Al-Hasakah. Security forces thwarted the attempt.",
             "tr": "Haseke'deki El-Hol kampında toplu kaçış girişimi yaşandı. Güvenlik güçleri girişimi engelledi.",
@@ -1198,7 +1294,6 @@
         },
         "attack_type": "Internal Security Forces car display with new visual identity",
         "visual_emoji": "🚚",
-        "attacker": "Syria",
         "summary": {
             "en": "Internal Security Forces car display with new visual identity in Tartus.",
             "tr": "Tartus'ta İç Güvenlik Güçleri'nin yeni görsel kimliğe sahip araç gösterisi.",
@@ -1232,7 +1327,6 @@
         },
         "attack_type": "vehicles display with new visual identity",
         "visual_emoji": "🚚",
-        "attacker": "Syria",
         "summary": {
             "en": "A convoy of 90 Internal Security Forces vehicles with the new visual identity was seen on the Tartus Corniche.",
             "tr": "İç Güvenlik Güçleri'ne ait yeni görsel kimliğe sahip 90 araçlık bir konvoy Tartus sahil yolunda görüldü.",
@@ -1266,7 +1360,6 @@
         },
         "attack_type": "Aerial shots of Deir ez-Zor and its prominent landmarks",
         "visual_emoji": "📸",
-        "attacker": "Syria",
         "summary": {
             "en": "Aerial shots of Deir ez-Zor and its landmarks are released.",
             "tr": "Deyrizor ve öne çıkan simge yapılarının havadan çekilmiş görüntüleri yayınlandı.",
@@ -1300,7 +1393,6 @@
         },
         "attack_type": "Dam filled to capacity",
         "visual_emoji": "📢",
-        "attacker": "Syria",
         "summary": {
             "en": "The Ministry of Energy reports that Al-Duraykish dam in Tartus is full, reaching its maximum capacity of 6 million cubic meters.",
             "tr": "Enerji Bakanlığı, Tartus'taki El-Duraykiş barajının dolduğunu ve 6 milyon metreküp maksimum kapasiteye ulaştığını bildirdi.",
