@@ -42,17 +42,17 @@
             "ru": "Аль-Хасака",
             "zh": "哈塞克"
         },
-        "attack_type": "Seizure",
-        "visual_emoji": "🚩",
+        "attack_type": "Deployment of Captured Assets",
+        "visual_emoji": "🚚",
         "actor": "Syria",
         "summary": {
-            "en": "Syrian Army begins deploying armored vehicles captured from SDF/PKK.",
-            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada konuşlandırıyor.",
-            "ru": "Сирийская армия начала развертывание бронетехники, захваченной у СДС/РПК.",
-            "zh": "叙利亚军队开始部署从SDF/PKK缴获的装甲车。"
+            "en": "Syrian Army begins deploying armored vehicles captured from SDF/PKK in the field.",
+            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada kullanmaya başladı.",
+            "ru": "Сирийская армия начала использовать на поле боя бронетехнику, захваченную у СДС/РПК.",
+            "zh": "叙利亚军队开始在战场上部署从SDF/PKK缴获的装甲车。"
         },
         "territory_update": null,
-        "confidence": 7.2,
+        "confidence": 6.0,
         "channel": "X (@ConflictTR)",
         "tweet_id": "2016092591729570238",
         "local_video_path": "media/2016092591729570238.mp4",
