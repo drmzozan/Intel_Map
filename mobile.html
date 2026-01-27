@@ -2097,9 +2097,9 @@
                 // Render Standard Markers
                 updateStandardMarkers(features);
 
-                // Handle Resize (Debounced) - Redirect check
+                // Handle Resize (Debounced) - Redirect back to desktop if needed
                 window.onresize = () => {
-                    if (window.innerWidth <= 768) window.location.href = "mobile.html";
+                    if (window.innerWidth > 768) window.location.href = "index.html";
                 };
 
                 // HEATMAP FILTERING: Only Clashes/Conflicts

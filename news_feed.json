@@ -2,6 +2,70 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 36.6092,
+        "lng": 40.7691,
+        "location_name": {
+            "en": "Al-Safa village",
+            "tr": "El-Safa köyü",
+            "ru": "Деревня Аль-Сафа",
+            "zh": "萨法村"
+        },
+        "attack_type": "Drone strike",
+        "visual_emoji": "🚁",
+        "attacker": "SDF",
+        "summary": {
+            "en": "Deir ez-Zor National Hospital received 14 injured last night due to SDF drone shelling on Al-Safa village, south of Al-Hasakah.",
+            "tr": "Dün gece, Haseke'nin güneyindeki El-Safa köyüne SDG'nin düzenlediği drone saldırısı sonucu yaralanan 14 kişi Deyr ez-Zor Milli Hastanesine kaldırıldı.",
+            "ru": "Национальная больница Дейр-эз-Зора приняла 14 раненых прошлой ночью в результате обстрела деревни Аль-Сафа к югу от Аль-Хасаки беспилотниками SDF.",
+            "zh": "由于叙利亚民主力量对哈塞克省南部的 Al-Safa 村庄进行无人机炮击，代尔祖尔国家医院昨晚接收了 14 名伤员。"
+        },
+        "territory_update": null,
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016046122213540253",
+        "local_video_path": null,
+        "image_path": "media/2016046122213540253.jpg",
+        "date": "2026-01-27 07:10:26+00:00",
+        "original_text": "مقطع مصور يُظهر استقبال مشفى دير الزور الوطني 14 مصابا ليلة أمس جراء قصف بالمسيّرات نفّذته قسد على قرية الصفا في ريف الحسكة الجنوبي https://t.co/6vR5fVl8zu",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 38.8951,
+        "lng": -77.0364,
+        "location_name": {
+            "en": "Washington, D.C.",
+            "tr": "Washington, D.C.",
+            "ru": "Вашингтон, округ Колумбия",
+            "zh": "华盛顿特区"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "USA",
+        "summary": {
+            "en": "US President Donald Trump stated Iran seeks a deal with Washington.",
+            "tr": "ABD Başkanı Donald Trump, İran'ın Washington ile bir anlaşma yapmak istediğini belirtti.",
+            "ru": "Президент США Дональд Трамп заявил, что Иран стремится к соглашению с Вашингтоном.",
+            "zh": "美国总统唐纳德·特朗普表示，伊朗寻求与华盛顿达成协议。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016045440890753277",
+        "local_video_path": null,
+        "image_path": null,
+        "date": "2026-01-27 07:07:44+00:00",
+        "original_text": "US President Donald Trump said Iran seeks a deal with Washington\n\nhttps://t.co/1F4bgiM953",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 33.8852,
         "lng": 35.5919,
         "location_name": {
@@ -1491,38 +1555,6 @@
         "original_text": "🔴 Suriye Dışişleri Bakanlığı:\n\nPKK/SDG terör örgütüne birden fazla süre tanıdık, ancak onlar oyalama ve geciktirme taktiğiyle karşılık verdiler.\n\nPKK/SDG'nin oyalama taktikleri herhangi bir olumlu sonuç vermedi.\n\nPKK/SDG’nin kullandığı 'güven' argümanı, krizi uzatmayı amaçlayan",
         "sources": [
             "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.4434,
-        "lng": 40.8601,
-        "location_name": {
-            "en": "Al-Maylabiyah",
-            "tr": "El-Maylabiye",
-            "ru": "Аль-Майлабия",
-            "zh": "迈拉比亚"
-        },
-        "attack_type": "drone strike",
-        "visual_emoji": "🚁",
-        "attacker": "Damascus-affiliated factions",
-        "summary": {
-            "en": "Three civilians were injured in Al-Maylabiyah due to a drone strike.",
-            "tr": "El-Maylabiye'de düzenlenen drone saldırısında üç sivil yaralandı.",
-            "ru": "Три мирных жителя получили ранения в Аль-Майлабии в результате удара дрона.",
-            "zh": "迈拉比亚发生无人机袭击事件，造成三名平民受伤。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2015781086442229967",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 13:37:17+00:00",
-        "original_text": "SDF: Three civilians were injured as a result of a drone strike carried out by Damascus-affiliated factions on the village of Al-Maylabiyah in the southern countryside of Hasakah Governorate.”",
-        "sources": [
-            "X (@vvanwilgenburg)"
         ]
     }
 ]
