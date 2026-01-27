@@ -2,6 +2,38 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 37.0407,
+        "lng": 41.2143,
+        "location_name": {
+            "en": "Qamishli",
+            "tr": "Kamışlı",
+            "ru": "Камышлы",
+            "zh": "卡米什利"
+        },
+        "attack_type": "Ceasefire Violation",
+        "visual_emoji": "⚔️",
+        "attacker": "HTS",
+        "summary": {
+            "en": "YPJ reports ceasefire violations by HTS and Daesh near Qamishli; alleged plans to invade Rojava.",
+            "tr": "YPJ, HTS ve Daesh'in Kamışlı yakınlarında ateşkesi ihlal ettiğini ve Rojava'yı işgal etmeyi planladığını bildirdi.",
+            "ru": "YPJ сообщает о нарушениях прекращения огня со стороны HTS и Даиш вблизи Камышли; предположительно планируется вторжение в Рожаву.",
+            "zh": "YPJ 报告说，HTS 和 Daesh 违反了卡米什利附近的停火协议，并声称计划入侵罗贾瓦。"
+        },
+        "territory_update": {},
+        "confidence": 10.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016082869894943034",
+        "local_video_path": null,
+        "image_path": "media/2016082869894943034.jpg",
+        "date": "2026-01-27 09:36:27+00:00",
+        "original_text": "https://t.co/uXpxcfEnLq",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 39.9208,
         "lng": 32.8541,
         "location_name": {
@@ -52,7 +84,7 @@
             "zh": "一名曾被 QSD (SDF) 拘留的人讲述了他被拘留的经历，之后他从拉卡市的 Al-Aqtan 监狱获释。"
         },
         "territory_update": {},
-        "confidence": 8.0,
+        "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016082115171938358",
         "local_video_path": "media/2016082115171938358.mp4",
@@ -61,6 +93,23 @@
         "original_text": "معتقل سابق لدى تنظيم قسد يروي لـ سانا ظروف اعتقاله قبل تحريره من سجن الأقطان في الرقة\n\n#سوريا \n#الرقة https://t.co/qyq6TIStCe",
         "sources": [
             "X (@Sana__gov)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "A former detainee of the QSD (SDF) recounts his detention before being released from Al-Aqtan prison in Raqqa.",
+                    "tr": "Eski bir QSD (SDF) tutuklusu, Rakka'daki El-Aktan hapishanesinden serbest bırakılmadan önce tutukluluğunu anlatıyor.",
+                    "ru": "Бывший задержанный QSD (SDF) рассказывает о своем задержании перед освобождением из тюрьмы Аль-Актан в Ракке.",
+                    "zh": "一名曾被 QSD (SDF) 拘留的人讲述了他被拘留的经历，之后他从拉卡市的 Al-Aqtan 监狱获释。"
+                },
+                "date": "2026-01-27 09:33:27+00:00",
+                "tweet_id": "2016082115171938358",
+                "local_video_path": "media/2016082115171938358.mp4",
+                "image_path": null,
+                "channel": "X (@Sana__gov)",
+                "attacker": "SDF",
+                "original_text": "معتقل سابق لدى تنظيم قسد يروي لـ سانا ظروف اعتقاله قبل تحريره من سجن الأقطان في الرقة\n\n#سوريا \n#الرقة https://t.co/qyq6TIStCe"
+            }
         ]
     },
     {
@@ -341,8 +390,8 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 36.8667,
-        "lng": 39.2167,
+        "lat": 37.0407,
+        "lng": 41.2143,
         "location_name": {
             "en": "Qamishli",
             "tr": "Kamışlı",
@@ -359,7 +408,7 @@
             "zh": "YPJ 报告说，HTS 和 Daesh 违反了停火协议，他们据称计划入侵西库尔德斯坦（罗贾瓦）。"
         },
         "territory_update": {},
-        "confidence": 7.5,
+        "confidence": 10.0,
         "channel": "X (@vvanwilgenburg)",
         "tweet_id": "2016077218531758376",
         "local_video_path": null,
@@ -367,7 +416,8 @@
         "date": "2026-01-27 09:14:00+00:00",
         "original_text": "“Ever since the ceasefire was announced, the HTS gangs and Daesh have been violating it. Their plot is to invade West Kurdistan [Rojava], but we will not let them - unless they go over our dead bodies.” - YPJ spox https://t.co/SN3l5hMNPM",
         "sources": [
-            "X (@vvanwilgenburg)"
+            "X (@vvanwilgenburg)",
+            "X (@AJSyriaNowN)"
         ]
     },
     {
@@ -1625,28 +1675,6 @@
             "X (@Sana__gov)",
             "X (@AJSyriaNowN)",
             "X (@vvanwilgenburg)"
-        ]
-    },
-    {
-        "action": "IRRELEVANT",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": null,
-        "attack_type": null,
-        "visual_emoji": null,
-        "attacker": null,
-        "summary": null,
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2015808864466149428",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-26 15:27:39+00:00",
-        "original_text": "South Sudanese Army Orders UN and NGO's to Evacuate Ahead of a Major Offensive\n\nhttps://t.co/HF9dFXdFJV",
-        "sources": [
-            "X (@clashreport)"
         ]
     }
 ]
