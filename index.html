@@ -935,9 +935,9 @@
             "Small Arms": "gun", "Sniper": "gun", "Execution": "gun",
             "Artillery": "cannon", "MLRS": "cannon", "Mortar": "cannon",
             "Tank": "tank", "IFV": "tank", "Reinforcement": "truck",
-            "Airstrike": "plane", "Drone": "fpv",
+            "Airstrike": "plane", "Drone": "fpv", "Drone strike": "fpv",
             "Cruise Missile": "rocket", "Ballistic Missile": "rocket",
-            "IED": "explosion", "Other": "unknown",
+            "IED": "explosion", "Shelling": "cannon", "Other": "unknown",
             "Hospital": "medical",
             "Military Base": "hq",
             "Border Crossing": "crossing", "Dam": "dam",
@@ -1462,10 +1462,10 @@
                     break;
 
                 default: // ? or Box
-                    ctx.font = "bold 24px monospace";
+                    ctx.font = "bold 32px Segoe UI, sans-serif";
                     ctx.textAlign = 'center';
                     ctx.textBaseline = 'middle';
-                    ctx.fillText(originalType.charAt(0), cx, cy);
+                    ctx.fillText("?", cx, cy);
             }
 
             return canvas;
