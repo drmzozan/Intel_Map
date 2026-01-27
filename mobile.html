@@ -501,6 +501,14 @@
                 transform: translateX(0);
             }
 
+            /* 5. Hide Mapbox UI Buttons (Zoom, Compass, Attribution) */
+            .mapboxgl-ctrl-top-right,
+            .mapboxgl-ctrl-top-left,
+            .mapboxgl-ctrl-bottom-right,
+            .mapboxgl-ctrl-bottom-left {
+                display: none !important;
+            }
+
             /* 5. Feed Items (Twitter Style) */
             .feed-item {
                 padding: 15px !important;
@@ -1150,7 +1158,7 @@
             if (window.hoverPopup) window.hoverPopup.remove();
             if (window.activeDetailPopup) window.activeDetailPopup.remove();
 
-            const popup = new mapboxgl.Popup({ className: 'event-popup', maxWidth: '320px', closeButton: true })
+            const popup = new mapboxgl.Popup({ className: 'event-popup', maxWidth: '320px', closeButton: true, closeOnClick: false })
                 .setLngLat(coords)
                 .setHTML(`
                     <div style="cursor:pointer;" onclick="event.stopPropagation(); expandEvent('${props.tweet_id}')">
@@ -2072,10 +2080,14 @@
                 document.getElementById('layer-control').classList.remove('active');
             }
             window.popupLocked = false;
+            // Popups are now persistent (closeOnClick: false), so we don't remove them on map click here
+            // to avoid accidental closings while panning.
+            /*
             if (window.activeDetailPopup) {
                 window.activeDetailPopup.remove();
                 window.activeDetailPopup = null;
             }
+            */
         });
 
         window.toggleLayer = function (layerId, checkbox) {
