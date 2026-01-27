@@ -254,7 +254,7 @@
             cursor: pointer;
         }
 
-        .attacker-badge {
+        .actor-badge {
             font-size: 10px;
             padding: 3px 8px;
             border-radius: 100px;
@@ -1508,14 +1508,14 @@
 
         // --- POPUP & MODAL SYSTEM ---
 
-        function openDetailModal(imgUrl, attacker, location_name, summary, date, tweet_id, channel, image_path, local_video_path, original_text, sources, confidence) {
+        function openDetailModal(imgUrl, actor, location_name, summary, date, tweet_id, channel, image_path, local_video_path, original_text, sources, confidence) {
             try {
                 const modal = document.getElementById('news-modal');
                 const content = document.getElementById('modal-content');
                 if (!modal || !content) return;
 
                 const item = latestNews.find(n => n.tweet_id == tweet_id);
-                const safeColor = (colorMapping && colorMapping[attacker]) ? colorMapping[attacker] : '#fff';
+                const safeColor = (colorMapping && colorMapping[actor]) ? colorMapping[actor] : '#fff';
                 const lang = window.currentLang || 'en';
                 const t = translations[lang] || translations['en'];
 
@@ -1526,14 +1526,14 @@
                     <div style="border-bottom:1px solid #333; padding-bottom:15px; margin-bottom:20px;">
                         <h2 style="color:${safeColor}; margin:0; font-size:26px;">${locName} Cluster</h2>
                         <div style="color:#888; font-size:14px; margin-top:5px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">
-                            ${attacker} • ${item ? item.attack_type : ''}
+                            ${actor} • ${item ? item.attack_type : ''}
                         </div>
                     </div>
                 `;
 
                 // CLUSTER LOGIC
                 const events = (item && item.sub_events && item.sub_events.length > 0) ? item.sub_events : [{
-                    summary, date, tweet_id, channel, image_path, local_video_path, attacker, sources, confidence
+                    summary, date, tweet_id, channel, image_path, local_video_path, actor, sources, confidence
                 }];
 
                 events.forEach((ev, idx) => {
@@ -1612,7 +1612,7 @@
             let itemsHtml = '';
             features.forEach(f => {
                 const p = f.properties;
-                const safeColor = (colorMapping && colorMapping[p.attacker]) ? colorMapping[p.attacker] : '#fff';
+                const safeColor = (colorMapping && colorMapping[p.actor]) ? colorMapping[p.actor] : '#fff';
                 const timeStr = timeAgo(p.date || new Date().toISOString());
                 const vidId = 'vid-list-' + p.tweet_id;
 
@@ -1636,7 +1636,7 @@
                         <!-- Info -->
                         <div style="padding:8px;">
                              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                                <span class="attacker-badge" style="background:${safeColor}; font-size:9px;">${p.attacker}</span>
+                                <span class="actor-badge" style="background:${safeColor}; font-size:9px;">${p.actor}</span>
                                 <span style="font-size:9px; color:${confColor}; border:1px solid ${confColor}; padding:0 3px; border-radius:3px;">
                                     ${confScore.toFixed(1)} AI
                                 </span>
@@ -1679,7 +1679,7 @@
             const props = feature.properties;
             const uniqueVidId = 'vid-' + props.tweet_id;
             const timeStr = timeAgo(props.date || new Date().toISOString());
-            const safeColor = (colorMapping && colorMapping[props.attacker]) ? colorMapping[props.attacker] : '#fff';
+            const safeColor = (colorMapping && colorMapping[props.actor]) ? colorMapping[props.actor] : '#fff';
 
             // Confidence
             const confScore = parseFloat(props.confidence) || 4.0;
@@ -1742,7 +1742,7 @@
                    <div style="padding:12px;">
                        <div style="display:flex; justify-content:space-between; margin-bottom:8px; align-items:center;">
                            <div style="display:flex; align-items:center; gap:6px;">
-                               <span class="attacker-badge" style="background:${safeColor}">${props.attacker}</span>
+                               <span class="actor-badge" style="background:${safeColor}">${props.actor}</span>
                                 <span style="font-size:10px; color:${confColor}; border:1px solid ${confColor}; padding:1px 5px; border-radius:3px; font-weight:700;">
                                     ${confScore.toFixed(1)} AI
                                 </span>
@@ -1843,7 +1843,7 @@
                 window.popupLocked = false;
                 window.activeDetailPopup = null;
 
-                openDetailModal(null, item.attacker, item.location_name, item.summary, item.date, item.tweet_id, item.channel, item.image_path, item.local_video_path, item.original_text, item.sources, item.confidence);
+                openDetailModal(null, item.actor, item.location_name, item.summary, item.date, item.tweet_id, item.channel, item.image_path, item.local_video_path, item.original_text, item.sources, item.confidence);
             }
         };
 
@@ -2023,7 +2023,7 @@
                                 <div style="font-weight: 600; color: #fff; font-size: 12px;">${props.location_name}</div>
                                 <div style="color: #bbb; font-size: 11px; line-height: 1.3;">${props.summary ? props.summary.substring(0, 100) + (props.summary.length > 100 ? '...' : '') : ''}</div>
                                 <div style="display: flex; justify-content: space-between; margin-top: 4px;">
-                                    <span style="color: #3498db; font-size: 10px; font-weight: 600;">${props.attacker}</span>
+                                    <span style="color: #3498db; font-size: 10px; font-weight: 600;">${props.actor}</span>
                                     <span style="color: #555; font-size: 9px;">${props.date ? props.date.split(' ')[1].substring(0, 5) : ''}</span>
                                 </div>
                             </div>
@@ -2645,8 +2645,8 @@
                     if (!symbolTypeMapping[safeIconName]) safeIconName = "Other";
 
                     // Use cached image URL
-                    let safeAttacker = item.attacker;
-                    if (!colorMapping[safeAttacker]) safeAttacker = "Unknown";
+                    let safeActor = item.actor;
+                    if (!colorMapping[safeActor]) safeActor = "Unknown";
 
                     // DYNAMIC EMOJI SYSTEM
                     // If AI provided an emoji, use it to generate a unique key
@@ -2681,24 +2681,24 @@
                     let key;
                     if (emoji) {
                         // Use normalized emoji for key to hit cache more often
-                        key = `emoji-${emoji}-${safeAttacker}-${isHighConf ? 'high' : 'norm'}`;
+                        key = `emoji-${emoji}-${safeActor}-${isHighConf ? 'high' : 'norm'}`;
                     } else {
-                        key = `${safeIconName}-${safeAttacker}-${isHighConf ? 'high' : 'norm'}`;
+                        key = `${safeIconName}-${safeActor}-${isHighConf ? 'high' : 'norm'}`;
                     }
 
                     // Dynamically generate and cache the icon if it's new (Aklımıza gelmeyen eventler için)
                     // CUSTOM FLAG OVERRIDE
                     if (safeIconName === "capture_flag") {
-                        if (safeAttacker === "SDF" || safeAttacker === "QSD") markerUrls[key] = "flag_sdf.png";
-                        else if (safeAttacker === "HTS" || safeAttacker === "Salvation Government") markerUrls[key] = "flag_hts.png";
+                        if (safeActor === "SDF" || safeActor === "QSD") markerUrls[key] = "flag_sdf.png";
+                        else if (safeActor === "HTS" || safeActor === "Salvation Government") markerUrls[key] = "flag_hts.png";
                         else if (!markerUrls[key]) {
                             // Default Canvas Flag for others
-                            const canvas = createCompositeMarker(null, colorMapping[safeAttacker], "capture_flag", false, emoji, confidence, safeAttacker);
+                            const canvas = createCompositeMarker(null, colorMapping[safeActor], "capture_flag", false, emoji, confidence, safeActor);
                             markerUrls[key] = canvas.toDataURL();
                         }
                     } else if (!markerUrls[key]) {
                         // Standard Marker
-                        const canvas = createCompositeMarker(null, colorMapping[safeAttacker], emoji ? "Other" : safeIconName, false, emoji, confidence, safeAttacker);
+                        const canvas = createCompositeMarker(null, colorMapping[safeActor], emoji ? "Other" : safeIconName, false, emoji, confidence, safeActor);
                         markerUrls[key] = canvas.toDataURL();
                     }
 
@@ -2718,13 +2718,13 @@
 
                     div.innerHTML = `
                         <div>
-                            <img src="${imgUrl}" style="width:42px; height:42px; filter: drop-shadow(0 0 5px ${colorMapping[safeAttacker]}55);">
+                            <img src="${imgUrl}" style="width:42px; height:42px; filter: drop-shadow(0 0 5px ${colorMapping[safeActor]}55);">
                             ${item.local_video_path ? '<div style="position:absolute; bottom:-2px; right:-2px; background:var(--accent); color:white; font-size:8px; padding:2px 4px; border-radius:4px; font-weight:bold;">LIVE</div>' : ''}
                         </div>
                         <div>
                             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
                                 <div>
-                                    <span class="attacker-badge bg-${safeAttacker}">${safeAttacker}</span>
+                                    <span class="actor-badge bg-${safeActor}">${safeActor}</span>
                                     <span style="font-size:9px; color:${isHighConf ? '#2ecc71' : '#f39c12'}; margin-left:5px; border:1px solid ${isHighConf ? '#2ecc71' : '#f39c12'}; padding:1px 4px; border-radius:4px;">
                                         ${confidence.toFixed(1)} AI
                                     </span>
@@ -2744,14 +2744,14 @@
                         }
                     };
                     sidebar.appendChild(div);
-                    // Use safeAttacker for the icon lookup in the map layer
+                    // Use safeActor for the icon lookup in the map layer
                     features.push({
                         type: 'Feature',
                         geometry: { type: 'Point', coordinates: [item.lng, item.lat] },
                         properties: {
                             type: safeIconName,
-                            attacker: safeAttacker,
-                            original_attacker: item.attacker,
+                            actor: safeActor,
+                            original_actor: item.actor,
                             summary: item.summary,
                             location_name: item.location_name,
                             image_path: item.image_path || "",
