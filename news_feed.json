@@ -130,22 +130,22 @@
     {
         "action": "MERGE",
         "target_id": "2016092591729570238",
-        "lat": 36.5,
-        "lng": 40.74,
+        "lat": 36.495,
+        "lng": 40.755,
         "location_name": {
             "en": "Al-Hasakah",
             "tr": "Haseke",
             "ru": "Эль-Хасака",
             "zh": "哈塞克"
         },
-        "attack_type": "Seizure of armored vehicles",
+        "attack_type": "Seizure",
         "visual_emoji": "🚩",
         "actor": "Syria",
         "summary": {
-            "en": "Syrian Army deploys armored vehicles captured from SDF/PKK in field operations.",
-            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirilen zırhlı araçları sahada kullanmaya başladı.",
-            "ru": "Сирийская армия начала использовать бронетехнику, захваченную у СДС/РПК.",
-            "zh": "叙利亚军队开始在实战中部署从SDF/PKK缴获的装甲车。"
+            "en": "Syrian Army begins deploying armored vehicles captured from SDF in field operations.",
+            "tr": "Suriye Ordusu, SDG'den ele geçirilen zırhlı araçları saha operasyonlarında kullanmaya başladı.",
+            "ru": "Сирийская армия начала использовать бронетехнику, захваченную у СДС, в полевых операциях.",
+            "zh": "叙利亚军队开始在实战行动中部署从SDF缴获的装甲车。"
         },
         "territory_update": null,
         "confidence": 6.0,
