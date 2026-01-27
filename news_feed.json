@@ -2,6 +2,999 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 39.9167,
+        "lng": 32.8667,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdogan states Turkey is meeting humanitarian aid requests from Kurdish brothers in cooperation with Syria.",
+            "tr": "Cumhurbaşkanı Erdoğan, Türkiye'nin Suriye hükümeti ile işbirliği içinde Kürt kardeşlerinden gelen insani yardım taleplerini karşıladığını belirtiyor.",
+            "ru": "Президент Эрдоган заявляет, что Турция удовлетворяет запросы о гуманитарной помощи от курдских братьев в сотрудничестве с Сирией.",
+            "zh": "埃尔多安总统表示，土耳其正在与叙利亚合作，满足库尔德兄弟的人道主义援助要求。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016128964582912170",
+        "local_video_path": "media/2016128964582912170.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:39:37+00:00",
+        "original_text": "Turkish President Erdogan:\n\nWe are meeting the humanitarian aid requests coming from our Kurdish brothers living beyond our border in close cooperation with the Syrian government. https://t.co/QKW2IqP10u",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9255,
+        "lng": 32.8663,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdogan says there can be no state within a state or separate armed force within Syria.",
+            "tr": "Cumhurbaşkanı Erdoğan, Suriye'de devlet içinde devlet veya ayrı bir silahlı kuvvet olamayacağını belirtiyor.",
+            "ru": "Президент Эрдоган заявляет, что в Сирии не может быть государства в государстве или отдельной вооруженной силы.",
+            "zh": "埃尔多安总统表示，叙利亚境内不能存在国中之国或单独的武装力量。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016128383491482048",
+        "local_video_path": "media/2016128383491482048.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:37:19+00:00",
+        "original_text": "Turkish President Erdogan on Syria:\n\nThere can be no state within a state and no separate armed force within the state. https://t.co/anrHqExQvp",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9208,
+        "lng": 32.8541,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdogan states resources will be used for Syrian welfare, not tunnels, but schools, hospitals, etc.",
+            "tr": "Cumhurbaşkanı Erdoğan, kaynakların tüneller yerine okullar, hastaneler vb. için Suriye'nin refahı için kullanılacağını belirtiyor.",
+            "ru": "Президент Эрдоган заявляет, что ресурсы будут использоваться для благосостояния Сирии, а не для туннелей, а для школ, больниц и т. д.",
+            "zh": "埃尔多安总统表示，资源将用于叙利亚的福利，而不是用于隧道，而是用于学校、医院等。"
+        },
+        "territory_update": {},
+        "confidence": 8.4,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016127846058426464",
+        "local_video_path": "media/2016127846058426464.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:35:11+00:00",
+        "original_text": "Turkish President Erdogan on Syria:\n\nResources that should be spent on the welfare of the Syrian people will no longer be used to dig tunnels underground, but instead to build schools, hospitals, bakeries, factories, and roads above ground. https://t.co/MLLVXAtbmF",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9255,
+        "lng": 32.8663,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Refugee Return Program",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdogan reports that millions of Syrian refugees, including 600,000 from Turkey, have returned to their homeland.",
+            "tr": "Cumhurbaşkanı Erdoğan, Türkiye'den 600.000'i de dahil olmak üzere milyonlarca Suriyeli mültecinin anavatanlarına geri döndüğünü bildirdi.",
+            "ru": "Президент Эрдоган сообщает, что миллионы сирийских беженцев, в том числе 600 000 из Турции, вернулись на родину.",
+            "zh": "埃尔多安总统报告说，包括来自土耳其的 60 万在内的数百万叙利亚难民已经返回家园。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016127443971559430",
+        "local_video_path": "media/2016127443971559430.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:33:35+00:00",
+        "original_text": "Turkish President Erdogan:\n\nMillions of Syrian refugees have returned to their homeland, including 600,000 from our country. https://t.co/s6RoGUDo6Z",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9167,
+        "lng": 32.8333,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdogan says Syria's stability will positively affect neighboring countries, boosting trade, investments, and tourism.",
+            "tr": "Cumhurbaşkanı Erdoğan, Suriye'nin istikrarının komşu ülkeleri olumlu etkileyeceğini, ticaret, yatırım ve turizmi artıracağını belirtiyor.",
+            "ru": "Президент Эрдоган заявляет, что стабильность Сирии положительно повлияет на соседние страны, стимулируя торговлю, инвестиции и туризм.",
+            "zh": "埃尔多安总统表示，叙利亚的稳定将对邻国产生积极影响，促进贸易、投资和旅游业。"
+        },
+        "territory_update": {},
+        "confidence": 8.4,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016127159362797739",
+        "local_video_path": "media/2016127159362797739.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:32:27+00:00",
+        "original_text": "Turkish President Erdogan:\n\nAs Syria achieves stability and security, all neighboring countries—starting with us—will directly feel its positive effects.\n\nTrade will accelerate, investments will increase, and tourism will develop. In the residential areas that were reduced to https://t.co/yWU6omRBM3",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9208,
+        "lng": 32.8541,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdoğan states that no one has the right to impose new costs on the Syrian people. Terrorism and weapons are outdated.",
+            "tr": "Cumhurbaşkanı Erdoğan, hiç kimsenin Suriye halkına yeni bedeller ödetme hakkı olmadığını, terörizm ve silahların miadının dolduğunu belirtiyor.",
+            "ru": "Президент Эрдоган заявляет, что никто не имеет права возлагать новые издержки на сирийский народ. Терроризм и оружие устарели.",
+            "zh": "埃尔多安总统表示，任何人都无权强加新的代价给叙利亚人民。恐怖主义和武器已经过时。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016128327048724517",
+        "local_video_path": null,
+        "image_path": "media/2016128327048724517.jpg",
+        "date": "2026-01-27 12:37:05+00:00",
+        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nKimsenin Suriye halkına yeni bedeller ödetme hakkı yoktur. Terörün, silahın miadı dolmuştur. Devlet içinde ayrı devlet olmaz. Devlet içinde ayrı silahlı güç olmaz, paralel ordu olmaz. https://t.co/naRCvsD6Ly",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 34.8021,
+        "lng": 38.9968,
+        "location_name": {
+            "en": "Syria",
+            "tr": "Suriye",
+            "ru": "Сирия",
+            "zh": "叙利亚"
+        },
+        "attack_type": "Construction and restoration efforts",
+        "visual_emoji": "🏗️",
+        "attacker": "Türkiye",
+        "summary": {
+            "en": "President Erdoğan announced a major construction and restoration initiative in areas of Syria devastated by the former regime's barrel bombs.",
+            "tr": "Cumhurbaşkanı Erdoğan, Suriye'de eski rejimin varil bombalarıyla enkaza çevirdiği bölgelerde büyük bir inşa ve restorasyon girişiminin başlayacağını duyurdu.",
+            "ru": "Президент Эрдоган объявил о крупной инициативе по строительству и восстановлению районов Сирии, разрушенных бочковыми бомбами бывшего режима.",
+            "zh": "埃尔多安总统宣布，将在叙利亚被前政权的桶装炸弹摧毁的地区启动一项大规模的建设和重建倡议。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016127452179759360",
+        "local_video_path": null,
+        "image_path": "media/2016127452179759360.jpg",
+        "date": "2026-01-27 12:33:37+00:00",
+        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nSuriye’nin tamamında, eski rejimin varil bombalarıyla enkaza çevirdiği yerleşim yerlerinde büyük bir inşa ve ihya seferberliği başlayacak. https://t.co/EsibvjtRsz",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9199,
+        "lng": 32.8543,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdoğan states that new opportunities are opening up for Turkey, emphasizing the benefits of supporting the oppressed in Gaza and embracing those in Syria.",
+            "tr": "Cumhurbaşkanı Erdoğan, Türkiye için yeni fırsatların açıldığını, Gazze'de mazlumlara sahip çıkmanın ve Suriye'de kucak açmanın faydalarını vurguluyor.",
+            "ru": "Президент Эрдоган заявляет об открытии новых возможностей для Турции, подчеркивая преимущества поддержки угнетенных в Газе и принятия тех, кто находится в Сирии.",
+            "zh": "埃尔多安总统表示，土耳其正在迎来新的机遇，强调支持加沙受压迫者和接纳叙利亚人民的好处。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016126906345673007",
+        "local_video_path": null,
+        "image_path": "media/2016126906345673007.jpg",
+        "date": "2026-01-27 12:31:26+00:00",
+        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nTürkiye’nin önünde yeni kapılar açılıyor. Samimiyetle ifade ediyorum; Gazze’de mazlumlara sahip çıkmamızın, Suriye’de 13,5 yıl boyunca kucak açmamızın bereketini ziyadesiyle göreceğiz. https://t.co/mLykNOEr1G",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.960956711822014,
+        "lng": 32.871756711822016,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdogan states that the surroundings are practically on fire from north to south.",
+            "tr": "Cumhurbaşkanı Erdoğan, çevrenin kuzeyden güneye adeta yanmakta olduğunu belirtiyor.",
+            "ru": "Президент Эрдоган заявляет, что все вокруг практически в огне с севера на юг.",
+            "zh": "埃尔多安总统表示，从北到南，周围环境实际上都着火了。"
+        },
+        "territory_update": {},
+        "confidence": 7.2,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016126196744962524",
+        "local_video_path": null,
+        "image_path": "media/2016126196744962524.jpg",
+        "date": "2026-01-27 12:28:37+00:00",
+        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nÇevremize baktığımızda, Kuzey’den Güney’e etrafımızın yangın yeri olduğunu görüyoruz. https://t.co/32VhtIEsQy",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.88864777063485,
+        "lng": 41.77834777063485,
+        "location_name": {
+            "en": "Baqla",
+            "tr": "Baqla",
+            "ru": "Бакла",
+            "zh": "巴格拉"
+        },
+        "attack_type": "drone attack",
+        "visual_emoji": "🚁",
+        "attacker": "Syria",
+        "summary": {
+            "en": "SAA carried out a drone attack on the village of Baqla, south of Çilaxa (Jawadiya).",
+            "tr": "SAA, Çilaxa'nın (Jawadiya) güneyindeki Baqla köyüne bir drone saldırısı düzenledi.",
+            "ru": "САА нанесла удар дроном по деревне Бакла, расположенной к югу от Чилаха (Джавадия).",
+            "zh": "叙利亚军队对 Çilaxa (Jawadiya) 南部的 Baqla 村庄发动了无人机袭击。"
+        },
+        "territory_update": {},
+        "confidence": 9.0,
+        "channel": "X (@vvanwilgenburg)",
+        "tweet_id": "2016125586201018644",
+        "local_video_path": null,
+        "image_path": "media/2016125586201018644.jpg",
+        "date": "2026-01-27 12:26:12+00:00",
+        "original_text": "ANHA: SAA carried out a drone attack on the village of Baqla, located south of the city of Çilaxa (Jawadiya) https://t.co/fcltXpA8aZ",
+        "sources": [
+            "X (@vvanwilgenburg)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9289,
+        "lng": 32.8547,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Preparation for buffer zone",
+        "visual_emoji": "⚠️",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "Turkey is planning to establish a buffer zone on the Iranian border to prevent a potential refugee wave if the Iranian government collapses.",
+            "tr": "Türkiye, İran hükümetinin çökmesi durumunda potansiyel bir mülteci akınını önlemek için İran sınırında bir tampon bölge oluşturmayı planlıyor.",
+            "ru": "Турция планирует создать буферную зону на иранской границе для предотвращения потенциальной волны беженцев в случае краха иранского правительства.",
+            "zh": "土耳其计划在伊朗边境建立一个缓冲区，以防止伊朗政府垮台时可能出现的难民潮。"
+        },
+        "territory_update": {},
+        "confidence": 9.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016123658855412084",
+        "local_video_path": null,
+        "image_path": "media/2016123658855412084.jpg",
+        "date": "2026-01-27 12:18:32+00:00",
+        "original_text": "ميدل إيست آي:\n\n• تركيا تخطط لإنشاء منطقة عازلة لصد موجة نزوح محتملة في حال سقوط الحكومة الإيرانية\n\n• في العام الماضي، قدّرت تركيا أن نحو مليون شخص قد يصلون إلى حدودها في حال حدوث هذا السيناريو https://t.co/Sx0zGYgzVZ",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.3701,
+        "lng": 40.7649,
+        "location_name": {
+            "en": "Al-Hol Camp",
+            "tr": "El-Hol Kampı",
+            "ru": "Лагерь Аль-Холь",
+            "zh": "霍尔营地"
+        },
+        "attack_type": "Collective escape attempt",
+        "visual_emoji": "👮",
+        "attacker": "Inmates",
+        "summary": {
+            "en": "A collective escape attempt occurred at Al-Hol camp in Al-Hasakah. Security forces thwarted the attempt.",
+            "tr": "Haseke'deki El-Hol kampında toplu kaçış girişimi yaşandı. Güvenlik güçleri girişimi engelledi.",
+            "ru": "В лагере Аль-Холь в Хасаке произошла коллективная попытка побега. Силы безопасности пресекли попытку.",
+            "zh": "哈塞克省的霍尔营地发生集体逃亡事件，安全部队挫败了这次企图。"
+        },
+        "territory_update": {},
+        "confidence": 9.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016122803271893207",
+        "local_video_path": "media/2016122803271893207.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:15:08+00:00",
+        "original_text": "محاولة هروب جماعية لأشخاص من مخيم الهول في ريف الحسكة إثر قيامهم بقطع السياج المحيط بأحد القطاعات داخل المخيم، قبل أن تتمكن قوى الأمن من إحباط المحاولة وإعادة جميع الفارين https://t.co/MKzDABgaNL",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.6362,
+        "lng": 38.2242,
+        "location_name": {
+            "en": "Qarah Quzaq Bridge",
+            "tr": "Qarah Quzaq Köprüsü",
+            "ru": "Мост Кара-Кузак",
+            "zh": "卡拉夸扎克桥"
+        },
+        "attack_type": "Mine clearing",
+        "visual_emoji": "💣",
+        "attacker": "Syria",
+        "summary": {
+            "en": "The Syrian Arab Army is clearing mines planted by QSD around the Qarah Quzaq Bridge in eastern Aleppo.",
+            "tr": "Suriye Arap Ordusu, Halep'in doğusundaki Qarah Quzaq Köprüsü çevresinde QSD tarafından yerleştirilen mayınları temizliyor.",
+            "ru": "Сирийская арабская армия разминирует мины, установленные QSD вокруг моста Кара-Кузак в восточном Алеппо.",
+            "zh": "叙利亚阿拉伯军队正在清理 QSD 在阿勒颇东部卡拉夸扎克桥周围埋设的地雷。"
+        },
+        "territory_update": {},
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016124105146204265",
+        "local_video_path": null,
+        "image_path": "media/2016124105146204265.jpg",
+        "date": "2026-01-27 12:20:19+00:00",
+        "original_text": "الجيش العربي السوري يقوم بإزالة الألغام التي زرعها تنظيم قسد في محيط جسر قره قوزاق بريف حلب الشرقي.\n\n#الجيش_العربي_السوري \n#حلب https://t.co/al2rGljhGJ",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 34.8845,
+        "lng": 35.8845,
+        "location_name": {
+            "en": "Tartus Corniche",
+            "tr": "Tartus Kordonu",
+            "ru": "Тартусская набережная",
+            "zh": "塔尔图斯滨海路"
+        },
+        "attack_type": "Internal Security Forces car display with new visual identity",
+        "visual_emoji": "🚚",
+        "attacker": "Syria",
+        "summary": {
+            "en": "Internal Security Forces car display with new visual identity in Tartus.",
+            "tr": "Tartus'ta İç Güvenlik Güçleri'nin yeni görsel kimliğe sahip araç gösterisi.",
+            "ru": "Автомобильная выставка сил внутренней безопасности с новой визуальной символикой в Тартусе.",
+            "zh": "在塔尔图斯，内部安全部队展示了具有新视觉形象的车辆。"
+        },
+        "territory_update": {},
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016120997204660401",
+        "local_video_path": "media/2016120997204660401.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:07:58+00:00",
+        "original_text": "عرض لسيارات قيادة الأمن الداخلي في محافظة طرطوس بالهوية البصرية الجديدة.\n\n#الأمن_الداخلي_السوري\n#طرطوس https://t.co/9poc74NYvl",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 38.8977,
+        "lng": -77.0365,
+        "location_name": {
+            "en": "Washington, D.C.",
+            "tr": "Washington, D.C.",
+            "ru": "Вашингтон, округ Колумбия",
+            "zh": "华盛顿特区"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "USA",
+        "summary": {
+            "en": "U.S. Treasury Secretary Scott Bessent criticizes Canadian PM Mark Carney's globalist agenda.",
+            "tr": "ABD Hazine Bakanı Scott Bessent, Kanada Başbakanı Mark Carney'in küreselci gündemini eleştiriyor.",
+            "ru": "Министр финансов США Скотт Бессент критикует глобалистскую повестку дня премьер-министра Канады Марка Карни.",
+            "zh": "美国财政部长斯科特·贝森特批评加拿大总理马克·卡尼的全球主义议程。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016118802639888880",
+        "local_video_path": "media/2016118802639888880.mp4",
+        "image_path": null,
+        "date": "2026-01-27 11:59:14+00:00",
+        "original_text": "U.S. Treasury Secretary Scott Bessent:\n\nCarney should do what is best for the Canadian people rather than trying to push his own globalist agenda. https://t.co/AhSYAzumyS",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.95820546760413,
+        "lng": 32.86900546760413,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "Turkey",
+        "summary": {
+            "en": "President Erdogan states that the surroundings are practically on fire from north to south.",
+            "tr": "Cumhurbaşkanı Erdoğan, çevrenin kuzeyden güneye adeta yanmakta olduğunu belirtiyor.",
+            "ru": "Президент Эрдоган заявляет, что все вокруг практически в огне с севера на юг.",
+            "zh": "埃尔多安总统表示，从北到南，周围环境实际上都着火了。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016124388383330331",
+        "local_video_path": "media/2016124388383330331.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:21:26+00:00",
+        "original_text": "Turkish President Erdogan:\n\nWhen we look around us, we can all see that from north to south our surroundings are practically on fire. https://t.co/uGbC7YTWbp",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 34.8904,
+        "lng": 35.8903,
+        "location_name": {
+            "en": "Tartus",
+            "tr": "Tartus",
+            "ru": "Тартус",
+            "zh": "塔尔图斯"
+        },
+        "attack_type": "vehicles display with new visual identity",
+        "visual_emoji": "🚚",
+        "attacker": "Syria",
+        "summary": {
+            "en": "A convoy of 90 Internal Security Forces vehicles with the new visual identity was seen on the Tartus Corniche.",
+            "tr": "İç Güvenlik Güçleri'ne ait yeni görsel kimliğe sahip 90 araçlık bir konvoy Tartus sahil yolunda görüldü.",
+            "ru": "На набережной Тартуса замечена колонна из 90 машин сил внутренней безопасности с новой визуальной символикой.",
+            "zh": "在塔尔图斯滨海路上，一支由90辆配备新视觉识别系统的内部安全部队车辆组成的车队被目击。"
+        },
+        "territory_update": {},
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016121352336355528",
+        "local_video_path": null,
+        "image_path": "media/2016121352336355528.jpg",
+        "date": "2026-01-27 12:09:22+00:00",
+        "original_text": "لقطات من عرض لرتل يضم 90 سيارة لقوى الأمن الداخلي بالهوية البصرية الجديدة على الكورنيش البحري في مدينة طرطوس https://t.co/QNPpPzxCbW",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 34.8021,
+        "lng": 38.9968,
+        "location_name": {
+            "en": "Syrian Desert",
+            "tr": "Suriye Çölü",
+            "ru": "Сирийская пустыня",
+            "zh": "叙利亚沙漠"
+        },
+        "attack_type": "Ceasefire",
+        "visual_emoji": "📢",
+        "attacker": "Syria",
+        "summary": {
+            "en": "Cautious calm in the Syrian region following the extension of the ceasefire. Will it hold?",
+            "tr": "Ateşkesin uzatılmasının ardından Suriye bölgesinde temkinli bir sükunet hakim. Bu sükunet devam edecek mi?",
+            "ru": "Осторожное спокойствие в сирийском регионе после продления перемирия. Сохранится ли оно?",
+            "zh": "在停火延长后，叙利亚地区局势谨慎平静。它能维持下去吗？"
+        },
+        "territory_update": {},
+        "confidence": 9.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016119301380489521",
+        "local_video_path": "media/2016119301380489521.mp4",
+        "image_path": null,
+        "date": "2026-01-27 12:01:13+00:00",
+        "original_text": "هدوء حذر في الجزيرة السورية.. هل يصمد بعد تمديد وقف إطلاق النار؟ https://t.co/MPv2Iq1qih",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.3333,
+        "lng": 40.15,
+        "location_name": {
+            "en": "Deir ez-Zor",
+            "tr": "Deyrizor",
+            "ru": "Дейр-эз-Зор",
+            "zh": "代尔祖尔"
+        },
+        "attack_type": "Aerial shots of Deir ez-Zor and its prominent landmarks",
+        "visual_emoji": "📸",
+        "attacker": "Syria",
+        "summary": {
+            "en": "Aerial shots of Deir ez-Zor and its landmarks are released.",
+            "tr": "Deyrizor ve öne çıkan simge yapılarının havadan çekilmiş görüntüleri yayınlandı.",
+            "ru": "Опубликованы аэрофотоснимки Дейр-эз-Зора и его известных достопримечательностей.",
+            "zh": "发布了代尔祖尔及其著名地标的航拍照片。"
+        },
+        "territory_update": {},
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016117192182407676",
+        "local_video_path": "media/2016117192182407676.mp4",
+        "image_path": null,
+        "date": "2026-01-27 11:52:50+00:00",
+        "original_text": "لقطات جوية لمدينة دير الزور وأبرز معالمها\n\n#سوريا \n#دير_الزور https://t.co/5DzMFdlBUK",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9208,
+        "lng": 32.8541,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Preparation for buffer zone",
+        "visual_emoji": "⚠️",
+        "attacker": "Türkiye",
+        "summary": {
+            "en": "Turkey is preparing plans to prevent a potential refugee wave from Iran in case of a US attack.",
+            "tr": "Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda İran'dan gelebilecek potansiyel mülteci akınını önlemek için planlar hazırlıyor.",
+            "ru": "Турция разрабатывает планы по предотвращению потенциальной волны беженцев из Ирана в случае нападения США.",
+            "zh": "土耳其正在制定计划，以防止美国袭击伊朗可能造成的伊朗难民潮。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016115911095132344",
+        "local_video_path": null,
+        "image_path": "media/2016115911095132344.jpg",
+        "date": "2026-01-27 11:47:45+00:00",
+        "original_text": "🔴 Middle East Eye:\n\n▪️ Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda potansiyel mülteci dalgasını önlemek için plan hazırlıyor.\n\n▪️ Türkiye, İran'da en kötü senaryoya hazırlanıyor ve yeni bir mülteci dalgasını önlemek için sınırın İran tarafında bir tampon bölge https://t.co/zd9H4UYM7y",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 34.8928,
+        "lng": 36.1183,
+        "location_name": {
+            "en": "Al-Duraykish",
+            "tr": "El-Duraykiş",
+            "ru": "Эд-Дрейкиш",
+            "zh": "杜赖基什"
+        },
+        "attack_type": "Dam filled to capacity",
+        "visual_emoji": "📢",
+        "attacker": "Syria",
+        "summary": {
+            "en": "The Ministry of Energy reports that Al-Duraykish dam in Tartus is full, reaching its maximum capacity of 6 million cubic meters.",
+            "tr": "Enerji Bakanlığı, Tartus'taki El-Duraykiş barajının dolduğunu ve 6 milyon metreküp maksimum kapasiteye ulaştığını bildirdi.",
+            "ru": "Министерство энергетики сообщает, что плотина Аль-Дурайкиш в Тартусе заполнена до предела, достигнув максимальной вместимости в 6 миллионов кубометров.",
+            "zh": "能源部报告说，塔尔图斯省的杜赖基什大坝已满，达到600万立方米的最大容量。"
+        },
+        "territory_update": null,
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016116847138034026",
+        "local_video_path": null,
+        "image_path": "media/2016116847138034026.jpg",
+        "date": "2026-01-27 11:51:28+00:00",
+        "original_text": "وزارة الطاقة:\n\n• امتلاء سد الدريكيش في محافظة طرطوس بالكامل إثر الهطولات المطرية الغزيرة التي شهدتها المنطقة خلال الأسابيع الماضية\n\n• مخزون السد حقق هذا العام السعة التخزينية القصوى البالغة 6 ملايين متر مكعب، لتبدأ مياهه بالتدفق عبر المفيض\n\n• لم يتجاوز مخزون السد العام الماضي https://t.co/n1BwOOFpxm",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 35.9541,
+        "lng": 39.0178,
+        "location_name": {
+            "en": "Raqqa",
+            "tr": "Rakka",
+            "ru": "Ракка",
+            "zh": "拉卡"
+        },
+        "attack_type": "Announcement of rehabilitation project",
+        "visual_emoji": "🏗️",
+        "attacker": "Syria",
+        "summary": {
+            "en": "The governor of Raqqa announced the start of a project to rehabilitate the old Al-Mansour bridge and educational facilities.",
+            "tr": "Rakka valisi, eski El-Mansur köprüsü ile eğitim tesislerinin rehabilitasyon projesinin başlangıcını duyurdu.",
+            "ru": "Губернатор Ракки объявил о начале проекта по восстановлению старого моста Аль-Мансур и образовательных учреждений.",
+            "zh": "拉卡省省长宣布启动修复旧的 Al-Mansour 桥梁和教育设施的项目。"
+        },
+        "territory_update": {},
+        "confidence": 9.0,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016112289569546528",
+        "local_video_path": null,
+        "image_path": "media/2016112289569546528.jpg",
+        "date": "2026-01-27 11:33:22+00:00",
+        "original_text": "محافظ الرقة عبد الرحمن سلامة:\n\nنواصل العمل تمهيدا للانطلاق بمشروع تأهيل وصيانة جسر الرقة القديم \"المنصور\"، بالتوازي مع دراسة لإعادة تأهيل المرافق التعليمية والحيوية وقطاعي الصحة والتنمية https://t.co/FIOVS98zrO",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.3814,
+        "lng": 38.1833,
+        "location_name": {
+            "en": "Tishrin Dam",
+            "tr": "Tişrin Barajı",
+            "ru": "Плотина Тишрин",
+            "zh": "提斯林大坝"
+        },
+        "attack_type": "Protest for bodies of civilians killed near Ain al-Arab",
+        "visual_emoji": "📣",
+        "attacker": "Civilians",
+        "summary": {
+            "en": "Families of several villages near Tishrin Dam protest, demanding QSD hand over the bodies of civilians killed near Ain al-Arab.",
+            "tr": "Tişrin Barajı yakınlarındaki çeşitli köylerin sakinleri, QSD'nin Ayn el-Arap yakınlarında öldürülen sivillerin cesetlerini teslim etmesini talep ediyor.",
+            "ru": "Жители нескольких деревень вблизи плотины Тишрин протестуют, требуя от QSD передать тела мирных жителей, убитых возле Айн-эль-Араба.",
+            "zh": "提斯林大坝附近几个村庄的居民举行抗议，要求“叙利亚民主军”交出在艾因阿拉伯附近被杀害的平民尸体。"
+        },
+        "territory_update": {},
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016112376773296349",
+        "local_video_path": null,
+        "image_path": "media/2016112376773296349.jpg",
+        "date": "2026-01-27 11:33:42+00:00",
+        "original_text": "وقفة لأهالي عدة قرى قرب سد تشرين في ريف حلب، لمطالبة تنظيم قسد بتسليم جثامين المدنيين الذي قتلهم قرب مدينة عين العرب مؤخراً وتمكين ذويهم من دفنهم وفق الأصول.\n\n#سوريا\n#حلب https://t.co/18PXMvOiJI",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.8789,
+        "lng": 38.3097,
+        "location_name": {
+            "en": "Ain al-Arab",
+            "tr": "Ayn el-Arap",
+            "ru": "Айн-эль-Араб",
+            "zh": "艾因阿拉伯"
+        },
+        "attack_type": "aid convoy",
+        "visual_emoji": "🚚",
+        "attacker": "Sana__gov",
+        "summary": {
+            "en": "An aid convoy entered Ain al-Arab through the humanitarian corridor in Nour Ali village.",
+            "tr": "Bir yardım konvoyu, Nur Ali köyündeki insani yardım koridorundan Ayn el-Arap'a girdi.",
+            "ru": "Гуманитарный конвой прибыл в Айн-эль-Араб через гуманитарный коридор в деревне Нур Али.",
+            "zh": "一个人道主义援助车队通过努尔·阿里村的人道主义走廊进入了艾因阿拉伯。"
+        },
+        "territory_update": {},
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016111325542314306",
+        "local_video_path": "media/2016111325542314306.mp4",
+        "image_path": null,
+        "date": "2026-01-27 11:29:32+00:00",
+        "original_text": "دخول قافلة مساعدات إنسانية إلى مدينة عين العرب عبر الممر الإنساني بقرية نور علي.\n\n#سوريا\n#حلب https://t.co/OGU8XGWjG5",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9167,
+        "lng": 32.8667,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "Preparation for buffer zone",
+        "visual_emoji": "⚠️",
+        "attacker": "Türkiye",
+        "summary": {
+            "en": "Türkiye is considering establishing a buffer zone on the Iranian border to prevent a new refugee wave.",
+            "tr": "Türkiye, yeni bir mülteci akınını önlemek için İran sınırında bir tampon bölge oluşturmayı düşünüyor.",
+            "ru": "Турция рассматривает возможность создания буферной зоны на иранской границе для предотвращения новой волны беженцев.",
+            "zh": "土耳其正在考虑在伊朗边境建立缓冲区，以防止新的难民潮。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016113162676830676",
+        "local_video_path": null,
+        "image_path": "media/2016113162676830676.jpg",
+        "date": "2026-01-27 11:36:50+00:00",
+        "original_text": "BIG: Türkiye is preparing for a worst-case scenario in Iran and is considering establishing a buffer zone on the Iranian side of the border to prevent a new wave of refugees. \n\nOfficials briefed lawmakers that Ankara wants to prevent migrants from crossing into Türkiye and has https://t.co/rFGAMEtfCW",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 39.9208,
+        "lng": 32.8541,
+        "location_name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "ru": "Анкара",
+            "zh": "安卡拉"
+        },
+        "attack_type": "IHA strike",
+        "visual_emoji": "🚁",
+        "attacker": "Türkiye",
+        "summary": {
+            "en": "STM, in Turkey, achieved a breakthrough with its swarm UAV technology, hitting targets with full accuracy in a live ammunition test with a swarm of 20 KARGU strike UAVs.",
+            "tr": "STM, Türkiye'de bir ilke imza attı ve 20'li KARGU vurucu İHA sürüsüyle gerçek mühimmatlı testte hedeflerini tam isabetle vurdu.",
+            "ru": "Компания STM в Турции добилась прорыва в своей технологии роя БПЛА, поразив цели с полной точностью в ходе испытаний с использованием боевых боеприпасов с роем из 20 ударных БПЛА KARGU.",
+            "zh": "土耳其的 STM 公司凭借其蜂群无人机技术取得了突破，在 20 架 KARGU 攻击无人机的实弹测试中，以极高的精度击中了目标。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016113447084155051",
+        "local_video_path": "media/2016113447084155051.mp4",
+        "image_path": null,
+        "date": "2026-01-27 11:37:58+00:00",
+        "original_text": "🔴 STM, Türkiye’de yeni bir ilke imza attı.\n\nSTM'nin geliştirdiği sürü İHA teknolojisi, 20’li KARGU vurucu İHA sürüsüyle gerçek mühimmatlı testte hedeflerini tam isabetle vurdu.\nhttps://t.co/aE0IDfI2tb",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 31.3547,
+        "lng": 34.3088,
+        "location_name": {
+            "en": "Gaza",
+            "tr": "Gazze",
+            "ru": "Газа",
+            "zh": "加沙"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "attacker": "UNICEF",
+        "summary": {
+            "en": "UNICEF reported over 100 children killed and 100,000 suffering malnutrition in Gaza despite the October 2025 ceasefire.",
+            "tr": "UNICEF, Ekim 2025'teki ateşkese rağmen Gazze'de 100'den fazla çocuğun öldürüldüğünü ve 100 bin çocuğun yetersiz beslendiğini bildirdi.",
+            "ru": "ЮНИСЕФ сообщил, что, несмотря на октябрьское перемирие 2025 года, в Газе погибло более 100 детей и 100 000 страдают от недоедания.",
+            "zh": "联合国儿童基金会报告称，尽管 2025 年 10 月停火，加沙仍有 100 多名儿童死亡，10 万儿童营养不良。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016111145141072009",
+        "local_video_path": null,
+        "image_path": "media/2016111145141072009.jpg",
+        "date": "2026-01-27 11:28:49+00:00",
+        "original_text": "🔴 UNICEF, Ekim 2025'te varılan ateşkese rağmen Gazze'de 100'den fazla çocuğun öldürüldüğünü, 100 bin çocuğun hala beslenme yetersizliği çektiğini bildirdi. https://t.co/MX0XOa0kNN",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.5647,
+        "lng": 40.7589,
+        "location_name": {
+            "en": "Al-Hasakah",
+            "tr": "Haseke",
+            "ru": "Эль-Хасака",
+            "zh": "哈塞克"
+        },
+        "attack_type": "Situation in Al-Hasakah region",
+        "visual_emoji": "⚠️",
+        "attacker": "None",
+        "summary": {
+            "en": "Latest situation in the Al-Hasakah region of Syria: Syrian Army and PKK/SDG.",
+            "tr": "Suriye'nin Haseke bölgesindeki son durum: Suriye Ordusu ve PKK/SDG.",
+            "ru": "Последняя ситуация в районе Аль-Хасаки в Сирии: Сирийская армия и РПК/СДС.",
+            "zh": "叙利亚哈塞克地区的最新情况：叙利亚军队和PKK/SDG。"
+        },
+        "territory_update": {},
+        "confidence": 7.2,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016108020535574660",
+        "local_video_path": null,
+        "image_path": "media/2016108020535574660.jpg",
+        "date": "2026-01-27 11:16:24+00:00",
+        "original_text": "🔴 Suriye'nin Haseke bölgesinde son durum:\n\n🟢 Suriye ordusu\n🟡 PKK/SDG terör örgütü https://t.co/zUiqFI8i2H",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.03473183043443,
+        "lng": 35.92473183043443,
+        "location_name": {
+            "en": "Quneitra countryside",
+            "tr": "Kuneitra kırsalı",
+            "ru": "Провинция Кунейтра",
+            "zh": "库奈特拉农村"
+        },
+        "attack_type": "Spraying of unknown substances",
+        "visual_emoji": "✈️",
+        "attacker": "Israel",
+        "summary": {
+            "en": "Israeli aircraft sprayed unknown substances on agricultural lands in the southern Quneitra countryside.",
+            "tr": "İsrail uçağı, güney Kuneitra kırsalındaki tarım arazilerine bilinmeyen maddeler püskürttü.",
+            "ru": "Израильские самолеты распылили неизвестные вещества на сельскохозяйственные угодья в южной части провинции Кунейтра.",
+            "zh": "以色列飞机在库奈特拉南部农村的农田上喷洒了不明物质。"
+        },
+        "territory_update": {},
+        "confidence": 9.6,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016105950617166246",
+        "local_video_path": null,
+        "image_path": "media/2016105950617166246.jpg",
+        "date": "2026-01-27 11:08:10+00:00",
+        "original_text": "أقدم طيران الاحتلال الإسرائيلي اليوم الثلاثاء على رش مساحات من الأراضي الزراعية بريف القنيطرة الجنوبي بمواد مجهولة.\n\nأفاد مراسل سانا في القنيطرة بأن طائرة للاحتلال رشت مواد مجهولة على الأراضي غرب مزرعة أبو مذراة، وقرية الحانوت بريف القنيطرة الجنوبي.\n\n#سوريا\n#القنيطرة https://t.co/kEDH7vLkaE",
+        "sources": [
+            "X (@Sana__gov)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.905961504678395,
+        "lng": 38.391149359013056,
+        "location_name": {
+            "en": "Ain al-Arab",
+            "tr": "Ayn el-Arap",
+            "ru": "Айн-эль-Араб",
+            "zh": "艾因阿拉伯"
+        },
+        "attack_type": "aid convoy",
+        "visual_emoji": "🚚",
+        "attacker": "Unknown",
+        "summary": {
+            "en": "An aid convoy entered Ain al-Arab through the humanitarian corridor in the village of Nour Ali.",
+            "tr": "Bir yardım konvoyu, Nur Ali köyündeki insani yardım koridorundan Ayn el-Arap'a girdi.",
+            "ru": "Гуманитарный конвой прибыл в Айн-эль-Араб через гуманитарный коридор в деревне Нур Али.",
+            "zh": "一个人道主义援助车队通过努尔·阿里村的人道主义走廊进入了艾因阿拉伯。"
+        },
+        "territory_update": {},
+        "confidence": 10.0,
+        "channel": "X (@Sana__gov)",
+        "tweet_id": "2016107255087714667",
+        "local_video_path": "media/2016107255087714667.mp4",
+        "image_path": null,
+        "date": "2026-01-27 11:13:21+00:00",
+        "original_text": "دخول قافلة مساعدات إنسانية إلى مدينة عين العرب عبر الممر الإنساني بقرية نور علي محملة بالمواد الغذائية والطبية واللوجستية. \n\n#سوريا \n#حلب https://t.co/kFrGKHBhsJ",
+        "sources": [
+            "X (@Sana__gov)",
+            "X (@AJSyriaNowN)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "An aid convoy entered Ain al-Arab through the humanitarian corridor in the village of Nour Ali.",
+                    "tr": "Bir yardım konvoyu, Nur Ali köyündeki insani yardım koridorundan Ayn el-Arap'a girdi.",
+                    "ru": "Гуманитарный конвой прибыл в Айн-эль-Араб через гуманитарный коридор в деревне Нур Али.",
+                    "zh": "一个人道主义援助车队通过努尔·阿里村的人道主义走廊进入了艾因阿拉伯。"
+                },
+                "date": "2026-01-27 11:13:21+00:00",
+                "tweet_id": "2016107255087714667",
+                "local_video_path": "media/2016107255087714667.mp4",
+                "image_path": null,
+                "channel": "X (@AJSyriaNowN)",
+                "attacker": "Unknown",
+                "original_text": "الثانية التي تمر عبر الممر الإنساني.. دخول قافلة مساعدات تضم مواد غذائية وطبية إلى مدينة عين العرب شرقي حلب عبر نقطة \"نور علي\"\n\nالتفاصيل مع مراسلنا https://t.co/aA84aUr2uX"
+            },
+            {
+                "summary": {
+                    "en": "An aid convoy entered Ain al-Arab through the humanitarian corridor in the village of Nour Ali.",
+                    "tr": "Bir yardım konvoyu, Nur Ali köyündeki insani yardım koridorundan Ayn el-Arap'a girdi.",
+                    "ru": "Гуманитарный конвой прибыл в Айн-эль-Араб через гуманитарный коридор в деревне Нур Али.",
+                    "zh": "一个人道主义援助车队通过努尔·阿里村的人道主义走廊进入了艾因阿拉伯。"
+                },
+                "date": "2026-01-27 10:57:22+00:00",
+                "tweet_id": "2016103230548160718",
+                "local_video_path": null,
+                "image_path": "media/2016103230548160718.jpg",
+                "channel": "X (@Sana__gov)",
+                "attacker": "Unknown",
+                "original_text": "دخول قافلة مساعدات إنسانية إلى مدينة عين العرب عبر الممر الإنساني بقرية نور علي محملة بالمواد الغذائية والطبية واللوجستية. \n\n#سوريا \n#حلب https://t.co/kFrGKHBhsJ"
+            }
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 35.6892,
         "lng": 51.389,
         "location_name": {
@@ -130,13 +1123,13 @@
     {
         "action": "MERGE",
         "target_id": "2016092591729570238",
-        "lat": 36.495,
-        "lng": 40.755,
+        "lat": 36.67232129963899,
+        "lng": 38.2802202166065,
         "location_name": {
-            "en": "Al-Hasakah",
-            "tr": "Haseke",
-            "ru": "Эль-Хасака",
-            "zh": "哈塞克"
+            "en": "Near HTS vs SDF ridge",
+            "tr": "HTS-SDF Cephe Hattı Yakını",
+            "ru": "Район хребта HTS-SDF",
+            "zh": "HTS 与 SDF 脊线附近"
         },
         "attack_type": "Seizure",
         "visual_emoji": "🚩",
@@ -638,1037 +1631,5 @@
             "X (@clashreport)"
         ],
         "actor": "Starmer"
-    },
-    {
-        "action": "error",
-        "target_id": null,
-        "lat": 36.19924,
-        "lng": 37.1637253,
-        "location_name": {
-            "en": "N/A",
-            "tr": "N/A",
-            "ru": "N/A",
-            "zh": "N/A"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "This report is about John Bolton's opinion on Iran and is not relevant to the Syrian theatre.",
-            "tr": "Bu rapor John Bolton'ın İran hakkındaki görüşleri ile ilgili ve Suriye sahası ile alakalı değil.",
-            "ru": "Этот отчет о мнении Джона Болтона об Иране и не относится к сирийскому театру военных действий.",
-            "zh": "该报告是关于约翰·博尔顿对伊朗的看法，与叙利亚战区无关。"
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016069136237928542",
-        "local_video_path": "media/2016069136237928542.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:41:53+00:00",
-        "original_text": "John Bolton on Iran:\n\nOne strike isn’t going to bring the regime down if he is committed to regime change, as he has now said. \n\nYou need to think in a more programmatic, strategic way.\n\nYou have to think about what multiple strikes might do to degrade the regime’s ability to https://t.co/V6B022n4k9",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "None"
-    },
-    {
-        "action": "error",
-        "target_id": null,
-        "lat": 36.1593592086948,
-        "lng": 37.15741007426682,
-        "location_name": {
-            "en": "N/A",
-            "tr": "N/A",
-            "ru": "N/A",
-            "zh": "N/A"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "This report is about John Bolton's opinion on Iran and is not relevant to the Syrian theatre.",
-            "tr": "Bu rapor John Bolton'ın İran hakkındaki görüşleri ile ilgili ve Suriye sahası ile alakalı değil.",
-            "ru": "Этот отчет о мнении Джона Болтона об Иране и не относится к сирийскому театру военных действий.",
-            "zh": "该报告是关于约翰·博尔顿对伊朗的看法，与叙利亚战区无关。"
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016069136237928542_ghost_2",
-        "local_video_path": "media/2016069136237928542.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:41:53+00:00",
-        "original_text": "John Bolton on Iran:\n\nOne strike isn’t going to bring the regime down if he is committed to regime change, as he has now said. \n\nYou need to think in a more programmatic, strategic way.\n\nYou have to think about what multiple strikes might do to degrade the regime’s ability to https://t.co/V6B022n4k9",
-        "is_ghost": true,
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "None"
-    },
-    {
-        "action": "error",
-        "target_id": null,
-        "lat": 36.22282977507003,
-        "lng": 37.12747155237664,
-        "location_name": {
-            "en": "N/A",
-            "tr": "N/A",
-            "ru": "N/A",
-            "zh": "N/A"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "This report is about John Bolton's opinion on Iran and is not relevant to the Syrian theatre.",
-            "tr": "Bu rapor John Bolton'ın İran hakkındaki görüşleri ile ilgili ve Suriye sahası ile alakalı değil.",
-            "ru": "Этот отчет о мнении Джона Болтона об Иране и не относится к сирийскому театру военных действий.",
-            "zh": "该报告是关于约翰·博尔顿对伊朗的看法，与叙利亚战区无关。"
-        },
-        "territory_update": null,
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016069136237928542_ghost_1",
-        "local_video_path": "media/2016069136237928542.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:41:53+00:00",
-        "original_text": "John Bolton on Iran:\n\nOne strike isn’t going to bring the regime down if he is committed to regime change, as he has now said. \n\nYou need to think in a more programmatic, strategic way.\n\nYou have to think about what multiple strikes might do to degrade the regime’s ability to https://t.co/V6B022n4k9",
-        "is_ghost": true,
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "None"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.1667,
-        "lng": 42.1333,
-        "location_name": {
-            "en": "Derik",
-            "tr": "Derik",
-            "ru": "Дерик",
-            "zh": "代里克"
-        },
-        "attack_type": "Displacement and dire humanitarian conditions",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "IDP families from Afrin, Aleppo, Raqqa, and Hasakah are sheltered in Derik with dire humanitarian conditions.",
-            "tr": "Afrin, Halep, Rakka ve Haseke'den gelen IDP aileleri, Derik'te kötü insani koşullarda barınıyor.",
-            "ru": "Семьи ВПЛ из Африна, Алеппо, Ракки и Хасаки укрываются в Дерике в тяжелых гуманитарных условиях.",
-            "zh": "来自阿夫林、阿勒颇、拉卡和哈塞克的境内流离失所者家庭在代里克避难，人道主义条件恶劣。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2016079017300897824",
-        "local_video_path": "media/2016079017300897824.mp4",
-        "image_path": null,
-        "date": "2026-01-27 09:21:09+00:00",
-        "original_text": "Hundreds of IDP families, from Afrin, Aleppo, Raqqa and Hasakah, are sheltered in schools and mosques in the border town of Derik in dire humanitarian conditions amid freezing weather conditions without any humanitarian aid. https://t.co/FQgtBjQbez",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ],
-        "actor": "Unknown"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.1583,
-        "lng": 38.7917,
-        "location_name": {
-            "en": "Şanlıurfa",
-            "tr": "Şanlıurfa",
-            "ru": "Шанлыурфа",
-            "zh": "尚勒乌尔法"
-        },
-        "attack_type": "Gift Exchange",
-        "visual_emoji": "🤝",
-        "summary": {
-            "en": "Öcalan sent a rug from Şanlıurfa to a DEM delegation as a gift.",
-            "tr": "Öcalan, bir DEM heyetine Şanlıurfa'dan bir halı hediye etti.",
-            "ru": "Оджалан отправил ковер из Шанлыурфы делегации DEM в качестве подарка.",
-            "zh": "厄贾兰送给民主选举党代表团一块来自尚勒乌尔法的地毯作为礼物。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2016078360879800626",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 09:18:32+00:00",
-        "original_text": "Bahçeli also revealed that Öcalan, through a DEM delegation visiting him last December, sent a gift of a traditional rug woven in Öcalan’s hometown Şanlıurfa. “I thank him for his sincerity on Turkish-Kurdish unity and named this as Feb. 27 Peace and Democracy Rug,” referring to",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ],
-        "actor": "Öcalan"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.5024,
-        "lng": 40.7477,
-        "location_name": {
-            "en": "Al-Hasakah",
-            "tr": "Haseke",
-            "ru": "Аль-Хасака",
-            "zh": "哈塞克"
-        },
-        "attack_type": "Military advance",
-        "visual_emoji": "⚔️",
-        "summary": {
-            "en": "HTS forces are 30km from Al-Hasakah city center but have not occupied any territory.",
-            "tr": "HTS güçleri El-Haseke şehir merkezine 30 km mesafede bulunuyor ancak herhangi bir bölgeyi işgal etmedi.",
-            "ru": "Силы ХТШ находятся в 30 км от центра города Аль-Хасака, но не оккупировали никакой территории.",
-            "zh": "HTS 部队距离哈塞克市中心 30 公里，但尚未占领任何领土。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2016078172014408126",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 09:17:47+00:00",
-        "original_text": "\"The Syrian Arab Army is now stationed 30 kilometers from the center of Hasakah city with a large force, but it has not yet been able to occupy any place.\" - YPJ spox",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ],
-        "actor": "HTS"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.891,
-        "lng": 38.3536,
-        "location_name": {
-            "en": "Kobani",
-            "tr": "Kobani",
-            "ru": "Кобани",
-            "zh": "科巴尼"
-        },
-        "attack_type": "Military advance towards Kobani thwarted",
-        "visual_emoji": "⚔️",
-        "summary": {
-            "en": "YPJ reports destroying two tanks and killing dozens of fighters near Kobani and in Safa village.",
-            "tr": "YPJ, Kobani yakınlarında ve Safa köyünde iki tankı imha ettiğini ve düzinelerce savaşçıyı öldürdüğünü bildirdi.",
-            "ru": "YPJ сообщает об уничтожении двух танков и гибели десятков бойцов возле Кобани и в деревне Сафа.",
-            "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了两辆坦克，并杀死了数十名战士。"
-        },
-        "territory_update": {},
-        "confidence": 9.0,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2016078098844758209",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 09:17:30+00:00",
-        "original_text": "\"During their attempt to advance towards Kobani, at least two of their tanks were destroyed and dozens of their fighters were killed. Between 40 and 50 of their fighters were also killed in the village of Safa and many of their armored vehicles were destroyed.\"  YPJ spox",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ],
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "YPJ reports destroying two tanks and killing dozens of fighters near Kobani and in Safa village.",
-                    "tr": "YPJ, Kobani yakınlarında ve Safa köyünde iki tankı imha ettiğini ve düzinelerce savaşçıyı öldürdüğünü bildirdi.",
-                    "ru": "YPJ сообщает об уничтожении двух танков и гибели десятков бойцов возле Кобани и в деревне Сафа.",
-                    "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了两辆坦克，并杀死了数十名战士。"
-                },
-                "date": "2026-01-27 09:17:30+00:00",
-                "tweet_id": "2016078098844758209",
-                "local_video_path": null,
-                "image_path": null,
-                "channel": "X (@vvanwilgenburg)",
-                "original_text": "\"During their attempt to advance towards Kobani, at least two of their tanks were destroyed and dozens of their fighters were killed. Between 40 and 50 of their fighters were also killed in the village of Safa and many of their armored vehicles were destroyed.\"  YPJ spox",
-                "actor": "YPJ"
-            }
-        ],
-        "actor": "YPJ"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.0407,
-        "lng": 41.2143,
-        "location_name": {
-            "en": "Qamishli",
-            "tr": "Kamışlı",
-            "ru": "Камышлы",
-            "zh": "卡米什利"
-        },
-        "attack_type": "Ceasefire Violation",
-        "visual_emoji": "⚔️",
-        "summary": {
-            "en": "YPJ reports ceasefire violations by HTS and Daesh, who allegedly plan to invade West Kurdistan (Rojava).",
-            "tr": "YPJ, HTS ve Daesh'in ateşkesi ihlal ettiğini ve Batı Kürdistan'ı (Rojava) işgal etmeyi planladığını bildirdi.",
-            "ru": "YPJ сообщает о нарушениях прекращения огня со стороны HTS и Даиш, которые предположительно планируют вторжение в Западный Курдистан (Рожава).",
-            "zh": "YPJ 报告说，HTS 和 Daesh 违反了停火协议，他们据称计划入侵西库尔德斯坦（罗贾瓦）。"
-        },
-        "territory_update": {},
-        "confidence": 10.0,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2016077218531758376",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 09:14:00+00:00",
-        "original_text": "“Ever since the ceasefire was announced, the HTS gangs and Daesh have been violating it. Their plot is to invade West Kurdistan [Rojava], but we will not let them - unless they go over our dead bodies.” - YPJ spox https://t.co/SN3l5hMNPM",
-        "sources": [
-            "X (@vvanwilgenburg)",
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "HTS/Daesh"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.333,
-        "lng": 40.15,
-        "location_name": {
-            "en": "Deir ez-Zor",
-            "tr": "Deir ez-Zor",
-            "ru": "Дейр-эз-Зор",
-            "zh": "代尔祖尔"
-        },
-        "attack_type": "Inspection of roads and bridges",
-        "visual_emoji": "🤝",
-        "summary": {
-            "en": "Syrian Transport Minister Yarub Badr visited Deir ez-Zor to discuss the state of roads and transportation with Governor Ghassan Al-Sayed Ahmed.",
-            "tr": "Suriye Ulaştırma Bakanı Yarub Badr, Vali Ghassan Al-Sayed Ahmed ile yolların ve ulaşımın durumunu görüşmek üzere Deir ez-Zor'u ziyaret etti.",
-            "ru": "Министр транспорта Сирии Яруб Бадр посетил Дейр-эз-Зор, чтобы обсудить состояние дорог и транспорта с губернатором Гассаном Аль-Сайедом Ахмедом.",
-            "zh": "叙利亚交通部长亚鲁布·巴德尔访问了代尔祖尔，与省长加桑·赛义德·艾哈迈德讨论了道路和交通状况。"
-        },
-        "territory_update": {},
-        "confidence": 9.6,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016079708870336579",
-        "local_video_path": null,
-        "image_path": "media/2016079708870336579.jpg",
-        "date": "2026-01-27 09:23:54+00:00",
-        "original_text": "وزير النقل السوري يعرب بدر يزور دير الزور ويبحث مع المحافظ غسان السيد أحمد واقع الطرقات والجسور وقطاع النقل في المحافظة.\n\n#سوريا\n#دير_الزور https://t.co/NrqLYwg0oV",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5104,
-        "lng": 36.2783,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Workshop on launching a unified complaints application",
-        "visual_emoji": "🤝",
-        "summary": {
-            "en": "A workshop was held in Damascus on the \"Wajib\" application for complaints across all ministries.",
-            "tr": "Tüm bakanlıklarda şikayetler için \"Wajib\" uygulaması üzerine Şam'da bir çalıştay düzenlendi.",
-            "ru": "В Дамаске состоялся семинар по приложению \"Wajib\" для подачи жалоб во всех министерствах.",
-            "zh": "在大马士革举办了一场关于“Wajib”应用程序的研讨会，该程序用于处理所有部委的投诉。"
-        },
-        "territory_update": {},
-        "confidence": 9.6,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016072146515099859",
-        "local_video_path": "media/2016072146515099859.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:53:51+00:00",
-        "original_text": "تطبيق \"وجب\" للشكاوى بجميع الوزارات.. محور ورشة عمل في الأمانة العامة لرئاسة الجمهورية.\n\n#سوريا\n#تطبيق_وجب https://t.co/WXR8DPaCWD",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.89941866116659,
-        "lng": 38.321992495760874,
-        "location_name": {
-            "en": "Ain al-Arab",
-            "tr": "Ayn el-Arap",
-            "ru": "Айн-эль-Араб",
-            "zh": "艾因阿拉伯"
-        },
-        "attack_type": "aid convoy",
-        "visual_emoji": "🚚",
-        "summary": {
-            "en": "An aid convoy loaded with food, medical, and logistical supplies is en route to the Ain al-Arab area in the Aleppo countryside.",
-            "tr": "Gıda, tıbbi ve lojistik malzeme yüklü bir yardım konvoyu, Halep kırsalındaki Ayn el-Arap bölgesine doğru yola çıktı.",
-            "ru": "Автоколонна с продовольствием, медикаментами и материально-техническими средствами направляется в район Айн-эль-Араб в сельской местности Алеппо.",
-            "zh": "一支装载着食品、医疗和后勤物资的援助车队正在前往阿勒颇农村地区的艾因阿拉伯地区。"
-        },
-        "territory_update": {},
-        "confidence": 8.0,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016068564080365664",
-        "local_video_path": "media/2016068564080365664.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:39:37+00:00",
-        "original_text": "قافلة مساعدات محملة بالمواد الغذائية والطبية واللوجستية في طريقها إلى منطقة عين العرب في ريف حلب.\n\n#سوريا \n#حلب https://t.co/hWDeaihSyv",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Sana__gov"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 24.7136,
-        "lng": 46.6753,
-        "location_name": {
-            "en": "Riyadh",
-            "tr": "Riyad",
-            "ru": "Эр-Рияд",
-            "zh": "利雅得"
-        },
-        "attack_type": "Construction paused",
-        "visual_emoji": "🏗️",
-        "summary": {
-            "en": "Saudi Arabia has paused major construction on the Mukaab cube megaproject in Riyadh.",
-            "tr": "Suudi Arabistan, Riyad'daki Mukaab küp mega projesinin büyük inşaatına ara verdi.",
-            "ru": "Саудовская Аравия приостановила основное строительство мегапроекта Mukaab cube в Эр-Рияде.",
-            "zh": "沙特阿拉伯已暂停在利雅得的 Mukaab 立方体大型项目的重大建设。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016065773005914323",
-        "local_video_path": null,
-        "image_path": "media/2016065773005914323.jpg",
-        "date": "2026-01-27 08:28:31+00:00",
-        "original_text": "NEW: Saudi Arabia has paused major construction on the futuristic Mukaab cube megaproject in Riyadh. \n\nSource: Reuters https://t.co/09kT3BEj2X",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Saudi Arabia"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.8938,
-        "lng": 35.5018,
-        "location_name": {
-            "en": "Beirut",
-            "tr": "Beyrut",
-            "ru": "Бейрут",
-            "zh": "贝鲁特"
-        },
-        "attack_type": "Announcement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "Qatar announces a $20 million project with IOM to support the voluntary return of 100,000 Syrian refugees in Lebanon.",
-            "tr": "Katar, Lübnan'daki 100.000 Suriyeli mültecinin gönüllü geri dönüşünü desteklemek için IOM ile 20 milyon dolarlık bir proje duyurdu.",
-            "ru": "Катар объявляет о проекте стоимостью 20 миллионов долларов с IOM для поддержки добровольного возвращения 100 000 сирийских беженцев в Ливане.",
-            "zh": "卡塔尔宣布与国际移民组织合作，启动一项耗资 2000 万美元的项目，以支持在黎巴嫩的 10 万叙利亚难民自愿返回家园。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016078256366145686",
-        "local_video_path": null,
-        "image_path": "media/2016078256366145686.jpg",
-        "date": "2026-01-27 09:18:07+00:00",
-        "original_text": "وزير الدولة في وزارة الخارجية القطرية محمد بن عبد العزيز الخليفي:\n\n• نعلن إطلاق مشروع لدعم العودة الطوعية للاجئين السوريين في لبنان، بالتعاون مع المنظمة الدولية للهجرة، وفق برنامج يستهدف قرابة 100 ألف شخص\n\n• تبلغ تكلفة المرحلة الأولى من المشروع نحو 20 مليون دولار، في إطار https://t.co/rmoW4szXNo",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Qatar"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 37.0407,
-        "lng": 41.2143,
-        "location_name": {
-            "en": "Qamishli",
-            "tr": "Kamışlı",
-            "ru": "Камышлы",
-            "zh": "卡米什利"
-        },
-        "attack_type": "Withdrawal of equipment",
-        "visual_emoji": "🚚",
-        "summary": {
-            "en": "Russia is gradually withdrawing its equipment from Qamishli airport, with some forces redeploying to Khmeimim airbase.",
-            "tr": "Rusya, ekipmanlarını kademeli olarak Kamışlı havaalanından çekiyor, bazı kuvvetler Hmeymim hava üssüne yeniden konuşlandırılıyor.",
-            "ru": "Россия постепенно выводит свою технику из аэропорта Камышли, при этом часть сил перебрасывается на авиабазу Хмеймим.",
-            "zh": "俄罗斯正逐步从卡米什利机场撤出设备，部分部队重新部署到赫梅米姆空军基地。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016075680446828891",
-        "local_video_path": "media/2016075680446828891.mp4",
-        "image_path": null,
-        "date": "2026-01-27 09:07:53+00:00",
-        "original_text": "روسيا تبدأ بسحب عتادها تدريجيا من مطار القامشلي.. متى وضعت قدمها هناك، وكيف حصل ذلك؟ https://t.co/K7wt9XkmZ6",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Russia"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Death announcement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "Syrian Ministry of Health announces the death of Dr. Omar Onlar, former personal physician to the Turkish President Erdogan.",
-            "tr": "Suriye Sağlık Bakanlığı, Türkiye Cumhurbaşkanı Erdoğan'ın eski özel doktoru Dr. Omar Onlar'ın ölümünü duyurdu.",
-            "ru": "Министерство здравоохранения Сирии объявляет о смерти доктора Омара Онлара, бывшего личного врача президента Турции Эрдогана.",
-            "zh": "叙利亚卫生部宣布土耳其总统埃尔多安的前私人医生奥马尔·昂拉尔博士去世。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016073375156736087",
-        "local_video_path": null,
-        "image_path": "media/2016073375156736087.jpg",
-        "date": "2026-01-27 08:58:44+00:00",
-        "original_text": "وزارة الصحة تنعى الدكتور السوري عمر أونلار، رئيس قسم الأمراض العصبية في جامعة \"يلدرم بيازيد\"، والطبيب الشخصي السابق للرئيس التركي رجب طيب أردوغان، ومسؤول الملف الصحي للاجئين السوريين في تركيا بين عامي 2011 و2014 https://t.co/J2dJmNiBtd",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.3412,
-        "lng": 40.7591,
-        "location_name": {
-            "en": "Al-Safa village",
-            "tr": "El-Safa köyü",
-            "ru": "Деревня Аль-Сафа",
-            "zh": "萨法村"
-        },
-        "attack_type": "SDF drone shelling",
-        "visual_emoji": "🚁",
-        "summary": {
-            "en": "SDF drone shelling injured 14 in Al-Safa village, south of Al-Hasakah.",
-            "tr": "SDF drone saldırısı Haseke'nin güneyindeki El-Safa köyünde 14 kişiyi yaraladı.",
-            "ru": "В результате обстрела деревни Аль-Сафа к югу от Аль-Хасаки беспилотниками SDF ранены 14 человек.",
-            "zh": "叙利亚民主力量无人机炮击造成哈塞克以南的 Al-Safa 村 14 人受伤。"
-        },
-        "territory_update": {},
-        "confidence": 9.0,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016071717500658158",
-        "local_video_path": null,
-        "image_path": "media/2016071717500658158.jpg",
-        "date": "2026-01-27 08:52:08+00:00",
-        "original_text": "https://t.co/zZGOjtq5n8",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "SDF"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.3116,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Meeting to discuss the restoration of the Hejaz Railway",
-        "visual_emoji": "🤝",
-        "summary": {
-            "en": "Turkish Ambassador Nuh Yılmaz met with Syrian Transport Minister Yarub Bedir to discuss restoring the Hejaz Railway.",
-            "tr": "Türkiye'nin Şam Büyükelçisi Nuh Yılmaz, Suriye Ulaştırma Bakanı Yarub Bedir ile Hicaz Demiryolu'nun yeniden ihyasını görüştü.",
-            "ru": "Посол Турции Нух Йылмаз встретился с министром транспорта Сирии Ярубом Бедиром для обсуждения восстановления Хиджазской железной дороги.",
-            "zh": "土耳其驻大马士革大使努·伊尔马兹会见了叙利亚交通部长亚鲁卜·贝迪尔，讨论了恢复希贾兹铁路的问题。"
-        },
-        "territory_update": {},
-        "confidence": 7.2,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016078173805384046",
-        "local_video_path": null,
-        "image_path": "media/2016078173805384046.jpg",
-        "date": "2026-01-27 09:17:48+00:00",
-        "original_text": "🔴 Türkiye’nin Şam Büyükelçisi Nuh Yılmaz, Suriye Ulaştırma Bakanı Yarub Bedir’i ziyaret ederek, Hicaz Demiryolu’nun yeniden ihyasını görüştü. https://t.co/WiptWczGUp",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Türkiye"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 31.769,
-        "lng": 35.2163,
-        "location_name": {
-            "en": "Jerusalem",
-            "tr": "Kudüs",
-            "ru": "Иерусалим",
-            "zh": "耶路撒冷"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "Israel is preparing for talks with the Trump administration for a new 10-year security agreement.",
-            "tr": "İsrail, mevcut anlaşmanın yerine geçecek yeni bir 10 yıllık güvenlik anlaşması için Trump yönetimiyle görüşmelere hazırlanıyor.",
-            "ru": "Израиль готовится к переговорам с администрацией Трампа о новом 10-летнем соглашении о безопасности.",
-            "zh": "以色列正准备与特朗普政府就一项新的 10 年安全协议进行谈判，以取代现有协议。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016074563054874857",
-        "local_video_path": null,
-        "image_path": "media/2016074563054874857.jpg",
-        "date": "2026-01-27 09:03:27+00:00",
-        "original_text": "🔴 İsrail, 2028’de sona erecek mevcut anlaşmanın yerine geçecek yeni bir 10 yıllık güvenlik anlaşması için Trump yönetimiyle görüşmelere hazırlanıyor.\n\nABD’den yıllık 3,8 milyar dolar nakit yardıma dayanmak yerine İsrail, “ücretsiz para”yı kademeli olarak azaltmak ve ortak silah https://t.co/ZgqXjyWRii",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Israel"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9208,
-        "lng": 32.8541,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "TUSAŞ General Manager announced plans to deliver 22 HÜRKUŞ aircraft this year.",
-            "tr": "TUSAŞ Genel Müdürü, bu yıl 22 adet HÜRKUŞ uçağı teslim etmeyi planladıklarını duyurdu.",
-            "ru": "Генеральный директор TUSAŞ объявил о планах поставки 22 самолетов HÜRKUŞ в этом году.",
-            "zh": "TUSAŞ 总经理宣布计划今年交付 22 架 HÜRKUŞ 飞机。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016068611803168963",
-        "local_video_path": "media/2016068611803168963.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:39:48+00:00",
-        "original_text": "🔴 TUSAŞ Genel Müdürü Mehmet Demiroğlu:\n\n\"HÜRKUŞ için bu sene içerisinde bir değil, 22 tane teslimat yapmayı planlıyoruz.\" https://t.co/RCx7TFeJEU",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "TUSAŞ"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9208,
-        "lng": 32.8541,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "TUSAŞ General Manager Mehmet Demiroğlu stated that KAAN's P1 and P2 prototypes will start flights this year.",
-            "tr": "TUSAŞ Genel Müdürü Mehmet Demiroğlu, KAAN'ın P1 ve P2 prototiplerinin bu yıl uçuşlara başlayacağını belirtti.",
-            "ru": "Генеральный директор TUSAŞ Мехмет Демироглу заявил, что прототипы KAAN P1 и P2 начнут полеты в этом году.",
-            "zh": "TUSAŞ 总经理 Mehmet Demiroğlu 表示，KAAN 的 P1 和 P2 原型机将于今年开始飞行。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016067777379860821",
-        "local_video_path": null,
-        "image_path": "media/2016067777379860821.jpg",
-        "date": "2026-01-27 08:36:29+00:00",
-        "original_text": "🔴 TUSAŞ Genel Müdürü Mehmet Demiroğlu:\n\nKAAN’ın P1 ve P2 prototipleri bu yıl uçuşlara başlayacak. https://t.co/04nFxuSNzy",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "TUSAŞ"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 31.769,
-        "lng": 35.2163,
-        "location_name": {
-            "en": "Jerusalem",
-            "tr": "Kudüs",
-            "ru": "Иерусалим",
-            "zh": "耶路撒冷"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "Israeli Foreign Minister Gideon Sa'ar comments on the deteriorating relations with Turkey and expresses hope for no further worsening.",
-            "tr": "İsrail Dışişleri Bakanı Gideon Sa'ar, Türkiye ile bozulan ilişkiler hakkında yorumlarda bulundu ve daha fazla kötüleşme olmaması umudunu dile getirdi.",
-            "ru": "Министр иностранных дел Израиля Гидеон Саар комментирует ухудшение отношений с Турцией и выражает надежду на дальнейшее ухудшение.",
-            "zh": "以色列外交部长吉德昂·萨尔评论了与土耳其不断恶化的关系，并表示希望不会进一步恶化。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016066395713192078",
-        "local_video_path": null,
-        "image_path": "media/2016066395713192078.jpg",
-        "date": "2026-01-27 08:31:00+00:00",
-        "original_text": "🔴 İsrail Dışişleri Bakanı Gideon Sa'ar:\n\nTürkiye ile geçmişte çok iyi ilişkilerimiz vardı, ancak son on yıllarda bu ilişkilerin kötüleştiğini gördük. Bu onların tercihiydi.\n\nTürkiye ile ilişkilerimizi zaten olduğundan daha da kötüleştirmek gibi bir niyetimiz yok. \n\nUmarım https://t.co/twZ0YueT4Q",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Israel"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "\"Wajib\" allows complaints via mobile app, web, bots, and citizen service centers.",
-            "tr": "\"Wajib\", mobil uygulama, web, botlar ve vatandaş hizmet merkezleri aracılığıyla şikayetlere olanak tanır.",
-            "ru": "\"Wajib\" позволяет подавать жалобы через мобильное приложение, веб-сайт, ботов и центры обслуживания граждан.",
-            "zh": "“Wajib” 允许通过移动应用程序、网络、机器人和公民服务中心进行投诉。"
-        },
-        "territory_update": {},
-        "confidence": 8.0,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016062742734532958",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 08:16:29+00:00",
-        "original_text": "يتيح \"وجب\" تقديم الشكاوى ومتابعتها عبر عدة مسارات تشمل؛ تطبيق الهاتف المحمول، ومنصة ويب، وتواصل عبر البوتات، ونوافذ مخصصة في مراكز خدمة المواطن.",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "The General Secretariat of the Presidency of the Republic - Council of Ministers, in cooperation with the Ministry of Communications and Information Technology, holds a workshop on launching a unified complaints application that includes all ministries, called \"Wajib.\"",
-            "tr": "Cumhurbaşkanlığı Genel Sekreterliği - Bakanlar Kurulu, İletişim ve Bilgi Teknolojileri Bakanlığı işbirliğiyle, tüm bakanlıkları içeren ve \"Wajib\" adını taşıyan birleşik bir şikayet uygulaması başlatmak üzere bir çalıştay düzenliyor.",
-            "ru": "Генеральный секретариат Администрации Президента Республики - Совет министров в сотрудничестве с Министерством связи и информационных технологий проводит семинар по запуску единого приложения для подачи жалоб, охватывающего все министерства, под названием «Ваджиб».",
-            "zh": "共和国总统秘书处 - 部长理事会与通信和信息技术部合作，举办一次关于启动统一投诉应用程序的研讨会，该程序涵盖所有部委，名称为“Wajib”。"
-        },
-        "territory_update": {},
-        "confidence": 9.6,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016062740456947767",
-        "local_video_path": null,
-        "image_path": "media/2016062740456947767.jpg",
-        "date": "2026-01-27 08:16:28+00:00",
-        "original_text": "الأمانة العامة لرئاسة الجمهورية - شؤون مجلس الوزراء، بالتعاون مع وزارة الاتصالات وتقانة المعلومات، تعقد ورشة عمل حول إطلاق تطبيق شكاوى موحد يشمل جميع الوزارات، ويحمل اسم \"وجب\".\n\n#سوريا \n#تطبيق_وجب https://t.co/5w016wS9ZC",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 28.6139,
-        "lng": 77.209,
-        "location_name": {
-            "en": "New Delhi",
-            "tr": "Yeni Delhi",
-            "ru": "Нью-Дели",
-            "zh": "新德里"
-        },
-        "attack_type": "EU-India Strategic Summits",
-        "visual_emoji": "🤝",
-        "summary": {
-            "en": "India and EU deepen partnership in counter-terrorism, maritime, and cyber security.",
-            "tr": "Hindistan ve AB, terörle mücadele, denizcilik ve siber güvenlik alanlarındaki ortaklığı derinleştiriyor.",
-            "ru": "Индия и ЕС углубляют партнерство в борьбе с терроризмом, в морской сфере и кибербезопасности.",
-            "zh": "印度和欧盟深化在反恐、海事和网络安全领域的伙伴关系。"
-        },
-        "territory_update": {},
-        "confidence": 10.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016067523301523624",
-        "local_video_path": "media/2016067523301523624.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:35:28+00:00",
-        "original_text": "EU-India Trade & Security Cluster",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "India and EU deepen partnership in counter-terrorism, maritime, and cyber security.",
-                    "tr": "Hindistan ve AB, terörle mücadele, denizcilik ve siber güvenlik alanlarındaki ortaklığı derinleştiriyor.",
-                    "ru": "Индия и ЕС углубляют партнерство в борьбе с терроризмом, в морской сфере и кибербезопасности.",
-                    "zh": "印度和欧盟深化在反恐、海事和网络安全领域的伙伴关系。"
-                },
-                "date": "2026-01-27 08:35:28+00:00",
-                "tweet_id": "2016067523301523624",
-                "local_video_path": "media/2016067523301523624.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "original_text": "India's Modi on security and defence pact with the EU:\n\nThis will deepen our partnership in counter-terrorism, maritime, and cyber security.\n\nThe scope of our cooperation in the Indo-Pacific region will further increase. \n\nOur defense companies will realize new opportunities for https://t.co/WCJQM7N2L7",
-                "actor": "India"
-            },
-            {
-                "summary": {
-                    "en": "EU announces a trade deal with India, expecting to cut billions in tariffs.",
-                    "tr": "AB, Hindistan ile bir ticaret anlaşması yaptığını ve milyarlarca tarifeyi düşürmeyi beklediğini duyurdu.",
-                    "ru": "ЕС объявляет о торговой сделке с Индией, ожидается сокращение тарифов на миллиарды.",
-                    "zh": "欧盟宣布与印度达成贸易协议，预计将削减数十亿关税。"
-                },
-                "date": "2026-01-27 08:23:46+00:00",
-                "tweet_id": "2016064576240992320",
-                "local_video_path": "media/2016064576240992320.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "original_text": "EU's von der Leyen on trade deal with India:\n\nWe did it. We delivered the mother of all deals.\n\nWe are creating a market of two billion people. \n\nIt will cut up to four billion euros in annual tariffs for exporters of all sizes. https://t.co/J2S60dWKtX",
-                "actor": "EU"
-            },
-            {
-                "summary": {
-                    "en": "India and the EU have signed a free trade agreement in New Delhi.",
-                    "tr": "Hindistan ve AB, Yeni Delhi'de bir serbest ticaret anlaşması imzaladı.",
-                    "ru": "Индия и ЕС подписали соглашение о свободной торговле в Нью-Дели.",
-                    "zh": "印度和欧盟在新德里签署了自由贸易协定。"
-                },
-                "date": "2026-01-27 08:09:54+00:00",
-                "tweet_id": "2016061085321740792",
-                "local_video_path": "media/2016061085321740792.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "original_text": "India's Modi on trade deal with the EU:\n\nToday, India has concluded the largest-ever Free Trade Agreement in its history. https://t.co/AQPAZyVh8S",
-                "actor": "India"
-            },
-            {
-                "summary": {
-                    "en": "EU and India sign security and defence pact in New Delhi.",
-                    "tr": "AB ve Hindistan, Yeni Delhi'de güvenlik ve savunma paktı imzaladı.",
-                    "ru": "ЕС и Индия подписывают пакт о безопасности и обороне в Нью-Дели.",
-                    "zh": "欧盟和印度在新德里签署安全和国防协议。"
-                },
-                "date": "2026-01-27 07:59:44+00:00",
-                "tweet_id": "2016058527232450645",
-                "local_video_path": "media/2016058527232450645.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "original_text": "NOW: EU and India sign security and defence pact in New Delhi. https://t.co/S8akBoLP46",
-                "actor": "EU"
-            }
-        ],
-        "actor": "EU"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Official exchange rates for new and old Syrian pounds",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "The Central Bank of Syria announced official exchange rates for the new and old Syrian pound.",
-            "tr": "Suriye Merkez Bankası, yeni ve eski Suriye lirası için resmi döviz kurlarını yayınladı.",
-            "ru": "Центральный банк Сирии опубликовал официальные обменные курсы новой и старой сирийской лиры.",
-            "zh": "叙利亚中央银行发布了新旧叙利亚镑的官方汇率。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016062708974571837",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 08:16:21+00:00",
-        "original_text": "READ MORE👇\n\nhttps://t.co/iLHcaMMcuX",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Official exchange rates for new and old Syrian pounds",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "The Central Bank of Syria released the official exchange rates for the new and old Syrian pound on Tuesday, January 27, 2026.",
-            "tr": "Suriye Merkez Bankası, 27 Ocak 2026 Salı günü yeni ve eski Suriye lirası için resmi döviz kurlarını yayınladı.",
-            "ru": "Центральный банк Сирии опубликовал официальные обменные курсы новой и старой сирийской лиры во вторник, 27 января 2026 года.",
-            "zh": "2026 年 1 月 27 日星期二，叙利亚中央银行发布了新旧叙利亚镑的官方汇率。"
-        },
-        "territory_update": {},
-        "confidence": 9.6,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016061191810949407",
-        "local_video_path": null,
-        "image_path": "media/2016061191810949407.jpg",
-        "date": "2026-01-27 08:10:19+00:00",
-        "original_text": "النشرة الرسمية الصادرة عن مصرف سوريا المركزي اليوم الثلاثاء 27-1-2026 لأسعار الصرف بالليرة الجديدة والليرة القديمة.\n\n#أسعار_الصرف\n#مصرف_سوريا_المركزي https://t.co/5hOfpfDjak",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.891,
-        "lng": 38.3536,
-        "location_name": {
-            "en": "Ain al-Arab",
-            "tr": "Ayn el-Arap",
-            "ru": "Айн-эль-Араб",
-            "zh": " عين العرب"
-        },
-        "attack_type": "aid convoy",
-        "visual_emoji": "🚚",
-        "summary": {
-            "en": "SANA reports the central committee is sending a convoy with food, medical and logistic supplies to Ain al-Arab in Aleppo.",
-            "tr": "SANA, merkez komitenin Halep'teki Ayn el-Arab'a gıda, tıbbi ve lojistik malzeme taşıyan bir konvoy gönderdiğini bildirdi.",
-            "ru": "SANA сообщает, что центральный комитет направляет конвой с продовольствием, медикаментами и материально-техническими средствами в Айн-эль-Араб в Алеппо.",
-            "zh": "SANA 报告说，中央委员会正在向阿勒颇的艾因阿拉伯派遣一支载有食品、医疗和后勤物资的车队。"
-        },
-        "territory_update": {},
-        "confidence": 9.6,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016058590704853336",
-        "local_video_path": null,
-        "image_path": "media/2016058590704853336.jpg",
-        "date": "2026-01-27 07:59:59+00:00",
-        "original_text": "مراسل سانا: اللجنة المركزية لاستجابة حلب ترسل قافلة مساعدات جديدة محملة بالمواد الغذائية والطبية واللوجستية إلى منطقة عين العرب في ريف حلب.\n\n#سوريا \n#حلب https://t.co/JKACqIZdH7",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Syria"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.3403,
-        "lng": 40.8203,
-        "location_name": {
-            "en": "Al-Safa village",
-            "tr": "El-Safa köyü",
-            "ru": "Деревня Аль-Сафа",
-            "zh": "萨法村"
-        },
-        "attack_type": "SDF drone shelling on Al-Safa village",
-        "visual_emoji": "💥",
-        "summary": {
-            "en": "SDF drone shelling injured 14 in Al-Safa village, south of Al-Hasakah.",
-            "tr": "SDF drone bombardımanı, Haseke'nin güneyindeki El-Safa köyünde 14 kişiyi yaraladı.",
-            "ru": "В результате обстрела деревни Аль-Сафа к югу от Аль-Хасаки беспилотниками SDF ранены 14 человек.",
-            "zh": "叙利亚民主力量对哈塞克省南部的 Al-Safa 村庄进行无人机炮击，造成 14 人受伤。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016056694598443410",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 07:52:27+00:00",
-        "original_text": "READ MORE👇\n\nhttps://t.co/vbpmHQwxwZ",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "SDF"
-    },
-    {
-        "action": "Irrelevant",
-        "target_id": null,
-        "lat": null,
-        "lng": null,
-        "location_name": null,
-        "attack_type": null,
-        "visual_emoji": null,
-        "summary": null,
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016060153779351684",
-        "local_video_path": "media/2016060153779351684.mp4",
-        "image_path": null,
-        "date": "2026-01-27 08:06:11+00:00",
-        "original_text": "🔴 Avrupa Birliği ile Hindistan,  “tüm anlaşmaların anası” olarak nitelendirilen bir ticaret anlaşması yaptı. https://t.co/ABIPRIpVuC",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": null
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": -25.2744,
-        "lng": 133.7751,
-        "location_name": {
-            "en": "Australia",
-            "tr": "Avustralya",
-            "ru": "Австралия",
-            "zh": "澳大利亚"
-        },
-        "attack_type": "Visa Cancellation",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "Australia canceled the visa of an Israeli influencer known for anti-Islam posts, citing that hate speech would not be allowed.",
-            "tr": "Avustralya, İslam karşıtı paylaşımlarıyla bilinen İsrailli bir influencer’ın vizesini, nefret söylemine izin verilmeyeceği gerekçesiyle iptal etti.",
-            "ru": "Австралия аннулировала визу израильского инфлюенсера, известного своими антиисламскими постами, заявив, что ненавистнические высказывания недопустимы.",
-            "zh": "澳大利亚取消了一位以反伊斯兰帖子闻名的以色列网红的签证，理由是不允许发表仇恨言论。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016057704398082093",
-        "local_video_path": null,
-        "image_path": "media/2016057704398082093.jpg",
-        "date": "2026-01-27 07:56:27+00:00",
-        "original_text": "🔴 Avustralya, İslam karşıtı paylaşımlarıyla bilinen İsrailli bir influencer’ın vizesini, “nefret yaymaya izin verilmeyeceği” gerekçesiyle iptal etti. https://t.co/58jyr34k3C",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Australia"
     }
 ]
