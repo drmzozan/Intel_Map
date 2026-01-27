@@ -1910,51 +1910,12 @@
             const allTypes = [...strategicTypes, ...Object.keys(symbolTypeMapping)];
             const uniqueTypes = [...new Set(allTypes)];
 
-            // LOAD REAL PNG ICONS & MAP TO ALL OWNERS
-            const ownerKeys = Object.keys({ ...colorMapping, "Unknown": "#7f8c8d" });
-
-            map.loadImage('media/icons/f16.png', (error, image) => {
-                if (error) console.error("F16 Load Error:", error);
-                else {
-                    ownerKeys.forEach(owner => {
-                        [false, true].forEach(isBesieged => {
-                            const suffix = isBesieged ? '-besieged' : '';
-
-                            // 1. Register 'plane' (Airstrikes)
-                            const idPlane = `plane-${owner}${suffix}`;
-                            if (!map.hasImage(idPlane)) map.addImage(idPlane, image, { sdf: true });
-
-                            // 2. Register 'Airport' (Airfields) - Reuse F16 icon
-                            const idAirport = `Airport-${owner}${suffix}`;
-                            if (!map.hasImage(idAirport)) map.addImage(idAirport, image, { sdf: true });
-                        });
-                    });
-                }
-            });
-
-            map.loadImage('media/icons/drone.png', (error, image) => {
-                if (error) console.error("Drone Load Error:", error);
-                else {
-                    ownerKeys.forEach(owner => {
-                        [false, true].forEach(isBesieged => {
-                            const suffix = isBesieged ? '-besieged' : '';
-                            const id = `fpv-${owner}${suffix}`;
-                            if (!map.hasImage(id)) map.addImage(id, image, { sdf: true });
-                        });
-                    });
-                }
-            });
-
             uniqueTypes.forEach(type => {
                 const colors = { ...colorMapping, "Unknown": "#7f8c8d" };
                 Object.keys(colors).forEach(owner => {
                     [false, true].forEach(isBesieged => {
                         const suffix = isBesieged ? '-besieged' : '';
                         const imageId = `${type}-${owner}${suffix}`;
-
-                        // SKIP PNG Types (Handled above by loadImage)
-                        const mappedType = symbolTypeMapping[type] || type;
-                        if (mappedType === 'plane' || mappedType === 'fpv') return;
 
                         if (!map.hasImage(imageId)) {
                             const canvas = createCompositeMarker(null, colors[owner], type, isBesieged);
