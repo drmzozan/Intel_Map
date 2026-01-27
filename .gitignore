@@ -1,0 +1,17 @@
+# System & Environment
+venv/
+__pycache__/
+*.log
+*.tmp
+.DS_Store
+
+# Backend & Secrets (CRITICAL: Do not remove)
+*.py
+requirements.txt
+go.mod
+go.sum
+latest_data_wiki
+*.bak
+
+# Explicit Exceptions (If you ever wanted to publish a specific script, un-comment it)
+# !worker.js <-- JS files are included by default, so no need to un-ignore unless we ignore *.js

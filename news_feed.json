@@ -2,6 +2,38 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 33.8852,
+        "lng": 35.5919,
+        "location_name": {
+            "en": "Roumieh Prison",
+            "tr": "Rumieh Hapishanesi",
+            "ru": "Тюрьма Румие",
+            "zh": "鲁米耶监狱"
+        },
+        "attack_type": "Diplomacy/Phone call",
+        "visual_emoji": "🗣️",
+        "attacker": "USA",
+        "summary": {
+            "en": "US Senator Chris Coons spoke by phone with a Syrian political detainee in Roumieh prison, Lebanon.",
+            "tr": "ABD Senatörü Chris Coons, Lübnan'daki Rumieh cezaevinde Suriyeli bir siyasi tutuklu ile telefonda görüştü.",
+            "ru": "Сенатор США Крис Кунс поговорил по телефону с сирийским политическим заключенным в тюрьме Румие, Ливан.",
+            "zh": "美国参议员克里斯·库恩斯与黎巴嫩鲁米耶监狱的一名叙利亚政治犯进行了电话交谈。"
+        },
+        "territory_update": null,
+        "confidence": 7.5,
+        "channel": "X (@AJSyriaNowN)",
+        "tweet_id": "2016043051169304620",
+        "local_video_path": null,
+        "image_path": "media/2016043051169304620.jpg",
+        "date": "2026-01-27 06:58:14+00:00",
+        "original_text": "المنظمة السورية للطوارئ:\n\nأجرى عضو مجلس الشيوخ الأمريكي السيناتور كريس كونز اتصالا هاتفيا مع معتقل سياسي سوري محتجز في سجن رومية بلبنان منذ 2014، بسبب مشاركته في الثورة السورية\n\nالاتصال ركز على مناقشة استمرار احتجاز السجناء السياسيين السوريين واللبنانيين، وسبل العمل من أجل https://t.co/G06faOj3y4",
+        "sources": [
+            "X (@AJSyriaNowN)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 36.8513,
         "lng": 38.7822,
         "location_name": {
@@ -348,38 +380,6 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 36.769609907831935,
-        "lng": 38.80911379456177,
-        "location_name": {
-            "en": "Ayın Rural",
-            "tr": "Ayın Kırsalı",
-            "ru": "Сельская местность Айн-эль-Араба",
-            "zh": "艾因阿拉伯农村地区"
-        },
-        "attack_type": "Clashes",
-        "visual_emoji": "⚔️",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Heavy clashes are reported in the rural area of Ayın.",
-            "tr": "Ayın kırsalında şiddetli çatışmalar yaşanıyor.",
-            "ru": "Сообщается о тяжелых столкновениях в сельской местности Айн.",
-            "zh": "据报道，阿因农村地区发生激烈冲突。"
-        },
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@khalildervPRESS)",
-        "tweet_id": "2015514203738538080",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-25 19:56:47+00:00",
-        "original_text": "Ayın Arap kırsalında şiddetli çatışmalar yaşanıyor.",
-        "sources": [
-            "X (@khalildervPRESS)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
         "lat": 31.7683,
         "lng": 35.2137,
         "location_name": {
@@ -565,38 +565,6 @@
         "image_path": null,
         "date": "2026-01-26 07:37:19+00:00",
         "original_text": "Suriye Ordusu, SDG’nin sivil yerleşimlere yönelik saldırılarına karşılık verdi. \n\nSuriye Ordus örgüte ait mevzileri İHA’lar ile hedef alınd.",
-        "sources": [
-            "X (@khalildervPRESS)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.8884,
-        "lng": 38.3443,
-        "location_name": {
-            "en": "Ain al-Arab",
-            "tr": "Ayn el-Arap",
-            "ru": "Айн-эль-Араб",
-            "zh": "艾因阿拉伯"
-        },
-        "attack_type": "clashes",
-        "visual_emoji": "⚔️",
-        "attacker": "Unknown",
-        "summary": {
-            "en": "Clashes continue in Ain al-Arab (Kobani).",
-            "tr": "Ayn el-Arap'ta (Kobani) çatışmalar devam ediyor.",
-            "ru": "Столкновения продолжаются в Айн-эль-Арабе (Кобани).",
-            "zh": "艾因阿拉伯（科巴尼）的冲突仍在继续。"
-        },
-        "territory_update": null,
-        "confidence": 6.0,
-        "channel": "X (@khalildervPRESS)",
-        "tweet_id": "2015526191327740284",
-        "local_video_path": "media/2015526191327740284.mp4",
-        "image_path": null,
-        "date": "2026-01-25 20:44:25+00:00",
-        "original_text": "Ayın Arap ekseninde çatışmalar devam ediyor. https://t.co/gCUJfVfTYz",
         "sources": [
             "X (@khalildervPRESS)"
         ]
