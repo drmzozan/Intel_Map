@@ -2269,6 +2269,11 @@
                         showEventPopup(pseudoFeature, [lng, lat]);
                     });
 
+                    // Add click listener to stop propagation to the map's click handler
+                    el.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                    });
+
                     // Force pointer events
                     el.style.pointerEvents = "all";
                     img.style.pointerEvents = "all";
