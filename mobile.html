@@ -1167,8 +1167,8 @@
                                </div>
                                <span style="font-size:11px; color:#888;">${timeStr}</span>
                            </div>
-                           <h3 style="margin:0 0 5px 0; font-size:14px; line-height:1.4; color:#fff;">${props.location_name}</h3>
-                           <p style="font-size:12px; color:#ccc; margin:0;">${props.summary ? props.summary.substring(0, 80) + '...' : 'Click for details'}</p>
+                           <h3 style="margin:0 0 5px 0; font-size:14px; line-height:1.4; color:#fff;">${getLoc(props, 'location_name')}</h3>
+                           <p style="font-size:12px; color:#ccc; margin:0;">${getLoc(props, 'summary') ? getLoc(props, 'summary').substring(0, 80) + '...' : 'Click for details'}</p>
                            <div style="font-size:11px; color:#3498db; margin-top:8px; font-weight:bold;">Click to Expand ↗</div>
                        </div>
                     </div>
@@ -1279,23 +1279,17 @@
                 globalSyriaGeoJSON = await resp.json();
             } catch (e) { console.error("Syria JSON Error", e); }
 
+            map.addSource('heatmap-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+            map.addLayer({
+                id: 'heatmap-layer', type: 'heatmap', source: 'heatmap-data', maxzoom: 15,
+                paint: { 'heatmap-weight': 1, 'heatmap-intensity': 1, 'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(0,0,0,0)', 0.2, '#f1c40f', 0.6, '#e67e22', 1, '#e74c3c'], 'heatmap-radius': 40, 'heatmap-opacity': 0.4 }
+            });
+
             map.addSource('dynamic-borders', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
             map.addLayer({ id: 'border-glow', type: 'line', source: 'dynamic-borders', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': ['get', 'color'], 'line-width': 6, 'line-blur': 3, 'line-opacity': 0.8 } });
             map.addLayer({ id: 'border-fill', type: 'fill', source: 'dynamic-borders', paint: { 'fill-color': ['get', 'color'], 'fill-opacity': 0.35 } });
 
             map.addSource('war-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-            map.addSource('heatmap-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-
-            map.addLayer({
-                id: 'heatmap-layer', type: 'heatmap', source: 'heatmap-data', maxzoom: 15,
-                paint: { 'heatmap-weight': 1, 'heatmap-intensity': 1, 'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(0,0,0,0)', 0.2, '#f1c40f', 0.6, '#e67e22', 1, '#e74c3c'], 'heatmap-radius': 40, 'heatmap-opacity': 0.6 }
-            });
-            // map.addLayer({
-            //     id: 'war-layer',
-            //     type: 'symbol',
-            //     source: 'war-data',
-            //     ... REMOVED TO USE HTML MARKERS ...
-            // });
 
             // --- CUSTOM MARKER MANAGER ---
             window.newsMarkers = [];
@@ -1327,8 +1321,8 @@
                         <div style="min-width: 160px; pointer-events: none;">
                             <div style="font-weight: 800; color: var(--accent); margin-bottom: 6px; font-size: 13px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;">Intelligence Update</div>
                             <div style="display: flex; flex-direction: column; gap: 4px;">
-                                <div style="font-weight: 600; color: #fff; font-size: 12px;">${props.location_name}</div>
-                                <div style="color: #bbb; font-size: 11px; line-height: 1.3;">${props.summary ? props.summary.substring(0, 100) + (props.summary.length > 100 ? '...' : '') : ''}</div>
+                                <div style="font-weight: 600; color: #fff; font-size: 12px;">${getLoc(props, 'location_name')}</div>
+                                <div style="color: #bbb; font-size: 11px; line-height: 1.3;">${getLoc(props, 'summary') ? getLoc(props, 'summary').substring(0, 100) + (getLoc(props, 'summary').length > 100 ? '...' : '') : ''}</div>
                                 <div style="display: flex; justify-content: space-between; margin-top: 4px;">
                                     <span style="color: #3498db; font-size: 10px; font-weight: 600;">${props.attacker}</span>
                                     <span style="color: #555; font-size: 9px;">${props.date ? props.date.split(' ')[1].substring(0, 5) : ''}</span>
@@ -1445,9 +1439,11 @@
                 map.on('pointerdown', layerId, (e) => {
                     console.log("Strategic Layer PointerDown:", layerId);
                     const props = e.features[0].properties;
-                    // const coords = e.lngLat; // Not needed for openDetailModal
                     openDetailModal(null, props.owner, props.name, props.summary || "Strategic Location", props.date, null, props.channel, null, null, null);
                 });
+
+                // Add touchstart as fallback
+                map.on('touchstart', layerId, (e) => { e.preventDefault(); });
 
                 map.on('mouseenter', layerId, (e) => {
                     // Suppress hover if detail popup is open
@@ -1733,6 +1729,17 @@
             } catch (e) { console.error("Border Update Error", e); }
         }
 
+        function getLoc(item, field) {
+            if (!item[field]) return "";
+            if (typeof item[field] === 'string') return item[field];
+            // Otherwise it's the translation object
+            const lang = navigator.language || navigator.userLanguage;
+            if (lang.startsWith('tr')) return item[field].tr || item[field].en || "";
+            if (lang.startsWith('ru')) return item[field].ru || item[field].en || "";
+            if (lang.startsWith('zh')) return item[field].zh || item[field].en || "";
+            return item[field].en || "";
+        }
+
         async function loadStrategicAssets() {
             try {
                 // Fetch both Strategic Assets and Settlements
@@ -1986,8 +1993,8 @@
                                 </div>
                                 <span style="font-size:10px; color:var(--text-dim); font-weight:600;">${item.date ? item.date.split(' ')[1].substring(0, 5) : ''}</span>
                             </div>
-                            <div style="font-weight:700; font-size:13px; color:#fff; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${item.location_name}</div>
-                            <div style="font-size:12px; color:var(--text-dim); line-height:1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${item.summary}</div>
+                            <div style="font-weight:700; font-size:13px; color:#fff; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${getLoc(item, 'location_name')}</div>
+                            <div style="font-size:12px; color:var(--text-dim); line-height:1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${getLoc(item, 'summary')}</div>
                             ${mediaHtml}
                         </div>
                     `;
@@ -2255,7 +2262,8 @@
             height: 100%;
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
             display: block;
-            pointer-events: auto !important;
+            pointer-events: none !important;
+            /* Let the parent div handle the click */
         }
     </style>
 </body>
