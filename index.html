@@ -1906,23 +1906,17 @@
                 globalSyriaGeoJSON = await resp.json();
             } catch (e) { console.error("Syria JSON Error", e); }
 
+            map.addSource('heatmap-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+            map.addLayer({
+                id: 'heatmap-layer', type: 'heatmap', source: 'heatmap-data', maxzoom: 15,
+                paint: { 'heatmap-weight': 1, 'heatmap-intensity': 1, 'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(0,0,0,0)', 0.2, '#f1c40f', 0.6, '#e67e22', 1, '#e74c3c'], 'heatmap-radius': 40, 'heatmap-opacity': 0.4 }
+            });
+
             map.addSource('dynamic-borders', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
             map.addLayer({ id: 'border-glow', type: 'line', source: 'dynamic-borders', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': ['get', 'color'], 'line-width': 6, 'line-blur': 3, 'line-opacity': 0.8 } });
             map.addLayer({ id: 'border-fill', type: 'fill', source: 'dynamic-borders', paint: { 'fill-color': ['get', 'color'], 'fill-opacity': 0.35 } });
 
             map.addSource('war-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-            map.addSource('heatmap-data', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-
-            map.addLayer({
-                id: 'heatmap-layer', type: 'heatmap', source: 'heatmap-data', maxzoom: 15,
-                paint: { 'heatmap-weight': 1, 'heatmap-intensity': 1, 'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(0,0,0,0)', 0.2, '#f1c40f', 0.6, '#e67e22', 1, '#e74c3c'], 'heatmap-radius': 40, 'heatmap-opacity': 0.6 }
-            });
-            // map.addLayer({
-            //     id: 'war-layer',
-            //     type: 'symbol',
-            //     source: 'war-data',
-            //     ... REMOVED TO USE HTML MARKERS ...
-            // });
 
             // --- CUSTOM MARKER MANAGER ---
             window.newsMarkers = [];
@@ -2262,8 +2256,9 @@
             // --- LAYER END ---
 
             // Correct placement: Load strategic assets immediately after layers are ready
-            loadStrategicAssets();
-            updateBorders(true);
+            await loadStrategicAssets();
+            await updateBorders(true);
+            await loadNews();
 
 
         });
