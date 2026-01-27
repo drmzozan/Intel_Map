@@ -2,22 +2,22 @@
     {
         "action": "MERGE",
         "target_id": "2016096807386784163",
-        "lat": 36.637,
-        "lng": 38.204,
+        "lat": 36.643,
+        "lng": 38.205,
         "location_name": {
-            "en": "Ain al-Arab Countryside",
-            "tr": "Ayn el-Arap Kırsalı",
-            "ru": "Сельская местность Айн-эль-Араб",
-            "zh": "艾因阿拉伯农村"
+            "en": "Euphrates East Bank (Ain al-Arab)",
+            "tr": "Fırat'ın Doğu Yakası (Ayn el-Arap)",
+            "ru": "Восточный берег Евфрата (Айн-эль-Араб)",
+            "zh": "幼发拉底河东岸（艾因阿拉伯）"
         },
-        "attack_type": "Aid Distribution",
+        "attack_type": "aid convoy",
         "visual_emoji": "🚚",
         "actor": "Syria",
         "summary": {
-            "en": "Aleppo Response Committee transports bread by boat to villages on the Euphrates east bank.",
-            "tr": "Halep Müdahale Komitesi, Fırat'ın doğu yakasındaki köylere tekneyle ekmek taşıyor.",
-            "ru": "Комитет Алеппо доставляет хлеб на лодках в деревни на восточном берегу Евфрата.",
-            "zh": "阿勒颇委员会通过船只向幼发拉底河东岸的村庄运送面包。"
+            "en": "Aleppo Response Committee transports bread by boat to 10 villages in Ain al-Arab countryside.",
+            "tr": "Halep Müdahale Komitesi, Ayn el-Arap kırsalındaki 10 köye tekneyle ekmek taşıyor.",
+            "ru": "Комитет Алеппо доставляет хлеб на лодках в 10 деревень в сельской местности Айн-эль-Араб.",
+            "zh": "阿勒颇应对委员会通过船只向艾因阿拉伯乡村的10个村庄运送面包。"
         },
         "territory_update": null,
         "confidence": 9.6,
@@ -34,8 +34,8 @@
     {
         "action": "MERGE",
         "target_id": "2016092591729570238",
-        "lat": 36.495,
-        "lng": 40.745,
+        "lat": 36.5,
+        "lng": 40.74,
         "location_name": {
             "en": "Al-Hasakah",
             "tr": "Haseke",
@@ -48,8 +48,8 @@
         "summary": {
             "en": "Syrian Army begins deploying armored vehicles captured from SDF/PKK in the field.",
             "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada kullanmaya başladı.",
-            "ru": "Сирийская армия начала использовать на поле боя бронетехнику, захваченную у СДС/РПК.",
-            "zh": "叙利亚军队开始在战场上部署从SDF/PKK缴获的装甲车。"
+            "ru": "Сирийская армия начала использовать бронетехнику, захваченную у СДС/РПК.",
+            "zh": "叙利亚军队开始部署从SDF/PKK缴获的装甲车。"
         },
         "territory_update": null,
         "confidence": 6.0,
@@ -74,14 +74,14 @@
             "ru": "Дамаск",
             "zh": "大马士革"
         },
-        "attack_type": "National Strategy Meeting",
+        "attack_type": "Meeting to discuss Syrian National Drug Control Strategy (2026-2030)",
         "visual_emoji": "🤝",
         "actor": "Syria",
         "summary": {
-            "en": "WHO and Syrian ministries discussed the National Drug Control Strategy (2026-2030) in Damascus.",
-            "tr": "DSÖ ve Suriye bakanlıkları Şam'da Ulusal Uyuşturucu Kontrol Stratejisini (2026-2030) görüştü.",
-            "ru": "ВОЗ и министерства Сирии обсудили Национальную стратегию по борьбе с наркотиками (2026-2030) в Дамаске.",
-            "zh": "世卫组织和叙利亚各部委在大马士革讨论了国家药物管制战略（2026-2030）。"
+            "en": "WHO and Syrian ministries meet in Damascus to discuss the National Drug Control Strategy (2026-2030).",
+            "tr": "DSÖ ve Suriye bakanlıkları Şam'da Ulusal Uyuşturucu Kontrol Stratejisi (2026-2030) için toplandı.",
+            "ru": "ВОЗ и министерства Сирии встретились в Дамаске для обсуждения Национальной стратегии по борьбе с наркотиками.",
+            "zh": "世卫组织与叙利亚各部委在大马士革会面，讨论国家毒品管制战略（2026-2030）。"
         },
         "territory_update": null,
         "confidence": 9.0,
@@ -106,7 +106,7 @@
             "ru": "Тартус",
             "zh": "塔尔图斯"
         },
-        "attack_type": "Internal Security Forces car display with new visual identity",
+        "attack_type": "vehicles display with new visual identity",
         "visual_emoji": "🚚",
         "actor": "Syria",
         "summary": {
@@ -138,14 +138,14 @@
             "ru": "Баку",
             "zh": "巴库"
         },
-        "attack_type": "Attack plan against the Israeli Embassy",
+        "attack_type": "Arrest",
         "visual_emoji": "👮",
         "actor": "Other",
         "summary": {
-            "en": "Three Azerbaijani citizens arrested for planning attack on Israeli Embassy in Baku.",
-            "tr": "Bakü'deki İsrail Büyükelçiliği'ne saldırı planlayan 3 Azerbaycan vatandaşı tutuklandı.",
-            "ru": "Трое граждан Азербайджана арестованы за планирование нападения на посольство Израиля в Баку.",
-            "zh": "三名阿塞拜疆公民因策划袭击巴库的以色列大使馆而被捕。"
+            "en": "Three Azerbaijani citizens arrested for planning an attack on the Israeli Embassy.",
+            "tr": "İsrail Büyükelçiliğine saldırı planlayan üç Azerbaycan vatandaşı tutuklandı.",
+            "ru": "Трое граждан Азербайджана арестованы за планирование нападения на посольство Израиля.",
+            "zh": "三名阿塞拜疆公民因策划袭击以色列大使馆而被捕。"
         },
         "territory_update": null,
         "confidence": 6.0,
@@ -162,22 +162,22 @@
     {
         "action": "MERGE",
         "target_id": "2016089448769798588",
-        "lat": 36.5125,
-        "lng": 40.648,
+        "lat": 36.5035,
+        "lng": 40.672,
         "location_name": {
             "en": "West of Al-Hasakah",
             "tr": "Haseke'nin Batısı",
-            "ru": "К западу от Аль-Хасаки",
+            "ru": "Западнее Эль-Хасаки",
             "zh": "哈塞克西部"
         },
-        "attack_type": "Suicide operation against a Syrian army armored vehicle",
-        "visual_emoji": "💣",
+        "attack_type": "Suicide attack on Syrian Army armored vehicle",
+        "visual_emoji": "💥",
         "actor": "SDF",
         "summary": {
-            "en": "SDF claims responsibility for a suicide attack targeting a Syrian Army armored vehicle west of Al-Hasakah.",
-            "tr": "SDF, Haseke'nin batısında Suriye Ordusu'na ait zırhlı bir aracı hedef alan intihar saldırısını üstlendi.",
-            "ru": "SDF взяли на себя ответственность за теракт-самоубийство против бронетехники сирийской армии к западу от Аль-Хасаки.",
-            "zh": "SDF 声称对哈塞克西部针对叙利亚军队装甲车的自杀式袭击负责。"
+            "en": "SDF claimed responsibility for a suicide attack on a Syrian Army armored vehicle west of Al-Hasakah.",
+            "tr": "SDF, Haseke'nin batısında Suriye Ordusu zırhlısına düzenlenen intihar saldırısını üstlendi.",
+            "ru": "СДС взяли на себя ответственность за теракт-самоубийство против бронетехники САА западнее Эль-Хасаки.",
+            "zh": "SDF声称对哈塞克以西针对叙利亚军队装甲车的自杀式袭击负责。"
         },
         "territory_update": null,
         "confidence": 9.0,
@@ -192,25 +192,26 @@
         ]
     },
     {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.886610623267906,
-        "lng": 38.379110623267906,
+        "action": "MERGE",
+        "target_id": "2016086331588292762",
+        "lat": 36.89,
+        "lng": 38.35,
         "location_name": {
             "en": "Ain al-Arab",
             "tr": "Ayn el-Arap",
             "ru": "Айн-эль-Араб",
             "zh": "艾因阿拉伯"
         },
-        "attack_type": "Drone strike",
+        "attack_type": "SDF drone shelling",
         "visual_emoji": "🚁",
+        "actor": "SDF",
         "summary": {
-            "en": "A video documents a drone dropping a bomb on army elements in the vicinity of Ain al-Arab in the eastern Aleppo countryside.",
-            "tr": "Bir video, Halep'in doğu kırsalındaki Ayn el-Arab çevresinde ordu unsurlarına bomba atan bir drone'u belgeliyor.",
-            "ru": "На видео задокументировано, как дрон сбрасывает бомбу на армейские элементы в окрестностях Айн-эль-Араб в восточной сельской местности Алеппо.",
-            "zh": "一段视频记录了一架无人机在阿勒颇东部乡村的艾因阿拉伯附近向军队成员投掷炸弹。"
+            "en": "Video documents SDF drone dropping a bomb on Syrian Army elements near Ain al-Arab.",
+            "tr": "Video, SDG dronunun Ayn el-Arap yakınlarında Suriye Ordusu unsurlarına bomba attığını belgeliyor.",
+            "ru": "Видео фиксирует сброс бомбы с дрона СДС на сирийских военных у Айн-эль-Араба.",
+            "zh": "视频记录了SDF无人机在艾因阿拉伯附近向叙利亚军队投掷炸弹。"
         },
-        "territory_update": {},
+        "territory_update": null,
         "confidence": 9.0,
         "channel": "X (@AJSyriaNowN)",
         "tweet_id": "2016086331588292762",
@@ -220,8 +221,7 @@
         "original_text": "تسجيل يوثّق لحظة إلقاء طائرة مسيّرة لقسد قنبلة على عناصر من الجيش في محيط عين العرب بريف حلب الشرقي https://t.co/HnkQrFVfQt",
         "sources": [
             "X (@AJSyriaNowN)"
-        ],
-        "actor": "SDF"
+        ]
     },
     {
         "action": "CREATE",
@@ -258,23 +258,24 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 36.8667,
-        "lng": 38.7833,
+        "lat": 36.225,
+        "lng": 37.15,
         "location_name": {
-            "en": "Al-Hasakah",
-            "tr": "Haseke",
-            "ru": "Аль-Хасака",
-            "zh": "哈塞克"
+            "en": "Aleppo",
+            "tr": "Halep",
+            "ru": "Алеппо",
+            "zh": "阿勒颇"
         },
-        "attack_type": "YPJ reports destroying two tanks and killing dozens of fighters near Kobani and in Safa village",
-        "visual_emoji": "⚔️",
+        "attack_type": "Seizure",
+        "visual_emoji": "🚩",
+        "actor": "Syria",
         "summary": {
-            "en": "YPJ reports destroying tanks and killing fighters near Kobani and Safa village.",
-            "tr": "YPJ, Kobani ve Safa köyü yakınlarında tankları imha ettiğini ve savaşçıları öldürdüğünü bildirdi.",
-            "ru": "YPJ сообщает об уничтожении танков и убийстве боевиков возле Кобани и деревни Сафа.",
-            "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了坦克并杀死了战士。"
+            "en": "Syrian Army seized a PKK/SDG ammunition depot during search operations in liberated areas of Aleppo.",
+            "tr": "Suriye Ordusu, Halep'in kurtarılmış bölgelerinde yapılan aramalarda PKK/SDG'ye ait bir mühimmat deposu ele geçirdi.",
+            "ru": "Сирийская армия захватила склад боеприпасов РПК/СДС в ходе поисковых операций в освобожденных районах Алеппо.",
+            "zh": "叙利亚军队在阿勒颇解放区的搜查行动中查获了属于PKK/SDG的一个弹药库。"
         },
-        "territory_update": {},
+        "territory_update": null,
         "confidence": 9.0,
         "channel": "X (@AJSyriaNowN)",
         "tweet_id": "2016082876945633465",
@@ -284,40 +285,7 @@
         "original_text": "https://t.co/i7lkCkduig",
         "sources": [
             "X (@AJSyriaNowN)"
-        ],
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "YPJ reports destroying tanks and killing fighters near Kobani and Safa village.",
-                    "tr": "YPJ, Kobani ve Safa köyü yakınlarında tankları imha ettiğini ve savaşçıları öldürdüğünü bildirdi.",
-                    "ru": "YPJ сообщает об уничтожении танков и убийстве боевиков возле Кобани и деревни Сафа.",
-                    "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了坦克并杀死了战士。"
-                },
-                "date": "2026-01-27 09:36:29+00:00",
-                "tweet_id": "2016082876945633465",
-                "local_video_path": null,
-                "image_path": "media/2016082876945633465.jpg",
-                "channel": "X (@AJSyriaNowN)",
-                "original_text": "https://t.co/2jqAPQ5RsP",
-                "actor": "YPJ"
-            },
-            {
-                "summary": {
-                    "en": "YPJ reports destroying tanks and killing fighters near Kobani and Safa village.",
-                    "tr": "YPJ, Kobani ve Safa köyü yakınlarında tankları imha ettiğini ve savaşçıları öldürdüğünü bildirdi.",
-                    "ru": "YPJ сообщает об уничтожении танков и убийстве боевиков возле Кобани и деревни Сафа.",
-                    "zh": "YPJ 报告说，在科巴尼和萨法村附近摧毁了坦克并杀死了战士。"
-                },
-                "date": "2026-01-27 09:36:28+00:00",
-                "tweet_id": "2016082873422434756",
-                "local_video_path": null,
-                "image_path": "media/2016082873422434756.jpg",
-                "channel": "X (@AJSyriaNowN)",
-                "original_text": "https://t.co/i7lkCkduig",
-                "actor": "SDF"
-            }
-        ],
-        "actor": "SDF"
+        ]
     },
     {
         "action": "CREATE",
@@ -352,8 +320,8 @@
         "actor": "None"
     },
     {
-        "action": "CREATE",
-        "target_id": null,
+        "action": "MERGE",
+        "target_id": "2016084977167872119",
         "lat": 36.2021,
         "lng": 37.1343,
         "location_name": {
@@ -362,15 +330,16 @@
             "ru": "Алеппо",
             "zh": "阿勒颇"
         },
-        "attack_type": "Meeting with Turkish delegation",
+        "attack_type": "Meeting to discuss cooperation",
         "visual_emoji": "🤝",
+        "actor": "Syria",
         "summary": {
-            "en": "The Governor of Aleppo, Azzam al-Gharib, meets with a Turkish delegation to discuss cooperation in service, development, urban planning and staff training.",
-            "tr": "Halep Valisi Azzam el-Gharib, hizmet, kalkınma, şehir planlaması ve personel eğitimi konularında işbirliğini görüşmek üzere bir Türk heyetiyle bir araya geldi.",
-            "ru": "Губернатор Алеппо Аззам аль-Гариб встречается с турецкой делегацией для обсуждения сотрудничества в сфере обслуживания, развития, городского планирования и подготовки кадров.",
-            "zh": "阿勒颇省长阿扎姆·加里卜会见了一个土耳其代表团，讨论在服务、发展、城市规划和人员培训方面的合作。"
+            "en": "Aleppo Governor meets Turkish delegation to discuss service, development, and urban planning cooperation.",
+            "tr": "Halep Valisi, hizmet, kalkınma ve şehir planlaması işbirliğini görüşmek üzere Türk heyetiyle buluştu.",
+            "ru": "Губернатор Алеппо встретился с турецкой делегацией для обсуждения сотрудничества в сфере услуг и градостроительства.",
+            "zh": "阿勒颇省长会见土耳其代表团，讨论服务、发展和城市规划方面的合作。"
         },
-        "territory_update": {},
+        "territory_update": null,
         "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016084977167872119",
@@ -380,8 +349,7 @@
         "original_text": "محافظ حلب عزّام الغريب يلتقي وفداً تركياً، ويبحث معه التعاون المشترك في المجالات الخدمية والتنموية والعمرانية وتدريب الكوادر.\n\n#سوريا \n#تركيا https://t.co/Q8X1mLS4WZ",
         "sources": [
             "X (@Sana__gov)"
-        ],
-        "actor": "Syria"
+        ]
     },
     {
         "action": "CREATE",
@@ -418,23 +386,24 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 35.3318,
-        "lng": 40.1476,
+        "lat": 37.051,
+        "lng": 41.226,
         "location_name": {
-            "en": "Deir ez-Zor",
-            "tr": "Deir ez-Zor",
-            "ru": "Дейр-эз-Зор",
-            "zh": "代尔祖尔"
+            "en": "Qamishli",
+            "tr": "Kamışlı",
+            "ru": "Камышлы",
+            "zh": "卡米什利"
         },
         "attack_type": "Statement",
         "visual_emoji": "📢",
+        "actor": "SDF",
         "summary": {
-            "en": "Former YPG official Polat Can reports that two of his cousins died in Deir ez-Zor due to treachery.",
-            "tr": "Eski YPG yetkilisi Polat Can, iki kuzeninin Deir ez-Zor'da ihanet nedeniyle öldüğünü bildirdi.",
-            "ru": "Бывший чиновник YPG Полат Джан сообщает, что двое его двоюродных братьев погибли в Дейр-эз-Зоре из-за предательства.",
-            "zh": "前 YPG 官员 Polat Can 报告说，他的两个堂兄弟因叛逆而在代尔祖尔去世。"
+            "en": "Former YPG official Polat Can alleges treachery and betrayal following the death of his cousins in Deir ez-Zour.",
+            "tr": "Eski YPG yetkilisi Polat Can, Deyr ez-Zor'da kuzenlerinin ölümünün ardından ihanet ve kalleşlik iddiasında bulundu.",
+            "ru": "Бывший чиновник YPG Полат Кан заявил о предательстве после гибели его двоюродных братьев в Дейр-эз-Зоре.",
+            "zh": "前 YPG 官员波拉特·坎在堂兄弟于代尔祖尔身亡后指责背叛和奸诈行为。"
         },
-        "territory_update": {},
+        "territory_update": null,
         "confidence": 7.5,
         "channel": "X (@vvanwilgenburg)",
         "tweet_id": "2016082970222702767",
@@ -444,8 +413,7 @@
         "original_text": "Former senior YPG official Polat Can: \"We must not deceive ourselves in the name of brotherhood. When we fall into trouble, first of all, it is they who stab us (in the back). Two of my cousins in Deir ez-Zour died due to treachery.\"\nhttps://t.co/izuwL022R8",
         "sources": [
             "X (@vvanwilgenburg)"
-        ],
-        "actor": "YPG"
+        ]
     },
     {
         "action": "CREATE",
@@ -482,23 +450,24 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 39.9208,
-        "lng": 32.8541,
+        "lat": 39.9334,
+        "lng": 32.8597,
         "location_name": {
             "en": "Ankara",
             "tr": "Ankara",
             "ru": "Анкара",
             "zh": "安卡拉"
         },
-        "attack_type": "Meeting",
+        "attack_type": "Diplomatic Meeting",
         "visual_emoji": "🤝",
+        "actor": "Turkey",
         "summary": {
-            "en": "Turkish Foreign Minister Hakan Fidan met with French Foreign Minister Jean-Noel Barrot in Ankara.",
-            "tr": "Dışişleri Bakanı Hakan Fidan, Fransa Dışişleri Bakanı Jean-Noel Barrot ile Ankara'da bir araya geldi.",
-            "ru": "Министр иностранных дел Турции Хакан Фидан встретился с министром иностранных дел Франции Жаном-Ноэлем Барро в Анкаре.",
-            "zh": "土耳其外交部长哈坎·菲丹在安卡拉会见了法国外交部长让-诺埃尔·巴罗。"
+            "en": "Turkish FM Hakan Fidan met with French FM Jean-Noel Barrot in Ankara.",
+            "tr": "Dışişleri Bakanı Hakan Fidan, Fransız mevkidaşı Jean-Noel Barrot ile Ankara'da bir araya geldi.",
+            "ru": "Глава МИД Турции Хакан Фидан встретился с министром иностранных дел Франции Жан-Ноэлем Барро в Анкаре.",
+            "zh": "土耳其外交部长哈坎·菲丹在安卡拉会见了法国外交部长让-努埃尔·巴罗。"
         },
-        "territory_update": {},
+        "territory_update": null,
         "confidence": 7.2,
         "channel": "X (@ConflictTR)",
         "tweet_id": "2016082137644924998",
@@ -508,29 +477,29 @@
         "original_text": "🔴 Dışişleri Bakanı Hakan Fidan, Fransa Dışişleri Bakanı Jean-Noel Barrot ile Ankara'da bir araya geldi. https://t.co/BhXoaI8SN8",
         "sources": [
             "X (@ConflictTR)"
-        ],
-        "actor": "Turkey"
+        ]
     },
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 35.9525,
-        "lng": 39.0178,
+        "lat": 35.96,
+        "lng": 39.01,
         "location_name": {
             "en": "Raqqa",
             "tr": "Rakka",
             "ru": "Ракка",
             "zh": "拉卡"
         },
-        "attack_type": "Arrest",
-        "visual_emoji": "🔗",
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "actor": "Syria",
         "summary": {
-            "en": "A former detainee of the QSD (SDF) recounts his detention before being released from Al-Aqtan prison in Raqqa.",
-            "tr": "Eski bir QSD (SDF) tutuklusu, Rakka'daki El-Aktan hapishanesinden serbest bırakılmadan önce tutukluluğunu anlatıyor.",
-            "ru": "Бывший задержанный QSD (SDF) рассказывает о своем задержании перед освобождением из тюрьмы Аль-Актан в Ракке.",
-            "zh": "一名曾被 QSD (SDF) 拘留的人讲述了他被拘留的经历，之后他从拉卡市的 Al-Aqtan 监狱获释。"
+            "en": "Former detainee recounts conditions in SDF's Al-Aqtan prison in Raqqa after release.",
+            "tr": "Eski bir tutuklu, serbest bırakılmasının ardından Rakka'daki SDG'nin El-Aktan hapishanesindeki koşulları anlatıyor.",
+            "ru": "Бывший заключенный рассказывает об условиях в тюрьме СДС Аль-Актан в Ракке после освобождения.",
+            "zh": "一名被拘留者获释后讲述SDF在拉卡阿克坦监狱的关押情况。"
         },
-        "territory_update": {},
+        "territory_update": null,
         "confidence": 9.6,
         "channel": "X (@Sana__gov)",
         "tweet_id": "2016082115171938358",
@@ -540,25 +509,7 @@
         "original_text": "معتقل سابق لدى تنظيم قسد يروي لـ سانا ظروف اعتقاله قبل تحريره من سجن الأقطان في الرقة\n\n#سوريا \n#الرقة https://t.co/qyq6TIStCe",
         "sources": [
             "X (@Sana__gov)"
-        ],
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "A former detainee of the QSD (SDF) recounts his detention before being released from Al-Aqtan prison in Raqqa.",
-                    "tr": "Eski bir QSD (SDF) tutuklusu, Rakka'daki El-Aktan hapishanesinden serbest bırakılmadan önce tutukluluğunu anlatıyor.",
-                    "ru": "Бывший задержанный QSD (SDF) рассказывает о своем задержании перед освобождением из тюрьмы Аль-Актан в Ракке.",
-                    "zh": "一名曾被 QSD (SDF) 拘留的人讲述了他被拘留的经历，之后他从拉卡市的 Al-Aqtan 监狱获释。"
-                },
-                "date": "2026-01-27 09:33:27+00:00",
-                "tweet_id": "2016082115171938358",
-                "local_video_path": "media/2016082115171938358.mp4",
-                "image_path": null,
-                "channel": "X (@Sana__gov)",
-                "original_text": "معتقل سابق لدى تنظيم قسد يروي لـ سانا ظروف اعتقاله قبل تحريره من سجن الأقطان في الرقة\n\n#سوريا \n#الرقة https://t.co/qyq6TIStCe",
-                "actor": "SDF"
-            }
-        ],
-        "actor": "SDF"
+        ]
     },
     {
         "action": "Irrelevant",
