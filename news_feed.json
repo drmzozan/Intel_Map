@@ -400,13 +400,13 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 36.69062816057632,
-        "lng": 38.289628160576314,
+        "lat": 36.6347,
+        "lng": 38.2028,
         "location_name": {
-            "en": "Qarah Qozak Bridge",
-            "tr": "Qarah Qozak Köprüsü",
-            "ru": "Мост Кара Козак",
-            "zh": "卡拉·科扎克桥"
+            "en": "Qarah Qawzaq Bridge",
+            "tr": "Qarah Qawzaq Köprüsü",
+            "ru": "Мост Кара Кавзак",
+            "zh": "卡拉夸扎克桥"
         },
         "attack_type": "Mine clearing operation",
         "visual_emoji": "💣",
@@ -428,7 +428,24 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "sub_events": []
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "The Syrian Arab Army is clearing mines planted by QSD around the Qarah Quzaq Bridge in eastern Aleppo.",
+                    "tr": "Suriye Arap Ordusu, Halep'in doğusundaki Qarah Quzaq Köprüsü çevresinde QSD tarafından yerleştirilen mayınları temizliyor.",
+                    "ru": "Сирийская арабская армия разминирует мины, установленные QSD вокруг моста Кара-Кузак в восточном Алеппо.",
+                    "zh": "叙利亚阿拉伯军队正在清理 QSD 在阿勒颇东部卡拉夸扎克桥周围埋设的地雷。"
+                },
+                "date": "2026-01-27 12:20:19+00:00",
+                "tweet_id": "2016124105146204265",
+                "local_video_path": null,
+                "image_path": "media/2016124105146204265.jpg",
+                "channel": "X (@Sana__gov)",
+                "attacker": "Syria",
+                "actor": "HTS",
+                "original_text": "الجيش العربي السوري يقوم بإزالة الألغام التي زرعها تنظيم قسد في محيط جسر قره قوزاق بريف حلب الشرقي.\n\n#الجيش_العربي_السوري \n#حلب https://t.co/al2rGljhGJ"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -1166,40 +1183,6 @@
             "X (@AJSyriaNowN)"
         ],
         "actor": "Inmates",
-        "sub_events": []
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.6362,
-        "lng": 38.2242,
-        "location_name": {
-            "en": "Qarah Quzaq Bridge",
-            "tr": "Qarah Quzaq Köprüsü",
-            "ru": "Мост Кара-Кузак",
-            "zh": "卡拉夸扎克桥"
-        },
-        "attack_type": "Mine clearing",
-        "visual_emoji": "💣",
-        "attacker": "Syria",
-        "summary": {
-            "en": "The Syrian Arab Army is clearing mines planted by QSD around the Qarah Quzaq Bridge in eastern Aleppo.",
-            "tr": "Suriye Arap Ordusu, Halep'in doğusundaki Qarah Quzaq Köprüsü çevresinde QSD tarafından yerleştirilen mayınları temizliyor.",
-            "ru": "Сирийская арабская армия разминирует мины, установленные QSD вокруг моста Кара-Кузак в восточном Алеппо.",
-            "zh": "叙利亚阿拉伯军队正在清理 QSD 在阿勒颇东部卡拉夸扎克桥周围埋设的地雷。"
-        },
-        "territory_update": {},
-        "confidence": 9.6,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016124105146204265",
-        "local_video_path": null,
-        "image_path": "media/2016124105146204265.jpg",
-        "date": "2026-01-27 12:20:19+00:00",
-        "original_text": "الجيش العربي السوري يقوم بإزالة الألغام التي زرعها تنظيم قسد في محيط جسر قره قوزاق بريف حلب الشرقي.\n\n#الجيش_العربي_السوري \n#حلب https://t.co/al2rGljhGJ",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "HTS",
         "sub_events": []
     },
     {
