@@ -2,6 +2,70 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 35.6892,
+        "lng": 51.389,
+        "location_name": {
+            "en": "Tehran",
+            "tr": "Tahran",
+            "ru": "Тегеран",
+            "zh": "德黑兰"
+        },
+        "attack_type": "Currency devaluation",
+        "visual_emoji": "⚠️",
+        "attacker": "Iran",
+        "summary": {
+            "en": "Iran's currency hits a new historic low of 1.51 million rials to the dollar due to fears of military action and US pressure.",
+            "tr": "İran para birimi, askeri harekat korkusu ve ABD baskısı nedeniyle dolar karşısında 1,51 milyon riyale gerileyerek tarihi düşük seviyeye ulaştı.",
+            "ru": "Валюта Ирана достигла нового исторического минимума в 1,51 миллиона риалов за доллар из-за опасений военных действий и давления со стороны США.",
+            "zh": "由于担心军事行动和美国的压力，伊朗货币创下历史新低，达到 151 万里亚尔兑 1 美元。"
+        },
+        "territory_update": {},
+        "confidence": 7.0,
+        "channel": "X (@clashreport)",
+        "tweet_id": "2016105402585235581",
+        "local_video_path": null,
+        "image_path": "media/2016105402585235581.jpg",
+        "date": "2026-01-27 11:06:00+00:00",
+        "original_text": "BIG: Iran’s currency has hit a new historic low, with the dollar rising to about 1.51 million rials. \n\nFears of possible military action and continued U.S. pressure are pushing Iranians to rush into foreign currency, despite heavy dollar sales by Iran’s central bank. \n\nThe rial https://t.co/E9ijZqUmau",
+        "sources": [
+            "X (@clashreport)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 46.3924,
+        "lng": -94.6362,
+        "location_name": {
+            "en": "Minnesota",
+            "tr": "Minnesota",
+            "ru": "Миннесота",
+            "zh": "明尼苏达州"
+        },
+        "attack_type": "ICE agents detained protesters with harsh interventions.",
+        "visual_emoji": "📣",
+        "attacker": "USA",
+        "summary": {
+            "en": "ICE agents in Minnesota detained protesters with harsh interventions.",
+            "tr": "Minnesota'daki ICE ajanları protestocuları sert müdahalelerle gözaltına aldı.",
+            "ru": "Агенты ICE в Миннесоте задержали протестующих с жесткими мерами.",
+            "zh": "明尼苏达州的 ICE 特工对示威者采取了强硬干预措施并拘留了他们。"
+        },
+        "territory_update": {},
+        "confidence": 6.0,
+        "channel": "X (@ConflictTR)",
+        "tweet_id": "2016104224665247803",
+        "local_video_path": "media/2016104224665247803.mp4",
+        "image_path": null,
+        "date": "2026-01-27 11:01:19+00:00",
+        "original_text": "🔴 ABD'nin Minnesota eyaletinde devam eden eylemlerde, ICE ajanları protestocuları sert müdahalelerle gözaltına aldı.\nhttps://t.co/FvIo8WGInl",
+        "sources": [
+            "X (@ConflictTR)"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 34.6414,
         "lng": 38.2851,
         "location_name": {
@@ -66,7 +130,7 @@
     {
         "action": "MERGE",
         "target_id": "2016092591729570238",
-        "lat": 36.49,
+        "lat": 36.5,
         "lng": 40.74,
         "location_name": {
             "en": "Al-Hasakah",
@@ -74,14 +138,14 @@
             "ru": "Эль-Хасака",
             "zh": "哈塞克"
         },
-        "attack_type": "Deployment of captured vehicles",
+        "attack_type": "Seizure of armored vehicles",
         "visual_emoji": "🚩",
         "actor": "Syria",
         "summary": {
-            "en": "Syrian Army deploys armored vehicles captured from SDF/PKK in Al-Hasakah.",
-            "tr": "Suriye Ordusu, Haseke'de SDG/PKK'dan ele geçirdiği zırhlı araçları konuşlandırdı.",
-            "ru": "Сирийская армия развертывает бронетехнику, захваченную у СДС/РПК в Эль-Хасаке.",
-            "zh": "叙利亚军队在哈塞克部署了从 SDF/PKK 缴获的装甲车。"
+            "en": "Syrian Army begins using armored vehicles captured from SDF/PKK in the field.",
+            "tr": "Suriye Ordusu, SDG/PKK'dan ele geçirdiği zırhlı araçları sahada kullanmaya başladı.",
+            "ru": "Сирийская армия начала использовать бронетехнику, захваченную у СДС/РПК.",
+            "zh": "叙利亚军队开始在战场上使用从SDF/PKK缴获的装甲车。"
         },
         "territory_update": null,
         "confidence": 6.0,
@@ -1606,69 +1670,5 @@
             "X (@ConflictTR)"
         ],
         "actor": "Australia"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.1833,
-        "lng": 37.15,
-        "location_name": {
-            "en": "Aleppo Governorate",
-            "tr": "Halep Valiliği",
-            "ru": "Алеппо (мухафаза)",
-            "zh": "阿勒颇省"
-        },
-        "attack_type": "No clashes reported",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "No clashes have been reported so far in the Aleppo Governorate.",
-            "tr": "Şu ana kadar Halep Valiliğinde herhangi bir çatışma bildirilmedi.",
-            "ru": "На данный момент не поступало сообщений о столкновениях в мухафазе Алеппо.",
-            "zh": "到目前为止，阿勒颇省尚未报告任何冲突。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@vvanwilgenburg)",
-        "tweet_id": "2016056771345834389",
-        "local_video_path": null,
-        "image_path": null,
-        "date": "2026-01-27 07:52:45+00:00",
-        "original_text": "So far no reports of clashes.",
-        "sources": [
-            "X (@vvanwilgenburg)"
-        ],
-        "actor": "vvanwilgenburg"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.2,
-        "lng": 37.15,
-        "location_name": {
-            "en": "Aleppo Governorate",
-            "tr": "Halep Valiliği",
-            "ru": "Алеппо (мухафаза)",
-            "zh": "阿勒颇省"
-        },
-        "attack_type": "Displacement and Return",
-        "visual_emoji": "📢",
-        "summary": {
-            "en": "UNHCR reports tens of thousands displaced in NE Syria. 80% of ~100k displaced in Aleppo Governorate have returned home.",
-            "tr": "UNHCR, kuzeydoğu Suriye'de on binlerce kişinin yerinden edildiğini bildirdi. Halep Valiliğindeki ~100 bin yerinden edilmiş kişinin %80'i evlerine geri döndü.",
-            "ru": "УВКБ ООН сообщает о десятках тысяч перемещенных лиц в северо-восточной Сирии. 80% из ~100 тыс. перемещенных лиц в провинции Алеппо вернулись домой.",
-            "zh": "难民署报告说，在叙利亚东北部有数万人流离失所。阿勒颇省约10万流离失所者中，有80%已经返回家园。"
-        },
-        "territory_update": {},
-        "confidence": 9.0,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016057423602016363",
-        "local_video_path": null,
-        "image_path": "media/2016057423602016363.jpg",
-        "date": "2026-01-27 07:55:20+00:00",
-        "original_text": "المتحدثة باسم مفوضية الأمم المتحدة لشؤون اللاجئين في سوريا سيلين شميت:\n\n• عشرات الآلاف نزحوا في شمال شرقي سوريا نتيجة الأعمال العدائية الأخيرة\n\n• عاد نحو 80 % من أصل ما يقارب 100 ألف نازح من مناطق في محافظة حلب إلى ديارهم https://t.co/VMFsV9NJMh",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "UNHCR"
     }
 ]
