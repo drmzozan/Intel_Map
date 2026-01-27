@@ -660,7 +660,7 @@
             center: [38.0, 35.0], zoom: 6.5, projection: 'globe',
             doubleClickZoom: false
         });
-        map.addControl(new mapboxgl.NavigationControl());
+        // map.addControl(new mapboxgl.NavigationControl()); // REMOVED FOR MOBILE UI
 
         const iconMapping = {
             "Small Arms": "🔫", "Sniper": "🎯", "Artillery": "💥", "MLRS": "🚀", "Tank": "🚜",
@@ -2178,22 +2178,14 @@
                     img.style.pointerEvents = 'auto'; // Force on Image too
 
                     // 1. MOUSE ENTER: Show Popup (Preview)
+                    // 1. MOUSE ENTER: (Disabled for mobile persistence)
                     el.addEventListener('mouseenter', () => {
-                        if (window.popupLocked && window.activeDetailPopup) return; // Don't override locked popup
-
-                        const pseudoFeature = {
-                            properties: props,
-                            geometry: { coordinates: [lng, lat] }
-                        };
-                        showEventPopup(pseudoFeature, [lng, lat]);
+                        // if (window.innerWidth > 768) { ... }
                     });
 
-                    // 2. MOUSE LEAVE: Hide Popup (unless locked)
+                    // 2. MOUSE LEAVE: (Disabled for mobile persistence)
                     el.addEventListener('mouseleave', () => {
-                        if (!window.popupLocked && window.activeDetailPopup) {
-                            window.activeDetailPopup.remove();
-                            window.activeDetailPopup = null;
-                        }
+                        // if (window.innerWidth > 768) { ... }
                     });
 
                     // 3. CLICK/TAP: Lock Popup (No Zoom)
