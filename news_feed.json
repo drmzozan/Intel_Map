@@ -2,8 +2,8 @@
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 55.7512,
-        "lng": 37.6184,
+        "lat": 55.7558,
+        "lng": 37.6173,
         "location_name": {
             "en": "Moscow",
             "tr": "Moskova",
@@ -29,7 +29,8 @@
         "original_text": "الكرملين:\n\nبوتين يجري محادثات غدا مع الرئيس أحمد الشرع في موسكو https://t.co/YEggpiD6Gx",
         "sources": [
             "X (@AJSyriaNowN)"
-        ]
+        ],
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -61,6 +62,24 @@
         "original_text": "رحبت الولايات المتحدة وفرنسا وألمانيا والمملكة المتحدة، في بيان مشترك، بتمديد وقف إطلاق النار بين الحكومة السورية وتنظيم \"قسد\"، وبفتح ممرين إنسانيين آمنين لإيصال المساعدات إلى الحسكة ومنطقة عين العرب في ريف حلب.\n\n#سوريا https://t.co/juG44CxG12",
         "sources": [
             "X (@Sana__gov)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "The Central Committee for Response in Aleppo sends bread by boats across the Euphrates River to villages besieged by QSD near Ayn al-Arab.",
+                    "tr": "Halep'teki Merkezi Müdahale Komitesi, Fırat Nehri üzerinden Ayn el-Arab yakınlarındaki QSD tarafından kuşatılmış köylere teknelerle ekmek gönderiyor.",
+                    "ru": "Центральный комитет по реагированию в Алеппо отправляет хлеб на лодках через реку Евфрат в деревни, осажденные QSD возле Айн-эль-Араб.",
+                    "zh": "阿勒颇中央应对委员会通过幼发拉底河用船只向艾因阿拉伯附近被 QSD 围困的村庄运送面包。"
+                },
+                "date": "2026-01-27 13:04:04+00:00",
+                "tweet_id": "2016135114980262075",
+                "local_video_path": "media/2016135114980262075.mp4",
+                "image_path": null,
+                "channel": "X (@AJSyriaNowN)",
+                "attacker": "Central Committee for Response in Aleppo",
+                "original_text": "اللجنة المركزية لاستجابة حلب ترسل خبزا بالزوارق عبر نهر الفرات إلى قرى محاصرة من قبل قسد قرب عين العرب (كوباني) https://t.co/W2Vhpjk4kb",
+                "actor": "Central Committee for Response in Aleppo"
+            }
         ]
     },
     {
@@ -93,13 +112,14 @@
         "original_text": "أهالي المفقودين في سجون تنظيم قسد ينظمون وقفة في دير الزور، طالبوا خلالها بالكشف عن مصير أبنائهم الذين اختطفهم تنظيم داعش الإرهابي إبان سيطرته على المنطقة، ثم استمر احتجازهم في السجون بعد انتقال السيطرة إلى تنظيم قسد.\n\n#سوريا \n#دير_الزور https://t.co/43nUGob8d4",
         "sources": [
             "X (@Sana__gov)"
-        ]
+        ],
+        "sub_events": []
     },
     {
         "action": "CREATE",
         "target_id": null,
-        "lat": 31.769,
-        "lng": 35.2163,
+        "lat": 31.7683,
+        "lng": 35.2137,
         "location_name": {
             "en": "Jerusalem",
             "tr": "Kudüs",
@@ -125,6 +145,40 @@
         "original_text": "US Ambassador to Israel Mike Huckabee:\n\nDo you like your cell phone? If you don't like Israel, get rid of your cell phone. \n\nYou would not have it without Israel. https://t.co/tm49aTazW2",
         "sources": [
             "X (@clashreport)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "US Ambassador Mike Huckabee comments on Trump's leadership style, highlighting his vertical thinking and openness to unconventional solutions.",
+                    "tr": "ABD Büyükelçisi Mike Huckabee, Trump'ın liderlik tarzı hakkında yorum yaparak, onun dikey düşünme tarzını ve alışılmadık çözümlere açıklığını vurguluyor.",
+                    "ru": "Посол США Майк Хакаби комментирует стиль руководства Трампа, подчеркивая его вертикальное мышление и открытость нетрадиционным решениям.",
+                    "zh": "美国大使迈克·赫卡比评论特朗普的领导风格，强调他的垂直思维和对非常规解决方案的开放态度。"
+                },
+                "date": "2026-01-27 14:20:49+00:00",
+                "tweet_id": "2016154433051050001",
+                "local_video_path": "media/2016154433051050001.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "USA",
+                "original_text": "US Ambassador to Israel Mike Huckabee:\n\nTrump does not see things horizontally; he sees them vertically.\n\nIf a thing may work but it lands a little left of center, he may still go there. https://t.co/nnWbiTrrYW",
+                "actor": null
+            },
+            {
+                "summary": {
+                    "en": "US Ambassador to Israel Mike Huckabee states that the root of Jew hatred is spiritual.",
+                    "tr": "ABD İsrail Büyükelçisi Mike Huckabee, Yahudi nefretinin kökeninin manevi olduğunu belirtiyor.",
+                    "ru": "Посол США в Израиле Майк Хакаби заявляет, что корень ненависти к евреям носит духовный характер.",
+                    "zh": "美国驻以色列大使迈克·赫卡比表示，对犹太人的仇恨根源是精神上的。"
+                },
+                "date": "2026-01-27 14:03:44+00:00",
+                "tweet_id": "2016150134078235063",
+                "local_video_path": null,
+                "image_path": "media/2016150134078235063.jpg",
+                "channel": "X (@clashreport)",
+                "attacker": "USA",
+                "original_text": "US Ambassador to Israel Mike Huckabee:\n\nThe root of Jew hatred is not political, it is not economic, it is spiritual. https://t.co/g6Pq8jfwio",
+                "actor": null
+            }
         ]
     },
     {
@@ -157,102 +211,136 @@
         "original_text": "🔴 ASELSAN:\n\nTOLUN mühimmat ailesinden harp sahasında oyun değiştiren kabiliyetler.\nhttps://t.co/0bvfsduYQn",
         "sources": [
             "X (@ConflictTR)"
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 31.7683,
-        "lng": 35.2137,
-        "location_name": {
-            "en": "Jerusalem",
-            "tr": "Kudüs",
-            "ru": "Иерусалим",
-            "zh": "耶路撒冷"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "USA",
-        "summary": {
-            "en": "US Ambassador Mike Huckabee comments on Trump's leadership style, highlighting his vertical thinking and openness to unconventional solutions.",
-            "tr": "ABD Büyükelçisi Mike Huckabee, Trump'ın liderlik tarzı hakkında yorum yaparak, onun dikey düşünme tarzını ve alışılmadık çözümlere açıklığını vurguluyor.",
-            "ru": "Посол США Майк Хакаби комментирует стиль руководства Трампа, подчеркивая его вертикальное мышление и открытость нетрадиционным решениям.",
-            "zh": "美国大使迈克·赫卡比评论特朗普的领导风格，强调他的垂直思维和对非常规解决方案的开放态度。"
-        },
-        "territory_update": {},
-        "confidence": 9.8,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016154433051050001",
-        "local_video_path": "media/2016154433051050001.mp4",
-        "image_path": null,
-        "date": "2026-01-27 14:20:49+00:00",
-        "original_text": "US Ambassador to Israel Mike Huckabee:\n\nTrump does not see things horizontally; he sees them vertically.\n\nIf a thing may work but it lands a little left of center, he may still go there. https://t.co/nnWbiTrrYW",
-        "sources": [
-            "X (@clashreport)"
         ],
         "sub_events": [
             {
                 "summary": {
-                    "en": "US Ambassador Mike Huckabee comments on Trump's leadership style, highlighting his vertical thinking and openness to unconventional solutions.",
-                    "tr": "ABD Büyükelçisi Mike Huckabee, Trump'ın liderlik tarzı hakkında yorum yaparak, onun dikey düşünme tarzını ve alışılmadık çözümlere açıklığını vurguluyor.",
-                    "ru": "Посол США Майк Хакаби комментирует стиль руководства Трампа, подчеркивая его вертикальное мышление и открытость нетрадиционным решениям.",
-                    "zh": "美国大使迈克·赫卡比评论特朗普的领导风格，强调他的垂直思维和对非常规解决方案的开放态度。"
+                    "en": "Turkish President Erdoğan states that there can be no state within a state or separate armed forces in Syria.",
+                    "tr": "Türkiye Cumhurbaşkanı Erdoğan, Suriye'de devlet içinde devlet veya ayrı silahlı kuvvetler olamayacağını belirtti.",
+                    "ru": "Президент Турции Эрдоган заявил, что в Сирии не может быть государства в государстве или отдельных вооруженных сил.",
+                    "zh": "土耳其总统埃尔多安表示，叙利亚境内不能存在国中之国或分裂的武装力量。"
                 },
-                "date": "2026-01-27 14:20:49+00:00",
-                "tweet_id": "2016154433051050001",
-                "local_video_path": "media/2016154433051050001.mp4",
+                "date": "2026-01-27 13:30:21+00:00",
+                "tweet_id": "2016141730614038633",
+                "local_video_path": "media/2016141730614038633.mp4",
                 "image_path": null,
-                "channel": "X (@clashreport)",
-                "attacker": "USA",
-                "original_text": "US Ambassador to Israel Mike Huckabee:\n\nTrump does not see things horizontally; he sees them vertically.\n\nIf a thing may work but it lands a little left of center, he may still go there. https://t.co/nnWbiTrrYW"
+                "channel": "X (@AJSyriaNowN)",
+                "attacker": "Turkey",
+                "original_text": "الرئيس التركي رجب طيب أردوغان:\n\nلا يمكن أن يكون هناك دولة داخل الدولة ولا قوى مسلّحة منفصلة في سوريا https://t.co/bxusL0I82a",
+                "actor": "Turkey"
             },
             {
                 "summary": {
-                    "en": "US Ambassador to Israel Mike Huckabee suggests that cell phones rely on Israel.",
-                    "tr": "ABD'nin İsrail Büyükelçisi Mike Huckabee, cep telefonlarının İsrail'e dayandığını öne sürüyor.",
-                    "ru": "Посол США в Израиле Майк Хакаби предполагает, что сотовые телефоны зависят от Израиля.",
-                    "zh": "美国驻以色列大使迈克·赫卡比暗示手机依赖以色列。"
+                    "en": "Turkish Chief of General Staff Selçuk Bayraktaroğlu held a phone call with US CENTCOM Commander Brad Cooper to discuss bilateral relations and regional issues.",
+                    "tr": "Türk Genelkurmay Başkanı Selçuk Bayraktaroğlu, ABD CENTCOM Komutanı Brad Cooper ile ikili ilişkileri ve bölgesel konuları görüşmek üzere bir telefon görüşmesi gerçekleştirdi.",
+                    "ru": "Начальник Генштаба Турции Сельчук Байрактароглу провел телефонный разговор с командующим Центральным командованием США Брэдом Купером для обсуждения двусторонних отношений и региональных вопросов.",
+                    "zh": "土耳其总参谋长塞尔丘克·巴拉克塔罗格鲁与美国中央司令部司令布拉德·库珀通电话，讨论双边关系和地区问题。"
                 },
-                "date": "2026-01-27 14:15:46+00:00",
-                "tweet_id": "2016153161090711854",
-                "local_video_path": "media/2016153161090711854.mp4",
+                "date": "2026-01-27 13:54:17+00:00",
+                "tweet_id": "2016147752267256048",
+                "local_video_path": null,
+                "image_path": "media/2016147752267256048.jpg",
+                "channel": "X (@ConflictTR)",
+                "attacker": "Turkey",
+                "original_text": "🔴 Genelkurmay Başkanı Orgeneral Selçuk Bayraktaroğlu, ABD Merkez Kuvvetler Komutanı Oramiral Brad Cooper ile telefon görüşmesi gerçekleştirdi.\n\nGörüşmede ikili ilişkiler ve bölgesel konuların ele alındığı bildirildi. https://t.co/FvL1yTDMSU",
+                "actor": "Turkey"
+            },
+            {
+                "summary": {
+                    "en": "USA, France, Germany, and the UK welcome the extension of the ceasefire between the Syrian government and SDF, and the opening of humanitarian corridors.",
+                    "tr": "ABD, Fransa, Almanya ve İngiltere, Suriye hükümeti ile SDG arasındaki ateşkesin uzatılmasını ve insani yardım koridorlarının açılmasını memnuniyetle karşılıyor.",
+                    "ru": "США, Франция, Германия и Великобритания приветствуют продление прекращения огня между сирийским правительством и СДС, а также открытие гуманитарных коридоров.",
+                    "zh": "美国、法国、德国和英国欢迎叙利亚政府与SDF之间延长停火协议，并开放人道主义走廊。"
+                },
+                "date": "2026-01-27 14:42:22+00:00",
+                "tweet_id": "2016159854616788993",
+                "local_video_path": null,
+                "image_path": "media/2016159854616788993.jpg",
+                "channel": "X (@ConflictTR)",
+                "attacker": "USA, UK, France, Germany",
+                "original_text": "🚨 ABD, İngiltere, Fransa ve Almanya’dan Suriye'deki ateşkes hakkında ortak açıklama:\n\nSuriye hükümeti ve PKK/SDG arasında varılan ateşkesin 15 gün daha uzatılmasını memnuniyetle karşılıyor ve tüm tarafları ateşkese kesinlikle uymaya çağırıyoruz.\n\nTüm tarafları kalıcı bir ateşkes https://t.co/ceHRySNQ84",
+                "actor": "USA, UK, France, Germany"
+            },
+            {
+                "summary": {
+                    "en": "President Erdogan states resources will be used for Syrian welfare, not tunnels, but schools, hospitals, etc.",
+                    "tr": "Cumhurbaşkanı Erdoğan, kaynakların tüneller yerine okullar, hastaneler vb. için Suriye'nin refahı için kullanılacağını belirtiyor.",
+                    "ru": "Президент Эрдоган заявляет, что ресурсы будут использоваться для благосостояния Сирии, а не для туннелей, а для школ, больниц и т. д.",
+                    "zh": "埃尔多安总统表示，资源将用于叙利亚的福利，而不是用于隧道，而是用于学校、医院等。"
+                },
+                "date": "2026-01-27 12:35:11+00:00",
+                "tweet_id": "2016127846058426464",
+                "local_video_path": "media/2016127846058426464.mp4",
                 "image_path": null,
                 "channel": "X (@clashreport)",
-                "attacker": "USA",
-                "original_text": "US Ambassador to Israel Mike Huckabee:\n\nDo you like your cell phone? If you don't like Israel, get rid of your cell phone. \n\nYou would not have it without Israel. https://t.co/tm49aTazW2"
+                "attacker": "Turkey",
+                "original_text": "Turkish President Erdogan on Syria:\n\nResources that should be spent on the welfare of the Syrian people will no longer be used to dig tunnels underground, but instead to build schools, hospitals, bakeries, factories, and roads above ground. https://t.co/MLLVXAtbmF",
+                "actor": "Turkey"
+            },
+            {
+                "summary": {
+                    "en": "President Erdogan says Syria's stability will positively affect neighboring countries, boosting trade, investments, and tourism.",
+                    "tr": "Cumhurbaşkanı Erdoğan, Suriye'nin istikrarının komşu ülkeleri olumlu etkileyeceğini, ticaret, yatırım ve turizmi artıracağını belirtiyor.",
+                    "ru": "Президент Эрдоган заявляет, что стабильность Сирии положительно повлияет на соседние страны, стимулируя торговлю, инвестиции и туризм.",
+                    "zh": "埃尔多安总统表示，叙利亚的稳定将对邻国产生积极影响，促进贸易、投资和旅游业。"
+                },
+                "date": "2026-01-27 12:32:27+00:00",
+                "tweet_id": "2016127159362797739",
+                "local_video_path": "media/2016127159362797739.mp4",
+                "image_path": null,
+                "channel": "X (@clashreport)",
+                "attacker": "Turkey",
+                "original_text": "Turkish President Erdogan:\n\nAs Syria achieves stability and security, all neighboring countries—starting with us—will directly feel its positive effects.\n\nTrade will accelerate, investments will increase, and tourism will develop. In the residential areas that were reduced to https://t.co/yWU6omRBM3",
+                "actor": "Turkey"
+            },
+            {
+                "summary": {
+                    "en": "President Erdogan states that the surroundings are practically on fire from north to south.",
+                    "tr": "Cumhurbaşkanı Erdoğan, çevrenin kuzeyden güneye adeta yanmakta olduğunu belirtiyor.",
+                    "ru": "Президент Эрдоган заявляет, что все вокруг практически в огне с севера на юг.",
+                    "zh": "埃尔多安总统表示，从北到南，周围环境实际上都着火了。"
+                },
+                "date": "2026-01-27 12:28:37+00:00",
+                "tweet_id": "2016126196744962524",
+                "local_video_path": null,
+                "image_path": "media/2016126196744962524.jpg",
+                "channel": "X (@ConflictTR)",
+                "attacker": "Turkey",
+                "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nÇevremize baktığımızda, Kuzey’den Güney’e etrafımızın yangın yeri olduğunu görüyoruz. https://t.co/32VhtIEsQy",
+                "actor": "Turkey"
+            },
+            {
+                "summary": {
+                    "en": "Turkey is planning to establish a buffer zone on the Iranian border to prevent a potential refugee wave if the Iranian government collapses.",
+                    "tr": "Türkiye, İran hükümetinin çökmesi durumunda potansiyel bir mülteci akınını önlemek için İran sınırında bir tampon bölge oluşturmayı planlıyor.",
+                    "ru": "Турция планирует создать буферную зону на иранской границе для предотвращения потенциальной волны беженцев в случае краха иранского правительства.",
+                    "zh": "土耳其计划在伊朗边境建立一个缓冲区，以防止伊朗政府垮台时可能出现的难民潮。"
+                },
+                "date": "2026-01-27 12:18:32+00:00",
+                "tweet_id": "2016123658855412084",
+                "local_video_path": null,
+                "image_path": "media/2016123658855412084.jpg",
+                "channel": "X (@AJSyriaNowN)",
+                "attacker": "Turkey",
+                "original_text": "ميدل إيست آي:\n\n• تركيا تخطط لإنشاء منطقة عازلة لصد موجة نزوح محتملة في حال سقوط الحكومة الإيرانية\n\n• في العام الماضي، قدّرت تركيا أن نحو مليون شخص قد يصلون إلى حدودها في حال حدوث هذا السيناريو https://t.co/Sx0zGYgzVZ",
+                "actor": "Turkey"
+            },
+            {
+                "summary": {
+                    "en": "Turkey is preparing plans to prevent a potential refugee wave from Iran in case of a US attack.",
+                    "tr": "Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda İran'dan gelebilecek potansiyel mülteci akınını önlemek için planlar hazırlıyor.",
+                    "ru": "Турция разрабатывает планы по предотвращению потенциальной волны беженцев из Ирана в случае нападения США.",
+                    "zh": "土耳其正在制定计划，以防止美国袭击伊朗可能造成的伊朗难民潮。"
+                },
+                "date": "2026-01-27 11:47:45+00:00",
+                "tweet_id": "2016115911095132344",
+                "local_video_path": null,
+                "image_path": "media/2016115911095132344.jpg",
+                "channel": "X (@ConflictTR)",
+                "attacker": "Türkiye",
+                "original_text": "🔴 Middle East Eye:\n\n▪️ Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda potansiyel mülteci dalgasını önlemek için plan hazırlıyor.\n\n▪️ Türkiye, İran'da en kötü senaryoya hazırlanıyor ve yeni bir mülteci dalgasını önlemek için sınırın İran tarafında bir tampon bölge https://t.co/zd9H4UYM7y",
+                "actor": "Türkiye"
             }
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 31.7765,
-        "lng": 35.2346,
-        "location_name": {
-            "en": "Jerusalem",
-            "tr": "Kudüs",
-            "ru": "Иерусалим",
-            "zh": "耶路撒冷"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "USA",
-        "summary": {
-            "en": "US Ambassador to Israel Mike Huckabee states that the root of Jew hatred is spiritual.",
-            "tr": "ABD İsrail Büyükelçisi Mike Huckabee, Yahudi nefretinin kökeninin manevi olduğunu belirtiyor.",
-            "ru": "Посол США в Израиле Майк Хакаби заявляет, что корень ненависти к евреям носит духовный характер.",
-            "zh": "美国驻以色列大使迈克·赫卡比表示，对犹太人的仇恨根源是精神上的。"
-        },
-        "territory_update": {},
-        "confidence": 7.0,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016150134078235063",
-        "local_video_path": null,
-        "image_path": "media/2016150134078235063.jpg",
-        "date": "2026-01-27 14:03:44+00:00",
-        "original_text": "US Ambassador to Israel Mike Huckabee:\n\nThe root of Jew hatred is not political, it is not economic, it is spiritual. https://t.co/g6Pq8jfwio",
-        "sources": [
-            "X (@clashreport)"
         ]
     },
     {
@@ -284,7 +372,8 @@
         "original_text": "معاون محافظ حماة لشؤون التنمية المحلية حسن الحسن يبحث مع وفد الوكالة البلجيكية “إينابيل”، آفاق التعاون لتنفيذ مشاريع إعادة تأهيل المرافق الخدمية، ودعم التحول الرقمي، وإعادة الإعمار في حماة بشكل خاص وسوريا بشكل عام.\n\n#سوريا\n#بلجيكا https://t.co/NzzKaYJ4WL",
         "sources": [
             "X (@Sana__gov)"
-        ]
+        ],
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -316,7 +405,8 @@
         "original_text": "الجيش العربي السوري يقوم بإزالة الألغام الموجودة في محيط جسر قرة قوزاق بريف حلب الشرقي.\n\n#سوريا \n#حلب https://t.co/Qz5jrxfLVf",
         "sources": [
             "X (@Sana__gov)"
-        ]
+        ],
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -348,6 +438,24 @@
         "original_text": "🚨 Suriyeli yetkili:\n\nSuriye hükümeti bugün PKK/SDG terör örgütü ile yeni bir entegrasyon görüşmesi yapmayı planlıyor.\n\n- Reuters",
         "sources": [
             "X (@ConflictTR)"
+        ],
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "Abdul Latif Al-Muhaimid expresses surprise at Damascus University instructions regarding his student record after being imprisoned by QSD.",
+                    "tr": "Abdul Latif Al-Muhaimid, QSD tarafından hapsedildikten sonra öğrenci kaydıyla ilgili olarak Şam Üniversitesi'nin talimatlarına şaşkınlığını dile getiriyor.",
+                    "ru": "Абдул Латиф Аль-Мухаймид выражает удивление инструкциям Дамасского университета относительно его студенческой записи после заключения в тюрьму QSD.",
+                    "zh": "阿卜杜勒·拉蒂夫·穆海米德对大马士革大学关于他在被 QSD 监禁后的学生记录的指示表示惊讶。"
+                },
+                "date": "2026-01-27 13:44:19+00:00",
+                "tweet_id": "2016145248108364232",
+                "local_video_path": null,
+                "image_path": "media/2016145248108364232.jpg",
+                "channel": "X (@AJSyriaNowN)",
+                "attacker": "Abdul Latif Al-Muhaimid",
+                "original_text": "الباحث والمؤلف عبد اللطيف المحيمد يبدي استغرابه من التعليمات المعمول بها في جامعة دمشق عبر منشور له على منصة فيسبوك:\n\n\"ذهبت اليوم لأستعيد قيدي في كلية الآداب - قسم اللغة العربية في دمشق، بناء على مرسوم وزير التعليم العالي، فقالوا لي: وين كنت بالفترة الماضية؟ فقلت: مسجون عند قسد، https://t.co/J1v72HXmzs",
+                "actor": "Abdul Latif Al-Muhaimid"
+            }
         ]
     },
     {
@@ -380,7 +488,8 @@
         "original_text": "\"U.S. Air Forces Central will be conducting a multi-day readiness exercise\"\n\nComes amidst US-Iran tensions https://t.co/X7jHHbn4MD",
         "sources": [
             "X (@vvanwilgenburg)"
-        ]
+        ],
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -413,7 +522,8 @@
         "sources": [
             "X (@AJSyriaNowN)"
         ],
-        "actor": "UK"
+        "actor": "UK",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -446,153 +556,8 @@
         "sources": [
             "X (@AJSyriaNowN)"
         ],
-        "actor": "HTS"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 33.5138,
-        "lng": 36.2765,
-        "location_name": {
-            "en": "Damascus",
-            "tr": "Şam",
-            "ru": "Дамаск",
-            "zh": "大马士革"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Abdul Latif Al-Muhaimid",
-        "summary": {
-            "en": "Abdul Latif Al-Muhaimid expresses surprise at Damascus University instructions regarding his student record after being imprisoned by QSD.",
-            "tr": "Abdul Latif Al-Muhaimid, QSD tarafından hapsedildikten sonra öğrenci kaydıyla ilgili olarak Şam Üniversitesi'nin talimatlarına şaşkınlığını dile getiriyor.",
-            "ru": "Абдул Латиф Аль-Мухаймид выражает удивление инструкциям Дамасского университета относительно его студенческой записи после заключения в тюрьму QSD.",
-            "zh": "阿卜杜勒·拉蒂夫·穆海米德对大马士革大学关于他在被 QSD 监禁后的学生记录的指示表示惊讶。"
-        },
-        "territory_update": {},
-        "confidence": 9.0,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016145248108364232",
-        "local_video_path": null,
-        "image_path": "media/2016145248108364232.jpg",
-        "date": "2026-01-27 13:44:19+00:00",
-        "original_text": "الباحث والمؤلف عبد اللطيف المحيمد يبدي استغرابه من التعليمات المعمول بها في جامعة دمشق عبر منشور له على منصة فيسبوك:\n\n\"ذهبت اليوم لأستعيد قيدي في كلية الآداب - قسم اللغة العربية في دمشق، بناء على مرسوم وزير التعليم العالي، فقالوا لي: وين كنت بالفترة الماضية؟ فقلت: مسجون عند قسد، https://t.co/J1v72HXmzs",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Abdul Latif Al-Muhaimid"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9255,
-        "lng": 32.8663,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Turkish President Erdoğan states that there can be no state within a state or separate armed forces in Syria.",
-            "tr": "Türkiye Cumhurbaşkanı Erdoğan, Suriye'de devlet içinde devlet veya ayrı silahlı kuvvetler olamayacağını belirtti.",
-            "ru": "Президент Турции Эрдоган заявил, что в Сирии не может быть государства в государстве или отдельных вооруженных сил.",
-            "zh": "土耳其总统埃尔多安表示，叙利亚境内不能存在国中之国或分裂的武装力量。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016141730614038633",
-        "local_video_path": "media/2016141730614038633.mp4",
-        "image_path": null,
-        "date": "2026-01-27 13:30:21+00:00",
-        "original_text": "الرئيس التركي رجب طيب أردوغان:\n\nلا يمكن أن يكون هناك دولة داخل الدولة ولا قوى مسلّحة منفصلة في سوريا https://t.co/bxusL0I82a",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Turkey",
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "Turkish and US military officials discussed bilateral relations and regional issues.",
-                    "tr": "Türk ve ABD'li askeri yetkililer ikili ilişkileri ve bölgesel sorunları görüştü.",
-                    "ru": "Турецкие и американские военные чиновники обсудили двусторонние отношения и региональные вопросы.",
-                    "zh": "土耳其和美国军方官员讨论了双边关系和地区问题。"
-                },
-                "date": "2026-01-27 13:54:22+00:00",
-                "tweet_id": "2016147776136970500",
-                "local_video_path": null,
-                "image_path": "media/2016147776136970500.jpg",
-                "channel": "X (@clashreport)",
-                "attacker": "Turkey",
-                "original_text": "Turkish Chief of the General Staff General Selçuk Bayraktaroğlu spoke by phone with CENTCOM Commander Admiral Brad Cooper. https://t.co/rZBxcqNdRE"
-            },
-            {
-                "summary": {
-                    "en": "President Erdogan says there can be no state within a state or separate armed force within Syria.",
-                    "tr": "Cumhurbaşkanı Erdoğan, Suriye'de devlet içinde devlet veya ayrı bir silahlı kuvvet olamayacağını belirtiyor.",
-                    "ru": "Президент Эрдоган заявляет, что в Сирии не может быть государства в государстве или отдельной вооруженной силы.",
-                    "zh": "埃尔多安总统表示，叙利亚境内不能存在国中之国或单独的武装力量。"
-                },
-                "date": "2026-01-27 12:37:19+00:00",
-                "tweet_id": "2016128383491482048",
-                "local_video_path": "media/2016128383491482048.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "attacker": "Turkey",
-                "original_text": "Turkish President Erdogan on Syria:\n\nThere can be no state within a state and no separate armed force within the state. https://t.co/anrHqExQvp"
-            },
-            {
-                "summary": {
-                    "en": "President Erdogan reports that millions of Syrian refugees, including 600,000 from Turkey, have returned to their homeland.",
-                    "tr": "Cumhurbaşkanı Erdoğan, Türkiye'den 600.000'i de dahil olmak üzere milyonlarca Suriyeli mültecinin anavatanlarına geri döndüğünü bildirdi.",
-                    "ru": "Президент Эрдоган сообщает, что миллионы сирийских беженцев, в том числе 600 000 из Турции, вернулись на родину.",
-                    "zh": "埃尔多安总统报告说，包括来自土耳其的 60 万在内的数百万叙利亚难民已经返回家园。"
-                },
-                "date": "2026-01-27 12:33:35+00:00",
-                "tweet_id": "2016127443971559430",
-                "local_video_path": "media/2016127443971559430.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "attacker": "Turkey",
-                "original_text": "Turkish President Erdogan:\n\nMillions of Syrian refugees have returned to their homeland, including 600,000 from our country. https://t.co/s6RoGUDo6Z"
-            }
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.891,
-        "lng": 38.3536,
-        "location_name": {
-            "en": "Ayn al-Arab",
-            "tr": "Ayn el-Arab",
-            "ru": "Айн-эль-Араб",
-            "zh": "艾因阿拉伯"
-        },
-        "attack_type": "Bread distribution via boats to besieged villages",
-        "visual_emoji": "🚚",
-        "attacker": "Central Committee for Response in Aleppo",
-        "summary": {
-            "en": "The Central Committee for Response in Aleppo sends bread by boats across the Euphrates River to villages besieged by QSD near Ayn al-Arab.",
-            "tr": "Halep'teki Merkezi Müdahale Komitesi, Fırat Nehri üzerinden Ayn el-Arab yakınlarındaki QSD tarafından kuşatılmış köylere teknelerle ekmek gönderiyor.",
-            "ru": "Центральный комитет по реагированию в Алеппо отправляет хлеб на лодках через реку Евфрат в деревни, осажденные QSD возле Айн-эль-Араб.",
-            "zh": "阿勒颇中央应对委员会通过幼发拉底河用船只向艾因阿拉伯附近被 QSD 围困的村庄运送面包。"
-        },
-        "territory_update": {},
-        "confidence": 7.5,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016135114980262075",
-        "local_video_path": "media/2016135114980262075.mp4",
-        "image_path": null,
-        "date": "2026-01-27 13:04:04+00:00",
-        "original_text": "اللجنة المركزية لاستجابة حلب ترسل خبزا بالزوارق عبر نهر الفرات إلى قرى محاصرة من قبل قسد قرب عين العرب (كوباني) https://t.co/W2Vhpjk4kb",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Central Committee for Response in Aleppo"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -625,7 +590,25 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": [
+            {
+                "summary": {
+                    "en": "Families of missing persons held a protest in Deir ez-Zor, demanding information on their children held in QSD prisons.",
+                    "tr": "Kayıp kişilerin aileleri, Deyr ez-Zor'da QSD cezaevlerinde tutulan çocukları hakkında bilgi talep ederek bir protesto düzenledi.",
+                    "ru": "Семьи пропавших без вести провели акцию протеста в Дейр-эз-Зоре, требуя предоставить информацию об их детях, содержащихся в тюрьмах QSD.",
+                    "zh": "失踪人员家属在代尔祖尔举行抗议活动，要求提供有关被关押在 QSD 监狱中的子女的信息。"
+                },
+                "date": "2026-01-27 12:37:53+00:00",
+                "tweet_id": "2016128529289613599",
+                "local_video_path": null,
+                "image_path": "media/2016128529289613599.jpg",
+                "channel": "X (@Sana__gov)",
+                "attacker": "Civilians",
+                "original_text": "أهالي المفقودين في سجون تنظيم قسد ينظمون وقفة في دير الزور، طالبوا خلالها بالكشف عن مصير أبنائهم الذين اختطفهم تنظيم داعش الإرهابي إبان سيطرته على المنطقة، ثم استمر احتجازهم في السجون بعد انتقال السيطرة إلى تنظيم قسد.\n\n#سوريا\n#دير_الزور https://t.co/BhayjMIoIf",
+                "actor": "Civilians"
+            }
+        ]
     },
     {
         "action": "CREATE",
@@ -674,6 +657,22 @@
                 "channel": "X (@AJSyriaNowN)",
                 "attacker": "Syria",
                 "original_text": "هدوء حذر في الجزيرة السورية.. هل يصمد بعد تمديد وقف إطلاق النار؟ https://t.co/MPv2Iq1qih"
+            },
+            {
+                "summary": {
+                    "en": "President Erdoğan announced a major construction and restoration initiative in areas of Syria devastated by the former regime's barrel bombs.",
+                    "tr": "Cumhurbaşkanı Erdoğan, Suriye'de eski rejimin varil bombalarıyla enkaza çevirdiği bölgelerde büyük bir inşa ve restorasyon girişiminin başlayacağını duyurdu.",
+                    "ru": "Президент Эрдоган объявил о крупной инициативе по строительству и восстановлению районов Сирии, разрушенных бочковыми бомбами бывшего режима.",
+                    "zh": "埃尔多安总统宣布，将在叙利亚被前政权的桶装炸弹摧毁的地区启动一项大规模的建设和重建倡议。"
+                },
+                "date": "2026-01-27 12:33:37+00:00",
+                "tweet_id": "2016127452179759360",
+                "local_video_path": null,
+                "image_path": "media/2016127452179759360.jpg",
+                "channel": "X (@ConflictTR)",
+                "attacker": "Türkiye",
+                "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nSuriye’nin tamamında, eski rejimin varil bombalarıyla enkaza çevirdiği yerleşim yerlerinde büyük bir inşa ve ihya seferberliği başlayacak. https://t.co/EsibvjtRsz",
+                "actor": "Türkiye"
             }
         ]
     },
@@ -708,7 +707,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -741,7 +741,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -774,57 +775,8 @@
         "sources": [
             "X (@clashreport)"
         ],
-        "actor": "Germany"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9167,
-        "lng": 32.8667,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Meeting",
-        "visual_emoji": "🤝",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Turkish Chief of General Staff Selçuk Bayraktaroğlu held a phone call with US CENTCOM Commander Brad Cooper to discuss bilateral relations and regional issues.",
-            "tr": "Türk Genelkurmay Başkanı Selçuk Bayraktaroğlu, ABD CENTCOM Komutanı Brad Cooper ile ikili ilişkileri ve bölgesel konuları görüşmek üzere bir telefon görüşmesi gerçekleştirdi.",
-            "ru": "Начальник Генштаба Турции Сельчук Байрактароглу провел телефонный разговор с командующим Центральным командованием США Брэдом Купером для обсуждения двусторонних отношений и региональных вопросов.",
-            "zh": "土耳其总参谋长塞尔丘克·巴拉克塔罗格鲁与美国中央司令部司令布拉德·库珀通电话，讨论双边关系和地区问题。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016147752267256048",
-        "local_video_path": null,
-        "image_path": "media/2016147752267256048.jpg",
-        "date": "2026-01-27 13:54:17+00:00",
-        "original_text": "🔴 Genelkurmay Başkanı Orgeneral Selçuk Bayraktaroğlu, ABD Merkez Kuvvetler Komutanı Oramiral Brad Cooper ile telefon görüşmesi gerçekleştirdi.\n\nGörüşmede ikili ilişkiler ve bölgesel konuların ele alındığı bildirildi. https://t.co/FvL1yTDMSU",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Turkey",
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "President Erdogan states Turkey is meeting humanitarian aid requests from Kurdish brothers in cooperation with Syria.",
-                    "tr": "Cumhurbaşkanı Erdoğan, Türkiye'nin Suriye hükümeti ile işbirliği içinde Kürt kardeşlerinden gelen insani yardım taleplerini karşıladığını belirtiyor.",
-                    "ru": "Президент Эрдоган заявляет, что Турция удовлетворяет запросы о гуманитарной помощи от курдских братьев в сотрудничестве с Сирией.",
-                    "zh": "埃尔多安总统表示，土耳其正在与叙利亚合作，满足库尔德兄弟的人道主义援助要求。"
-                },
-                "date": "2026-01-27 12:39:37+00:00",
-                "tweet_id": "2016128964582912170",
-                "local_video_path": "media/2016128964582912170.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "attacker": "Turkey",
-                "original_text": "Turkish President Erdogan:\n\nWe are meeting the humanitarian aid requests coming from our Kurdish brothers living beyond our border in close cooperation with the Syrian government. https://t.co/QKW2IqP10u"
-            }
-        ]
+        "actor": "Germany",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -857,73 +809,8 @@
         "sources": [
             "X (@ConflictTR)"
         ],
-        "actor": "HTS"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 36.8742,
-        "lng": 38.7744,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Ceasefire Statement",
-        "visual_emoji": "📢",
-        "attacker": "USA, UK, France, Germany",
-        "summary": {
-            "en": "USA, France, Germany, and the UK welcome the extension of the ceasefire between the Syrian government and SDF, and the opening of humanitarian corridors.",
-            "tr": "ABD, Fransa, Almanya ve İngiltere, Suriye hükümeti ile SDG arasındaki ateşkesin uzatılmasını ve insani yardım koridorlarının açılmasını memnuniyetle karşılıyor.",
-            "ru": "США, Франция, Германия и Великобритания приветствуют продление прекращения огня между сирийским правительством и СДС, а также открытие гуманитарных коридоров.",
-            "zh": "美国、法国、德国和英国欢迎叙利亚政府与SDF之间延长停火协议，并开放人道主义走廊。"
-        },
-        "territory_update": {},
-        "confidence": 8.8,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016159854616788993",
-        "local_video_path": null,
-        "image_path": "media/2016159854616788993.jpg",
-        "date": "2026-01-27 14:42:22+00:00",
-        "original_text": "🚨 ABD, İngiltere, Fransa ve Almanya’dan Suriye'deki ateşkes hakkında ortak açıklama:\n\nSuriye hükümeti ve PKK/SDG arasında varılan ateşkesin 15 gün daha uzatılmasını memnuniyetle karşılıyor ve tüm tarafları ateşkese kesinlikle uymaya çağırıyoruz.\n\nTüm tarafları kalıcı bir ateşkes https://t.co/ceHRySNQ84",
-        "sources": [
-            "X (@ConflictTR)",
-            "X (@Sana__gov)"
-        ],
-        "actor": "USA, UK, France, Germany",
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "USA, France, Germany, and the UK welcome the extension of the ceasefire between the Syrian government and SDF, and the opening of humanitarian corridors.",
-                    "tr": "ABD, Fransa, Almanya ve İngiltere, Suriye hükümeti ile SDG arasındaki ateşkesin uzatılmasını ve insani yardım koridorlarının açılmasını memnuniyetle karşılıyor.",
-                    "ru": "США, Франция, Германия и Великобритания приветствуют продление прекращения огня между сирийским правительством и СДС, а также открытие гуманитарных коридоров.",
-                    "zh": "美国、法国、德国和英国欢迎叙利亚政府与SDF之间延长停火协议，并开放人道主义走廊。"
-                },
-                "date": "2026-01-27 14:42:22+00:00",
-                "tweet_id": "2016159854616788993",
-                "local_video_path": null,
-                "image_path": "media/2016159854616788993.jpg",
-                "channel": "X (@Sana__gov)",
-                "actor": "USA, UK, France, Germany",
-                "original_text": "رحبت الولايات المتحدة وفرنسا وألمانيا والمملكة المتحدة، في بيان مشترك، بتمديد وقف إطلاق النار بين الحكومة السورية وتنظيم \"قسد\"، وبفتح ممرين إنسانيين آمنين لإيصال المساعدات إلى الحسكة ومنطقة عين العرب في ريف حلب.\n\n#سوريا https://t.co/juG44CxG12"
-            },
-            {
-                "summary": {
-                    "en": "USA, UK, France, and Germany welcome the extension of the ceasefire between the Syrian government and PKK/SDG for another 15 days.",
-                    "tr": "ABD, İngiltere, Fransa ve Almanya, Suriye hükümeti ile PKK/SDG arasındaki ateşkesin 15 gün daha uzatılmasını memnuniyetle karşılıyor.",
-                    "ru": "США, Великобритания, Франция и Германия приветствуют продление перемирия между сирийским правительством и РПК/СДС еще на 15 дней.",
-                    "zh": "美国、英国、法国和德国欢迎叙利亚政府与PKK/SDG之间停火协议再延长15天。"
-                },
-                "date": "2026-01-27 13:32:11+00:00",
-                "tweet_id": "2016142192461369759",
-                "local_video_path": null,
-                "image_path": "media/2016142192461369759.jpg",
-                "channel": "X (@ConflictTR)",
-                "actor": "USA, UK, France, Germany",
-                "original_text": "🚨 ABD, İngiltere, Fransa ve Almanya’dan Suriye'deki ateşkes hakkında ortak açıklama:\n\nSuriye hükümeti ve PKK/SDG arasında varılan ateşkesin 15 gün daha uzatılmasını memnuniyetle karşılıyor ve tüm tarafları ateşkese kesinlikle uymaya çağırıyoruz.\n\nTüm tarafları kalıcı bir ateşkes https://t.co/ceHRySNQ84"
-            }
-        ]
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -956,7 +843,8 @@
         "sources": [
             "X (@ConflictTR)"
         ],
-        "actor": "USA"
+        "actor": "USA",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1039,7 +927,8 @@
         "sources": [
             "X (@vvanwilgenburg)"
         ],
-        "actor": "USA"
+        "actor": "USA",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1072,7 +961,8 @@
         "sources": [
             "X (@vvanwilgenburg)"
         ],
-        "actor": "USA"
+        "actor": "USA",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1105,7 +995,8 @@
         "sources": [
             "X (@vvanwilgenburg)"
         ],
-        "actor": "Islamist"
+        "actor": "Islamist",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1138,40 +1029,8 @@
         "sources": [
             "X (@vvanwilgenburg)"
         ],
-        "actor": "Iraqi Kurdistan"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 35.3359,
-        "lng": 40.1408,
-        "location_name": {
-            "en": "Deir ez-Zor",
-            "tr": "Deir ez-Zor",
-            "ru": "Дейр-эз-Зор",
-            "zh": "代尔祖尔"
-        },
-        "attack_type": "Protest",
-        "visual_emoji": "📣",
-        "attacker": "Civilians",
-        "summary": {
-            "en": "Families of missing persons held a protest in Deir ez-Zor, demanding information on their children held in QSD prisons.",
-            "tr": "Kayıp kişilerin aileleri, Deyr ez-Zor'da QSD cezaevlerinde tutulan çocukları hakkında bilgi talep ederek bir protesto düzenledi.",
-            "ru": "Семьи пропавших без вести провели акцию протеста в Дейр-эз-Зоре, требуя предоставить информацию об их детях, содержащихся в тюрьмах QSD.",
-            "zh": "失踪人员家属在代尔祖尔举行抗议活动，要求提供有关被关押在 QSD 监狱中的子女的信息。"
-        },
-        "territory_update": {},
-        "confidence": 8.0,
-        "channel": "X (@Sana__gov)",
-        "tweet_id": "2016128529289613599",
-        "local_video_path": null,
-        "image_path": "media/2016128529289613599.jpg",
-        "date": "2026-01-27 12:37:53+00:00",
-        "original_text": "أهالي المفقودين في سجون تنظيم قسد ينظمون وقفة في دير الزور، طالبوا خلالها بالكشف عن مصير أبنائهم الذين اختطفهم تنظيم داعش الإرهابي إبان سيطرته على المنطقة، ثم استمر احتجازهم في السجون بعد انتقال السيطرة إلى تنظيم قسد.\n\n#سوريا\n#دير_الزور https://t.co/BhayjMIoIf",
-        "sources": [
-            "X (@Sana__gov)"
-        ],
-        "actor": "Civilians"
+        "actor": "Iraqi Kurdistan",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1204,188 +1063,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9208,
-        "lng": 32.8541,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdogan states resources will be used for Syrian welfare, not tunnels, but schools, hospitals, etc.",
-            "tr": "Cumhurbaşkanı Erdoğan, kaynakların tüneller yerine okullar, hastaneler vb. için Suriye'nin refahı için kullanılacağını belirtiyor.",
-            "ru": "Президент Эрдоган заявляет, что ресурсы будут использоваться для благосостояния Сирии, а не для туннелей, а для школ, больниц и т. д.",
-            "zh": "埃尔多安总统表示，资源将用于叙利亚的福利，而不是用于隧道，而是用于学校、医院等。"
-        },
-        "territory_update": {},
-        "confidence": 8.4,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016127846058426464",
-        "local_video_path": "media/2016127846058426464.mp4",
-        "image_path": null,
-        "date": "2026-01-27 12:35:11+00:00",
-        "original_text": "Turkish President Erdogan on Syria:\n\nResources that should be spent on the welfare of the Syrian people will no longer be used to dig tunnels underground, but instead to build schools, hospitals, bakeries, factories, and roads above ground. https://t.co/MLLVXAtbmF",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Turkey",
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "President Erdoğan states that no one has the right to impose new costs on the Syrian people. Terrorism and weapons are outdated.",
-                    "tr": "Cumhurbaşkanı Erdoğan, hiç kimsenin Suriye halkına yeni bedeller ödetme hakkı olmadığını, terörizm ve silahların miadının dolduğunu belirtiyor.",
-                    "ru": "Президент Эрдоган заявляет, что никто не имеет права возлагать новые издержки на сирийский народ. Терроризм и оружие устарели.",
-                    "zh": "埃尔多安总统表示，任何人都无权强加新的代价给叙利亚人民。恐怖主义和武器已经过时。"
-                },
-                "date": "2026-01-27 12:37:05+00:00",
-                "tweet_id": "2016128327048724517",
-                "local_video_path": null,
-                "image_path": "media/2016128327048724517.jpg",
-                "channel": "X (@ConflictTR)",
-                "attacker": "Turkey",
-                "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nKimsenin Suriye halkına yeni bedeller ödetme hakkı yoktur. Terörün, silahın miadı dolmuştur. Devlet içinde ayrı devlet olmaz. Devlet içinde ayrı silahlı güç olmaz, paralel ordu olmaz. https://t.co/naRCvsD6Ly"
-            },
-            {
-                "summary": {
-                    "en": "President Erdoğan states that new opportunities are opening up for Turkey, emphasizing the benefits of supporting the oppressed in Gaza and embracing those in Syria.",
-                    "tr": "Cumhurbaşkanı Erdoğan, Türkiye için yeni fırsatların açıldığını, Gazze'de mazlumlara sahip çıkmanın ve Suriye'de kucak açmanın faydalarını vurguluyor.",
-                    "ru": "Президент Эрдоган заявляет об открытии новых возможностей для Турции, подчеркивая преимущества поддержки угнетенных в Газе и принятия тех, кто находится в Сирии.",
-                    "zh": "埃尔多安总统表示，土耳其正在迎来新的机遇，强调支持加沙受压迫者和接纳叙利亚人民的好处。"
-                },
-                "date": "2026-01-27 12:31:26+00:00",
-                "tweet_id": "2016126906345673007",
-                "local_video_path": null,
-                "image_path": "media/2016126906345673007.jpg",
-                "channel": "X (@ConflictTR)",
-                "attacker": "Turkey",
-                "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nTürkiye’nin önünde yeni kapılar açılıyor. Samimiyetle ifade ediyorum; Gazze’de mazlumlara sahip çıkmamızın, Suriye’de 13,5 yıl boyunca kucak açmamızın bereketini ziyadesiyle göreceğiz. https://t.co/mLykNOEr1G"
-            }
-        ]
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9167,
-        "lng": 32.8333,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdogan says Syria's stability will positively affect neighboring countries, boosting trade, investments, and tourism.",
-            "tr": "Cumhurbaşkanı Erdoğan, Suriye'nin istikrarının komşu ülkeleri olumlu etkileyeceğini, ticaret, yatırım ve turizmi artıracağını belirtiyor.",
-            "ru": "Президент Эрдоган заявляет, что стабильность Сирии положительно повлияет на соседние страны, стимулируя торговлю, инвестиции и туризм.",
-            "zh": "埃尔多安总统表示，叙利亚的稳定将对邻国产生积极影响，促进贸易、投资和旅游业。"
-        },
-        "territory_update": {},
-        "confidence": 8.4,
-        "channel": "X (@clashreport)",
-        "tweet_id": "2016127159362797739",
-        "local_video_path": "media/2016127159362797739.mp4",
-        "image_path": null,
-        "date": "2026-01-27 12:32:27+00:00",
-        "original_text": "Turkish President Erdogan:\n\nAs Syria achieves stability and security, all neighboring countries—starting with us—will directly feel its positive effects.\n\nTrade will accelerate, investments will increase, and tourism will develop. In the residential areas that were reduced to https://t.co/yWU6omRBM3",
-        "sources": [
-            "X (@clashreport)"
-        ],
-        "actor": "Turkey"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 34.8021,
-        "lng": 38.9968,
-        "location_name": {
-            "en": "Syria",
-            "tr": "Suriye",
-            "ru": "Сирия",
-            "zh": "叙利亚"
-        },
-        "attack_type": "Construction and restoration efforts",
-        "visual_emoji": "🏗️",
-        "attacker": "Türkiye",
-        "summary": {
-            "en": "President Erdoğan announced a major construction and restoration initiative in areas of Syria devastated by the former regime's barrel bombs.",
-            "tr": "Cumhurbaşkanı Erdoğan, Suriye'de eski rejimin varil bombalarıyla enkaza çevirdiği bölgelerde büyük bir inşa ve restorasyon girişiminin başlayacağını duyurdu.",
-            "ru": "Президент Эрдоган объявил о крупной инициативе по строительству и восстановлению районов Сирии, разрушенных бочковыми бомбами бывшего режима.",
-            "zh": "埃尔多安总统宣布，将在叙利亚被前政权的桶装炸弹摧毁的地区启动一项大规模的建设和重建倡议。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016127452179759360",
-        "local_video_path": null,
-        "image_path": "media/2016127452179759360.jpg",
-        "date": "2026-01-27 12:33:37+00:00",
-        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nSuriye’nin tamamında, eski rejimin varil bombalarıyla enkaza çevirdiği yerleşim yerlerinde büyük bir inşa ve ihya seferberliği başlayacak. https://t.co/EsibvjtRsz",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Türkiye"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.960956711822014,
-        "lng": 32.871756711822016,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Statement",
-        "visual_emoji": "📢",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "President Erdogan states that the surroundings are practically on fire from north to south.",
-            "tr": "Cumhurbaşkanı Erdoğan, çevrenin kuzeyden güneye adeta yanmakta olduğunu belirtiyor.",
-            "ru": "Президент Эрдоган заявляет, что все вокруг практически в огне с севера на юг.",
-            "zh": "埃尔多安总统表示，从北到南，周围环境实际上都着火了。"
-        },
-        "territory_update": {},
-        "confidence": 7.2,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016126196744962524",
-        "local_video_path": null,
-        "image_path": "media/2016126196744962524.jpg",
-        "date": "2026-01-27 12:28:37+00:00",
-        "original_text": "🔴 Cumhurbaşkanı Erdoğan:\n\nÇevremize baktığımızda, Kuzey’den Güney’e etrafımızın yangın yeri olduğunu görüyoruz. https://t.co/32VhtIEsQy",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Turkey",
-        "sub_events": [
-            {
-                "summary": {
-                    "en": "President Erdogan states that the surroundings are practically on fire from north to south.",
-                    "tr": "Cumhurbaşkanı Erdoğan, çevrenin kuzeyden güneye adeta yanmakta olduğunu belirtiyor.",
-                    "ru": "Президент Эрдоган заявляет, что все вокруг практически в огне с севера на юг.",
-                    "zh": "埃尔多安总统表示，从北到南，周围环境实际上都着火了。"
-                },
-                "date": "2026-01-27 12:21:26+00:00",
-                "tweet_id": "2016124388383330331",
-                "local_video_path": "media/2016124388383330331.mp4",
-                "image_path": null,
-                "channel": "X (@clashreport)",
-                "attacker": "Turkey",
-                "original_text": "Turkish President Erdogan:\n\nWhen we look around us, we can all see that from north to south our surroundings are practically on fire. https://t.co/uGbC7YTWbp"
-            }
-        ]
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1418,40 +1097,8 @@
         "sources": [
             "X (@vvanwilgenburg)"
         ],
-        "actor": "HTS"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9289,
-        "lng": 32.8547,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Preparation for buffer zone",
-        "visual_emoji": "⚠️",
-        "attacker": "Turkey",
-        "summary": {
-            "en": "Turkey is planning to establish a buffer zone on the Iranian border to prevent a potential refugee wave if the Iranian government collapses.",
-            "tr": "Türkiye, İran hükümetinin çökmesi durumunda potansiyel bir mülteci akınını önlemek için İran sınırında bir tampon bölge oluşturmayı planlıyor.",
-            "ru": "Турция планирует создать буферную зону на иранской границе для предотвращения потенциальной волны беженцев в случае краха иранского правительства.",
-            "zh": "土耳其计划在伊朗边境建立一个缓冲区，以防止伊朗政府垮台时可能出现的难民潮。"
-        },
-        "territory_update": {},
-        "confidence": 9.0,
-        "channel": "X (@AJSyriaNowN)",
-        "tweet_id": "2016123658855412084",
-        "local_video_path": null,
-        "image_path": "media/2016123658855412084.jpg",
-        "date": "2026-01-27 12:18:32+00:00",
-        "original_text": "ميدل إيست آي:\n\n• تركيا تخطط لإنشاء منطقة عازلة لصد موجة نزوح محتملة في حال سقوط الحكومة الإيرانية\n\n• في العام الماضي، قدّرت تركيا أن نحو مليون شخص قد يصلون إلى حدودها في حال حدوث هذا السيناريو https://t.co/Sx0zGYgzVZ",
-        "sources": [
-            "X (@AJSyriaNowN)"
-        ],
-        "actor": "Turkey"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1484,7 +1131,8 @@
         "sources": [
             "X (@AJSyriaNowN)"
         ],
-        "actor": "Inmates"
+        "actor": "Inmates",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1517,7 +1165,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1550,7 +1199,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1583,7 +1233,8 @@
         "sources": [
             "X (@AJSyriaNowN)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1616,40 +1267,8 @@
         "sources": [
             "X (@Sana__gov)"
         ],
-        "actor": "HTS"
-    },
-    {
-        "action": "CREATE",
-        "target_id": null,
-        "lat": 39.9208,
-        "lng": 32.8541,
-        "location_name": {
-            "en": "Ankara",
-            "tr": "Ankara",
-            "ru": "Анкара",
-            "zh": "安卡拉"
-        },
-        "attack_type": "Preparation for buffer zone",
-        "visual_emoji": "⚠️",
-        "attacker": "Türkiye",
-        "summary": {
-            "en": "Turkey is preparing plans to prevent a potential refugee wave from Iran in case of a US attack.",
-            "tr": "Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda İran'dan gelebilecek potansiyel mülteci akınını önlemek için planlar hazırlıyor.",
-            "ru": "Турция разрабатывает планы по предотвращению потенциальной волны беженцев из Ирана в случае нападения США.",
-            "zh": "土耳其正在制定计划，以防止美国袭击伊朗可能造成的伊朗难民潮。"
-        },
-        "territory_update": {},
-        "confidence": 6.0,
-        "channel": "X (@ConflictTR)",
-        "tweet_id": "2016115911095132344",
-        "local_video_path": null,
-        "image_path": "media/2016115911095132344.jpg",
-        "date": "2026-01-27 11:47:45+00:00",
-        "original_text": "🔴 Middle East Eye:\n\n▪️ Türkiye, ABD'nin İran'a yönelik bir saldırısı durumunda potansiyel mülteci dalgasını önlemek için plan hazırlıyor.\n\n▪️ Türkiye, İran'da en kötü senaryoya hazırlanıyor ve yeni bir mülteci dalgasını önlemek için sınırın İran tarafında bir tampon bölge https://t.co/zd9H4UYM7y",
-        "sources": [
-            "X (@ConflictTR)"
-        ],
-        "actor": "Türkiye"
+        "actor": "HTS",
+        "sub_events": []
     },
     {
         "action": "CREATE",
@@ -1682,6 +1301,7 @@
         "sources": [
             "X (@AJSyriaNowN)"
         ],
-        "actor": "HTS"
+        "actor": "HTS",
+        "sub_events": []
     }
 ]
