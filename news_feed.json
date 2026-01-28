@@ -2,6 +2,99 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 36.84357,
+        "lng": 38.55625,
+        "location_name": {
+            "en": "East of Kobani",
+            "tr": "Kobani Doğusu",
+            "ru": "К востоку от Кобани",
+            "zh": "科巴尼以东"
+        },
+        "attack_type": "Tank Attack",
+        "visual_emoji": "⚔️",
+        "actor": "SDF",
+        "summary": {
+            "en": "SDF launched a tank attack east of Kobani.",
+            "tr": "SDF, Kobani'nin doğusunda tank saldırısı başlattı.",
+            "ru": "СДС начали танковую атаку к востоку от Кобани.",
+            "zh": "SDF 在科巴尼以东发动坦克袭击。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 4.0,
+        "channel": "Test Script",
+        "tweet_id": "test_TestSDF_Kobani_1769584791",
+        "date": "2026-01-28 10:20:50",
+        "original_text": "SDF Kobani doğusunda tank saldırısı başlattı.",
+        "sources": [
+            "Test Script"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "actor": "HTS",
+        "summary": {
+            "en": "The Damascus administration issued an official statement.",
+            "tr": "Şam yönetimi resmi bir açıklama yaptı.",
+            "ru": "Администрация Дамаска сделала официальное заявление.",
+            "zh": "大马士革当局发表了正式声明。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 4.0,
+        "channel": "Test Script",
+        "tweet_id": "test_TestDamascus_Statement_1769584759",
+        "date": "2026-01-28 10:19:49",
+        "original_text": "Şam yönetimi açıklama yaptı.",
+        "sources": [
+            "Test Script"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 36.0485,
+        "lng": 40.728,
+        "location_name": {
+            "en": "Al-Hasakah Frontline",
+            "tr": "Haseke Cephesi",
+            "ru": "Линия фронта Эль-Хасака",
+            "zh": "哈塞克前线"
+        },
+        "attack_type": "Offensive",
+        "visual_emoji": "⚔️",
+        "actor": "HTS",
+        "summary": {
+            "en": "HTS launched a military offensive along the Al-Hasakah contact line.",
+            "tr": "HTŞ, Haseke temas hattında askeri saldırı başlattı.",
+            "ru": "ХТШ начали военное наступление на линии соприкосновения в Эль-Хасаке.",
+            "zh": "HTS在哈塞克接触线发动了军事攻势。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 4.0,
+        "channel": "Test Script",
+        "tweet_id": "test_TestHTS_Haseke_1769584736",
+        "date": "2026-01-28 10:19:17",
+        "original_text": "HTS Haseke hattında saldırı başlattı.",
+        "sources": [
+            "Test Script"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 36.56234,
         "lng": 38.45171,
         "location_name": {
