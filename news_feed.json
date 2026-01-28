@@ -2,6 +2,68 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 36.56234,
+        "lng": 38.45171,
+        "location_name": {
+            "en": "East of Kobani (Jalabiya Sector)",
+            "tr": "Kobani Doğusu (Çelebiye Sektörü)",
+            "ru": "К востоку от Кобани (сектор Джалабия)",
+            "zh": "科巴尼以东（Jalabiya防区）"
+        },
+        "attack_type": "Tank Attack",
+        "visual_emoji": "⚔️",
+        "actor": "SDF",
+        "summary": {
+            "en": "SDF launched a tank attack against hostile positions east of Kobani.",
+            "tr": "SDG, Kobani'nin doğusunda karşıt mevzilere tank saldırısı düzenledi.",
+            "ru": "СДС начали танковую атаку на враждебные позиции к востоку от Кобани.",
+            "zh": "SDF在科巴尼以东向敌方阵地发动坦克进攻。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 4.0,
+        "channel": "Test Script",
+        "tweet_id": "test_TestSDF_Kobani_1769583930",
+        "date": "2026-01-28 10:06:19",
+        "original_text": "SDF Kobani doğusunda tank saldırısı başlattı.",
+        "sources": [
+            "Test Script"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
+        "lat": 33.5138,
+        "lng": 36.2765,
+        "location_name": {
+            "en": "Damascus",
+            "tr": "Şam",
+            "ru": "Дамаск",
+            "zh": "大马士革"
+        },
+        "attack_type": "Statement",
+        "visual_emoji": "📢",
+        "actor": "HTS",
+        "summary": {
+            "en": "The Damascus administration issued a statement.",
+            "tr": "Şam yönetimi bir açıklama yaptı.",
+            "ru": "Администрация Дамаска сделала заявление.",
+            "zh": "大马士革当局发表声明。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "confidence": 4.0,
+        "channel": "Test Script",
+        "tweet_id": "test_TestDamascus_Statement_1769583878",
+        "date": "2026-01-28 10:05:27",
+        "original_text": "Şam yönetimi açıklama yaptı.",
+        "sources": [
+            "Test Script"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 24.7136,
         "lng": 46.6753,
         "location_name": {
