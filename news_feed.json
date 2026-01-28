@@ -2,6 +2,38 @@
     {
         "action": "CREATE",
         "target_id": null,
+        "lat": 36.26787,
+        "lng": 40.63376,
+        "location_name": {
+            "en": "Al-Hasakah Frontline",
+            "tr": "Haseke Cephesi",
+            "ru": "Линия фронта Эль-Хасака",
+            "zh": "哈塞克前线"
+        },
+        "attack_type": "Tank Attack",
+        "visual_emoji": "⚔️",
+        "actor": "HTS",
+        "summary": {
+            "en": "HTS initiates a tank-led offensive along the Al-Hasakah contact line.",
+            "tr": "HTŞ, Haseke temas hattında tank destekli bir saldırı başlattı.",
+            "ru": "ХТШ начали танковое наступление на линии соприкосновения в Эль-Хасаке.",
+            "zh": "HTS在哈塞克接触线发动了坦克进攻。"
+        },
+        "territory_update": null,
+        "discovery": null,
+        "frontline_snap": true,
+        "confidence": 4.0,
+        "channel": "Snap Test",
+        "tweet_id": "snap_verified_1769585755",
+        "date": "2026-01-28 10:36:53",
+        "original_text": "HTS Haseke hattında tank saldırısı başlattı.",
+        "sources": [
+            "Snap Test"
+        ]
+    },
+    {
+        "action": "CREATE",
+        "target_id": null,
         "lat": 36.84357,
         "lng": 38.55625,
         "location_name": {
