@@ -1294,7 +1294,7 @@
         "wiki_page": "Ma'arriyah",
         "lat": 32.764,
         "lng": 35.798,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -1374,7 +1374,7 @@
         "wiki_page": "‘Abidin",
         "lat": 32.779,
         "lng": 35.824,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -1874,7 +1874,7 @@
         "wiki_page": "Hanout",
         "lat": 32.8609,
         "lng": 35.869,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -1934,7 +1934,7 @@
         "wiki_page": "Sayda Al-Golan",
         "lat": 32.8728,
         "lng": 35.876,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -1954,7 +1954,7 @@
         "wiki_page": "Al-Bassah al Gharbi",
         "lat": 32.8758,
         "lng": 35.888,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -2174,7 +2174,7 @@
         "wiki_page": "Al-Mu'allaqah",
         "lat": 32.915,
         "lng": 35.893,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -2514,7 +2514,7 @@
         "wiki_page": "Al-Rafid, Syria",
         "lat": 32.956,
         "lng": 35.9,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -2614,7 +2614,7 @@
         "wiki_page": "Asbah",
         "lat": 32.977,
         "lng": 35.8849,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -2894,7 +2894,7 @@
         "wiki_page": "Kudna, Syria",
         "lat": 33.009,
         "lng": 35.889,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3574,7 +3574,7 @@
         "wiki_page": "Qahtaniyah",
         "lat": 33.111,
         "lng": 35.84,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3654,7 +3654,7 @@
         "wiki_page": "Quneitra",
         "lat": 33.125,
         "lng": 35.825,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -3794,7 +3794,7 @@
         "wiki_page": "Al-Hamidiyah",
         "lat": 33.156,
         "lng": 35.846,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3954,7 +3954,7 @@
         "wiki_page": "Al-Huriyah",
         "lat": 33.189,
         "lng": 35.846,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -4054,7 +4054,7 @@
         "wiki_page": "Ufaniya",
         "lat": 33.204,
         "lng": 35.859,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -4084,7 +4084,7 @@
         "wiki_page": "Ayn an Nuriyah",
         "lat": 33.213,
         "lng": 35.9,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -4104,7 +4104,7 @@
         "wiki_page": "Ayn al-Bayda, Quneitra",
         "lat": 33.216,
         "lng": 35.858,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 4
@@ -4144,7 +4144,7 @@
         "wiki_page": "Jubata al-Khashab",
         "lat": 33.225,
         "lng": 35.833,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -4154,7 +4154,7 @@
         "wiki_page": "Mazrat al Amal",
         "lat": 33.227,
         "lng": 35.879,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 4
@@ -4194,7 +4194,7 @@
         "wiki_page": "Turnajah",
         "lat": 33.233,
         "lng": 35.844,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -4424,7 +4424,7 @@
         "wiki_page": "Hader, Quneitra Governorate",
         "lat": 33.281,
         "lng": 35.831,
-        "owner": "Israel",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -51430,16 +51430,6 @@
         "marksize": 10
     },
     {
-        "name": "Hamadun",
-        "wiki_page": "Hamadun",
-        "lat": 36.586,
-        "lng": 38.463,
-        "owner": "SDF",
-        "type": "Settlement",
-        "is_besieged": false,
-        "marksize": 5
-    },
-    {
         "name": "Shu‘bah",
         "wiki_page": "Shu‘bah",
         "lat": 36.586,
@@ -62184,5 +62174,53 @@
         "lat": 36.63,
         "lng": 38.3,
         "owner": "SDF"
+    },
+    {
+        "name": "Hamdun",
+        "lat": 36.5868784,
+        "lng": 38.4631802,
+        "population": 500,
+        "owner": "SDF",
+        "type": "Strategic Village"
+    },
+    {
+        "name": "Majdal Shams",
+        "lat": 33.3,
+        "lng": 35.7667,
+        "owner": "HTS",
+        "type": "Settlement",
+        "marksize": 5
+    },
+    {
+        "name": "Zakiya",
+        "lat": 34.80207499999999,
+        "lng": 38.996815,
+        "owner": "HTS",
+        "type": "Settlement",
+        "marksize": 5
+    },
+    {
+        "name": "Bakfala",
+        "lat": 35.885,
+        "lng": 36.295,
+        "owner": "HTS",
+        "type": "Settlement",
+        "marksize": 5
+    },
+    {
+        "name": "Ash Shaddadi, Syria",
+        "lat": 36.0557063,
+        "lng": 40.7270078,
+        "owner": "Syrian Government (HTS)",
+        "type": "Settlement",
+        "marksize": 5
+    },
+    {
+        "name": "Ash Shaddadi, Syria",
+        "lat": 36.0557063,
+        "lng": 40.7270078,
+        "owner": "Syrian Government (HTS)",
+        "type": "Settlement",
+        "marksize": 5
     }
 ]

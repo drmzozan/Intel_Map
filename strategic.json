@@ -155,7 +155,7 @@
                 "wiki_page": "TSK Military Base (Zilif)",
                 "lat": 36.621,
                 "lng": 37.6179,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -175,7 +175,7 @@
                 "wiki_page": "TSK fire base (Umm Routha)",
                 "lat": 36.659,
                 "lng": 38.007,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -675,7 +675,7 @@
                 "wiki_page": "Shir/Shaykh Khurus mountain (700m)",
                 "lat": 36.7314,
                 "lng": 36.9058,
-                "owner": "USA",
+                "owner": "SNA",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -795,7 +795,7 @@
                 "wiki_page": "TSK Military Base - Ghanamah",
                 "lat": 36.6795,
                 "lng": 37.8263,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -815,7 +815,7 @@
                 "wiki_page": "TSK Military Base - Tal Ali",
                 "lat": 36.6065,
                 "lng": 37.741,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -835,7 +835,7 @@
                 "wiki_page": "Al-Hamm military camp",
                 "lat": 36.779,
                 "lng": 36.8125,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -855,7 +855,7 @@
                 "wiki_page": "TSK Military Base - Kaljibrin",
                 "lat": 36.5265,
                 "lng": 37.1295,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 5
@@ -875,7 +875,7 @@
                 "wiki_page": "TSK Military Base - Bulduq",
                 "lat": 36.692,
                 "lng": 37.8818,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -895,7 +895,7 @@
                 "wiki_page": "TSK military observation base(Ishtabraq)",
                 "lat": 35.7988,
                 "lng": 36.2866,
-                "owner": "TSK",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -915,7 +915,7 @@
                 "wiki_page": "TSK Military Base - Mastumah",
                 "lat": 35.887,
                 "lng": 36.6336,
-                "owner": "TSK",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -935,7 +935,7 @@
                 "wiki_page": "Termesiyah Base",
                 "lat": 36.519,
                 "lng": 36.632,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -955,7 +955,7 @@
                 "wiki_page": "Al-Jud Roundabout",
                 "lat": 36.5663,
                 "lng": 37.002,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 4
@@ -975,7 +975,7 @@
                 "wiki_page": "TSK Military Base (Zilif)",
                 "lat": 36.621,
                 "lng": 37.6179,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -995,7 +995,7 @@
                 "wiki_page": "TSK fire base (Umm Routha)",
                 "lat": 36.659,
                 "lng": 38.007,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -1015,7 +1015,7 @@
                 "wiki_page": "Brigade 135 Base",
                 "lat": 36.539,
                 "lng": 36.916,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 7
@@ -1055,7 +1055,7 @@
                 "wiki_page": "Al Bayadah military camp",
                 "lat": 36.3536,
                 "lng": 36.7489,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 5
@@ -1075,7 +1075,7 @@
                 "wiki_page": "Ghazawiyah military camp",
                 "lat": 36.374,
                 "lng": 36.8509,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 5
@@ -1475,7 +1475,7 @@
                 "wiki_page": "",
                 "lat": 33.365,
                 "lng": 38.783,
-                "owner": "Unknown",
+                "owner": "HTS",
                 "type": "Border Crossing",
                 "is_besieged": false,
                 "marksize": 18
@@ -1495,7 +1495,7 @@
                 "wiki_page": "",
                 "lat": 33.437,
                 "lng": 38.895,
-                "owner": "Unknown",
+                "owner": "HTS",
                 "type": "Border Crossing",
                 "is_besieged": false,
                 "marksize": 18
@@ -1575,7 +1575,7 @@
                 "wiki_page": "Quneitra Border Crossing",
                 "lat": 33.112,
                 "lng": 35.815,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Border Crossing",
                 "is_besieged": false,
                 "marksize": 18
@@ -1835,7 +1835,7 @@
                 "wiki_page": "Alzaawih Border Crossing",
                 "lat": 33.365,
                 "lng": 38.783,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Border Crossing",
                 "is_besieged": false,
                 "marksize": 5
@@ -1855,7 +1855,7 @@
                 "wiki_page": "Al Waleed border crossing",
                 "lat": 33.437,
                 "lng": 38.895,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Border Crossing",
                 "is_besieged": false,
                 "marksize": 5
@@ -1915,7 +1915,7 @@
                 "wiki_page": "Quneitra Border Crossing",
                 "lat": 33.112,
                 "lng": 35.815,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Border Crossing",
                 "is_besieged": false,
                 "marksize": 5
@@ -2095,7 +2095,7 @@
                 "wiki_page": "Maydankay Dam",
                 "lat": 36.6231,
                 "lng": 36.8717,
-                "owner": "HTS",
+                "owner": "SNA",
                 "type": "Dam",
                 "is_besieged": false,
                 "marksize": 10
@@ -2115,7 +2115,7 @@
                 "wiki_page": "Sajur Dam",
                 "lat": 36.698,
                 "lng": 37.7257,
-                "owner": "HTS",
+                "owner": "SNA",
                 "type": "Dam",
                 "is_besieged": false,
                 "marksize": 8
@@ -2615,7 +2615,7 @@
                 "wiki_page": "Kudanah Dam",
                 "lat": 33.027,
                 "lng": 35.915,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Dam",
                 "is_besieged": false,
                 "marksize": 9
@@ -2895,7 +2895,7 @@
                 "wiki_page": "Damascus Int'l Airport",
                 "lat": 33.411,
                 "lng": 36.512,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Airport",
                 "is_besieged": false,
                 "marksize": 12
@@ -3215,7 +3215,7 @@
                 "wiki_page": "Control of cities during the Syrian civil war",
                 "lat": 34.569,
                 "lng": 36.573,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Airport",
                 "is_besieged": false,
                 "marksize": 11
@@ -3295,7 +3295,7 @@
                 "wiki_page": "Latakia International Airport",
                 "lat": 35.402,
                 "lng": 35.955,
-                "owner": "Russia",
+                "owner": "HTS",
                 "type": "Airport",
                 "is_besieged": false,
                 "marksize": 13
@@ -8215,7 +8215,7 @@
                 "wiki_page": "US Military Base - Tell Beydar",
                 "lat": 36.744,
                 "lng": 40.583,
-                "owner": "USA",
+                "owner": "SDF",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 7
@@ -8855,7 +8855,7 @@
                 "wiki_page": "al-Mu'tasim Brigade Military Base - Dabiq",
                 "lat": 36.535,
                 "lng": 37.288,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -8875,7 +8875,7 @@
                 "wiki_page": "Hamza Division Military Base - Sheikh Aqil",
                 "lat": 36.3695,
                 "lng": 37.507,
-                "owner": "TSK",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 5
@@ -8955,7 +8955,7 @@
                 "wiki_page": "Air Defense Battalion (Mount Azzan)",
                 "lat": 36.057,
                 "lng": 37.171,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 7
@@ -9135,7 +9135,7 @@
                 "wiki_page": "Air Defense Battalion 602 Base",
                 "lat": 36.297,
                 "lng": 37.16,
-                "owner": "HTS",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 7
@@ -9215,7 +9215,7 @@
                 "wiki_page": "Kafr Jana Base",
                 "lat": 36.585,
                 "lng": 36.946,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -9235,7 +9235,7 @@
                 "wiki_page": "Fortified defensive base",
                 "lat": 36.6408,
                 "lng": 37.0683,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 5
@@ -9295,7 +9295,7 @@
                 "wiki_page": "Aleppo Prison/Security Branch",
                 "lat": 36.297,
                 "lng": 37.2,
-                "owner": "HTS",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -9315,7 +9315,7 @@
                 "wiki_page": "Tall Aghop/Aghop citadel",
                 "lat": 36.281,
                 "lng": 37.21,
-                "owner": "HTS",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -11975,7 +11975,7 @@
                 "wiki_page": "Al-Tanf Border Post",
                 "lat": 33.438,
                 "lng": 38.832,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -12235,7 +12235,7 @@
                 "wiki_page": "Tall al Ahmar",
                 "lat": 33.2137,
                 "lng": 35.8813,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -12415,7 +12415,7 @@
                 "wiki_page": "4th Battalion",
                 "lat": 33.2397,
                 "lng": 35.8706,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 5
@@ -12535,7 +12535,7 @@
                 "wiki_page": "Al-Busayri crossroad",
                 "lat": 34.157,
                 "lng": 37.603,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -12615,7 +12615,7 @@
                 "wiki_page": "US Military base - Qulayb",
                 "lat": 36.707,
                 "lng": 40.5126,
-                "owner": "USA",
+                "owner": "SDF",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -13455,7 +13455,7 @@
                 "wiki_page": "Shaalah Radar Base",
                 "lat": 36.359,
                 "lng": 37.3924,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -13475,7 +13475,7 @@
                 "wiki_page": "Kaljibrin-Ayn Daqnah checkpoint",
                 "lat": 36.5317,
                 "lng": 37.0967,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 4
@@ -13635,7 +13635,7 @@
                 "wiki_page": "Russian (former US) Base - Manbij",
                 "lat": 36.5849,
                 "lng": 37.9424,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -13695,7 +13695,7 @@
                 "wiki_page": "Tal Jijan-NW crossroad checkpoint",
                 "lat": 36.4147,
                 "lng": 37.3326,
-                "owner": "TSK",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 4
@@ -13915,7 +13915,7 @@
                 "wiki_page": "US Training Base - Shaddadi",
                 "lat": 36.042,
                 "lng": 40.729,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -14195,7 +14195,7 @@
                 "wiki_page": "Air Defence Base(Dahr al-Qusayr)",
                 "lat": 34.837,
                 "lng": 36.377,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 7
@@ -14795,7 +14795,7 @@
                 "wiki_page": "Tall Asfar - Abandoned US military base",
                 "lat": 33.116,
                 "lng": 36.7309,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 6
@@ -14835,7 +14835,7 @@
                 "wiki_page": "Tall Susayn IDP Camp",
                 "lat": 36.349,
                 "lng": 37.1936,
-                "owner": "USA",
+                "owner": "SNA",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 4
@@ -15095,7 +15095,7 @@
                 "wiki_page": "Green village (US Base)",
                 "lat": 35.049,
                 "lng": 40.556,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 8
@@ -15395,7 +15395,7 @@
                 "wiki_page": "Al-Tanf (U.S. military base)",
                 "lat": 33.5058,
                 "lng": 38.617,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 8
@@ -16795,7 +16795,7 @@
                 "wiki_page": "U.N. hill(Tal Qaba’a)",
                 "lat": 33.2029,
                 "lng": 35.8892,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -17495,7 +17495,7 @@
                 "wiki_page": "Tel Musaytiba",
                 "lat": 33.2468,
                 "lng": 36.596,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -18215,7 +18215,7 @@
                 "wiki_page": "Jabal al-Fusayyat",
                 "lat": 35.469,
                 "lng": 39.6112,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -18655,7 +18655,7 @@
                 "wiki_page": "Mount Sawwanat al-Qusayr",
                 "lat": 35.1757,
                 "lng": 38.077,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -20335,7 +20335,7 @@
                 "wiki_page": "Al Qulayb mountain",
                 "lat": 36.4,
                 "lng": 38.112,
-                "owner": "SNA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -20615,7 +20615,7 @@
                 "wiki_page": "Bashmara mountain",
                 "lat": 36.3214,
                 "lng": 36.9568,
-                "owner": "HTS",
+                "owner": "SNA",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -21215,7 +21215,7 @@
                 "wiki_page": "Jabal at Tanf",
                 "lat": 33.502,
                 "lng": 38.701,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -21615,7 +21615,7 @@
                 "wiki_page": "Jabal Ru'us at Tiwal",
                 "lat": 34.084,
                 "lng": 37.128,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -22595,7 +22595,7 @@
                 "wiki_page": "Jabal Busayri",
                 "lat": 34.187,
                 "lng": 37.671,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -23575,7 +23575,7 @@
                 "wiki_page": "Khirbat al-Qusayr",
                 "lat": 35.409,
                 "lng": 38.097,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -24115,7 +24115,7 @@
                 "wiki_page": "Ar-Rus Hills",
                 "lat": 34.1526,
                 "lng": 37.2615,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -24955,7 +24955,7 @@
                 "wiki_page": "Tall adh Dhahab",
                 "lat": 36.384,
                 "lng": 40.787,
-                "owner": "HTS",
+                "owner": "SDF",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -25095,7 +25095,7 @@
                 "wiki_page": "Rujm Hanash",
                 "lat": 36.396,
                 "lng": 40.559,
-                "owner": "SDF",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 8
@@ -25295,7 +25295,7 @@
                 "wiki_page": "Tall Musa",
                 "lat": 36.692,
                 "lng": 39.509,
-                "owner": "USA",
+                "owner": "SNA",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -25395,7 +25395,7 @@
                 "wiki_page": "Gumus Deresi",
                 "lat": 36.666,
                 "lng": 40.216,
-                "owner": "USA",
+                "owner": "SNA",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -25655,7 +25655,7 @@
                 "wiki_page": "Tall Muhammad Ali",
                 "lat": 36.662,
                 "lng": 41.229,
-                "owner": "HTS",
+                "owner": "SDF",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -25775,7 +25775,7 @@
                 "wiki_page": "Rujm Sufayrat",
                 "lat": 36.344,
                 "lng": 40.033,
-                "owner": "SDF",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -25795,7 +25795,7 @@
                 "wiki_page": "Tall Nisr",
                 "lat": 36.335,
                 "lng": 40.081,
-                "owner": "SDF",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -25855,7 +25855,7 @@
                 "wiki_page": "Qarat al Milah",
                 "lat": 36.35,
                 "lng": 40.366,
-                "owner": "SDF",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -25975,7 +25975,7 @@
                 "wiki_page": "Dahr al Musabi",
                 "lat": 33.6269,
                 "lng": 36.1414,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -26195,7 +26195,7 @@
                 "wiki_page": "Mount Hermon",
                 "lat": 33.411,
                 "lng": 35.855,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -26235,7 +26235,7 @@
                 "wiki_page": "Tall al-Harrah",
                 "lat": 33.2998,
                 "lng": 35.819,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -26355,7 +26355,7 @@
                 "wiki_page": "Tall Ahmar ash Sharqi",
                 "lat": 32.991,
                 "lng": 35.9,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -26395,7 +26395,7 @@
                 "wiki_page": "Tall al Ahmar al Gharbi",
                 "lat": 32.996,
                 "lng": 35.8834,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -26415,7 +26415,7 @@
                 "wiki_page": "Tall Taranjah",
                 "lat": 33.246,
                 "lng": 35.854,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -26475,7 +26475,7 @@
                 "wiki_page": "Al-Humriyah hill",
                 "lat": 33.258,
                 "lng": 35.8195,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -26935,7 +26935,7 @@
                 "wiki_page": "Tall at Musa",
                 "lat": 34.029,
                 "lng": 36.48,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 9
@@ -26995,7 +26995,7 @@
                 "wiki_page": "Nasriyah hill",
                 "lat": 36.347,
                 "lng": 36.659,
-                "owner": "SNA",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -27555,7 +27555,7 @@
                 "wiki_page": "Tel al-Maheer",
                 "lat": 32.9818,
                 "lng": 35.88057,
-                "owner": "Israel",
+                "owner": "HTS",
                 "type": "Peak",
                 "is_besieged": false,
                 "marksize": 7
@@ -28635,7 +28635,7 @@
                 "wiki_page": "Tartus naval base",
                 "lat": 34.908,
                 "lng": 35.871,
-                "owner": "USA",
+                "owner": "HTS",
                 "type": "Military Base",
                 "is_besieged": false,
                 "marksize": 11

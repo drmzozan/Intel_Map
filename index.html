@@ -586,6 +586,35 @@
                 border-color: var(--accent);
             }
         }
+
+        /* STYLE SWITCHER */
+        .style-switcher {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .style-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .style-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .style-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            box-shadow: 0 0 10px rgba(231, 76, 60, 0.4);
+        }
     </style>
 </head>
 
@@ -696,7 +725,29 @@
         <!-- Language Selector -->
         <!-- Language Selector Removed - Moved to Settings -->
 
-        <h4 style="margin:0 0 10px 0; border-bottom:1px solid #444; padding-bottom:5px;" data-i18n="layers_title">LAYERS
+        <h4 style="margin:0 0 10px 0; border-bottom:1px solid #444; padding-bottom:5px; color:var(--accent);"
+            data-i18n="style_title">BASE MAP</h4>
+        <div class="style-switcher">
+            <button onclick="switchBasemap('mapbox://styles/mapbox/satellite-streets-v12', this)"
+                class="style-btn active" title="Satellite">
+                🛰️
+            </button>
+            <button onclick="switchBasemap('mapbox://styles/mapbox/streets-v12', this)" class="style-btn"
+                title="Street Map">
+                🗺️
+            </button>
+            <button onclick="switchBasemap('mapbox://styles/mapbox/dark-v11', this)" class="style-btn"
+                title="Tactical Dark">
+                🌑
+            </button>
+            <button onclick="switchBasemap('mapbox://styles/mapbox/light-v11', this)" class="style-btn"
+                title="Light Map">
+                ☀️
+            </button>
+        </div>
+
+        <h4 style="margin:15px 0 10px 0; border-bottom:1px solid #444; padding-bottom:5px;" data-i18n="layers_title">
+            LAYERS
         </h4>
         <label class="layer-toggle"><input type="checkbox" checked onchange="toggleLayer('border-group', this)"> <span
                 data-i18n="layer_borders">🏳️ Borders</span></label>
@@ -1867,8 +1918,30 @@
             }
         });
 
-        map.on('load', async () => {
-            // 0. FETCH FACTIONS & BUILD COLOR MAPPING DYNAMICALLY
+        // --- MAP STYLE MANAGMENT ---
+        window.currentStyle = 'mapbox://styles/mapbox/satellite-streets-v12';
+
+        async function switchBasemap(styleUrl, btn) {
+            if (window.currentStyle === styleUrl) return;
+            window.currentStyle = styleUrl;
+
+            // UI Update
+            document.querySelectorAll('.style-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+
+            // Switch Style
+            map.setStyle(styleUrl);
+
+            // Restore Layers after style load
+            map.once('style.load', async () => {
+                console.log("🎨 Style Loaded. Restoring layers...");
+                await initMapLayers();
+            });
+        }
+
+        // --- REUSABLE LAYER INIT ---
+        async function initMapLayers() {
+            // 0. FETCH FACTIONS & BUILD COLOR MAPPING DYNAMICALLY (Idempotent)
             try {
                 const fResp = await fetch('factions.json?t=' + Date.now());
                 const fData = await fResp.json();
@@ -2285,8 +2358,11 @@
             await loadStrategicAssets();
             await updateBorders(true);
             await loadNews();
+        }
 
-
+        // INITIAL LOAD
+        map.on('load', async () => {
+            await initMapLayers();
         });
 
 

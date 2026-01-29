@@ -1,13 +1,43 @@
 {
     "Russia": {
-        "color": "#e74c3c",
+        "color": "#c0392b",
         "label": "Russian Armed Forces",
+        "type": "State",
+        "render_order": 1
+    },
+    "Syria": {
+        "color": "#116327",
+        "label": "Syria (New Government / HTS)",
+        "type": "State",
+        "render_order": 3
+    },
+    "Iran": {
+        "color": "#c0392b",
+        "label": "Iranian Forces / IRGC",
+        "type": "State",
+        "render_order": 1
+    },
+    "China": {
+        "color": "#c0392b",
+        "label": "China",
         "type": "State",
         "render_order": 1
     },
     "SNA": {
         "color": "#27ae60",
         "label": "Syrian Interim Gov (SNA) & Turkey",
+        "type": "State",
+        "render_order": 2
+    },
+    "Turkey": {
+        "color": "#2ecc71",
+        "label": "Turkish Armed Forces (TSK)",
+        "type": "State",
+        "render_order": 2
+    },
+    "Türkiye": {
+        "color": "#2ecc71",
+        "label": "Turkish Armed Forces (TSK)",
         "type": "State",
         "render_order": 2
     },
@@ -30,13 +60,13 @@
         "render_order": 5
     },
     "USA": {
-        "color": "#1abc9c",
+        "color": "#2980b9",
         "label": "United States Forces",
         "type": "State",
         "render_order": 6
     },
     "Israel": {
-        "color": "#3498db",
+        "color": "#2980b9",
         "label": "Israel Defense Forces",
         "type": "State",
         "render_order": 7

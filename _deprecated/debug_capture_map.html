@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Area Capture Debug Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .legend {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([36.62, 38.60], 12); // Center on midpoint
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(map);
+
+        // --- MOCK DATA FROM TEST ---
+        var anchor = [36.60, 38.60];
+        var target = [36.65, 38.60];
+        var baseLeft = [36.60, 38.40];
+        var baseRight = [36.60, 38.80];
+        var intermediate = [36.62, 38.60];
+
+        // 1. Plot Points
+        L.circleMarker(anchor, { color: 'blue', radius: 8 }).addTo(map).bindPopup("Anchor (Frontline)");
+        L.circleMarker(target, { color: 'green', radius: 10 }).addTo(map).bindPopup("TARGET (New Capture)");
+        L.circleMarker(baseLeft, { color: 'cyan', radius: 6 }).addTo(map).bindPopup("Base Left");
+        L.circleMarker(baseRight, { color: 'cyan', radius: 6 }).addTo(map).bindPopup("Base Right");
+        L.circleMarker(intermediate, { color: 'red', radius: 6 }).addTo(map).bindPopup("Intermediate Village (Captured)");
+
+        // 2. Draw Attack Vector
+        L.polyline([anchor, target], { color: 'white', dashArray: '5, 10' }).addTo(map).bindPopup("Attack Vector");
+
+        // 3. Draw Capture Triangle (Polygon)
+        var triangle = [target, baseLeft, baseRight];
+        L.polygon(triangle, { color: 'green', fillColor: '#0f0', fillOpacity: 0.3 }).addTo(map).bindPopup("Capture Zone (Shadow)");
+
+        // Add Scale
+        L.control.scale().addTo(map);
+
+        // Add Legend
+        var legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'legend');
+            div.innerHTML += '<i style="background:green; width:10px; height:10px; display:inline-block;"></i> Target<br>';
+            div.innerHTML += '<i style="background:blue; width:10px; height:10px; display:inline-block;"></i> Anchor<br>';
+            div.innerHTML += '<i style="background:cyan; width:10px; height:10px; display:inline-block;"></i> Base Sides<br>';
+            div.innerHTML += '<i style="background:red; width:10px; height:10px; display:inline-block;"></i> Captured Village';
+            return div;
+        };
+        legend.addTo(map);
+
+    </script>
+</body>
+
+</html>
