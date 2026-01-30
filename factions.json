@@ -1,6 +1,6 @@
 {
     "Russia": {
-        "color": "#c0392b",
+        "color": "#FF0000",
         "label": "Russian Armed Forces",
         "type": "State",
         "render_order": 1
@@ -12,13 +12,13 @@
         "render_order": 3
     },
     "Iran": {
-        "color": "#c0392b",
+        "color": "#FF0000",
         "label": "Iranian Forces / IRGC",
         "type": "State",
         "render_order": 1
     },
     "China": {
-        "color": "#c0392b",
+        "color": "#FF0000",
         "label": "China",
         "type": "State",
         "render_order": 1

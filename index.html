@@ -1566,7 +1566,8 @@
                 if (!modal || !content) return;
 
                 const item = latestNews.find(n => n.tweet_id == tweet_id);
-                const safeColor = (colorMapping && colorMapping[actor]) ? colorMapping[actor] : '#fff';
+                // Prioritize AI-provided actor_color, then colorMapping, then white
+                const safeColor = (item && item.actor_color) ? item.actor_color : ((colorMapping && colorMapping[actor]) ? colorMapping[actor] : '#fff');
                 const lang = window.currentLang || 'en';
                 const t = translations[lang] || translations['en'];
 
@@ -1755,50 +1756,91 @@
             let confColor = '#f39c12';
             if (confScore >= 7.5) confColor = '#2ecc71';
 
-            // CLUSTER LOGIC
+            // CLUSTER LOGIC - Two-Tier System
             const isCluster = props.sub_events && props.sub_events.length > 0;
+            const clusterType = props.cluster_type || 'default';
             let htmlContent = `<div style="cursor:pointer;" onclick="event.stopPropagation(); expandEvent('${props.tweet_id}')">`;
 
             if (isCluster) {
+                // Cluster Header with gradient
+                const clusterIcon = clusterType === 'geographic' ? '📍' : '📡';
+                const clusterLabel = clusterType === 'geographic' ? 'LOCATION CLUSTER' : 'INTEL CLUSTER';
+
                 htmlContent += `
-                    <div style="background:${safeColor}15; padding:8px 12px; border-bottom:1px solid #333; display:flex; justify-content:space-between; align-items:center;">
-                        <span style="font-size:10px; font-weight:900; color:${safeColor}; letter-spacing:1.5px; text-transform:uppercase;">INTEL CLUSTER (${props.sub_events.length})</span>
+                    <div style="background:linear-gradient(135deg, ${safeColor}25, ${safeColor}10); padding:10px 14px; border-bottom:1px solid ${safeColor}40; display:flex; justify-content:space-between; align-items:center;">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span style="font-size:14px;">${clusterIcon}</span>
+                            <span style="font-size:10px; font-weight:900; color:${safeColor}; letter-spacing:1.5px; text-transform:uppercase;">${clusterLabel}</span>
+                            <span style="background:${safeColor}; color:#000; padding:2px 6px; border-radius:10px; font-size:9px; font-weight:900;">${props.sub_events.length}</span>
+                        </div>
                         <span style="font-size:10px; color:#666;">${timeStr}</span>
                     </div>
-                    <div style="max-height:280px; overflow-y:auto; background:rgba(0,0,0,0.3); border-radius:0 0 6px 6px;">
+                    <div style="max-height:320px; overflow-y:auto; background:rgba(0,0,0,0.4); border-radius:0 0 6px 6px;">
                 `;
 
                 props.sub_events.forEach((ev, i) => {
-                    const evTime = timeAgo(ev.date);
+                    // Get first confirmation for media/date
+                    const firstConf = ev.confirmations && ev.confirmations[0] ? ev.confirmations[0] : {};
+                    const evTime = timeAgo(firstConf.date || ev.date);
+                    const evConf = parseFloat(ev.confidence) || 4.0;
+                    const sourceCount = ev.sources ? ev.sources.length : 1;
+                    const confColor = evConf >= 7.5 ? '#2ecc71' : evConf >= 5.0 ? '#f39c12' : '#888';
 
+                    // Media from first confirmation
                     let miniMedia = '';
-                    if (ev.local_video_path) {
-                        miniMedia = `<div style="width:100%; height:90px; background:#000; margin-bottom:8px; border-radius:4px; overflow:hidden;">
-                                        <video src="${ev.local_video_path}" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+                    const mediaPath = firstConf.local_video_path || ev.local_video_path;
+                    const imagePath = firstConf.image_path || ev.image_path;
+
+                    if (mediaPath) {
+                        miniMedia = `<div style="width:100%; height:80px; background:#000; margin-bottom:8px; border-radius:6px; overflow:hidden; position:relative;">
+                                        <video src="${mediaPath}" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+                                        <div style="position:absolute; bottom:4px; right:4px; background:rgba(0,0,0,0.7); padding:2px 6px; border-radius:4px; font-size:8px; color:#fff;">▶ VIDEO</div>
                                      </div>`;
-                    } else if (ev.image_path) {
-                        miniMedia = `<div style="width:100%; height:90px; background:url('${ev.image_path}') center/cover; margin-bottom:8px; border-radius:4px;"></div>`;
+                    } else if (imagePath) {
+                        miniMedia = `<div style="width:100%; height:80px; background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url('${imagePath}') center/cover; margin-bottom:8px; border-radius:6px;"></div>`;
                     }
 
+                    // Source confirmation badge
+                    const sourceBadge = sourceCount > 1
+                        ? `<div style="display:flex; align-items:center; gap:4px; margin-top:6px; flex-wrap:wrap;">
+                               <span style="font-size:8px; color:#2ecc71; font-weight:800; letter-spacing:0.5px;">✓ CONFIRMED BY ${sourceCount} SOURCES</span>
+                               ${ev.sources.slice(0, 3).map(s => `<span style="font-size:7px; background:#222; color:#888; padding:1px 4px; border-radius:3px;">${s.replace('X (@', '').replace(')', '')}</span>`).join('')}
+                           </div>`
+                        : '';
+
                     htmlContent += `
-                        <div style="padding:12px; border-bottom: ${i < props.sub_events.length - 1 ? '1px solid #222' : 'none'};">
-                             <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
-                                <span style="font-size:9px; color:#555; font-weight:800; letter-spacing:0.5px;">REPORT #${props.sub_events.length - i}</span>
-                                <span style="font-size:9px; color:#444;">${evTime}</span>
+                        <div style="padding:12px; border-bottom: ${i < props.sub_events.length - 1 ? '1px solid #1a1a1a' : 'none'}; background:${i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.02)'};">
+                             <div style="display:flex; justify-content:space-between; margin-bottom:8px; align-items:center;">
+                                <div style="display:flex; align-items:center; gap:6px;">
+                                    <span style="font-size:9px; color:#555; font-weight:800; letter-spacing:0.5px;">#${props.sub_events.length - i}</span>
+                                    <span style="font-size:11px;">${ev.visual_emoji || '📰'}</span>
+                                    ${ev.actor ? `<span style="font-size:8px; background:${safeColor}30; color:${safeColor}; padding:1px 5px; border-radius:3px; font-weight:700;">${ev.actor}</span>` : ''}
+                                </div>
+                                <div style="display:flex; align-items:center; gap:6px;">
+                                    <span style="font-size:9px; color:${confColor}; border:1px solid ${confColor}; padding:1px 5px; border-radius:3px; font-weight:700;">
+                                        ★ ${evConf.toFixed(1)}
+                                    </span>
+                                    <span style="font-size:9px; color:#444;">${evTime}</span>
+                                </div>
                              </div>
                              
                              ${miniMedia}
 
-                             <div style="font-size:11px; color:#eee; line-height:1.4; font-weight:500;">
-                                ${getLoc(ev, 'summary').substring(0, 100)}${getLoc(ev, 'summary').length > 100 ? '...' : ''}
+                             <div style="font-size:11px; color:#eee; line-height:1.5; font-weight:500;">
+                                ${getLoc(ev, 'summary').substring(0, 120)}${getLoc(ev, 'summary').length > 120 ? '...' : ''}
                              </div>
+                             
+                             ${sourceBadge}
                         </div>
                     `;
                 });
 
                 htmlContent += `
                     </div>
-                    <div style="padding:10px; background:#000; color:${safeColor}; font-size:10px; text-align:center; font-weight:900; border-top:1px solid #222; letter-spacing:1px;">FULL INTEL DOSSIER ↗</div>
+                    <div style="padding:12px; background:linear-gradient(135deg, #000, #111); color:${safeColor}; font-size:10px; text-align:center; font-weight:900; border-top:1px solid #222; letter-spacing:1px; display:flex; justify-content:center; align-items:center; gap:6px;">
+                        <span>📋 FULL INTEL DOSSIER</span>
+                        <span style="font-size:12px;">↗</span>
+                    </div>
                 `;
             } else {
                 htmlContent += `
@@ -2699,9 +2741,11 @@
                     let safeIconName = item.attack_type;
                     if (!symbolTypeMapping[safeIconName]) safeIconName = "Other";
 
-                    // Use cached image URL
-                    let safeActor = item.actor;
-                    if (!colorMapping[safeActor]) safeActor = "Unknown";
+                    // Actor name comes directly from AI - no hardcoded fallback
+                    const safeActor = item.actor || "Unknown";
+
+                    // Prioritize AI-provided actor_color from news item
+                    const itemColor = item.actor_color || colorMapping[safeActor] || '#808080';
 
                     // DYNAMIC EMOJI SYSTEM
                     // If AI provided an emoji, use it to generate a unique key
@@ -2747,13 +2791,13 @@
                         if (safeActor === "SDF" || safeActor === "QSD") markerUrls[key] = "flag_sdf.png";
                         else if (safeActor === "HTS" || safeActor === "Salvation Government") markerUrls[key] = "flag_hts.png";
                         else if (!markerUrls[key]) {
-                            // Default Canvas Flag for others
-                            const canvas = createCompositeMarker(null, colorMapping[safeActor], "capture_flag", false, emoji, confidence, safeActor);
+                            // Default Canvas Flag for others - USE itemColor
+                            const canvas = createCompositeMarker(null, itemColor, "capture_flag", false, emoji, confidence, safeActor);
                             markerUrls[key] = canvas.toDataURL();
                         }
                     } else if (!markerUrls[key]) {
-                        // Standard Marker
-                        const canvas = createCompositeMarker(null, colorMapping[safeActor], emoji ? "Other" : safeIconName, false, emoji, confidence, safeActor);
+                        // Standard Marker - USE itemColor
+                        const canvas = createCompositeMarker(null, itemColor, emoji ? "Other" : safeIconName, false, emoji, confidence, safeActor);
                         markerUrls[key] = canvas.toDataURL();
                     }
 

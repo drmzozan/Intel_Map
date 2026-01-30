@@ -98,5 +98,12 @@
     "Diplomatic Proposal": "📢",
     "Traffic Accident": "📢",
     "Intel Report": "📢",
-    "Sanctions Announcement": "📢"
+    "Sanctions Announcement": "📢",
+    "Suicide Attack": "💥",
+    "Small Arms Fire": "⚔️",
+    "Armed Attack": "⚔️",
+    "Mobilization": "📢",
+    "Military Exercise": "🛩️",
+    "Spraying of unknown substances on agricultural lands": "🛩️",
+    "Agreement": "🤝"
 }

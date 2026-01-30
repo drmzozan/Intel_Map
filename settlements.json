@@ -330,8 +330,8 @@
         "marksize": 8
     },
     {
-        "name": "Muta\u2018iyah",
-        "wiki_page": "Muta\u2018iyah",
+        "name": "Muta‘iyah",
+        "wiki_page": "Muta‘iyah",
         "lat": 32.495,
         "lng": 36.292,
         "owner": "HTS",
@@ -1370,8 +1370,8 @@
         "marksize": 4
     },
     {
-        "name": "\u2018Abidin",
-        "wiki_page": "\u2018Abidin",
+        "name": "‘Abidin",
+        "wiki_page": "‘Abidin",
         "lat": 32.779,
         "lng": 35.824,
         "owner": "HTS",
@@ -1590,8 +1590,8 @@
         "marksize": 6
     },
     {
-        "name": "Nafi\u2018ah",
-        "wiki_page": "Nafi\u2018ah",
+        "name": "Nafi‘ah",
+        "wiki_page": "Nafi‘ah",
         "lat": 32.809,
         "lng": 35.8926,
         "owner": "HTS",
@@ -1920,8 +1920,8 @@
         "marksize": 9
     },
     {
-        "name": "Rujm al Mu\u0163ay\u0163\u0101",
-        "wiki_page": "Rujm al Mu\u0163ay\u0163\u0101",
+        "name": "Rujm al Muţayţā",
+        "wiki_page": "Rujm al Muţayţā",
         "lat": 32.869,
         "lng": 37.7677,
         "owner": "HTS",
@@ -2514,7 +2514,7 @@
         "wiki_page": "Al-Rafid, Syria",
         "lat": 32.956,
         "lng": 35.9,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -2614,7 +2614,7 @@
         "wiki_page": "Asbah",
         "lat": 32.977,
         "lng": 35.8849,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -2860,8 +2860,8 @@
         "marksize": 4
     },
     {
-        "name": "Kh\u0131rbet al-Kanise",
-        "wiki_page": "Kh\u0131rbet al-Kanise",
+        "name": "Khırbet al-Kanise",
+        "wiki_page": "Khırbet al-Kanise",
         "lat": 33.005,
         "lng": 37.352,
         "owner": "HTS",
@@ -3114,7 +3114,7 @@
         "wiki_page": "Bariqa",
         "lat": 33.043,
         "lng": 35.871,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -3164,7 +3164,7 @@
         "wiki_page": "Beer Ajam",
         "lat": 33.053,
         "lng": 35.867,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -3560,8 +3560,8 @@
         "marksize": 7
     },
     {
-        "name": "Khabrat Rad\u012bfah",
-        "wiki_page": "Khabrat Rad\u012bfah",
+        "name": "Khabrat Radīfah",
+        "wiki_page": "Khabrat Radīfah",
         "lat": 33.111,
         "lng": 38.255,
         "owner": "HTS",
@@ -3574,7 +3574,7 @@
         "wiki_page": "Qahtaniyah",
         "lat": 33.111,
         "lng": 35.84,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3594,7 +3594,7 @@
         "wiki_page": "Al Mushayrifah, Syria",
         "lat": 33.116,
         "lng": 35.8912,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3620,8 +3620,8 @@
         "marksize": 8
     },
     {
-        "name": "Wadi Ab\u016b as Sahl",
-        "wiki_page": "Wadi Ab\u016b as Sahl",
+        "name": "Wadi Abū as Sahl",
+        "wiki_page": "Wadi Abū as Sahl",
         "lat": 33.118,
         "lng": 36.9412,
         "owner": "HTS",
@@ -3654,7 +3654,7 @@
         "wiki_page": "Quneitra",
         "lat": 33.125,
         "lng": 35.825,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -3670,8 +3670,8 @@
         "marksize": 4
     },
     {
-        "name": "Manqa\u2018 ar Ruhbah",
-        "wiki_page": "Manqa\u2018 ar Ruhbah",
+        "name": "Manqa‘ ar Ruhbah",
+        "wiki_page": "Manqa‘ ar Ruhbah",
         "lat": 33.129,
         "lng": 37.36,
         "owner": "HTS",
@@ -3700,11 +3700,11 @@
         "marksize": 6
     },
     {
-        "name": "al \u2018Ajraf",
-        "wiki_page": "al \u2018Ajraf",
+        "name": "al ‘Ajraf",
+        "wiki_page": "al ‘Ajraf",
         "lat": 33.133,
         "lng": 35.884,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 4
@@ -3730,8 +3730,8 @@
         "marksize": 5
     },
     {
-        "name": "Ghur\u0101b",
-        "wiki_page": "Ghur\u0101b",
+        "name": "Ghurāb",
+        "wiki_page": "Ghurāb",
         "lat": 33.1367,
         "lng": 37.757,
         "owner": "HTS",
@@ -3754,7 +3754,7 @@
         "wiki_page": "Samadaniyah al-Gharbi (West)",
         "lat": 33.145,
         "lng": 35.863,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3794,7 +3794,7 @@
         "wiki_page": "Al-Hamidiyah",
         "lat": 33.156,
         "lng": 35.846,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3804,7 +3804,7 @@
         "wiki_page": "Samadaniyah al-Sharqi (East)",
         "lat": 33.157,
         "lng": 35.887,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -3830,8 +3830,8 @@
         "marksize": 6
     },
     {
-        "name": "Khabrat al Ghur\u0101b",
-        "wiki_page": "Khabrat al Ghur\u0101b",
+        "name": "Khabrat al Ghurāb",
+        "wiki_page": "Khabrat al Ghurāb",
         "lat": 33.1702,
         "lng": 37.7747,
         "owner": "HTS",
@@ -3844,7 +3844,7 @@
         "wiki_page": "Madinat al-Salam (Syria)",
         "lat": 33.171,
         "lng": 35.869,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 8
@@ -3954,7 +3954,7 @@
         "wiki_page": "Al-Huriyah",
         "lat": 33.189,
         "lng": 35.846,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -4000,8 +4000,8 @@
         "marksize": 4
     },
     {
-        "name": "Buway\u1e11an",
-        "wiki_page": "Buway\u1e11an",
+        "name": "Buwayḑan",
+        "wiki_page": "Buwayḑan",
         "lat": 33.198,
         "lng": 36.428,
         "owner": "HTS",
@@ -4054,7 +4054,7 @@
         "wiki_page": "Ufaniya",
         "lat": 33.204,
         "lng": 35.859,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -4104,7 +4104,7 @@
         "wiki_page": "Ayn al-Bayda, Quneitra",
         "lat": 33.216,
         "lng": 35.858,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 4
@@ -4144,7 +4144,7 @@
         "wiki_page": "Jubata al-Khashab",
         "lat": 33.225,
         "lng": 35.833,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -4194,7 +4194,7 @@
         "wiki_page": "Turnajah",
         "lat": 33.233,
         "lng": 35.844,
-        "owner": "HTS",
+        "owner": "Israel",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -4231,7 +4231,7 @@
     },
     {
         "name": "Abu Khashbah",
-        "wiki_page": "Syrian Desert campaign (May\u2013July 2017)",
+        "wiki_page": "Syrian Desert campaign (May–July 2017)",
         "lat": 33.235,
         "lng": 37.4723,
         "owner": "HTS",
@@ -4320,8 +4320,8 @@
         "marksize": 5
     },
     {
-        "name": "Sabkhat a\u0163 \u0162ayy\u0101r",
-        "wiki_page": "Sabkhat a\u0163 \u0162ayy\u0101r",
+        "name": "Sabkhat aţ Ţayyār",
+        "wiki_page": "Sabkhat aţ Ţayyār",
         "lat": 33.262,
         "lng": 37.614,
         "owner": "HTS",
@@ -4400,8 +4400,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbet as Sa\u2018d",
-        "wiki_page": "Khirbet as Sa\u2018d",
+        "name": "Khirbet as Sa‘d",
+        "wiki_page": "Khirbet as Sa‘d",
         "lat": 33.269,
         "lng": 36.7837,
         "owner": "HTS",
@@ -4460,8 +4460,8 @@
         "marksize": 5
     },
     {
-        "name": "Al Qulay\u2018ah",
-        "wiki_page": "Al Qulay\u2018ah",
+        "name": "Al Qulay‘ah",
+        "wiki_page": "Al Qulay‘ah",
         "lat": 33.2865,
         "lng": 36.0555,
         "owner": "HTS",
@@ -4560,8 +4560,8 @@
         "marksize": 5
     },
     {
-        "name": "Maara\u2018at an Nufur",
-        "wiki_page": "Maara\u2018at an Nufur",
+        "name": "Maara‘at an Nufur",
+        "wiki_page": "Maara‘at an Nufur",
         "lat": 33.309,
         "lng": 36.104,
         "owner": "HTS",
@@ -4960,8 +4960,8 @@
         "marksize": 6
     },
     {
-        "name": "Ra\u2019s al Ayn",
-        "wiki_page": "Ra\u2019s al Ayn",
+        "name": "Ra’s al Ayn",
+        "wiki_page": "Ra’s al Ayn",
         "lat": 33.538,
         "lng": 36.058,
         "owner": "HTS",
@@ -5140,8 +5140,8 @@
         "marksize": 8
     },
     {
-        "name": "Ard al Ma\u2018radah",
-        "wiki_page": "Ard al Ma\u2018radah",
+        "name": "Ard al Ma‘radah",
+        "wiki_page": "Ard al Ma‘radah",
         "lat": 33.65,
         "lng": 36.573,
         "owner": "HTS",
@@ -5420,8 +5420,8 @@
         "marksize": 6
     },
     {
-        "name": "Ma\u2018dar",
-        "wiki_page": "Ma\u2018dar",
+        "name": "Ma‘dar",
+        "wiki_page": "Ma‘dar",
         "lat": 33.738,
         "lng": 36.012,
         "owner": "HTS",
@@ -5480,8 +5480,8 @@
         "marksize": 6
     },
     {
-        "name": "Hawsh \u2018Arana",
-        "wiki_page": "Hawsh \u2018Arana",
+        "name": "Hawsh ‘Arana",
+        "wiki_page": "Hawsh ‘Arana",
         "lat": 33.771,
         "lng": 36.28,
         "owner": "HTS",
@@ -5670,8 +5670,8 @@
         "marksize": 5
     },
     {
-        "name": "B\u012br al-Afa'i",
-        "wiki_page": "B\u012br al-Afa'i",
+        "name": "Bīr al-Afa'i",
+        "wiki_page": "Bīr al-Afa'i",
         "lat": 33.859,
         "lng": 36.9528,
         "owner": "HTS",
@@ -5761,7 +5761,7 @@
     },
     {
         "name": "Yabroud",
-        "wiki_page": "Battle_of_Qalamoun_(2013\u20132014)",
+        "wiki_page": "Battle_of_Qalamoun_(2013–2014)",
         "lat": 33.967,
         "lng": 36.657,
         "owner": "HTS",
@@ -5770,8 +5770,8 @@
         "marksize": 10
     },
     {
-        "name": "Bi\u2019r Sajr\u012b",
-        "wiki_page": "Bi\u2019r Sajr\u012b",
+        "name": "Bi’r Sajrī",
+        "wiki_page": "Bi’r Sajrī",
         "lat": 33.9917,
         "lng": 39.287,
         "owner": "HTS",
@@ -5801,7 +5801,7 @@
     },
     {
         "name": "Al-Bawdah",
-        "wiki_page": "Syrian Desert campaign (May 2017\u2013present)",
+        "wiki_page": "Syrian Desert campaign (May 2017–present)",
         "lat": 34.008,
         "lng": 39.295,
         "owner": "HTS",
@@ -5841,7 +5841,7 @@
     },
     {
         "name": "an-Nabek",
-        "wiki_page": "Battle of Qalamoun (2013\u20132014)",
+        "wiki_page": "Battle of Qalamoun (2013–2014)",
         "lat": 34.025,
         "lng": 36.728,
         "owner": "HTS",
@@ -5890,8 +5890,8 @@
         "marksize": 4
     },
     {
-        "name": "Ru\u0163aymah",
-        "wiki_page": "Ru\u0163aymah",
+        "name": "Ruţaymah",
+        "wiki_page": "Ruţaymah",
         "lat": 34.0601,
         "lng": 40.0105,
         "owner": "HTS",
@@ -5950,8 +5950,8 @@
         "marksize": 4
     },
     {
-        "name": "Bi\u2019r Makr al Wa\u2018r",
-        "wiki_page": "Bi\u2019r Makr al Wa\u2018r",
+        "name": "Bi’r Makr al Wa‘r",
+        "wiki_page": "Bi’r Makr al Wa‘r",
         "lat": 34.085,
         "lng": 39.886,
         "owner": "HTS",
@@ -5961,7 +5961,7 @@
     },
     {
         "name": "Deir Atiyah",
-        "wiki_page": "Battle of Qalamoun (2013\u20132014)",
+        "wiki_page": "Battle of Qalamoun (2013–2014)",
         "lat": 34.095,
         "lng": 36.767,
         "owner": "HTS",
@@ -6021,7 +6021,7 @@
     },
     {
         "name": "Qara",
-        "wiki_page": "Battle of Qalamoun (2013\u20132014)",
+        "wiki_page": "Battle of Qalamoun (2013–2014)",
         "lat": 34.152,
         "lng": 36.745,
         "owner": "HTS",
@@ -6040,8 +6040,8 @@
         "marksize": 4
     },
     {
-        "name": "Bi\u2019r al \u2018Uway\u1e11ah",
-        "wiki_page": "Bi\u2019r al \u2018Uway\u1e11ah",
+        "name": "Bi’r al ‘Uwayḑah",
+        "wiki_page": "Bi’r al ‘Uwayḑah",
         "lat": 34.1601,
         "lng": 38.527,
         "owner": "HTS",
@@ -6090,8 +6090,8 @@
         "marksize": 4
     },
     {
-        "name": "Bir al \u2018Atshan",
-        "wiki_page": "Bir al \u2018Atshan",
+        "name": "Bir al ‘Atshan",
+        "wiki_page": "Bir al ‘Atshan",
         "lat": 34.1908,
         "lng": 39.5446,
         "owner": "HTS",
@@ -6220,8 +6220,8 @@
         "marksize": 7
     },
     {
-        "name": "Bi\u2019r al Badi\u2018ah",
-        "wiki_page": "Bi\u2019r al Badi\u2018ah",
+        "name": "Bi’r al Badi‘ah",
+        "wiki_page": "Bi’r al Badi‘ah",
         "lat": 34.265,
         "lng": 38.483,
         "owner": "HTS",
@@ -6231,7 +6231,7 @@
     },
     {
         "name": "Huwwarin",
-        "wiki_page": "Homs offensive (November\u2013December 2015)",
+        "wiki_page": "Homs offensive (November–December 2015)",
         "lat": 34.269,
         "lng": 37.078,
         "owner": "HTS",
@@ -6310,8 +6310,8 @@
         "marksize": 4
     },
     {
-        "name": "Ba\u2019er Fiddah",
-        "wiki_page": "Ba\u2019er Fiddah",
+        "name": "Ba’er Fiddah",
+        "wiki_page": "Ba’er Fiddah",
         "lat": 34.328,
         "lng": 37.6,
         "owner": "HTS",
@@ -6641,7 +6641,7 @@
     },
     {
         "name": "Al-Humaymah",
-        "wiki_page": "Syrian Desert campaign (May 2017\u2013present)",
+        "wiki_page": "Syrian Desert campaign (May 2017–present)",
         "lat": 34.4415,
         "lng": 39.755,
         "owner": "HTS",
@@ -6670,8 +6670,8 @@
         "marksize": 4
     },
     {
-        "name": "Bayt Jarb\u016b\u2018 al \u2018Azw",
-        "wiki_page": "Bayt Jarb\u016b\u2018 al \u2018Azw",
+        "name": "Bayt Jarbū‘ al ‘Azw",
+        "wiki_page": "Bayt Jarbū‘ al ‘Azw",
         "lat": 34.446,
         "lng": 37.7136,
         "owner": "HTS",
@@ -6690,8 +6690,8 @@
         "marksize": 4
     },
     {
-        "name": "B\u012br Tawalah",
-        "wiki_page": "B\u012br Tawalah",
+        "name": "Bīr Tawalah",
+        "wiki_page": "Bīr Tawalah",
         "lat": 34.447,
         "lng": 37.7737,
         "owner": "HTS",
@@ -6840,8 +6840,8 @@
         "marksize": 6
     },
     {
-        "name": "Bayt Jarb\u016b\u2018 al \u2018Azw",
-        "wiki_page": "Bayt Jarb\u016b\u2018 al \u2018Azw",
+        "name": "Bayt Jarbū‘ al ‘Azw",
+        "wiki_page": "Bayt Jarbū‘ al ‘Azw",
         "lat": 34.4669,
         "lng": 37.788,
         "owner": "HTS",
@@ -7110,8 +7110,8 @@
         "marksize": 10
     },
     {
-        "name": "Ta\u2018s ash Shayir",
-        "wiki_page": "Ta\u2018s ash Shayir",
+        "name": "Ta‘s ash Shayir",
+        "wiki_page": "Ta‘s ash Shayir",
         "lat": 34.5124,
         "lng": 40.903,
         "owner": "HTS",
@@ -7510,8 +7510,8 @@
         "marksize": 6
     },
     {
-        "name": "Mazra\u2018at Abu al Fawaris",
-        "wiki_page": "Mazra\u2018at Abu al Fawaris",
+        "name": "Mazra‘at Abu al Fawaris",
+        "wiki_page": "Mazra‘at Abu al Fawaris",
         "lat": 34.558,
         "lng": 38.187,
         "owner": "HTS",
@@ -7790,8 +7790,8 @@
         "marksize": 6
     },
     {
-        "name": "Umm T\u012bnah",
-        "wiki_page": "Umm T\u012bnah",
+        "name": "Umm Tīnah",
+        "wiki_page": "Umm Tīnah",
         "lat": 34.594,
         "lng": 37.187,
         "owner": "HTS",
@@ -8210,8 +8210,8 @@
         "marksize": 5
     },
     {
-        "name": "Haw\u012bjat al Mujawwadah",
-        "wiki_page": "Haw\u012bjat al Mujawwadah",
+        "name": "Hawījat al Mujawwadah",
+        "wiki_page": "Hawījat al Mujawwadah",
         "lat": 34.649,
         "lng": 40.7134,
         "owner": "HTS",
@@ -8300,8 +8300,8 @@
         "marksize": 4
     },
     {
-        "name": "Qal\u2019at Al-Hari",
-        "wiki_page": "Qal\u2019at Al-Hari",
+        "name": "Qal’at Al-Hari",
+        "wiki_page": "Qal’at Al-Hari",
         "lat": 34.663,
         "lng": 38.374,
         "owner": "HTS",
@@ -8330,8 +8330,8 @@
         "marksize": 6
     },
     {
-        "name": "Bi\u2019r Rashwani",
-        "wiki_page": "Bi\u2019r Rashwani",
+        "name": "Bi’r Rashwani",
+        "wiki_page": "Bi’r Rashwani",
         "lat": 34.667,
         "lng": 39.417,
         "owner": "HTS",
@@ -8410,8 +8410,8 @@
         "marksize": 5
     },
     {
-        "name": "Mazra\u2018at Shammu",
-        "wiki_page": "Mazra\u2018at Shammu",
+        "name": "Mazra‘at Shammu",
+        "wiki_page": "Mazra‘at Shammu",
         "lat": 34.676,
         "lng": 40.7735,
         "owner": "HTS",
@@ -8930,8 +8930,8 @@
         "marksize": 4
     },
     {
-        "name": "Wadi ash Shaf\u0101",
-        "wiki_page": "Wadi ash Shaf\u0101",
+        "name": "Wadi ash Shafā",
+        "wiki_page": "Wadi ash Shafā",
         "lat": 34.7324,
         "lng": 37.706,
         "owner": "HTS",
@@ -8940,8 +8940,8 @@
         "marksize": 4
     },
     {
-        "name": "Fay\u1e11at al-Jubb salt pan(Sabkhah)",
-        "wiki_page": "Fay\u1e11at al-Jubb salt pan(Sabkhah)",
+        "name": "Fayḑat al-Jubb salt pan(Sabkhah)",
+        "wiki_page": "Fayḑat al-Jubb salt pan(Sabkhah)",
         "lat": 34.7328,
         "lng": 40.3126,
         "owner": "HTS",
@@ -9000,8 +9000,8 @@
         "marksize": 6
     },
     {
-        "name": "Umm Jami\u2019(Umm Hamah)",
-        "wiki_page": "Umm Jami\u2019(Umm Hamah)",
+        "name": "Umm Jami’(Umm Hamah)",
+        "wiki_page": "Umm Jami’(Umm Hamah)",
         "lat": 34.741,
         "lng": 37.17,
         "owner": "HTS",
@@ -9370,8 +9370,8 @@
         "marksize": 4
     },
     {
-        "name": "Al \u2018Aybid\u012bya",
-        "wiki_page": "Al \u2018Aybid\u012bya",
+        "name": "Al ‘Aybidīya",
+        "wiki_page": "Al ‘Aybidīya",
         "lat": 34.767,
         "lng": 37.612,
         "owner": "HTS",
@@ -9400,8 +9400,8 @@
         "marksize": 8
     },
     {
-        "name": "A\u015f Sawwanah",
-        "wiki_page": "A\u015f Sawwanah",
+        "name": "Aş Sawwanah",
+        "wiki_page": "Aş Sawwanah",
         "lat": 34.769,
         "lng": 37.558,
         "owner": "HTS",
@@ -9510,8 +9510,8 @@
         "marksize": 6
     },
     {
-        "name": "Al \u2018Amud\u012byah",
-        "wiki_page": "Al \u2018Amud\u012byah",
+        "name": "Al ‘Amudīyah",
+        "wiki_page": "Al ‘Amudīyah",
         "lat": 34.7778,
         "lng": 37.529,
         "owner": "HTS",
@@ -9780,8 +9780,8 @@
         "marksize": 6
     },
     {
-        "name": "\u015eurrat al Kashmah",
-        "wiki_page": "\u015eurrat al Kashmah",
+        "name": "Şurrat al Kashmah",
+        "wiki_page": "Şurrat al Kashmah",
         "lat": 34.798,
         "lng": 40.614,
         "owner": "HTS",
@@ -10280,8 +10280,8 @@
         "marksize": 4
     },
     {
-        "name": "Duway\u2018ir al Gharbi",
-        "wiki_page": "Duway\u2018ir al Gharbi",
+        "name": "Duway‘ir al Gharbi",
+        "wiki_page": "Duway‘ir al Gharbi",
         "lat": 34.825,
         "lng": 37.246,
         "owner": "HTS",
@@ -10310,8 +10310,8 @@
         "marksize": 6
     },
     {
-        "name": "Hasiyat \u2018Abid",
-        "wiki_page": "Hasiyat \u2018Abid",
+        "name": "Hasiyat ‘Abid",
+        "wiki_page": "Hasiyat ‘Abid",
         "lat": 34.8271,
         "lng": 40.7158,
         "owner": "HTS",
@@ -10370,8 +10370,8 @@
         "marksize": 5
     },
     {
-        "name": "Umm Fus\u016bs (Um al-Sos)",
-        "wiki_page": "Umm Fus\u016bs (Um al-Sos)",
+        "name": "Umm Fusūs (Um al-Sos)",
+        "wiki_page": "Umm Fusūs (Um al-Sos)",
         "lat": 34.8315,
         "lng": 37.486,
         "owner": "HTS",
@@ -10680,8 +10680,8 @@
         "marksize": 5
     },
     {
-        "name": "As Sa\u2018diyah",
-        "wiki_page": "As Sa\u2018diyah",
+        "name": "As Sa‘diyah",
+        "wiki_page": "As Sa‘diyah",
         "lat": 34.852,
         "lng": 37.135,
         "owner": "HTS",
@@ -10800,8 +10800,8 @@
         "marksize": 4
     },
     {
-        "name": "Rasm al \u2018Ukayd\u0101t/Rasm al \u2018Akbad\u0101t",
-        "wiki_page": "Rasm al \u2018Ukayd\u0101t/Rasm al \u2018Akbad\u0101t",
+        "name": "Rasm al ‘Ukaydāt/Rasm al ‘Akbadāt",
+        "wiki_page": "Rasm al ‘Ukaydāt/Rasm al ‘Akbadāt",
         "lat": 34.86,
         "lng": 37.459,
         "owner": "HTS",
@@ -10900,8 +10900,8 @@
         "marksize": 4
     },
     {
-        "name": "Musay\u2018id",
-        "wiki_page": "Musay\u2018id",
+        "name": "Musay‘id",
+        "wiki_page": "Musay‘id",
         "lat": 34.8637,
         "lng": 37.334,
         "owner": "HTS",
@@ -11100,8 +11100,8 @@
         "marksize": 6
     },
     {
-        "name": "Uthman\u012byah",
-        "wiki_page": "Uthman\u012byah",
+        "name": "Uthmanīyah",
+        "wiki_page": "Uthmanīyah",
         "lat": 34.884,
         "lng": 37.086,
         "owner": "HTS",
@@ -11150,8 +11150,8 @@
         "marksize": 5
     },
     {
-        "name": "Al \u2018Amiriyah",
-        "wiki_page": "Al \u2018Amiriyah",
+        "name": "Al ‘Amiriyah",
+        "wiki_page": "Al ‘Amiriyah",
         "lat": 34.886,
         "lng": 36.8756,
         "owner": "HTS",
@@ -11730,8 +11730,8 @@
         "marksize": 3
     },
     {
-        "name": "Khirbat \u0162aw\u012bl al Bil\u2018\u0101s",
-        "wiki_page": "Khirbat \u0162aw\u012bl al Bil\u2018\u0101s",
+        "name": "Khirbat Ţawīl al Bil‘ās",
+        "wiki_page": "Khirbat Ţawīl al Bil‘ās",
         "lat": 34.928,
         "lng": 37.648,
         "owner": "HTS",
@@ -11740,8 +11740,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat \u015e\u0101li\u1e29 Ham\u012bd",
-        "wiki_page": "Khirbat \u015e\u0101li\u1e29 Ham\u012bd",
+        "name": "Khirbat Şāliḩ Hamīd",
+        "wiki_page": "Khirbat Şāliḩ Hamīd",
         "lat": 34.928,
         "lng": 37.894,
         "owner": "HTS",
@@ -12060,8 +12060,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat ad Dabl\u0101t",
-        "wiki_page": "Khirbat ad Dabl\u0101t",
+        "name": "Khirbat ad Dablāt",
+        "wiki_page": "Khirbat ad Dablāt",
         "lat": 34.953,
         "lng": 37.9,
         "owner": "HTS",
@@ -12190,8 +12190,8 @@
         "marksize": 6
     },
     {
-        "name": "Zawr Qubayb\u0101t",
-        "wiki_page": "Zawr Qubayb\u0101t",
+        "name": "Zawr Qubaybāt",
+        "wiki_page": "Zawr Qubaybāt",
         "lat": 34.9588,
         "lng": 36.7978,
         "owner": "HTS",
@@ -12600,8 +12600,8 @@
         "marksize": 4
     },
     {
-        "name": "Tall al Muzayri\u2018ah",
-        "wiki_page": "Tall al Muzayri\u2018ah",
+        "name": "Tall al Muzayri‘ah",
+        "wiki_page": "Tall al Muzayri‘ah",
         "lat": 34.985,
         "lng": 36.988,
         "owner": "HTS",
@@ -12810,8 +12810,8 @@
         "marksize": 5
     },
     {
-        "name": "Al \u2018Imarah",
-        "wiki_page": "Al \u2018Imarah",
+        "name": "Al ‘Imarah",
+        "wiki_page": "Al ‘Imarah",
         "lat": 35.0,
         "lng": 36.867,
         "owner": "HTS",
@@ -13000,8 +13000,8 @@
         "marksize": 3
     },
     {
-        "name": "Wadi Ad\u012bm\u0101 Sharqi",
-        "wiki_page": "Wadi Ad\u012bm\u0101 Sharqi",
+        "name": "Wadi Adīmā Sharqi",
+        "wiki_page": "Wadi Adīmā Sharqi",
         "lat": 35.0117,
         "lng": 39.324,
         "owner": "HTS",
@@ -13310,8 +13310,8 @@
         "marksize": 3
     },
     {
-        "name": "Al Bul\u2018um",
-        "wiki_page": "Al Bul\u2018um",
+        "name": "Al Bul‘um",
+        "wiki_page": "Al Bul‘um",
         "lat": 35.037,
         "lng": 40.426,
         "owner": "HTS",
@@ -13320,8 +13320,8 @@
         "marksize": 5
     },
     {
-        "name": "Ruqayb/Rourhe\u00efb",
-        "wiki_page": "Ruqayb/Rourhe\u00efb",
+        "name": "Ruqayb/Rourheïb",
+        "wiki_page": "Ruqayb/Rourheïb",
         "lat": 35.0374,
         "lng": 40.4583,
         "owner": "HTS",
@@ -13410,8 +13410,8 @@
         "marksize": 5
     },
     {
-        "name": "Bir Mu\u1e29ammad D\u0101ghir",
-        "wiki_page": "Bir Mu\u1e29ammad D\u0101ghir",
+        "name": "Bir Muḩammad Dāghir",
+        "wiki_page": "Bir Muḩammad Dāghir",
         "lat": 35.045,
         "lng": 38.839,
         "owner": "HTS",
@@ -13420,8 +13420,8 @@
         "marksize": 4
     },
     {
-        "name": "Rasm al \u2018Ali",
-        "wiki_page": "Rasm al \u2018Ali",
+        "name": "Rasm al ‘Ali",
+        "wiki_page": "Rasm al ‘Ali",
         "lat": 35.046,
         "lng": 37.588,
         "owner": "HTS",
@@ -13450,8 +13450,8 @@
         "marksize": 4
     },
     {
-        "name": "Rasm as Suww\u0101nah",
-        "wiki_page": "Rasm as Suww\u0101nah",
+        "name": "Rasm as Suwwānah",
+        "wiki_page": "Rasm as Suwwānah",
         "lat": 35.0479,
         "lng": 37.7545,
         "owner": "HTS",
@@ -13660,8 +13660,8 @@
         "marksize": 5
     },
     {
-        "name": "Rasm Zanubia (Rasm Kadd\u016bsh",
-        "wiki_page": "Rasm Zanubia (Rasm Kadd\u016bsh",
+        "name": "Rasm Zanubia (Rasm Kaddūsh",
+        "wiki_page": "Rasm Zanubia (Rasm Kaddūsh",
         "lat": 35.0705,
         "lng": 37.716,
         "owner": "HTS",
@@ -13671,7 +13671,7 @@
     },
     {
         "name": "Abu Hanaya",
-        "wiki_page": "Central Syria campaign (July 2017\u2013present)",
+        "wiki_page": "Central Syria campaign (July 2017–present)",
         "lat": 35.071,
         "lng": 37.327,
         "owner": "HTS",
@@ -13710,8 +13710,8 @@
         "marksize": 7
     },
     {
-        "name": "Al\u012byat al Qas\u0163al/Qastal al-Ghazi",
-        "wiki_page": "Al\u012byat al Qas\u0163al/Qastal al-Ghazi",
+        "name": "Alīyat al Qasţal/Qastal al-Ghazi",
+        "wiki_page": "Alīyat al Qasţal/Qastal al-Ghazi",
         "lat": 35.075,
         "lng": 37.591,
         "owner": "HTS",
@@ -13751,7 +13751,7 @@
     },
     {
         "name": "Kabajeb",
-        "wiki_page": "Central Syria campaign (July 2017\u2013present)",
+        "wiki_page": "Central Syria campaign (July 2017–present)",
         "lat": 35.079,
         "lng": 39.68,
         "owner": "HTS",
@@ -13790,8 +13790,8 @@
         "marksize": 5
     },
     {
-        "name": "Al Qas\u0163al/Al-Wastani)",
-        "wiki_page": "Al Qas\u0163al/Al-Wastani)",
+        "name": "Al Qasţal/Al-Wastani)",
+        "wiki_page": "Al Qasţal/Al-Wastani)",
         "lat": 35.087,
         "lng": 37.5959,
         "owner": "HTS",
@@ -14130,8 +14130,8 @@
         "marksize": 4
     },
     {
-        "name": "Az Zab\u0101r\u012b",
-        "wiki_page": "Az Zab\u0101r\u012b",
+        "name": "Az Zabārī",
+        "wiki_page": "Az Zabārī",
         "lat": 35.1233,
         "lng": 40.394,
         "owner": "HTS",
@@ -14250,8 +14250,8 @@
         "marksize": 4
     },
     {
-        "name": "Jubb al \u2018Aw\u0101r",
-        "wiki_page": "Jubb al \u2018Aw\u0101r",
+        "name": "Jubb al ‘Awār",
+        "wiki_page": "Jubb al ‘Awār",
         "lat": 35.131,
         "lng": 37.954,
         "owner": "HTS",
@@ -14260,8 +14260,8 @@
         "marksize": 5
     },
     {
-        "name": "\u0162ayyibah",
-        "wiki_page": "\u0162ayyibah",
+        "name": "Ţayyibah",
+        "wiki_page": "Ţayyibah",
         "lat": 35.1313,
         "lng": 37.4457,
         "owner": "HTS",
@@ -14590,8 +14590,8 @@
         "marksize": 4
     },
     {
-        "name": "A\u015f \u015ea\u2018l\u016b/Al-Aliyat",
-        "wiki_page": "A\u015f \u015ea\u2018l\u016b/Al-Aliyat",
+        "name": "Aş Şa‘lū/Al-Aliyat",
+        "wiki_page": "Aş Şa‘lū/Al-Aliyat",
         "lat": 35.1548,
         "lng": 40.3859,
         "owner": "HTS",
@@ -14810,8 +14810,8 @@
         "marksize": 5
     },
     {
-        "name": "Jubb \u2018\u012ad",
-        "wiki_page": "Jubb \u2018\u012ad",
+        "name": "Jubb ‘Īd",
+        "wiki_page": "Jubb ‘Īd",
         "lat": 35.173,
         "lng": 37.577,
         "owner": "HTS",
@@ -14960,8 +14960,8 @@
         "marksize": 4
     },
     {
-        "name": "Harmal\u0101",
-        "wiki_page": "Harmal\u0101",
+        "name": "Harmalā",
+        "wiki_page": "Harmalā",
         "lat": 35.1813,
         "lng": 37.5724,
         "owner": "HTS",
@@ -15050,8 +15050,8 @@
         "marksize": 4
     },
     {
-        "name": "\u2018Abd al Am\u012br",
-        "wiki_page": "\u2018Abd al Am\u012br",
+        "name": "‘Abd al Amīr",
+        "wiki_page": "‘Abd al Amīr",
         "lat": 35.189,
         "lng": 37.6001,
         "owner": "HTS",
@@ -15081,7 +15081,7 @@
     },
     {
         "name": "Al-Shulah",
-        "wiki_page": "Central Syria campaign (July 2017\u2013present)",
+        "wiki_page": "Central Syria campaign (July 2017–present)",
         "lat": 35.191,
         "lng": 39.851,
         "owner": "HTS",
@@ -15130,8 +15130,8 @@
         "marksize": 7
     },
     {
-        "name": "\u2018Ayn Ban\u012b MuHaysin",
-        "wiki_page": "\u2018Ayn Ban\u012b MuHaysin",
+        "name": "‘Ayn Banī MuHaysin",
+        "wiki_page": "‘Ayn Banī MuHaysin",
         "lat": 35.1925,
         "lng": 38.843,
         "owner": "HTS",
@@ -15170,8 +15170,8 @@
         "marksize": 4
     },
     {
-        "name": "Maksar al Jan\u016bb\u012b",
-        "wiki_page": "Maksar al Jan\u016bb\u012b",
+        "name": "Maksar al Janūbī",
+        "wiki_page": "Maksar al Janūbī",
         "lat": 35.1949,
         "lng": 37.5828,
         "owner": "HTS",
@@ -15241,7 +15241,7 @@
     },
     {
         "name": "Khattab",
-        "wiki_page": "Hama offensive (March\u2013April 2017)",
+        "wiki_page": "Hama offensive (March–April 2017)",
         "lat": 35.197,
         "lng": 36.667,
         "owner": "HTS",
@@ -15320,8 +15320,8 @@
         "marksize": 7
     },
     {
-        "name": "Abreeha/Al-Buray\u1e29ah",
-        "wiki_page": "Abreeha/Al-Buray\u1e29ah",
+        "name": "Abreeha/Al-Burayḩah",
+        "wiki_page": "Abreeha/Al-Burayḩah",
         "lat": 35.2,
         "lng": 40.483,
         "owner": "HTS",
@@ -15350,8 +15350,8 @@
         "marksize": 4
     },
     {
-        "name": "\u2018Ayn Subaykhah",
-        "wiki_page": "\u2018Ayn Subaykhah",
+        "name": "‘Ayn Subaykhah",
+        "wiki_page": "‘Ayn Subaykhah",
         "lat": 35.2014,
         "lng": 38.8238,
         "owner": "HTS",
@@ -15360,8 +15360,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat a\u015f \u015eafrah",
-        "wiki_page": "Khirbat a\u015f \u015eafrah",
+        "name": "Khirbat aş Şafrah",
+        "wiki_page": "Khirbat aş Şafrah",
         "lat": 35.202,
         "lng": 38.892,
         "owner": "HTS",
@@ -15400,8 +15400,8 @@
         "marksize": 5
     },
     {
-        "name": "J\u016brat al Hamm\u0101l",
-        "wiki_page": "J\u016brat al Hamm\u0101l",
+        "name": "Jūrat al Hammāl",
+        "wiki_page": "Jūrat al Hammāl",
         "lat": 35.207,
         "lng": 38.8827,
         "owner": "HTS",
@@ -15410,8 +15410,8 @@
         "marksize": 4
     },
     {
-        "name": "Wad\u012b Fulaytah",
-        "wiki_page": "Wad\u012b Fulaytah",
+        "name": "Wadī Fulaytah",
+        "wiki_page": "Wadī Fulaytah",
         "lat": 35.207,
         "lng": 40.932,
         "owner": "HTS",
@@ -15500,8 +15500,8 @@
         "marksize": 4
     },
     {
-        "name": "Al Qu\u015fayr\u012byah",
-        "wiki_page": "Al Qu\u015fayr\u012byah",
+        "name": "Al Quşayrīyah",
+        "wiki_page": "Al Quşayrīyah",
         "lat": 35.2108,
         "lng": 40.5138,
         "owner": "HTS",
@@ -15610,8 +15610,8 @@
         "marksize": 4
     },
     {
-        "name": "\u2018Ayn Bukhayr\u0101t",
-        "wiki_page": "\u2018Ayn Bukhayr\u0101t",
+        "name": "‘Ayn Bukhayrāt",
+        "wiki_page": "‘Ayn Bukhayrāt",
         "lat": 35.219,
         "lng": 38.852,
         "owner": "HTS",
@@ -15880,8 +15880,8 @@
         "marksize": 6
     },
     {
-        "name": "Iskandar\u012byah",
-        "wiki_page": "Iskandar\u012byah",
+        "name": "Iskandarīyah",
+        "wiki_page": "Iskandarīyah",
         "lat": 35.24,
         "lng": 36.7618,
         "owner": "HTS",
@@ -15980,8 +15980,8 @@
         "marksize": 5
     },
     {
-        "name": "Al \u2018Am\u012byah",
-        "wiki_page": "Al \u2018Am\u012byah",
+        "name": "Al ‘Amīyah",
+        "wiki_page": "Al ‘Amīyah",
         "lat": 35.2455,
         "lng": 37.424,
         "owner": "HTS",
@@ -16160,8 +16160,8 @@
         "marksize": 7
     },
     {
-        "name": "Al\u2018Anz",
-        "wiki_page": "Al\u2018Anz",
+        "name": "Al‘Anz",
+        "wiki_page": "Al‘Anz",
         "lat": 35.2605,
         "lng": 37.0207,
         "owner": "HTS",
@@ -16571,7 +16571,7 @@
     },
     {
         "name": "Al-Mari'iyah",
-        "wiki_page": "Central Syria campaign (July 2017\u2013present)",
+        "wiki_page": "Central Syria campaign (July 2017–present)",
         "lat": 35.2825,
         "lng": 40.225,
         "owner": "HTS",
@@ -16910,8 +16910,8 @@
         "marksize": 3
     },
     {
-        "name": "Mu'siwan/Ma\u2018\u015far\u0101n",
-        "wiki_page": "Mu'siwan/Ma\u2018\u015far\u0101n",
+        "name": "Mu'siwan/Ma‘şarān",
+        "wiki_page": "Mu'siwan/Ma‘şarān",
         "lat": 35.3128,
         "lng": 37.246,
         "owner": "HTS",
@@ -17010,8 +17010,8 @@
         "marksize": 5
     },
     {
-        "name": "Al \u2018Uwayn",
-        "wiki_page": "Al \u2018Uwayn",
+        "name": "Al ‘Uwayn",
+        "wiki_page": "Al ‘Uwayn",
         "lat": 35.318,
         "lng": 36.434,
         "owner": "HTS",
@@ -17160,8 +17160,8 @@
         "marksize": 4
     },
     {
-        "name": "Abu Rai\u2019dah al-Gharbiyah",
-        "wiki_page": "Abu Rai\u2019dah al-Gharbiyah",
+        "name": "Abu Rai’dah al-Gharbiyah",
+        "wiki_page": "Abu Rai’dah al-Gharbiyah",
         "lat": 35.3257,
         "lng": 36.5329,
         "owner": "HTS",
@@ -17220,8 +17220,8 @@
         "marksize": 4
     },
     {
-        "name": "Al Jayl\u012byah",
-        "wiki_page": "Al Jayl\u012byah",
+        "name": "Al Jaylīyah",
+        "wiki_page": "Al Jaylīyah",
         "lat": 35.3305,
         "lng": 37.076,
         "owner": "HTS",
@@ -17230,8 +17230,8 @@
         "marksize": 4
     },
     {
-        "name": "Abu Rai\u2019dah al-Sharqiyah",
-        "wiki_page": "Abu Rai\u2019dah al-Sharqiyah",
+        "name": "Abu Rai’dah al-Sharqiyah",
+        "wiki_page": "Abu Rai’dah al-Sharqiyah",
         "lat": 35.3308,
         "lng": 36.541,
         "owner": "HTS",
@@ -17260,8 +17260,8 @@
         "marksize": 6
     },
     {
-        "name": "Tuf\u0101\u1e29ah",
-        "wiki_page": "Tuf\u0101\u1e29ah",
+        "name": "Tufāḩah",
+        "wiki_page": "Tufāḩah",
         "lat": 35.3326,
         "lng": 37.351,
         "owner": "HTS",
@@ -17320,8 +17320,8 @@
         "marksize": 4
     },
     {
-        "name": "Ar Rab\u012b\u2018ah",
-        "wiki_page": "Ar Rab\u012b\u2018ah",
+        "name": "Ar Rabī‘ah",
+        "wiki_page": "Ar Rabī‘ah",
         "lat": 35.336,
         "lng": 37.0778,
         "owner": "HTS",
@@ -17560,8 +17560,8 @@
         "marksize": 4
     },
     {
-        "name": "Shamt\u0101nah",
-        "wiki_page": "Shamt\u0101nah",
+        "name": "Shamtānah",
+        "wiki_page": "Shamtānah",
         "lat": 35.347,
         "lng": 37.257,
         "owner": "HTS",
@@ -17730,8 +17730,8 @@
         "marksize": 4
     },
     {
-        "name": "Bi\u2019r al A\u00e2oueje",
-        "wiki_page": "Bi\u2019r al A\u00e2oueje",
+        "name": "Bi’r al Aâoueje",
+        "wiki_page": "Bi’r al Aâoueje",
         "lat": 35.356,
         "lng": 38.6613,
         "owner": "HTS",
@@ -17980,8 +17980,8 @@
         "marksize": 5
     },
     {
-        "name": "Al Ghaw\u0101r\u012b",
-        "wiki_page": "Al Ghaw\u0101r\u012b",
+        "name": "Al Ghawārī",
+        "wiki_page": "Al Ghawārī",
         "lat": 35.3717,
         "lng": 40.602,
         "owner": "HTS",
@@ -18090,8 +18090,8 @@
         "marksize": 8
     },
     {
-        "name": "Saw\u1e29 al Khurayj",
-        "wiki_page": "Saw\u1e29 al Khurayj",
+        "name": "Sawḩ al Khurayj",
+        "wiki_page": "Sawḩ al Khurayj",
         "lat": 35.375,
         "lng": 39.8329,
         "owner": "HTS",
@@ -18110,8 +18110,8 @@
         "marksize": 4
     },
     {
-        "name": "Ad Dab'ah (Dabb\u0101yah)",
-        "wiki_page": "Ad Dab'ah (Dabb\u0101yah)",
+        "name": "Ad Dab'ah (Dabbāyah)",
+        "wiki_page": "Ad Dab'ah (Dabbāyah)",
         "lat": 35.376,
         "lng": 37.103,
         "owner": "HTS",
@@ -18150,8 +18150,8 @@
         "marksize": 5
     },
     {
-        "name": "Ma\u2018qar al Qibl\u012b",
-        "wiki_page": "Ma\u2018qar al Qibl\u012b",
+        "name": "Ma‘qar al Qiblī",
+        "wiki_page": "Ma‘qar al Qiblī",
         "lat": 35.377,
         "lng": 37.3315,
         "owner": "HTS",
@@ -18610,8 +18610,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat \u2018Amsh\u0101\u2019",
-        "wiki_page": "Khirbat \u2018Amsh\u0101\u2019",
+        "name": "Khirbat ‘Amshā’",
+        "wiki_page": "Khirbat ‘Amshā’",
         "lat": 35.405,
         "lng": 37.8616,
         "owner": "HTS",
@@ -18970,8 +18970,8 @@
         "marksize": 8
     },
     {
-        "name": "Ad Daj\u0101j",
-        "wiki_page": "Ad Daj\u0101j",
+        "name": "Ad Dajāj",
+        "wiki_page": "Ad Dajāj",
         "lat": 35.422,
         "lng": 36.895,
         "owner": "HTS",
@@ -19080,8 +19080,8 @@
         "marksize": 6
     },
     {
-        "name": "Huways Umm Jarn(Huways ash Sham\u0101l\u012b)",
-        "wiki_page": "Huways Umm Jarn(Huways ash Sham\u0101l\u012b)",
+        "name": "Huways Umm Jarn(Huways ash Shamālī)",
+        "wiki_page": "Huways Umm Jarn(Huways ash Shamālī)",
         "lat": 35.427,
         "lng": 37.125,
         "owner": "HTS",
@@ -19390,8 +19390,8 @@
         "marksize": 5
     },
     {
-        "name": "Murayjeb al-Jumalan/Jubb al Jal\u0101n",
-        "wiki_page": "Murayjeb al-Jumalan/Jubb al Jal\u0101n",
+        "name": "Murayjeb al-Jumalan/Jubb al Jalān",
+        "wiki_page": "Murayjeb al-Jumalan/Jubb al Jalān",
         "lat": 35.443,
         "lng": 37.5189,
         "owner": "HTS",
@@ -19400,8 +19400,8 @@
         "marksize": 5
     },
     {
-        "name": "\u012azah",
-        "wiki_page": "\u012azah",
+        "name": "Īzah",
+        "wiki_page": "Īzah",
         "lat": 35.4435,
         "lng": 37.2527,
         "owner": "HTS",
@@ -19450,7 +19450,7 @@
         "marksize": 4
     },
     {
-        "name": "Kafr \u2018Ayn",
+        "name": "Kafr ‘Ayn",
         "wiki_page": "Kafr Ein, Idlib",
         "lat": 35.445,
         "lng": 36.566,
@@ -19500,8 +19500,8 @@
         "marksize": 5
     },
     {
-        "name": "Ash Shari\u2018ah",
-        "wiki_page": "Ash Shari\u2018ah",
+        "name": "Ash Shari‘ah",
+        "wiki_page": "Ash Shari‘ah",
         "lat": 35.446,
         "lng": 36.353,
         "owner": "HTS",
@@ -19510,8 +19510,8 @@
         "marksize": 5
     },
     {
-        "name": "Rasm a\u1e11 \u1e10ab\u2018",
-        "wiki_page": "Rasm a\u1e11 \u1e10ab\u2018",
+        "name": "Rasm aḑ Ḑab‘",
+        "wiki_page": "Rasm aḑ Ḑab‘",
         "lat": 35.446,
         "lng": 37.482,
         "owner": "HTS",
@@ -19590,8 +19590,8 @@
         "marksize": 5
     },
     {
-        "name": "Zu\u2018aywir/Zughayr",
-        "wiki_page": "Zu\u2018aywir/Zughayr",
+        "name": "Zu‘aywir/Zughayr",
+        "wiki_page": "Zu‘aywir/Zughayr",
         "lat": 35.449,
         "lng": 37.291,
         "owner": "HTS",
@@ -19641,7 +19641,7 @@
     },
     {
         "name": "Abu Dali",
-        "wiki_page": "Northwestern Syria campaign (October 2017\u2013February 2018)",
+        "wiki_page": "Northwestern Syria campaign (October 2017–February 2018)",
         "lat": 35.451,
         "lng": 36.903,
         "owner": "HTS",
@@ -19650,8 +19650,8 @@
         "marksize": 6
     },
     {
-        "name": "Qarat Rab\u016b\u2018",
-        "wiki_page": "Qarat Rab\u016b\u2018",
+        "name": "Qarat Rabū‘",
+        "wiki_page": "Qarat Rabū‘",
         "lat": 35.4517,
         "lng": 37.3213,
         "owner": "HTS",
@@ -19680,8 +19680,8 @@
         "marksize": 4
     },
     {
-        "name": "Mu\u2018allis",
-        "wiki_page": "Mu\u2018allis",
+        "name": "Mu‘allis",
+        "wiki_page": "Mu‘allis",
         "lat": 35.453,
         "lng": 36.582,
         "owner": "HTS",
@@ -19720,8 +19720,8 @@
         "marksize": 5
     },
     {
-        "name": "Umm Zu\u1e29aymik",
-        "wiki_page": "Umm Zu\u1e29aymik",
+        "name": "Umm Zuḩaymik",
+        "wiki_page": "Umm Zuḩaymik",
         "lat": 35.4539,
         "lng": 37.237,
         "owner": "HTS",
@@ -20080,8 +20080,8 @@
         "marksize": 6
     },
     {
-        "name": "Al Qan\u0101\u0163ir",
-        "wiki_page": "Al Qan\u0101\u0163ir",
+        "name": "Al Qanāţir",
+        "wiki_page": "Al Qanāţir",
         "lat": 35.4707,
         "lng": 37.2334,
         "owner": "HTS",
@@ -20180,8 +20180,8 @@
         "marksize": 4
     },
     {
-        "name": "Ab\u016b Mahla",
-        "wiki_page": "Ab\u016b Mahla",
+        "name": "Abū Mahla",
+        "wiki_page": "Abū Mahla",
         "lat": 35.474,
         "lng": 37.3078,
         "owner": "HTS",
@@ -20220,8 +20220,8 @@
         "marksize": 6
     },
     {
-        "name": "Maksar at Ta\u1e29t\u0101n\u012b",
-        "wiki_page": "Maksar at Ta\u1e29t\u0101n\u012b",
+        "name": "Maksar at Taḩtānī",
+        "wiki_page": "Maksar at Taḩtānī",
         "lat": 35.475,
         "lng": 37.088,
         "owner": "HTS",
@@ -20390,8 +20390,8 @@
         "marksize": 4
     },
     {
-        "name": "Than\u012byat a\u015f \u015eafw\u0101n\u012b",
-        "wiki_page": "Than\u012byat a\u015f \u015eafw\u0101n\u012b",
+        "name": "Thanīyat aş Şafwānī",
+        "wiki_page": "Thanīyat aş Şafwānī",
         "lat": 35.482,
         "lng": 37.344,
         "owner": "HTS",
@@ -20400,8 +20400,8 @@
         "marksize": 3
     },
     {
-        "name": "Al \u2018Uraymah",
-        "wiki_page": "Al \u2018Uraymah",
+        "name": "Al ‘Uraymah",
+        "wiki_page": "Al ‘Uraymah",
         "lat": 35.4827,
         "lng": 36.389,
         "owner": "HTS",
@@ -20520,8 +20520,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat-Zayd\u0101n",
-        "wiki_page": "Khirbat-Zayd\u0101n",
+        "name": "Khirbat-Zaydān",
+        "wiki_page": "Khirbat-Zaydān",
         "lat": 35.488,
         "lng": 38.265,
         "owner": "HTS",
@@ -20670,8 +20670,8 @@
         "marksize": 6
     },
     {
-        "name": "Maksar al Fawqan\u012b",
-        "wiki_page": "Maksar al Fawqan\u012b",
+        "name": "Maksar al Fawqanī",
+        "wiki_page": "Maksar al Fawqanī",
         "lat": 35.4959,
         "lng": 37.0957,
         "owner": "HTS",
@@ -20970,8 +20970,8 @@
         "marksize": 4
     },
     {
-        "name": "As Suwayr\u0101t",
-        "wiki_page": "As Suwayr\u0101t",
+        "name": "As Suwayrāt",
+        "wiki_page": "As Suwayrāt",
         "lat": 35.505,
         "lng": 36.939,
         "owner": "HTS",
@@ -21020,8 +21020,8 @@
         "marksize": 4
     },
     {
-        "name": "Jubb al \u2018Uthm\u0101n",
-        "wiki_page": "Jubb al \u2018Uthm\u0101n",
+        "name": "Jubb al ‘Uthmān",
+        "wiki_page": "Jubb al ‘Uthmān",
         "lat": 35.508,
         "lng": 37.2323,
         "owner": "HTS",
@@ -21140,8 +21140,8 @@
         "marksize": 5
     },
     {
-        "name": "Hawa\u2019 ash Sharq\u012byah",
-        "wiki_page": "Hawa\u2019 ash Sharq\u012byah",
+        "name": "Hawa’ ash Sharqīyah",
+        "wiki_page": "Hawa’ ash Sharqīyah",
         "lat": 35.5128,
         "lng": 37.156,
         "owner": "HTS",
@@ -21200,8 +21200,8 @@
         "marksize": 6
     },
     {
-        "name": "Jubb ar Rum\u0101n",
-        "wiki_page": "Jubb ar Rum\u0101n",
+        "name": "Jubb ar Rumān",
+        "wiki_page": "Jubb ar Rumān",
         "lat": 35.516,
         "lng": 37.204,
         "owner": "HTS",
@@ -21320,8 +21320,8 @@
         "marksize": 6
     },
     {
-        "name": "B\u012br al \u2018It\u0101w",
-        "wiki_page": "B\u012br al \u2018It\u0101w",
+        "name": "Bīr al ‘Itāw",
+        "wiki_page": "Bīr al ‘Itāw",
         "lat": 35.5202,
         "lng": 38.723,
         "owner": "HTS",
@@ -21350,8 +21350,8 @@
         "marksize": 4
     },
     {
-        "name": "W\u0101d\u012b al Ghurrah",
-        "wiki_page": "W\u0101d\u012b al Ghurrah",
+        "name": "Wādī al Ghurrah",
+        "wiki_page": "Wādī al Ghurrah",
         "lat": 35.5224,
         "lng": 38.0302,
         "owner": "HTS",
@@ -21410,8 +21410,8 @@
         "marksize": 4
     },
     {
-        "name": "B\u0101r\u016bd\u012byah",
-        "wiki_page": "B\u0101r\u016bd\u012byah",
+        "name": "Bārūdīyah",
+        "wiki_page": "Bārūdīyah",
         "lat": 35.5249,
         "lng": 37.224,
         "owner": "HTS",
@@ -21850,8 +21850,8 @@
         "marksize": 4
     },
     {
-        "name": "Jubb Mushayrifat Nab\u0101j",
-        "wiki_page": "Jubb Mushayrifat Nab\u0101j",
+        "name": "Jubb Mushayrifat Nabāj",
+        "wiki_page": "Jubb Mushayrifat Nabāj",
         "lat": 35.545,
         "lng": 38.4018,
         "owner": "HTS",
@@ -21911,7 +21911,7 @@
     },
     {
         "name": "Hish",
-        "wiki_page": "Idlib Governorate clashes (June 2012\u2013April 2013)",
+        "wiki_page": "Idlib Governorate clashes (June 2012–April 2013)",
         "lat": 35.548,
         "lng": 36.644,
         "owner": "HTS",
@@ -21940,8 +21940,8 @@
         "marksize": 3
     },
     {
-        "name": "Ray\u2018 al Haw\u0101",
-        "wiki_page": "Ray\u2018 al Haw\u0101",
+        "name": "Ray‘ al Hawā",
+        "wiki_page": "Ray‘ al Hawā",
         "lat": 35.548,
         "lng": 37.1059,
         "owner": "HTS",
@@ -22110,8 +22110,8 @@
         "marksize": 4
     },
     {
-        "name": "Thal\u012bjah",
-        "wiki_page": "Thal\u012bjah",
+        "name": "Thalījah",
+        "wiki_page": "Thalījah",
         "lat": 35.5548,
         "lng": 37.1839,
         "owner": "HTS",
@@ -22120,8 +22120,8 @@
         "marksize": 4
     },
     {
-        "name": "Qabr Ja\u2018\u0101r",
-        "wiki_page": "Qabr Ja\u2018\u0101r",
+        "name": "Qabr Ja‘ār",
+        "wiki_page": "Qabr Ja‘ār",
         "lat": 35.555,
         "lng": 37.889,
         "owner": "HTS",
@@ -22260,8 +22260,8 @@
         "marksize": 5
     },
     {
-        "name": "Jadwa\u2018\u012byah Sham\u0101l\u012byah",
-        "wiki_page": "Jadwa\u2018\u012byah Sham\u0101l\u012byah",
+        "name": "Jadwa‘īyah Shamālīyah",
+        "wiki_page": "Jadwa‘īyah Shamālīyah",
         "lat": 35.5629,
         "lng": 37.2319,
         "owner": "HTS",
@@ -22380,8 +22380,8 @@
         "marksize": 8
     },
     {
-        "name": "B\u012br Ab\u016b Qahwah",
-        "wiki_page": "B\u012br Ab\u016b Qahwah",
+        "name": "Bīr Abū Qahwah",
+        "wiki_page": "Bīr Abū Qahwah",
         "lat": 35.567,
         "lng": 38.229,
         "owner": "HTS",
@@ -22390,8 +22390,8 @@
         "marksize": 5
     },
     {
-        "name": "Jubb \u2018Abd al \u2018Az\u012bz",
-        "wiki_page": "Jubb \u2018Abd al \u2018Az\u012bz",
+        "name": "Jubb ‘Abd al ‘Azīz",
+        "wiki_page": "Jubb ‘Abd al ‘Azīz",
         "lat": 35.567,
         "lng": 38.274,
         "owner": "HTS",
@@ -22420,8 +22420,8 @@
         "marksize": 5
     },
     {
-        "name": "Al Ma\u015fla\u1e29ah",
-        "wiki_page": "Al Ma\u015fla\u1e29ah",
+        "name": "Al Maşlaḩah",
+        "wiki_page": "Al Maşlaḩah",
         "lat": 35.568,
         "lng": 37.189,
         "owner": "HTS",
@@ -22471,7 +22471,7 @@
     },
     {
         "name": "Al-Buwaytiyah",
-        "wiki_page": "Central Syria campaign (July 2017\u2013present)",
+        "wiki_page": "Central Syria campaign (July 2017–present)",
         "lat": 35.569,
         "lng": 39.8604,
         "owner": "HTS",
@@ -22510,8 +22510,8 @@
         "marksize": 6
     },
     {
-        "name": "Khirbet Umm Ruj\u016bm",
-        "wiki_page": "Khirbet Umm Ruj\u016bm",
+        "name": "Khirbet Umm Rujūm",
+        "wiki_page": "Khirbet Umm Rujūm",
         "lat": 35.5714,
         "lng": 37.2357,
         "owner": "HTS",
@@ -22670,8 +22670,8 @@
         "marksize": 5
     },
     {
-        "name": "Al Ba\u0163\u016bsh\u012byah",
-        "wiki_page": "Al Ba\u0163\u016bsh\u012byah",
+        "name": "Al Baţūshīyah",
+        "wiki_page": "Al Baţūshīyah",
         "lat": 35.579,
         "lng": 37.2048,
         "owner": "HTS",
@@ -22730,8 +22730,8 @@
         "marksize": 5
     },
     {
-        "name": "Umm \u2018Ib\u1e29",
-        "wiki_page": "Umm \u2018Ib\u1e29",
+        "name": "Umm ‘Ibḩ",
+        "wiki_page": "Umm ‘Ibḩ",
         "lat": 35.583,
         "lng": 37.2319,
         "owner": "HTS",
@@ -22800,8 +22800,8 @@
         "marksize": 6
     },
     {
-        "name": "Ab\u016b Dar\u012bkhah",
-        "wiki_page": "Ab\u016b Dar\u012bkhah",
+        "name": "Abū Darīkhah",
+        "wiki_page": "Abū Darīkhah",
         "lat": 35.5868,
         "lng": 37.1776,
         "owner": "HTS",
@@ -22900,8 +22900,8 @@
         "marksize": 5
     },
     {
-        "name": "Jubb al Abya\u1e11",
-        "wiki_page": "Jubb al Abya\u1e11",
+        "name": "Jubb al Abyaḑ",
+        "wiki_page": "Jubb al Abyaḑ",
         "lat": 35.5905,
         "lng": 38.2525,
         "owner": "HTS",
@@ -22960,8 +22960,8 @@
         "marksize": 4
     },
     {
-        "name": "Fay\u1e11at al J\u012bzah",
-        "wiki_page": "Fay\u1e11at al J\u012bzah",
+        "name": "Fayḑat al Jīzah",
+        "wiki_page": "Fayḑat al Jīzah",
         "lat": 35.593,
         "lng": 41.061,
         "owner": "HTS",
@@ -22990,8 +22990,8 @@
         "marksize": 5
     },
     {
-        "name": "W\u0101d\u012b Nahr Hamm\u0101r \u0162aw\u012bl",
-        "wiki_page": "W\u0101d\u012b Nahr Hamm\u0101r \u0162aw\u012bl",
+        "name": "Wādī Nahr Hammār Ţawīl",
+        "wiki_page": "Wādī Nahr Hammār Ţawīl",
         "lat": 35.5939,
         "lng": 40.3239,
         "owner": "HTS",
@@ -23060,8 +23060,8 @@
         "marksize": 5
     },
     {
-        "name": "Sabkhat Mar\u0101gh\u0101",
-        "wiki_page": "Sabkhat Mar\u0101gh\u0101",
+        "name": "Sabkhat Marāghā",
+        "wiki_page": "Sabkhat Marāghā",
         "lat": 35.598,
         "lng": 37.6826,
         "owner": "HTS",
@@ -23270,8 +23270,8 @@
         "marksize": 6
     },
     {
-        "name": "Khirbat B\u012br a\u0163 \u0162aw\u012bl",
-        "wiki_page": "Khirbat B\u012br a\u0163 \u0162aw\u012bl",
+        "name": "Khirbat Bīr aţ Ţawīl",
+        "wiki_page": "Khirbat Bīr aţ Ţawīl",
         "lat": 35.6037,
         "lng": 37.8314,
         "owner": "HTS",
@@ -23400,8 +23400,8 @@
         "marksize": 4
     },
     {
-        "name": "Jubb Ab\u016b Qu\u0163nah",
-        "wiki_page": "Jubb Ab\u016b Qu\u0163nah",
+        "name": "Jubb Abū Quţnah",
+        "wiki_page": "Jubb Abū Quţnah",
         "lat": 35.608,
         "lng": 38.165,
         "owner": "HTS",
@@ -23510,8 +23510,8 @@
         "marksize": 3
     },
     {
-        "name": "Khirbat B\u012br a\u0163 \u0162aw\u012bl",
-        "wiki_page": "Khirbat B\u012br a\u0163 \u0162aw\u012bl",
+        "name": "Khirbat Bīr aţ Ţawīl",
+        "wiki_page": "Khirbat Bīr aţ Ţawīl",
         "lat": 35.6148,
         "lng": 37.779,
         "owner": "HTS",
@@ -23610,8 +23610,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat Ab\u016b \u2018An\u012byaht",
-        "wiki_page": "Khirbat Ab\u016b \u2018An\u012byaht",
+        "name": "Khirbat Abū ‘Anīyaht",
+        "wiki_page": "Khirbat Abū ‘Anīyaht",
         "lat": 35.616,
         "lng": 36.9458,
         "owner": "HTS",
@@ -23691,7 +23691,7 @@
     },
     {
         "name": "Jurin",
-        "wiki_page": "Al-Ghab offensive (July\u2013August 2015)",
+        "wiki_page": "Al-Ghab offensive (July–August 2015)",
         "lat": 35.619,
         "lng": 36.268,
         "owner": "HTS",
@@ -23750,8 +23750,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat B\u0101sh\u016bt",
-        "wiki_page": "Khirbat B\u0101sh\u016bt",
+        "name": "Khirbat Bāshūt",
+        "wiki_page": "Khirbat Bāshūt",
         "lat": 35.624,
         "lng": 36.9526,
         "owner": "HTS",
@@ -23790,8 +23790,8 @@
         "marksize": 5
     },
     {
-        "name": "Ab\u016b \u0162u\u1e29ayjah",
-        "wiki_page": "Ab\u016b \u0162u\u1e29ayjah",
+        "name": "Abū Ţuḩayjah",
+        "wiki_page": "Abū Ţuḩayjah",
         "lat": 35.625,
         "lng": 36.981,
         "owner": "HTS",
@@ -23810,8 +23810,8 @@
         "marksize": 4
     },
     {
-        "name": "\u2018Aziziyah",
-        "wiki_page": "\u2018Aziziyah",
+        "name": "‘Aziziyah",
+        "wiki_page": "‘Aziziyah",
         "lat": 35.6268,
         "lng": 37.4458,
         "owner": "HTS",
@@ -23840,8 +23840,8 @@
         "marksize": 5
     },
     {
-        "name": "Hazayah/Khar\u0101\u2018\u012byah",
-        "wiki_page": "Hazayah/Khar\u0101\u2018\u012byah",
+        "name": "Hazayah/Kharā‘īyah",
+        "wiki_page": "Hazayah/Kharā‘īyah",
         "lat": 35.628,
         "lng": 37.376,
         "owner": "HTS",
@@ -23880,8 +23880,8 @@
         "marksize": 4
     },
     {
-        "name": "Al \u2018Alq\u0101nah",
-        "wiki_page": "Al \u2018Alq\u0101nah",
+        "name": "Al ‘Alqānah",
+        "wiki_page": "Al ‘Alqānah",
         "lat": 35.629,
         "lng": 37.7958,
         "owner": "HTS",
@@ -23890,8 +23890,8 @@
         "marksize": 4
     },
     {
-        "name": "Al Falw/Al Fal\u016b Kib\u0101r)",
-        "wiki_page": "Al Falw/Al Fal\u016b Kib\u0101r)",
+        "name": "Al Falw/Al Falū Kibār)",
+        "wiki_page": "Al Falw/Al Falū Kibār)",
         "lat": 35.629,
         "lng": 39.8656,
         "owner": "HTS",
@@ -24000,8 +24000,8 @@
         "marksize": 5
     },
     {
-        "name": "Wad\u012b Tarib",
-        "wiki_page": "Wad\u012b Tarib",
+        "name": "Wadī Tarib",
+        "wiki_page": "Wadī Tarib",
         "lat": 35.632,
         "lng": 39.444,
         "owner": "HTS",
@@ -24020,8 +24020,8 @@
         "marksize": 6
     },
     {
-        "name": "\u2018Uwayjat al Qa\u2018n\u0101",
-        "wiki_page": "\u2018Uwayjat al Qa\u2018n\u0101",
+        "name": "‘Uwayjat al Qa‘nā",
+        "wiki_page": "‘Uwayjat al Qa‘nā",
         "lat": 35.6325,
         "lng": 37.1859,
         "owner": "HTS",
@@ -24140,8 +24140,8 @@
         "marksize": 5
     },
     {
-        "name": "Jubb Abu \u015eu\u015fah",
-        "wiki_page": "Jubb Abu \u015eu\u015fah",
+        "name": "Jubb Abu Şuşah",
+        "wiki_page": "Jubb Abu Şuşah",
         "lat": 35.636,
         "lng": 38.263,
         "owner": "HTS",
@@ -24280,8 +24280,8 @@
         "marksize": 5
     },
     {
-        "name": "Al Kh\u0101f\u012byah",
-        "wiki_page": "Al Kh\u0101f\u012byah",
+        "name": "Al Khāfīyah",
+        "wiki_page": "Al Khāfīyah",
         "lat": 35.6419,
         "lng": 37.7912,
         "owner": "HTS",
@@ -24400,8 +24400,8 @@
         "marksize": 12
     },
     {
-        "name": "Jubb Umz\u016br",
-        "wiki_page": "Jubb Umz\u016br",
+        "name": "Jubb Umzūr",
+        "wiki_page": "Jubb Umzūr",
         "lat": 35.648,
         "lng": 37.698,
         "owner": "HTS",
@@ -24820,8 +24820,8 @@
         "marksize": 5
     },
     {
-        "name": "\u2018Adiliyah",
-        "wiki_page": "\u2018Adiliyah",
+        "name": "‘Adiliyah",
+        "wiki_page": "‘Adiliyah",
         "lat": 35.6659,
         "lng": 37.1036,
         "owner": "HTS",
@@ -25110,8 +25110,8 @@
         "marksize": 5
     },
     {
-        "name": "Al-Uraybidi/Khirbat \u2018Urb\u012bd\u012b",
-        "wiki_page": "Al-Uraybidi/Khirbat \u2018Urb\u012bd\u012b",
+        "name": "Al-Uraybidi/Khirbat ‘Urbīdī",
+        "wiki_page": "Al-Uraybidi/Khirbat ‘Urbīdī",
         "lat": 35.676,
         "lng": 40.3569,
         "owner": "HTS",
@@ -25270,8 +25270,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat Haw\u012bsh",
-        "wiki_page": "Khirbat Haw\u012bsh",
+        "name": "Khirbat Hawīsh",
+        "wiki_page": "Khirbat Hawīsh",
         "lat": 35.6814,
         "lng": 37.4589,
         "owner": "HTS",
@@ -25390,8 +25390,8 @@
         "marksize": 3
     },
     {
-        "name": "Al \u2018Uwaynah",
-        "wiki_page": "Al \u2018Uwaynah",
+        "name": "Al ‘Uwaynah",
+        "wiki_page": "Al ‘Uwaynah",
         "lat": 35.685,
         "lng": 37.588,
         "owner": "HTS",
@@ -25470,8 +25470,8 @@
         "marksize": 8
     },
     {
-        "name": "\u015eab\u1e29ah",
-        "wiki_page": "\u015eab\u1e29ah",
+        "name": "Şabḩah",
+        "wiki_page": "Şabḩah",
         "lat": 35.686,
         "lng": 37.3178,
         "owner": "HTS",
@@ -25680,8 +25680,8 @@
         "marksize": 4
     },
     {
-        "name": "Sabkh\u0101w\u012b",
-        "wiki_page": "Sabkh\u0101w\u012b",
+        "name": "Sabkhāwī",
+        "wiki_page": "Sabkhāwī",
         "lat": 35.6948,
         "lng": 39.2372,
         "owner": "HTS",
@@ -25780,8 +25780,8 @@
         "marksize": 4
     },
     {
-        "name": "Khuwayn ash Sha\u2018r",
-        "wiki_page": "Khuwayn ash Sha\u2018r",
+        "name": "Khuwayn ash Sha‘r",
+        "wiki_page": "Khuwayn ash Sha‘r",
         "lat": 35.697,
         "lng": 36.927,
         "owner": "HTS",
@@ -26540,8 +26540,8 @@
         "marksize": 4
     },
     {
-        "name": "Suwayd\u012byat Ristm\u016b",
-        "wiki_page": "Suwayd\u012byat Ristm\u016b",
+        "name": "Suwaydīyat Ristmū",
+        "wiki_page": "Suwaydīyat Ristmū",
         "lat": 35.719,
         "lng": 36.13,
         "owner": "HTS",
@@ -27010,8 +27010,8 @@
         "marksize": 3
     },
     {
-        "name": "Jubb al Kh\u0101f\u012b",
-        "wiki_page": "Jubb al Kh\u0101f\u012b",
+        "name": "Jubb al Khāfī",
+        "wiki_page": "Jubb al Khāfī",
         "lat": 35.733,
         "lng": 38.149,
         "owner": "HTS",
@@ -27120,8 +27120,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat al Jam\u2018",
-        "wiki_page": "Khirbat al Jam\u2018",
+        "name": "Khirbat al Jam‘",
+        "wiki_page": "Khirbat al Jam‘",
         "lat": 35.7359,
         "lng": 37.8939,
         "owner": "HTS",
@@ -27930,8 +27930,8 @@
         "marksize": 7
     },
     {
-        "name": "Abbud al Jad\u2018an",
-        "wiki_page": "Abbud al Jad\u2018an",
+        "name": "Abbud al Jad‘an",
+        "wiki_page": "Abbud al Jad‘an",
         "lat": 35.7613,
         "lng": 41.1159,
         "owner": "HTS",
@@ -27991,7 +27991,7 @@
     },
     {
         "name": "al-Rami",
-        "wiki_page": "Idlib Governorate clashes (June 2012\u2013April 2013)",
+        "wiki_page": "Idlib Governorate clashes (June 2012–April 2013)",
         "lat": 35.763,
         "lng": 36.559,
         "owner": "HTS",
@@ -28391,7 +28391,7 @@
     },
     {
         "name": "Ghanim al-Ali",
-        "wiki_page": "Raqqa campaign (2016\u20132017)",
+        "wiki_page": "Raqqa campaign (2016–2017)",
         "lat": 35.774,
         "lng": 39.402,
         "owner": "HTS",
@@ -28830,8 +28830,8 @@
         "marksize": 8
     },
     {
-        "name": "Al Qulay\u2018ah",
-        "wiki_page": "Al Qulay\u2018ah",
+        "name": "Al Qulay‘ah",
+        "wiki_page": "Al Qulay‘ah",
         "lat": 35.785,
         "lng": 37.625,
         "owner": "HTS",
@@ -29360,8 +29360,8 @@
         "marksize": 4
     },
     {
-        "name": "Al Mar\u0101z\u012bj",
-        "wiki_page": "Al Mar\u0101z\u012bj",
+        "name": "Al Marāzīj",
+        "wiki_page": "Al Marāzīj",
         "lat": 35.799,
         "lng": 40.559,
         "owner": "HTS",
@@ -29540,8 +29540,8 @@
         "marksize": 3
     },
     {
-        "name": "As Sawda'/Karabacakl\u0131",
-        "wiki_page": "As Sawda'/Karabacakl\u0131",
+        "name": "As Sawda'/Karabacaklı",
+        "wiki_page": "As Sawda'/Karabacaklı",
         "lat": 35.804,
         "lng": 35.981,
         "owner": "HTS",
@@ -29560,8 +29560,8 @@
         "marksize": 5
     },
     {
-        "name": "Kasr \u2018Ada",
-        "wiki_page": "Kasr \u2018Ada",
+        "name": "Kasr ‘Ada",
+        "wiki_page": "Kasr ‘Ada",
         "lat": 35.805,
         "lng": 36.396,
         "owner": "HTS",
@@ -29570,8 +29570,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat as Sab\u2018",
-        "wiki_page": "Khirbat as Sab\u2018",
+        "name": "Khirbat as Sab‘",
+        "wiki_page": "Khirbat as Sab‘",
         "lat": 35.806,
         "lng": 38.0923,
         "owner": "HTS",
@@ -29580,8 +29580,8 @@
         "marksize": 5
     },
     {
-        "name": "Shuwaykhat al \u2018\u012ab",
-        "wiki_page": "Shuwaykhat al \u2018\u012ab",
+        "name": "Shuwaykhat al ‘Īb",
+        "wiki_page": "Shuwaykhat al ‘Īb",
         "lat": 35.806,
         "lng": 37.269,
         "owner": "HTS",
@@ -29700,8 +29700,8 @@
         "marksize": 5
     },
     {
-        "name": "Nuw\u0101f\u012byah",
-        "wiki_page": "Nuw\u0101f\u012byah",
+        "name": "Nuwāfīyah",
+        "wiki_page": "Nuwāfīyah",
         "lat": 35.809,
         "lng": 37.982,
         "owner": "HTS",
@@ -29920,8 +29920,8 @@
         "marksize": 10
     },
     {
-        "name": "\u2018Khirbat al \u2018Awj\u0101",
-        "wiki_page": "\u2018Khirbat al \u2018Awj\u0101",
+        "name": "‘Khirbat al ‘Awjā",
+        "wiki_page": "‘Khirbat al ‘Awjā",
         "lat": 35.814,
         "lng": 37.9605,
         "owner": "HTS",
@@ -30050,8 +30050,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat al Hass\u0101n",
-        "wiki_page": "Khirbat al Hass\u0101n",
+        "name": "Khirbat al Hassān",
+        "wiki_page": "Khirbat al Hassān",
         "lat": 35.8205,
         "lng": 38.065,
         "owner": "HTS",
@@ -30360,8 +30360,8 @@
         "marksize": 8
     },
     {
-        "name": "Khirbat Mu\u1e29sin",
-        "wiki_page": "Khirbat Mu\u1e29sin",
+        "name": "Khirbat Muḩsin",
+        "wiki_page": "Khirbat Muḩsin",
         "lat": 35.828,
         "lng": 38.1067,
         "owner": "HTS",
@@ -30370,8 +30370,8 @@
         "marksize": 5
     },
     {
-        "name": "Mazra\u2018at ar Ruwayhib",
-        "wiki_page": "Mazra\u2018at ar Ruwayhib",
+        "name": "Mazra‘at ar Ruwayhib",
+        "wiki_page": "Mazra‘at ar Ruwayhib",
         "lat": 35.828,
         "lng": 37.541,
         "owner": "HTS",
@@ -30760,8 +30760,8 @@
         "marksize": 4
     },
     {
-        "name": "Al Mas\u2018ud\u012byah",
-        "wiki_page": "Al Mas\u2018ud\u012byah",
+        "name": "Al Mas‘udīyah",
+        "wiki_page": "Al Mas‘udīyah",
         "lat": 35.838,
         "lng": 37.8682,
         "owner": "HTS",
@@ -30820,8 +30820,8 @@
         "marksize": 5
     },
     {
-        "name": "Umm Is\u0163abal(Banawi)",
-        "wiki_page": "Umm Is\u0163abal(Banawi)",
+        "name": "Umm Isţabal(Banawi)",
+        "wiki_page": "Umm Isţabal(Banawi)",
         "lat": 35.8423,
         "lng": 37.4529,
         "owner": "HTS",
@@ -30830,8 +30830,8 @@
         "marksize": 4
     },
     {
-        "name": "Ramad\u0101n\u012byah",
-        "wiki_page": "Ramad\u0101n\u012byah",
+        "name": "Ramadānīyah",
+        "wiki_page": "Ramadānīyah",
         "lat": 35.8425,
         "lng": 37.876,
         "owner": "HTS",
@@ -30870,8 +30870,8 @@
         "marksize": 6
     },
     {
-        "name": "Mushayrifat ash Sharbatj\u012b",
-        "wiki_page": "Mushayrifat ash Sharbatj\u012b",
+        "name": "Mushayrifat ash Sharbatjī",
+        "wiki_page": "Mushayrifat ash Sharbatjī",
         "lat": 35.8459,
         "lng": 37.158,
         "owner": "HTS",
@@ -30960,8 +30960,8 @@
         "marksize": 6
     },
     {
-        "name": "\u2018Uthmaniyah as Saghirah",
-        "wiki_page": "\u2018Uthmaniyah as Saghirah",
+        "name": "‘Uthmaniyah as Saghirah",
+        "wiki_page": "‘Uthmaniyah as Saghirah",
         "lat": 35.8478,
         "lng": 37.044,
         "owner": "HTS",
@@ -31000,8 +31000,8 @@
         "marksize": 4
     },
     {
-        "name": "Q\u0131z\u0131ldag",
-        "wiki_page": "Q\u0131z\u0131ldag",
+        "name": "Qızıldag",
+        "wiki_page": "Qızıldag",
         "lat": 35.85,
         "lng": 36.015,
         "owner": "HTS",
@@ -31040,8 +31040,8 @@
         "marksize": 5
     },
     {
-        "name": "Al Khaz\u2018al\u012byah/Faha",
-        "wiki_page": "Al Khaz\u2018al\u012byah/Faha",
+        "name": "Al Khaz‘alīyah/Faha",
+        "wiki_page": "Al Khaz‘alīyah/Faha",
         "lat": 35.8514,
         "lng": 37.89,
         "owner": "HTS",
@@ -31120,8 +31120,8 @@
         "marksize": 3
     },
     {
-        "name": "Khirbat al Musayl\u0101n",
-        "wiki_page": "Khirbat al Musayl\u0101n",
+        "name": "Khirbat al Musaylān",
+        "wiki_page": "Khirbat al Musaylān",
         "lat": 35.855,
         "lng": 37.8739,
         "owner": "HTS",
@@ -31141,7 +31141,7 @@
     },
     {
         "name": "Judaydat Khabour",
-        "wiki_page": "Raqqa campaign (2016\u20132017)",
+        "wiki_page": "Raqqa campaign (2016–2017)",
         "lat": 35.856,
         "lng": 39.4247,
         "owner": "HTS",
@@ -31150,8 +31150,8 @@
         "marksize": 8
     },
     {
-        "name": "Mashrafat al Bakr\u012b",
-        "wiki_page": "Mashrafat al Bakr\u012b",
+        "name": "Mashrafat al Bakrī",
+        "wiki_page": "Mashrafat al Bakrī",
         "lat": 35.856,
         "lng": 38.091,
         "owner": "HTS",
@@ -31180,8 +31180,8 @@
         "marksize": 6
     },
     {
-        "name": "Quwa\u015fiyah Kabirah",
-        "wiki_page": "Quwa\u015fiyah Kabirah",
+        "name": "Quwaşiyah Kabirah",
+        "wiki_page": "Quwaşiyah Kabirah",
         "lat": 35.8567,
         "lng": 37.828,
         "owner": "HTS",
@@ -31191,7 +31191,7 @@
     },
     {
         "name": "Ukayrishah",
-        "wiki_page": "Raqqa campaign (2016\u20132017)",
+        "wiki_page": "Raqqa campaign (2016–2017)",
         "lat": 35.857,
         "lng": 39.127,
         "owner": "HTS",
@@ -31401,7 +31401,7 @@
     },
     {
         "name": "al-Hajib",
-        "wiki_page": "Northwestern Syria campaign (October 2017\u2013February 2018)",
+        "wiki_page": "Northwestern Syria campaign (October 2017–February 2018)",
         "lat": 35.864,
         "lng": 37.397,
         "owner": "HTS",
@@ -31410,8 +31410,8 @@
         "marksize": 6
     },
     {
-        "name": "Rasm al \u2018Aysh",
-        "wiki_page": "Rasm al \u2018Aysh",
+        "name": "Rasm al ‘Aysh",
+        "wiki_page": "Rasm al ‘Aysh",
         "lat": 35.864,
         "lng": 37.5017,
         "owner": "HTS",
@@ -31470,8 +31470,8 @@
         "marksize": 7
     },
     {
-        "name": "Umm Miy\u0101l (Khrbt al Faha",
-        "wiki_page": "Umm Miy\u0101l (Khrbt al Faha",
+        "name": "Umm Miyāl (Khrbt al Faha",
+        "wiki_page": "Umm Miyāl (Khrbt al Faha",
         "lat": 35.866,
         "lng": 37.9035,
         "owner": "HTS",
@@ -31740,8 +31740,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat A\u1e29mad al Habib",
-        "wiki_page": "Khirbat A\u1e29mad al Habib",
+        "name": "Khirbat Aḩmad al Habib",
+        "wiki_page": "Khirbat Aḩmad al Habib",
         "lat": 35.878,
         "lng": 38.0456,
         "owner": "HTS",
@@ -31951,7 +31951,7 @@
     },
     {
         "name": "Ratlah",
-        "wiki_page": "Raqqa campaign (2016\u20132017)",
+        "wiki_page": "Raqqa campaign (2016–2017)",
         "lat": 35.8842,
         "lng": 39.052,
         "owner": "HTS",
@@ -32710,8 +32710,8 @@
         "marksize": 5
     },
     {
-        "name": "Tabb \u2018Isa",
-        "wiki_page": "Tabb \u2018Isa",
+        "name": "Tabb ‘Isa",
+        "wiki_page": "Tabb ‘Isa",
         "lat": 35.914,
         "lng": 36.549,
         "owner": "HTS",
@@ -32721,7 +32721,7 @@
     },
     {
         "name": "Nasirah",
-        "wiki_page": "Raqqa campaign (2016\u20132017)",
+        "wiki_page": "Raqqa campaign (2016–2017)",
         "lat": 35.915,
         "lng": 39.167,
         "owner": "HTS",
@@ -33100,8 +33100,8 @@
         "marksize": 5
     },
     {
-        "name": "Mustar\u012b\u1e29ah",
-        "wiki_page": "Mustar\u012b\u1e29ah",
+        "name": "Mustarīḩah",
+        "wiki_page": "Mustarīḩah",
         "lat": 35.926,
         "lng": 37.803,
         "owner": "HTS",
@@ -33241,7 +33241,7 @@
     },
     {
         "name": "Tal Mamou",
-        "wiki_page": "Northwestern Syria campaign (October 2017\u2013February 2018)",
+        "wiki_page": "Northwestern Syria campaign (October 2017–February 2018)",
         "lat": 35.931,
         "lng": 37.024,
         "owner": "HTS",
@@ -33570,8 +33570,8 @@
         "marksize": 5
     },
     {
-        "name": "Batush\u012byah",
-        "wiki_page": "Batush\u012byah",
+        "name": "Batushīyah",
+        "wiki_page": "Batushīyah",
         "lat": 35.94,
         "lng": 37.84,
         "owner": "HTS",
@@ -34120,8 +34120,8 @@
         "marksize": 5
     },
     {
-        "name": "Abdul Mutanabi/\u2018Abd al Matn\u012b",
-        "wiki_page": "Abdul Mutanabi/\u2018Abd al Matn\u012b",
+        "name": "Abdul Mutanabi/‘Abd al Matnī",
+        "wiki_page": "Abdul Mutanabi/‘Abd al Matnī",
         "lat": 35.965,
         "lng": 39.739,
         "owner": "HTS",
@@ -34760,8 +34760,8 @@
         "marksize": 6
     },
     {
-        "name": "Julayb Khal\u012bl",
-        "wiki_page": "Julayb Khal\u012bl",
+        "name": "Julayb Khalīl",
+        "wiki_page": "Julayb Khalīl",
         "lat": 35.988,
         "lng": 39.739,
         "owner": "HTS",
@@ -34791,7 +34791,7 @@
     },
     {
         "name": "al-Hadher",
-        "wiki_page": "Aleppo offensive (October\u2013December 2015)",
+        "wiki_page": "Aleppo offensive (October–December 2015)",
         "lat": 35.989,
         "lng": 37.051,
         "owner": "HTS",
@@ -34951,7 +34951,7 @@
     },
     {
         "name": "al-Eiss",
-        "wiki_page": "Aleppo offensive (October\u2013December 2015)",
+        "wiki_page": "Aleppo offensive (October–December 2015)",
         "lat": 35.995,
         "lng": 36.998,
         "owner": "HTS",
@@ -35090,8 +35090,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat Huss\u016bn",
-        "wiki_page": "Khirbat Huss\u016bn",
+        "name": "Khirbat Hussūn",
+        "wiki_page": "Khirbat Hussūn",
         "lat": 36.0,
         "lng": 37.773,
         "owner": "HTS",
@@ -35860,8 +35860,8 @@
         "marksize": 5
     },
     {
-        "name": "B\u012br Adm\u0101n",
-        "wiki_page": "B\u012br Adm\u0101n",
+        "name": "Bīr Admān",
+        "wiki_page": "Bīr Admān",
         "lat": 36.0345,
         "lng": 39.8842,
         "owner": "HTS",
@@ -35950,8 +35950,8 @@
         "marksize": 4
     },
     {
-        "name": "East Jisr Shahin/Sen\u00eene",
-        "wiki_page": "East Jisr Shahin/Sen\u00eene",
+        "name": "East Jisr Shahin/Senîne",
+        "wiki_page": "East Jisr Shahin/Senîne",
         "lat": 36.0393,
         "lng": 39.0954,
         "owner": "HTS",
@@ -35970,8 +35970,8 @@
         "marksize": 4
     },
     {
-        "name": "Kuwayt\u0101r",
-        "wiki_page": "Kuwayt\u0101r",
+        "name": "Kuwaytār",
+        "wiki_page": "Kuwaytār",
         "lat": 36.04,
         "lng": 39.787,
         "owner": "HTS",
@@ -36070,8 +36070,8 @@
         "marksize": 5
     },
     {
-        "name": "Jubb al \u2018\u0100l\u012b",
-        "wiki_page": "Jubb al \u2018\u0100l\u012b",
+        "name": "Jubb al ‘Ālī",
+        "wiki_page": "Jubb al ‘Ālī",
         "lat": 36.045,
         "lng": 37.798,
         "owner": "HTS",
@@ -36430,8 +36430,8 @@
         "marksize": 6
     },
     {
-        "name": "Kass\u0101r",
-        "wiki_page": "Kass\u0101r",
+        "name": "Kassār",
+        "wiki_page": "Kassār",
         "lat": 36.063,
         "lng": 39.8024,
         "owner": "HTS",
@@ -36490,8 +36490,8 @@
         "marksize": 4
     },
     {
-        "name": "Bir Shammar\u012b",
-        "wiki_page": "Bir Shammar\u012b",
+        "name": "Bir Shammarī",
+        "wiki_page": "Bir Shammarī",
         "lat": 36.0653,
         "lng": 39.8373,
         "owner": "HTS",
@@ -36531,7 +36531,7 @@
     },
     {
         "name": "Al-Zerbah",
-        "wiki_page": "Aleppo offensive (October 2015 \u2013 present)",
+        "wiki_page": "Aleppo offensive (October 2015 – present)",
         "lat": 36.0685,
         "lng": 36.9795,
         "owner": "HTS",
@@ -36721,7 +36721,7 @@
     },
     {
         "name": "Al-Hamraa",
-        "wiki_page": "Aleppo offensive (October\u2013December 2015)",
+        "wiki_page": "Aleppo offensive (October–December 2015)",
         "lat": 36.077,
         "lng": 37.054,
         "owner": "HTS",
@@ -37240,8 +37240,8 @@
         "marksize": 5
     },
     {
-        "name": "Az\u012bz",
-        "wiki_page": "Az\u012bz",
+        "name": "Azīz",
+        "wiki_page": "Azīz",
         "lat": 36.098,
         "lng": 39.7804,
         "owner": "HTS",
@@ -37440,8 +37440,8 @@
         "marksize": 6
     },
     {
-        "name": "Jaf\u012brat Mansur",
-        "wiki_page": "Jaf\u012brat Mansur",
+        "name": "Jafīrat Mansur",
+        "wiki_page": "Jafīrat Mansur",
         "lat": 36.106,
         "lng": 37.763,
         "owner": "SNA",
@@ -37471,7 +37471,7 @@
     },
     {
         "name": "Judaydah",
-        "wiki_page": "Kuweires offensive (September\u2013November 2015)",
+        "wiki_page": "Kuweires offensive (September–November 2015)",
         "lat": 36.107,
         "lng": 37.512,
         "owner": "HTS",
@@ -37560,8 +37560,8 @@
         "marksize": 5
     },
     {
-        "name": "Al-Jadah/Pirtiw\u00eak",
-        "wiki_page": "Al-Jadah/Pirtiw\u00eak",
+        "name": "Al-Jadah/Pirtiwêk",
+        "wiki_page": "Al-Jadah/Pirtiwêk",
         "lat": 36.1108,
         "lng": 38.593,
         "owner": "HTS",
@@ -38310,8 +38310,8 @@
         "marksize": 5
     },
     {
-        "name": "\u2018Ayn Sabil",
-        "wiki_page": "\u2018Ayn Sabil",
+        "name": "‘Ayn Sabil",
+        "wiki_page": "‘Ayn Sabil",
         "lat": 36.137,
         "lng": 37.4105,
         "owner": "SNA",
@@ -38500,8 +38500,8 @@
         "marksize": 5
     },
     {
-        "name": "Jam\u2018iyat al-Rahal",
-        "wiki_page": "Jam\u2018iyat al-Rahal",
+        "name": "Jam‘iyat al-Rahal",
+        "wiki_page": "Jam‘iyat al-Rahal",
         "lat": 36.1448,
         "lng": 36.9808,
         "owner": "HTS",
@@ -38881,7 +38881,7 @@
     },
     {
         "name": "al-Alani",
-        "wiki_page": "Idlib Governorate clashes (June 2012\u2013April 2013)",
+        "wiki_page": "Idlib Governorate clashes (June 2012–April 2013)",
         "lat": 36.159,
         "lng": 36.389,
         "owner": "HTS",
@@ -39010,8 +39010,8 @@
         "marksize": 6
     },
     {
-        "name": "Jam\u2018iyat al Kahraba",
-        "wiki_page": "Jam\u2018iyat al Kahraba",
+        "name": "Jam‘iyat al Kahraba",
+        "wiki_page": "Jam‘iyat al Kahraba",
         "lat": 36.1649,
         "lng": 37.002,
         "owner": "HTS",
@@ -39650,8 +39650,8 @@
         "marksize": 4
     },
     {
-        "name": "Judaydah \u2018Arbin",
-        "wiki_page": "Judaydah \u2018Arbin",
+        "name": "Judaydah ‘Arbin",
+        "wiki_page": "Judaydah ‘Arbin",
         "lat": 36.184,
         "lng": 37.545,
         "owner": "SNA",
@@ -39840,8 +39840,8 @@
         "marksize": 4
     },
     {
-        "name": "Tayyibah/\u1e6caybat al-Asm",
-        "wiki_page": "Tayyibah/\u1e6caybat al-Asm",
+        "name": "Tayyibah/Ṭaybat al-Asm",
+        "wiki_page": "Tayyibah/Ṭaybat al-Asm",
         "lat": 36.19,
         "lng": 37.447,
         "owner": "SNA",
@@ -39931,7 +39931,7 @@
     },
     {
         "name": "Rasm`Abbud",
-        "wiki_page": "Kuweires offensive (September\u2013November 2015)",
+        "wiki_page": "Kuweires offensive (September–November 2015)",
         "lat": 36.194,
         "lng": 37.611,
         "owner": "SNA",
@@ -40030,8 +40030,8 @@
         "marksize": 5
     },
     {
-        "name": "\u2018Arbid",
-        "wiki_page": "\u2018Arbid",
+        "name": "‘Arbid",
+        "wiki_page": "‘Arbid",
         "lat": 36.198,
         "lng": 37.557,
         "owner": "SNA",
@@ -40344,7 +40344,7 @@
         "wiki_page": "Fah, Syria",
         "lat": 36.206,
         "lng": 37.363,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -40441,7 +40441,7 @@
     },
     {
         "name": "at-Tulul",
-        "wiki_page": "Idlib Governorate clashes (June 2012\u2013April 2013)",
+        "wiki_page": "Idlib Governorate clashes (June 2012–April 2013)",
         "lat": 36.208,
         "lng": 36.398,
         "owner": "HTS",
@@ -40791,7 +40791,7 @@
     },
     {
         "name": "Afrin",
-        "wiki_page": "East Aleppo offensive (2015\u201316)",
+        "wiki_page": "East Aleppo offensive (2015–16)",
         "lat": 36.2257,
         "lng": 37.326,
         "owner": "SNA",
@@ -41250,8 +41250,8 @@
         "marksize": 10
     },
     {
-        "name": "Ma\u2019azah/Tayyar Hamadah",
-        "wiki_page": "Ma\u2019azah/Tayyar Hamadah",
+        "name": "Ma’azah/Tayyar Hamadah",
+        "wiki_page": "Ma’azah/Tayyar Hamadah",
         "lat": 36.24,
         "lng": 37.687,
         "owner": "SNA",
@@ -41434,7 +41434,7 @@
         "wiki_page": "Ayn al-Bayda, Dayr Hafir",
         "lat": 36.25,
         "lng": 37.592,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 4
@@ -41520,8 +41520,8 @@
         "marksize": 4
     },
     {
-        "name": "Rasm al \u2018Alam",
-        "wiki_page": "Rasm al \u2018Alam",
+        "name": "Rasm al ‘Alam",
+        "wiki_page": "Rasm al ‘Alam",
         "lat": 36.253,
         "lng": 37.437,
         "owner": "SNA",
@@ -41590,8 +41590,8 @@
         "marksize": 4
     },
     {
-        "name": "Khaf\u012byat al Humr",
-        "wiki_page": "Khaf\u012byat al Humr",
+        "name": "Khafīyat al Humr",
+        "wiki_page": "Khafīyat al Humr",
         "lat": 36.256,
         "lng": 37.9569,
         "owner": "SNA",
@@ -41840,8 +41840,8 @@
         "marksize": 6
     },
     {
-        "name": "Mazra\u2018at al Hudaydah",
-        "wiki_page": "Mazra\u2018at al Hudaydah",
+        "name": "Mazra‘at al Hudaydah",
+        "wiki_page": "Mazra‘at al Hudaydah",
         "lat": 36.2665,
         "lng": 38.1117,
         "owner": "SNA",
@@ -41930,8 +41930,8 @@
         "marksize": 5
     },
     {
-        "name": "\u2018Ank\u012bb\u0101n",
-        "wiki_page": "\u2018Ank\u012bb\u0101n",
+        "name": "‘Ankībān",
+        "wiki_page": "‘Ankībān",
         "lat": 36.2715,
         "lng": 37.9119,
         "owner": "SNA",
@@ -41990,8 +41990,8 @@
         "marksize": 5
     },
     {
-        "name": "Ab\u016b Jurayn",
-        "wiki_page": "Ab\u016b Jurayn",
+        "name": "Abū Jurayn",
+        "wiki_page": "Abū Jurayn",
         "lat": 36.274,
         "lng": 37.8109,
         "owner": "SNA",
@@ -42180,8 +42180,8 @@
         "marksize": 6
     },
     {
-        "name": "Sarjah Sagh\u012brah",
-        "wiki_page": "Sarjah Sagh\u012brah",
+        "name": "Sarjah Saghīrah",
+        "wiki_page": "Sarjah Saghīrah",
         "lat": 36.2833,
         "lng": 37.379,
         "owner": "SNA",
@@ -42210,8 +42210,8 @@
         "marksize": 4
     },
     {
-        "name": "Tellac/Dalaq Magh\u0101r",
-        "wiki_page": "Tellac/Dalaq Magh\u0101r",
+        "name": "Tellac/Dalaq Maghār",
+        "wiki_page": "Tellac/Dalaq Maghār",
         "lat": 36.2838,
         "lng": 38.7118,
         "owner": "HTS",
@@ -42280,8 +42280,8 @@
         "marksize": 4
     },
     {
-        "name": "Kharj\u012bs",
-        "wiki_page": "Kharj\u012bs",
+        "name": "Kharjīs",
+        "wiki_page": "Kharjīs",
         "lat": 36.2889,
         "lng": 37.834,
         "owner": "SNA",
@@ -42330,8 +42330,8 @@
         "marksize": 6
     },
     {
-        "name": "Ad Dara\u2018\u012byah Umm \u2018Adas",
-        "wiki_page": "Ad Dara\u2018\u012byah Umm \u2018Adas",
+        "name": "Ad Dara‘īyah Umm ‘Adas",
+        "wiki_page": "Ad Dara‘īyah Umm ‘Adas",
         "lat": 36.2925,
         "lng": 37.347,
         "owner": "SNA",
@@ -42520,8 +42520,8 @@
         "marksize": 5
     },
     {
-        "name": "Qib\u0101b Kab\u012br",
-        "wiki_page": "Qib\u0101b Kab\u012br",
+        "name": "Qibāb Kabīr",
+        "wiki_page": "Qibāb Kabīr",
         "lat": 36.2968,
         "lng": 37.9169,
         "owner": "SNA",
@@ -42550,8 +42550,8 @@
         "marksize": 5
     },
     {
-        "name": "Ab\u016b \u0162aw\u012bl",
-        "wiki_page": "Ab\u016b \u0162aw\u012bl",
+        "name": "Abū Ţawīl",
+        "wiki_page": "Abū Ţawīl",
         "lat": 36.2979,
         "lng": 37.823,
         "owner": "SNA",
@@ -42620,8 +42620,8 @@
         "marksize": 5
     },
     {
-        "name": "B\u00e2bennes",
-        "wiki_page": "B\u00e2bennes",
+        "name": "Bâbennes",
+        "wiki_page": "Bâbennes",
         "lat": 36.300276,
         "lng": 37.233247,
         "owner": "SNA",
@@ -42920,8 +42920,8 @@
         "marksize": 4
     },
     {
-        "name": "Mashrafah Isma\u2019eliyah",
-        "wiki_page": "Mashrafah Isma\u2019eliyah",
+        "name": "Mashrafah Isma’eliyah",
+        "wiki_page": "Mashrafah Isma’eliyah",
         "lat": 36.3112,
         "lng": 37.888,
         "owner": "SNA",
@@ -43100,8 +43100,8 @@
         "marksize": 4
     },
     {
-        "name": "Ab\u016b Kha\u0163ar",
-        "wiki_page": "Ab\u016b Kha\u0163ar",
+        "name": "Abū Khaţar",
+        "wiki_page": "Abū Khaţar",
         "lat": 36.3203,
         "lng": 37.839,
         "owner": "SNA",
@@ -43190,8 +43190,8 @@
         "marksize": 4
     },
     {
-        "name": "J\u0101\u2019i\u2018ah",
-        "wiki_page": "J\u0101\u2019i\u2018ah",
+        "name": "Jā’i‘ah",
+        "wiki_page": "Jā’i‘ah",
         "lat": 36.323,
         "lng": 37.7747,
         "owner": "SNA",
@@ -43270,8 +43270,8 @@
         "marksize": 4
     },
     {
-        "name": "Khirbat al \u2018Uraymah",
-        "wiki_page": "Khirbat al \u2018Uraymah",
+        "name": "Khirbat al ‘Uraymah",
+        "wiki_page": "Khirbat al ‘Uraymah",
         "lat": 36.327,
         "lng": 37.018,
         "owner": "HTS",
@@ -43340,8 +43340,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat ad Z\u012bb",
-        "wiki_page": "Khirbat ad Z\u012bb",
+        "name": "Khirbat ad Zīb",
+        "wiki_page": "Khirbat ad Zīb",
         "lat": 36.332,
         "lng": 37.7602,
         "owner": "SNA",
@@ -43430,8 +43430,8 @@
         "marksize": 6
     },
     {
-        "name": "Kheurbet Kay\u00e2r",
-        "wiki_page": "Kheurbet Kay\u00e2r",
+        "name": "Kheurbet Kayâr",
+        "wiki_page": "Kheurbet Kayâr",
         "lat": 36.3335,
         "lng": 37.625,
         "owner": "SNA",
@@ -43560,8 +43560,8 @@
         "marksize": 4
     },
     {
-        "name": "Jalamah al \u2018At\u012bqah",
-        "wiki_page": "Jalamah al \u2018At\u012bqah",
+        "name": "Jalamah al ‘Atīqah",
+        "wiki_page": "Jalamah al ‘Atīqah",
         "lat": 36.3389,
         "lng": 36.7858,
         "owner": "SNA",
@@ -43710,8 +43710,8 @@
         "marksize": 5
     },
     {
-        "name": "Dukan/Seferiye k\u00f6y\u00fc",
-        "wiki_page": "Dukan/Seferiye k\u00f6y\u00fc",
+        "name": "Dukan/Seferiye köyü",
+        "wiki_page": "Dukan/Seferiye köyü",
         "lat": 36.342,
         "lng": 36.639,
         "owner": "SNA",
@@ -43720,8 +43720,8 @@
         "marksize": 4
     },
     {
-        "name": "Diwan Al-Fawqaniyah/D\u00eaw\u00ea Jor\u00een",
-        "wiki_page": "Diwan Al-Fawqaniyah/D\u00eaw\u00ea Jor\u00een",
+        "name": "Diwan Al-Fawqaniyah/Dêwê Jorîn",
+        "wiki_page": "Diwan Al-Fawqaniyah/Dêwê Jorîn",
         "lat": 36.3428,
         "lng": 36.699,
         "owner": "HTS",
@@ -43730,8 +43730,8 @@
         "marksize": 4
     },
     {
-        "name": "Al Gh\u016bz",
-        "wiki_page": "Al Gh\u016bz",
+        "name": "Al Ghūz",
+        "wiki_page": "Al Ghūz",
         "lat": 36.343,
         "lng": 37.454,
         "owner": "SNA",
@@ -43860,8 +43860,8 @@
         "marksize": 4
     },
     {
-        "name": "Fall\u0101\u1e29 ar Rab\u016b",
-        "wiki_page": "Fall\u0101\u1e29 ar Rab\u016b",
+        "name": "Fallāḩ ar Rabū",
+        "wiki_page": "Fallāḩ ar Rabū",
         "lat": 36.349,
         "lng": 37.5919,
         "owner": "SNA",
@@ -44101,7 +44101,7 @@
     },
     {
         "name": "Jalamah",
-        "wiki_page": "Celem\u00ea",
+        "wiki_page": "Celemê",
         "lat": 36.357,
         "lng": 36.77,
         "owner": "SNA",
@@ -44460,8 +44460,8 @@
         "marksize": 6
     },
     {
-        "name": "Sukkar\u012byah Saghirah",
-        "wiki_page": "Sukkar\u012byah Saghirah",
+        "name": "Sukkarīyah Saghirah",
+        "wiki_page": "Sukkarīyah Saghirah",
         "lat": 36.37,
         "lng": 37.704,
         "owner": "SNA",
@@ -44474,7 +44474,7 @@
         "wiki_page": "Gharrah as Saghirah",
         "lat": 36.37,
         "lng": 38.041,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -44630,8 +44630,8 @@
         "marksize": 5
     },
     {
-        "name": "M\u0101\u2019 al Faydat",
-        "wiki_page": "M\u0101\u2019 al Faydat",
+        "name": "Mā’ al Faydat",
+        "wiki_page": "Mā’ al Faydat",
         "lat": 36.3775,
         "lng": 40.646,
         "owner": "SDF",
@@ -44774,7 +44774,7 @@
         "wiki_page": "Mushayrifah",
         "lat": 36.3814,
         "lng": 37.7836,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 4
@@ -44794,7 +44794,7 @@
         "wiki_page": "Gharrah as Kabirah",
         "lat": 36.382,
         "lng": 38.05,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -44920,8 +44920,8 @@
         "marksize": 8
     },
     {
-        "name": "Bar\u0101tah",
-        "wiki_page": "Bar\u0101tah",
+        "name": "Barātah",
+        "wiki_page": "Barātah",
         "lat": 36.385,
         "lng": 37.463,
         "owner": "SNA",
@@ -44930,8 +44930,8 @@
         "marksize": 4
     },
     {
-        "name": "Ali Shumary/Ali Shemar\u00ee",
-        "wiki_page": "Ali Shumary/Ali Shemar\u00ee",
+        "name": "Ali Shumary/Ali Shemarî",
+        "wiki_page": "Ali Shumary/Ali Shemarî",
         "lat": 36.385,
         "lng": 38.4577,
         "owner": "HTS",
@@ -45480,8 +45480,8 @@
         "marksize": 4
     },
     {
-        "name": "Yalanqoz\u00ea",
-        "wiki_page": "Yalanqoz\u00ea",
+        "name": "Yalanqozê",
+        "wiki_page": "Yalanqozê",
         "lat": 36.405,
         "lng": 36.685,
         "owner": "HTS",
@@ -46900,8 +46900,8 @@
         "marksize": 5
     },
     {
-        "name": "Jubb al \u2018Asi",
-        "wiki_page": "Jubb al \u2018Asi",
+        "name": "Jubb al ‘Asi",
+        "wiki_page": "Jubb al ‘Asi",
         "lat": 36.454,
         "lng": 37.3235,
         "owner": "SNA",
@@ -47330,8 +47330,8 @@
         "marksize": 4
     },
     {
-        "name": "Kirazl\u0131",
-        "wiki_page": "Kirazl\u0131",
+        "name": "Kirazlı",
+        "wiki_page": "Kirazlı",
         "lat": 36.4673,
         "lng": 36.8876,
         "owner": "SNA",
@@ -47744,7 +47744,7 @@
         "wiki_page": "Qanat al Gharrah",
         "lat": 36.484,
         "lng": 37.908,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -47790,8 +47790,8 @@
         "marksize": 4
     },
     {
-        "name": "Hac\u0131 Hasanl\u0131",
-        "wiki_page": "Hac\u0131 Hasanl\u0131",
+        "name": "Hacı Hasanlı",
+        "wiki_page": "Hacı Hasanlı",
         "lat": 36.485,
         "lng": 36.6506,
         "owner": "SNA",
@@ -48170,8 +48170,8 @@
         "marksize": 5
     },
     {
-        "name": "Rutanl\u0131",
-        "wiki_page": "Rutanl\u0131",
+        "name": "Rutanlı",
+        "wiki_page": "Rutanlı",
         "lat": 36.5019,
         "lng": 36.677,
         "owner": "SNA",
@@ -48370,8 +48370,8 @@
         "marksize": 4
     },
     {
-        "name": "Kaziyah/Gaz\u00ea",
-        "wiki_page": "Kaziyah/Gaz\u00ea",
+        "name": "Kaziyah/Gazê",
+        "wiki_page": "Kaziyah/Gazê",
         "lat": 36.509,
         "lng": 36.766,
         "owner": "SNA",
@@ -48530,8 +48530,8 @@
         "marksize": 4
     },
     {
-        "name": "\u0130ki A\u011f\u0131z/Kochri",
-        "wiki_page": "\u0130ki A\u011f\u0131z/Kochri",
+        "name": "İki Ağız/Kochri",
+        "wiki_page": "İki Ağız/Kochri",
         "lat": 36.5151,
         "lng": 36.7042,
         "owner": "SNA",
@@ -49020,8 +49020,8 @@
         "marksize": 4
     },
     {
-        "name": "Bash Jurn/Ba\u015fcirn\u00ea",
-        "wiki_page": "Bash Jurn/Ba\u015fcirn\u00ea",
+        "name": "Bash Jurn/Başcirnê",
+        "wiki_page": "Bash Jurn/Başcirnê",
         "lat": 36.527,
         "lng": 37.6335,
         "owner": "SNA",
@@ -49100,8 +49100,8 @@
         "marksize": 5
     },
     {
-        "name": "Jurn Sagh\u012br",
-        "wiki_page": "Jurn Sagh\u012br",
+        "name": "Jurn Saghīr",
+        "wiki_page": "Jurn Saghīr",
         "lat": 36.5294,
         "lng": 38.2258,
         "owner": "SNA",
@@ -49530,8 +49530,8 @@
         "marksize": 4
     },
     {
-        "name": "Jurn Kab\u012br",
-        "wiki_page": "Jurn Kab\u012br",
+        "name": "Jurn Kabīr",
+        "wiki_page": "Jurn Kabīr",
         "lat": 36.5433,
         "lng": 38.2422,
         "owner": "SNA",
@@ -49540,8 +49540,8 @@
         "marksize": 6
     },
     {
-        "name": "Mazra\u2018at a\u015f \u015eayy\u0101dah a\u015f \u015eagh\u012brah",
-        "wiki_page": "Mazra\u2018at a\u015f \u015eayy\u0101dah a\u015f \u015eagh\u012brah",
+        "name": "Mazra‘at aş Şayyādah aş Şaghīrah",
+        "wiki_page": "Mazra‘at aş Şayyādah aş Şaghīrah",
         "lat": 36.5436,
         "lng": 37.7391,
         "owner": "SNA",
@@ -49620,8 +49620,8 @@
         "marksize": 5
     },
     {
-        "name": "Sayy\u0101dah as Sagh\u012brah",
-        "wiki_page": "Sayy\u0101dah as Sagh\u012brah",
+        "name": "Sayyādah as Saghīrah",
+        "wiki_page": "Sayyādah as Saghīrah",
         "lat": 36.545,
         "lng": 37.7489,
         "owner": "SNA",
@@ -49830,8 +49830,8 @@
         "marksize": 4
     },
     {
-        "name": "Mazra\u2018at as Sayyadah al Kab\u012brah",
-        "wiki_page": "Mazra\u2018at as Sayyadah al Kab\u012brah",
+        "name": "Mazra‘at as Sayyadah al Kabīrah",
+        "wiki_page": "Mazra‘at as Sayyadah al Kabīrah",
         "lat": 36.5509,
         "lng": 37.7366,
         "owner": "SNA",
@@ -50310,8 +50310,8 @@
         "marksize": 5
     },
     {
-        "name": "Tallat al Bay\u1e11ah",
-        "wiki_page": "Tallat al Bay\u1e11ah",
+        "name": "Tallat al Bayḑah",
+        "wiki_page": "Tallat al Bayḑah",
         "lat": 36.561,
         "lng": 37.31,
         "owner": "SNA",
@@ -50540,8 +50540,8 @@
         "marksize": 4
     },
     {
-        "name": "Sahuljuk (Seholcik\u00ea)",
-        "wiki_page": "Sahuljuk (Seholcik\u00ea)",
+        "name": "Sahuljuk (Seholcikê)",
+        "wiki_page": "Sahuljuk (Seholcikê)",
         "lat": 36.5651,
         "lng": 36.6152,
         "owner": "SNA",
@@ -51080,8 +51080,8 @@
         "marksize": 5
     },
     {
-        "name": "Katranl\u0131/Qitraniye",
-        "wiki_page": "Katranl\u0131/Qitraniye",
+        "name": "Katranlı/Qitraniye",
+        "wiki_page": "Katranlı/Qitraniye",
         "lat": 36.5777,
         "lng": 36.7452,
         "owner": "SNA",
@@ -51110,8 +51110,8 @@
         "marksize": 5
     },
     {
-        "name": "Mughayr\u0101t",
-        "wiki_page": "Mughayr\u0101t",
+        "name": "Mughayrāt",
+        "wiki_page": "Mughayrāt",
         "lat": 36.5783,
         "lng": 38.2058,
         "owner": "SNA",
@@ -51170,8 +51170,8 @@
         "marksize": 4
     },
     {
-        "name": "Tall ar Rafee\u2018",
-        "wiki_page": "Tall ar Rafee\u2018",
+        "name": "Tall ar Rafee‘",
+        "wiki_page": "Tall ar Rafee‘",
         "lat": 36.58,
         "lng": 37.995,
         "owner": "SNA",
@@ -51230,8 +51230,8 @@
         "marksize": 6
     },
     {
-        "name": "Qatma N\u00fb",
-        "wiki_page": "Qatma N\u00fb",
+        "name": "Qatma Nû",
+        "wiki_page": "Qatma Nû",
         "lat": 36.5813,
         "lng": 36.9716,
         "owner": "SNA",
@@ -51430,8 +51430,8 @@
         "marksize": 10
     },
     {
-        "name": "Shu\u2018bah",
-        "wiki_page": "Shu\u2018bah",
+        "name": "Shu‘bah",
+        "wiki_page": "Shu‘bah",
         "lat": 36.586,
         "lng": 38.808,
         "owner": "SNA",
@@ -51560,8 +51560,8 @@
         "marksize": 5
     },
     {
-        "name": "Umm \u2018Idam",
-        "wiki_page": "Umm \u2018Idam",
+        "name": "Umm ‘Idam",
+        "wiki_page": "Umm ‘Idam",
         "lat": 36.589,
         "lng": 38.079,
         "owner": "SNA",
@@ -51740,8 +51740,8 @@
         "marksize": 4
     },
     {
-        "name": "Mazra\u2018at Tall al Haw\u00e1",
-        "wiki_page": "Mazra\u2018at Tall al Haw\u00e1",
+        "name": "Mazra‘at Tall al Hawá",
+        "wiki_page": "Mazra‘at Tall al Hawá",
         "lat": 36.5939,
         "lng": 37.6466,
         "owner": "SNA",
@@ -51930,8 +51930,8 @@
         "marksize": 8
     },
     {
-        "name": "Al-Faydiyah/Fayzruz\u012byah",
-        "wiki_page": "Al-Faydiyah/Fayzruz\u012byah",
+        "name": "Al-Faydiyah/Fayzruzīyah",
+        "wiki_page": "Al-Faydiyah/Fayzruzīyah",
         "lat": 36.596,
         "lng": 37.145,
         "owner": "SNA",
@@ -52020,8 +52020,8 @@
         "marksize": 5
     },
     {
-        "name": "Ma\u2018mal Ushaghi",
-        "wiki_page": "Ma\u2018mal Ushaghi",
+        "name": "Ma‘mal Ushaghi",
+        "wiki_page": "Ma‘mal Ushaghi",
         "lat": 36.598,
         "lng": 36.635,
         "owner": "SNA",
@@ -52440,8 +52440,8 @@
         "marksize": 3
     },
     {
-        "name": "Mis\u00earfa",
-        "wiki_page": "Mis\u00earfa",
+        "name": "Misêrfa",
+        "wiki_page": "Misêrfa",
         "lat": 36.607,
         "lng": 40.1226,
         "owner": "SDF",
@@ -52590,8 +52590,8 @@
         "marksize": 5
     },
     {
-        "name": "Mil\u00ea",
-        "wiki_page": "Mil\u00ea",
+        "name": "Milê",
+        "wiki_page": "Milê",
         "lat": 36.611,
         "lng": 38.549,
         "owner": "SDF",
@@ -52670,8 +52670,8 @@
         "marksize": 4
     },
     {
-        "name": "Kawn \u2018Atar",
-        "wiki_page": "Kawn \u2018Atar",
+        "name": "Kawn ‘Atar",
+        "wiki_page": "Kawn ‘Atar",
         "lat": 36.612,
         "lng": 40.522,
         "owner": "SDF",
@@ -52680,8 +52680,8 @@
         "marksize": 6
     },
     {
-        "name": "Tal Hajar/Ta\u015fl\u0131h\u00fcy\u00fck",
-        "wiki_page": "Tal Hajar/Ta\u015fl\u0131h\u00fcy\u00fck",
+        "name": "Tal Hajar/Taşlıhüyük",
+        "wiki_page": "Tal Hajar/Taşlıhüyük",
         "lat": 36.6127,
         "lng": 37.7102,
         "owner": "SNA",
@@ -52750,8 +52750,8 @@
         "marksize": 4
     },
     {
-        "name": "Tel Sha\u2018\u012br",
-        "wiki_page": "Tel Sha\u2018\u012br",
+        "name": "Tel Sha‘īr",
+        "wiki_page": "Tel Sha‘īr",
         "lat": 36.614,
         "lng": 37.343,
         "owner": "SNA",
@@ -53050,8 +53050,8 @@
         "marksize": 5
     },
     {
-        "name": "Bad\u0131nl\u0131",
-        "wiki_page": "Bad\u0131nl\u0131",
+        "name": "Badınlı",
+        "wiki_page": "Badınlı",
         "lat": 36.6203,
         "lng": 36.689,
         "owner": "SNA",
@@ -53080,8 +53080,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat Tel Sha\u2018\u012br",
-        "wiki_page": "Khirbat Tel Sha\u2018\u012br",
+        "name": "Khirbat Tel Sha‘īr",
+        "wiki_page": "Khirbat Tel Sha‘īr",
         "lat": 36.621,
         "lng": 37.319,
         "owner": "SNA",
@@ -53350,8 +53350,8 @@
         "marksize": 4
     },
     {
-        "name": "Kum Re\u00e7\u00ea",
-        "wiki_page": "Kum Re\u00e7\u00ea",
+        "name": "Kum Reçê",
+        "wiki_page": "Kum Reçê",
         "lat": 36.627,
         "lng": 36.6237,
         "owner": "SNA",
@@ -53420,8 +53420,8 @@
         "marksize": 6
     },
     {
-        "name": "Raf\u012b\u2018ah",
-        "wiki_page": "Raf\u012b\u2018ah",
+        "name": "Rafī‘ah",
+        "wiki_page": "Rafī‘ah",
         "lat": 36.6286,
         "lng": 38.038,
         "owner": "SNA",
@@ -53514,7 +53514,7 @@
         "wiki_page": "Sal, Syria",
         "lat": 36.63,
         "lng": 38.464,
-        "owner": "SDF",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -53620,8 +53620,8 @@
         "marksize": 4
     },
     {
-        "name": "Nur \u2018Al\u012b",
-        "wiki_page": "Nur \u2018Al\u012b",
+        "name": "Nur ‘Alī",
+        "wiki_page": "Nur ‘Alī",
         "lat": 36.631,
         "lng": 38.349,
         "owner": "SDF",
@@ -53760,8 +53760,8 @@
         "marksize": 4
     },
     {
-        "name": "Shana\u2018a",
-        "wiki_page": "Shana\u2018a",
+        "name": "Shana‘a",
+        "wiki_page": "Shana‘a",
         "lat": 36.633,
         "lng": 38.089,
         "owner": "SNA",
@@ -54420,8 +54420,8 @@
         "marksize": 5
     },
     {
-        "name": "Derbes\u00een (Darb Hassan)",
-        "wiki_page": "Derbes\u00een (Darb Hassan)",
+        "name": "Derbesîn (Darb Hassan)",
+        "wiki_page": "Derbesîn (Darb Hassan)",
         "lat": 36.6456,
         "lng": 38.6777,
         "owner": "SDF",
@@ -54490,8 +54490,8 @@
         "marksize": 5
     },
     {
-        "name": "Shamanl\u0131",
-        "wiki_page": "Shamanl\u0131",
+        "name": "Shamanlı",
+        "wiki_page": "Shamanlı",
         "lat": 36.647,
         "lng": 36.939,
         "owner": "SNA",
@@ -54940,8 +54940,8 @@
         "marksize": 4
     },
     {
-        "name": "Umranl\u0131/Omar",
-        "wiki_page": "Umranl\u0131/Omar",
+        "name": "Umranlı/Omar",
+        "wiki_page": "Umranlı/Omar",
         "lat": 36.659,
         "lng": 36.957,
         "owner": "SNA",
@@ -54950,8 +54950,8 @@
         "marksize": 4
     },
     {
-        "name": "Mutkelt\u00ea",
-        "wiki_page": "Mutkelt\u00ea",
+        "name": "Mutkeltê",
+        "wiki_page": "Mutkeltê",
         "lat": 36.659,
         "lng": 38.8567,
         "owner": "SNA",
@@ -55190,8 +55190,8 @@
         "marksize": 4
     },
     {
-        "name": "Sheikh Ubas\u0131",
-        "wiki_page": "Sheikh Ubas\u0131",
+        "name": "Sheikh Ubası",
+        "wiki_page": "Sheikh Ubası",
         "lat": 36.6631,
         "lng": 36.7502,
         "owner": "SNA",
@@ -55310,8 +55310,8 @@
         "marksize": 4
     },
     {
-        "name": "Huwaykanl\u012b/Hopkan",
-        "wiki_page": "Huwaykanl\u012b/Hopkan",
+        "name": "Huwaykanlī/Hopkan",
+        "wiki_page": "Huwaykanlī/Hopkan",
         "lat": 36.667,
         "lng": 36.64,
         "owner": "SNA",
@@ -55730,8 +55730,8 @@
         "marksize": 5
     },
     {
-        "name": "Mazra\u2018at Za\u2018dal\u012byah",
-        "wiki_page": "Mazra\u2018at Za\u2018dal\u012byah",
+        "name": "Mazra‘at Za‘dalīyah",
+        "wiki_page": "Mazra‘at Za‘dalīyah",
         "lat": 36.6781,
         "lng": 37.0139,
         "owner": "SNA",
@@ -55750,8 +55750,8 @@
         "marksize": 5
     },
     {
-        "name": "Wasit\u00ea",
-        "wiki_page": "Wasit\u00ea",
+        "name": "Wasitê",
+        "wiki_page": "Wasitê",
         "lat": 36.6786,
         "lng": 38.876,
         "owner": "SNA",
@@ -55880,8 +55880,8 @@
         "marksize": 4
     },
     {
-        "name": "Kuranl\u0131",
-        "wiki_page": "Kuranl\u0131",
+        "name": "Kuranlı",
+        "wiki_page": "Kuranlı",
         "lat": 36.6805,
         "lng": 36.7018,
         "owner": "SNA",
@@ -55920,8 +55920,8 @@
         "marksize": 6
     },
     {
-        "name": "K\u0131rk Ma\u011fara",
-        "wiki_page": "K\u0131rk Ma\u011fara",
+        "name": "Kırk Mağara",
+        "wiki_page": "Kırk Mağara",
         "lat": 36.681,
         "lng": 38.054,
         "owner": "SNA",
@@ -56070,8 +56070,8 @@
         "marksize": 4
     },
     {
-        "name": "Jarkhatl\u012b",
-        "wiki_page": "Jarkhatl\u012b",
+        "name": "Jarkhatlī",
+        "wiki_page": "Jarkhatlī",
         "lat": 36.685,
         "lng": 36.717,
         "owner": "SNA",
@@ -56390,8 +56390,8 @@
         "marksize": 4
     },
     {
-        "name": "Habul Usaq\u0131/Upila",
-        "wiki_page": "Habul Usaq\u0131/Upila",
+        "name": "Habul Usaqı/Upila",
+        "wiki_page": "Habul Usaqı/Upila",
         "lat": 36.693,
         "lng": 36.8469,
         "owner": "SNA",
@@ -56430,8 +56430,8 @@
         "marksize": 4
     },
     {
-        "name": "Khalil Usag\u0131/Xalilan",
-        "wiki_page": "Khalil Usag\u0131/Xalilan",
+        "name": "Khalil Usagı/Xalilan",
+        "wiki_page": "Khalil Usagı/Xalilan",
         "lat": 36.6944,
         "lng": 36.8065,
         "owner": "SNA",
@@ -56460,8 +56460,8 @@
         "marksize": 4
     },
     {
-        "name": "Kotanl\u0131/Al Mudallah",
-        "wiki_page": "Kotanl\u0131/Al Mudallah",
+        "name": "Kotanlı/Al Mudallah",
+        "wiki_page": "Kotanlı/Al Mudallah",
         "lat": 36.6949,
         "lng": 36.856,
         "owner": "SNA",
@@ -56490,8 +56490,8 @@
         "marksize": 5
     },
     {
-        "name": "Sheikh Abadi (S\u00eax Ebdi)",
-        "wiki_page": "Sheikh Abadi (S\u00eax Ebdi)",
+        "name": "Sheikh Abadi (Sêx Ebdi)",
+        "wiki_page": "Sheikh Abadi (Sêx Ebdi)",
         "lat": 36.6952,
         "lng": 38.773,
         "owner": "SNA",
@@ -56520,8 +56520,8 @@
         "marksize": 5
     },
     {
-        "name": "Zurzur\u00ee",
-        "wiki_page": "Zurzur\u00ee",
+        "name": "Zurzurî",
+        "wiki_page": "Zurzurî",
         "lat": 36.696,
         "lng": 38.718,
         "owner": "SDF",
@@ -56530,8 +56530,8 @@
         "marksize": 4
     },
     {
-        "name": "\u00c7obana",
-        "wiki_page": "\u00c7obana",
+        "name": "Çobana",
+        "wiki_page": "Çobana",
         "lat": 36.6967,
         "lng": 36.7319,
         "owner": "SNA",
@@ -56750,8 +56750,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat \u2018Atshsn",
-        "wiki_page": "Khirbat \u2018Atshsn",
+        "name": "Khirbat ‘Atshsn",
+        "wiki_page": "Khirbat ‘Atshsn",
         "lat": 36.702,
         "lng": 41.168,
         "owner": "SDF",
@@ -56920,8 +56920,8 @@
         "marksize": 6
     },
     {
-        "name": "Kilanl\u0131",
-        "wiki_page": "Kilanl\u0131",
+        "name": "Kilanlı",
+        "wiki_page": "Kilanlı",
         "lat": 36.7055,
         "lng": 36.766,
         "owner": "SNA",
@@ -57010,8 +57010,8 @@
         "marksize": 4
     },
     {
-        "name": "Khujamanl\u012b",
-        "wiki_page": "Khujamanl\u012b",
+        "name": "Khujamanlī",
+        "wiki_page": "Khujamanlī",
         "lat": 36.7084,
         "lng": 36.688,
         "owner": "SNA",
@@ -57250,8 +57250,8 @@
         "marksize": 5
     },
     {
-        "name": "At Taghlah/Babak \u016ash\u0101gh\u012b",
-        "wiki_page": "At Taghlah/Babak \u016ash\u0101gh\u012b",
+        "name": "At Taghlah/Babak Ūshāghī",
+        "wiki_page": "At Taghlah/Babak Ūshāghī",
         "lat": 36.718,
         "lng": 36.8215,
         "owner": "SNA",
@@ -57290,8 +57290,8 @@
         "marksize": 6
     },
     {
-        "name": "Sa'ar Najkah/Sa'rnj\u0101k",
-        "wiki_page": "Sa'ar Najkah/Sa'rnj\u0101k",
+        "name": "Sa'ar Najkah/Sa'rnjāk",
+        "wiki_page": "Sa'ar Najkah/Sa'rnjāk",
         "lat": 36.721,
         "lng": 36.913,
         "owner": "SNA",
@@ -57400,8 +57400,8 @@
         "marksize": 4
     },
     {
-        "name": "Kirazl\u0131",
-        "wiki_page": "Kirazl\u0131, Syria",
+        "name": "Kirazlı",
+        "wiki_page": "Kirazlı, Syria",
         "lat": 36.725,
         "lng": 36.765,
         "owner": "SNA",
@@ -57414,7 +57414,7 @@
         "wiki_page": "Ayn al-Bayda, Jarabulus",
         "lat": 36.725,
         "lng": 37.978,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 6
@@ -57690,8 +57690,8 @@
         "marksize": 5
     },
     {
-        "name": "Serkanl\u0131",
-        "wiki_page": "Serkanl\u0131",
+        "name": "Serkanlı",
+        "wiki_page": "Serkanlı",
         "lat": 36.734,
         "lng": 36.829,
         "owner": "SNA",
@@ -58330,8 +58330,8 @@
         "marksize": 4
     },
     {
-        "name": "Mazra\u2018at Sulaql\u0131/Ali Bacco",
-        "wiki_page": "Mazra\u2018at Sulaql\u0131/Ali Bacco",
+        "name": "Mazra‘at Sulaqlı/Ali Bacco",
+        "wiki_page": "Mazra‘at Sulaqlı/Ali Bacco",
         "lat": 36.759,
         "lng": 36.7537,
         "owner": "SNA",
@@ -58420,8 +58420,8 @@
         "marksize": 6
     },
     {
-        "name": "Sir\u2018ayn",
-        "wiki_page": "Sir\u2018ayn",
+        "name": "Sir‘ayn",
+        "wiki_page": "Sir‘ayn",
         "lat": 36.7631,
         "lng": 36.7707,
         "owner": "SNA",
@@ -58490,8 +58490,8 @@
         "marksize": 6
     },
     {
-        "name": "Ma\u1e29m\u016bd \u016abah S\u012b",
-        "wiki_page": "Ma\u1e29m\u016bd \u016abah S\u012b",
+        "name": "Maḩmūd Ūbah Sī",
+        "wiki_page": "Maḩmūd Ūbah Sī",
         "lat": 36.7658,
         "lng": 36.8664,
         "owner": "SNA",
@@ -58610,8 +58610,8 @@
         "marksize": 5
     },
     {
-        "name": "Bayt Azr\u012b",
-        "wiki_page": "Bayt Azr\u012b",
+        "name": "Bayt Azrī",
+        "wiki_page": "Bayt Azrī",
         "lat": 36.7708,
         "lng": 36.898,
         "owner": "SNA",
@@ -58720,8 +58720,8 @@
         "marksize": 4
     },
     {
-        "name": "Bayt Rish K\u012blu",
-        "wiki_page": "Bayt Rish K\u012blu",
+        "name": "Bayt Rish Kīlu",
+        "wiki_page": "Bayt Rish Kīlu",
         "lat": 36.7748,
         "lng": 36.9078,
         "owner": "SNA",
@@ -58850,8 +58850,8 @@
         "marksize": 5
     },
     {
-        "name": "H\u0101y \u016aghl\u016b",
-        "wiki_page": "H\u0101y \u016aghl\u016b",
+        "name": "Hāy Ūghlū",
+        "wiki_page": "Hāy Ūghlū",
         "lat": 36.7804,
         "lng": 36.923,
         "owner": "SNA",
@@ -59050,8 +59050,8 @@
         "marksize": 4
     },
     {
-        "name": "Gir\u00ea Qozel Bakur",
-        "wiki_page": "Gir\u00ea Qozel Bakur",
+        "name": "Girê Qozel Bakur",
+        "wiki_page": "Girê Qozel Bakur",
         "lat": 36.7885,
         "lng": 40.505,
         "owner": "SDF",
@@ -59070,8 +59070,8 @@
         "marksize": 4
     },
     {
-        "name": "J\u016bq\u0101nl\u012b",
-        "wiki_page": "J\u016bq\u0101nl\u012b",
+        "name": "Jūqānlī",
+        "wiki_page": "Jūqānlī",
         "lat": 36.789,
         "lng": 36.8336,
         "owner": "SNA",
@@ -59280,8 +59280,8 @@
         "marksize": 4
     },
     {
-        "name": "Bir Nuh/Kaniy\u00ea N\u00fb",
-        "wiki_page": "Bir Nuh/Kaniy\u00ea N\u00fb",
+        "name": "Bir Nuh/Kaniyê Nû",
+        "wiki_page": "Bir Nuh/Kaniyê Nû",
         "lat": 36.797,
         "lng": 40.138,
         "owner": "SNA",
@@ -59400,8 +59400,8 @@
         "marksize": 4
     },
     {
-        "name": "Qarah Mazra\u2018ah",
-        "wiki_page": "Qarah Mazra\u2018ah",
+        "name": "Qarah Mazra‘ah",
+        "wiki_page": "Qarah Mazra‘ah",
         "lat": 36.802,
         "lng": 38.401,
         "owner": "SDF",
@@ -59430,8 +59430,8 @@
         "marksize": 6
     },
     {
-        "name": "Madinat Ruhayyah Kab\u012brah",
-        "wiki_page": "Madinat Ruhayyah Kab\u012brah",
+        "name": "Madinat Ruhayyah Kabīrah",
+        "wiki_page": "Madinat Ruhayyah Kabīrah",
         "lat": 36.8039,
         "lng": 41.3263,
         "owner": "SDF",
@@ -59450,8 +59450,8 @@
         "marksize": 4
     },
     {
-        "name": "\u2018Arabl\u012b",
-        "wiki_page": "\u2018Arabl\u012b",
+        "name": "‘Arablī",
+        "wiki_page": "‘Arablī",
         "lat": 36.8046,
         "lng": 36.708,
         "owner": "SNA",
@@ -59484,7 +59484,7 @@
         "wiki_page": "Hamidi",
         "lat": 36.806,
         "lng": 41.166,
-        "owner": "SDF",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
@@ -59690,7 +59690,7 @@
         "marksize": 5
     },
     {
-        "name": "al-Yaarubiyah (Til Ko\u00e7er)",
+        "name": "al-Yaarubiyah (Til Koçer)",
         "wiki_page": "Al-Yaarubiyah",
         "lat": 36.815,
         "lng": 42.042,
@@ -60040,8 +60040,8 @@
         "marksize": 4
     },
     {
-        "name": "Bawi\u2018ah",
-        "wiki_page": "Bawi\u2018ah",
+        "name": "Bawi‘ah",
+        "wiki_page": "Bawi‘ah",
         "lat": 36.8383,
         "lng": 41.198,
         "owner": "SDF",
@@ -60154,14 +60154,14 @@
         "wiki_page": "Hamid",
         "lat": 36.8437,
         "lng": 40.1813,
-        "owner": "SNA",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 5
     },
     {
-        "name": "Girk\u00ea Kere",
-        "wiki_page": "Girk\u00ea Kere",
+        "name": "Girkê Kere",
+        "wiki_page": "Girkê Kere",
         "lat": 36.8446,
         "lng": 41.048,
         "owner": "SDF",
@@ -60280,7 +60280,7 @@
         "marksize": 4
     },
     {
-        "name": "Ras al-Ayn  (Ser\u00eakaniy\u00ea)",
+        "name": "Ras al-Ayn  (Serêkaniyê)",
         "wiki_page": "Ras al-Ayn",
         "lat": 36.85,
         "lng": 40.067,
@@ -60370,8 +60370,8 @@
         "marksize": 6
     },
     {
-        "name": "Qarah Kuy Fawqan\u012b",
-        "wiki_page": "Qarah Kuy Fawqan\u012b",
+        "name": "Qarah Kuy Fawqanī",
+        "wiki_page": "Qarah Kuy Fawqanī",
         "lat": 36.857,
         "lng": 38.161,
         "owner": "SDF",
@@ -60711,7 +60711,7 @@
     },
     {
         "name": "Alishar",
-        "wiki_page": "Ali\u015far, Syria",
+        "wiki_page": "Alişar, Syria",
         "lat": 36.874,
         "lng": 38.457,
         "owner": "SDF",
@@ -60800,8 +60800,8 @@
         "marksize": 5
     },
     {
-        "name": "Mazra\u2018at Saghir",
-        "wiki_page": "Mazra\u2018at Saghir",
+        "name": "Mazra‘at Saghir",
+        "wiki_page": "Mazra‘at Saghir",
         "lat": 36.882,
         "lng": 38.296,
         "owner": "SDF",
@@ -60870,8 +60870,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat As\u2018ad",
-        "wiki_page": "Khirbat As\u2018ad",
+        "name": "Khirbat As‘ad",
+        "wiki_page": "Khirbat As‘ad",
         "lat": 36.888,
         "lng": 41.317,
         "owner": "SDF",
@@ -60890,8 +60890,8 @@
         "marksize": 5
     },
     {
-        "name": "Koban\u00ee",
-        "wiki_page": "Koban\u00ee",
+        "name": "Kobanî",
+        "wiki_page": "Kobanî",
         "lat": 36.89,
         "lng": 38.354,
         "owner": "SDF",
@@ -60930,8 +60930,8 @@
         "marksize": 4
     },
     {
-        "name": "Mazra\u2018at Amud",
-        "wiki_page": "Mazra\u2018at Amud",
+        "name": "Mazra‘at Amud",
+        "wiki_page": "Mazra‘at Amud",
         "lat": 36.8914,
         "lng": 38.3003,
         "owner": "SDF",
@@ -61190,8 +61190,8 @@
         "marksize": 5
     },
     {
-        "name": "Khirbat \u2018Askar",
-        "wiki_page": "Khirbat \u2018Askar",
+        "name": "Khirbat ‘Askar",
+        "wiki_page": "Khirbat ‘Askar",
         "lat": 36.9073,
         "lng": 41.325,
         "owner": "SDF",
@@ -61210,8 +61210,8 @@
         "marksize": 6
     },
     {
-        "name": "A'qulah/Agul\u00ea",
-        "wiki_page": "A'qulah/Agul\u00ea",
+        "name": "A'qulah/Agulê",
+        "wiki_page": "A'qulah/Agulê",
         "lat": 36.9084,
         "lng": 41.1444,
         "owner": "SDF",
@@ -61350,8 +61350,8 @@
         "marksize": 5
     },
     {
-        "name": "Umm Ja\u2018far",
-        "wiki_page": "Umm Ja\u2018far",
+        "name": "Umm Ja‘far",
+        "wiki_page": "Umm Ja‘far",
         "lat": 36.923,
         "lng": 41.266,
         "owner": "SDF",
@@ -61560,8 +61560,8 @@
         "marksize": 5
     },
     {
-        "name": "Subhiyah/S\u00ea Gir\u00ee",
-        "wiki_page": "Subhiyah/S\u00ea Gir\u00ee",
+        "name": "Subhiyah/Sê Girî",
+        "wiki_page": "Subhiyah/Sê Girî",
         "lat": 36.959,
         "lng": 42.068,
         "owner": "SDF",
@@ -61640,8 +61640,8 @@
         "marksize": 5
     },
     {
-        "name": "Ger\u00ea Bereze",
-        "wiki_page": "Ger\u00ea Bereze",
+        "name": "Gerê Bereze",
+        "wiki_page": "Gerê Bereze",
         "lat": 36.993,
         "lng": 42.218,
         "owner": "SDF",
@@ -61760,8 +61760,8 @@
         "marksize": 5
     },
     {
-        "name": "Salam \u2018Alayk",
-        "wiki_page": "Salam \u2018Alayk",
+        "name": "Salam ‘Alayk",
+        "wiki_page": "Salam ‘Alayk",
         "lat": 37.0204,
         "lng": 40.5526,
         "owner": "SDF",
@@ -61804,7 +61804,7 @@
         "wiki_page": "Al-Qahtaniyah, al-Hasakah",
         "lat": 37.028,
         "lng": 41.546,
-        "owner": "SDF",
+        "owner": "HTS",
         "type": "Settlement",
         "is_besieged": false,
         "marksize": 8
@@ -62260,6 +62260,14 @@
         "lat": 36.1583,
         "lng": 37.7054,
         "owner": "Syrian Government (HTS)",
+        "type": "Settlement",
+        "marksize": 5
+    },
+    {
+        "name": "Shwaihan",
+        "lat": 35.632,
+        "lng": 38.79,
+        "owner": "Syria",
         "type": "Settlement",
         "marksize": 5
     }
